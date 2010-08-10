@@ -1,0 +1,2054 @@
+TUnitTests+Three20
+v7
+r0
+t302726192.198667
+cCheck dependencies
+cProcessInfoPlistFile /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Info.plist UnitTests-Info.plist
+cCpResource build/Debug-iphonesimulator/UnitTests.octest/orders.json orders.json
+cProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch.pth UnitTests_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cDataModelCompile /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Test.mom /Work/ObjectiveRecord/Test.xcdatamodel
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveManagerTest.o /Work/ObjectiveRecord/ActiveManagerTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveRecordTest.o /Work/ObjectiveRecord/ActiveRecordTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/CoreDataTestCase.o /Work/ObjectiveRecord/CoreDataTestCase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests normal i386
+cGenerateDSYMFile /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest.dSYM /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests
+cPhaseScriptExecution "Run Script" /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Script-C93094191208A0F300931448.sh
+cTouch /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C0FD15A0000000000000132
+t1276105050
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
+c000000004BFE177E00000000000008A5
+t1274943358
+s2213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004BFDFEB400000000001CFA90
+t1274937012
+s1899152
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004BFDFEA8000000000000046B
+t1274937000
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004C04586B00000000000000C4
+t1275353195
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/TargetConditionals.h
+c000000004BF4CBFA00000000000031E9
+t1274334202
+s12777
+
+N/Work/ObjectiveRecord/ActiveManagerTest.h
+c000000004C5AE0380000000000000367
+t1281024056
+s871
+i<SenTestingKit/SenTestingKit.h>
+i<UIKit/UIKit.h>
+
+N/Work/ObjectiveRecord/ActiveManagerTest.m
+c000000004C5AE12C00000000000000DA
+t1281024300
+s218
+i"ActiveManagerTest.h"
+
+N/Work/ObjectiveRecord/ActiveRecordTest.m
+c000000004C5AF85F0000000000000164
+t1281030239
+s356
+i"CoreDataTestCase.h"
+
+N/Work/ObjectiveRecord/CoreDataTestCase.h
+c000000004C5B003A00000000000002E7
+t1281032250
+s743
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestingKit.h>
+
+N/Work/ObjectiveRecord/CoreDataTestCase.m
+c000000004C5B0425000000000000085B
+t1281033253
+s2139
+i"CoreDataTestCase.h"
+
+N/Work/ObjectiveRecord/Libraries/Headers/OCMock/NSNotificationCenter+OCMAdditions.h
+c000000004C59BEFD000000000000023C
+t1280950013
+s572
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/Libraries/Headers/OCMock/OCMArg.h
+c000000004C59BEFD0000000000000372
+t1280950013
+s882
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/Libraries/Headers/OCMock/OCMConstraint.h
+c000000004C59BEFD00000000000005C0
+t1280950013
+s1472
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/Libraries/Headers/OCMock/OCMock.h
+c000000004C59BEFD00000000000001E7
+t1280950013
+s487
+i<OCMock/OCMockObject.h>
+i<OCMock/OCMockRecorder.h>
+i<OCMock/OCMConstraint.h>
+i<OCMock/OCMArg.h>
+i<OCMock/NSNotificationCenter+OCMAdditions.h>
+
+N/Work/ObjectiveRecord/Libraries/Headers/OCMock/OCMockObject.h
+c000000004C59BEFD000000000000040F
+t1280950013
+s1039
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/Libraries/Headers/OCMock/OCMockRecorder.h
+c000000004C59BEFD00000000000003B7
+t1280950013
+s951
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/Libraries/libOCMock.a
+c000000004C59BEFD000000000007E9F8
+t1280950013
+s518648
+
+N/Work/ObjectiveRecord/Test.xcdatamodel
+c000000004C5AF9C50000000000000088
+t1281030597
+s136
+
+N/Work/ObjectiveRecord/UnitTests_Prefix.pch
+c000000004C5B021600000000000000CC
+t1281032726
+s204
+i<Foundation/Foundation.h>
+i<CoreData/CoreData.h>
+i<OCMock/OCMock.h>
+i<Three20/Three20.h>
+i<extThree20JSON/YAJL.h>
+i"CoreDataTestCase.h"
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest
+t1281033392
+s204
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest.dSYM
+t1281033391
+s102
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Info.plist
+t1281033391
+s468
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Test.mom
+t1281033391
+s2743
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests
+t1281033391
+s17052
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/orders.json
+t1281033391
+s389
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveManagerTest.o
+t1281033391
+s1228
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveRecordTest.o
+t1281033391
+s7908
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/CoreDataTestCase.o
+t1281033391
+s17344
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/UnitTests.LinkFileList
+c000000004C5B04AF0000000000000196
+t1281033391
+s406
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Script-C93094191208A0F300931448.sh
+c000000004C5B04AF0000000000000062
+t1281033391
+s98
+
+N/Work/ObjectiveRecord/orders.json
+c000000004C5B04A70000000000000185
+t1281033383
+s389
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20.a
+c000000004C48942F0000000000000FF0
+t1279824943
+s4080
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20Core.a
+c000000004C48956200000000000317A8
+t1279825250
+s202664
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20Network.a
+c000000004C489563000000000004F080
+t1279825251
+s323712
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20Style.a
+c000000004C4894200000000000122D10
+t1279824928
+s1191184
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20UI.a
+c000000004C48942E0000000000535078
+t1279824942
+s5460088
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20UICommon.a
+c000000004C48942200000000000342F8
+t1279824930
+s213752
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libThree20UINavigator.a
+c000000004C489424000000000007DC08
+t1279824932
+s515080
+
+N/Work/three20/Build/Products/Debug-iphonesimulator/libextThree20JSON+YAJL.a
+c000000004C48956500000000000363E0
+t1279825253
+s222176
+
+N/Work/three20/Build/Products/three20/Three20/Three20.h
+c000000004C48942E00000000000008D7
+t1279824942
+s2263
+i"Three20Core/Three20Core.h"
+i"Three20Network/Three20Network.h"
+i"Three20Style/Three20Style.h"
+i"Three20UICommon/Three20UICommon.h"
+i"Three20UINavigator/Three20UINavigator.h"
+i"Three20UI/Three20UI.h"
+
+N/Work/three20/Build/Products/three20/Three20Core/TTCorePreprocessorMacros.h
+c000000004C4894140000000000000876
+t1279824916
+s2166
+
+N/Work/three20/Build/Products/three20/Three20Core/TTDebug.h
+c000000004C4894140000000000000EBD
+t1279824916
+s3773
+i<TargetConditionals.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/TTEntityTables.h
+c000000004C48941400000000000004E0
+t1279824916
+s1248
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/TTGlobalCore.h
+c000000004C48941400000000000005E6
+t1279824916
+s1510
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/TTGlobalCoreLocale.h
+c000000004C489414000000000000056D
+t1279824916
+s1389
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/TTGlobalCorePaths.h
+c000000004C4894140000000000000457
+t1279824916
+s1111
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/TTGlobalCoreRects.h
+c000000004C4894140000000000000520
+t1279824916
+s1312
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/TTMarkupStripper.h
+c000000004C48941400000000000003CB
+t1279824916
+s971
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Core/Three20Core.h
+c000000004C48941400000000000003DD
+t1279824916
+s989
+i"Three20Core/TTCorePreprocessorMacros.h"
+i"Three20Core/TTGlobalCore.h"
+i"Three20Core/TTGlobalCoreLocale.h"
+i"Three20Core/TTGlobalCorePaths.h"
+i"Three20Core/TTGlobalCoreRects.h"
+i"Three20Core/TTDebug.h"
+i"Three20Core/TTEntityTables.h"
+i"Three20Core/TTMarkupStripper.h"
+
+N/Work/three20/Build/Products/three20/Three20Network/TTGlobalNetwork.h
+c000000004C489417000000000000057D
+t1279824919
+s1405
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/TTModel.h
+c000000004C4894170000000000000CEB
+t1279824919
+s3307
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+
+N/Work/three20/Build/Products/three20/Three20Network/TTModelDelegate.h
+c000000004C48941700000000000008A8
+t1279824919
+s2216
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLCache.h
+c000000004C48941700000000000018EA
+t1279824919
+s6378
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLDataResponse.h
+c000000004C4894170000000000000363
+t1279824919
+s867
+i"Three20Network/TTURLResponse.h"
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLImageResponse.h
+c000000004C4894170000000000000434
+t1279824919
+s1076
+i"Three20Network/TTURLResponse.h"
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLRequest.h
+c000000004C4894170000000000001A70
+t1279824919
+s6768
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLRequestCachePolicy.h
+c000000004C48941700000000000004CF
+t1279824919
+s1231
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLRequestDelegate.h
+c000000004C48941700000000000006C3
+t1279824919
+s1731
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLRequestModel.h
+c000000004C48941700000000000006A1
+t1279824919
+s1697
+i"Three20Network/TTModel.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLRequestQueue.h
+c000000004C4894170000000000000DAC
+t1279824919
+s3500
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/TTURLResponse.h
+c000000004C489417000000000000064F
+t1279824919
+s1615
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/TTUserInfo.h
+c000000004C4894170000000000000673
+t1279824919
+s1651
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20Network/Three20Network.h
+c000000004C489417000000000000053E
+t1279824919
+s1342
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Network/TTModel.h"
+i"Three20Network/TTModelDelegate.h"
+i"Three20Network/TTURLRequestModel.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLRequestDelegate.h"
+i"Three20Network/TTURLResponse.h"
+i"Three20Network/TTURLDataResponse.h"
+i"Three20Network/TTURLImageResponse.h"
+i"Three20Network/TTUserInfo.h"
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Network/TTURLCache.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTBevelBorderStyle.h
+c000000004C48941900000000000004FD
+t1279824921
+s1277
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTBlendStyle.h
+c000000004C4894190000000000000340
+t1279824921
+s832
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTBoxStyle.h
+c000000004C48941900000000000005FD
+t1279824921
+s1533
+i"Three20Style/TTStyle.h"
+i"Three20Style/TTPosition.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTContentStyle.h
+c000000004C48941900000000000002DB
+t1279824921
+s731
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTDefaultStyleSheet+DragRefreshHeader.h
+c000000004C48941900000000000004C3
+t1279824921
+s1219
+i"Three20Style/TTDefaultStyleSheet.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTDefaultStyleSheet.h
+c000000004C4894190000000000000F98
+t1279824921
+s3992
+i"Three20Style/TTStyleSheet.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTFlowLayout.h
+c000000004C4894190000000000000324
+t1279824921
+s804
+i"Three20Style/TTLayout.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTFourBorderStyle.h
+c000000004C4894190000000000000630
+t1279824921
+s1584
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTGlobalStyle.h
+c000000004C4894190000000000000774
+t1279824921
+s1908
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTGridLayout.h
+c000000004C4894190000000000000373
+t1279824921
+s883
+i"Three20Style/TTLayout.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTHighlightBorderStyle.h
+c000000004C4894190000000000000442
+t1279824921
+s1090
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTImageStyle.h
+c000000004C48941900000000000007A7
+t1279824921
+s1959
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTInnerShadowStyle.h
+c000000004C48941900000000000002B8
+t1279824921
+s696
+i"Three20Style/TTShadowStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTInsetStyle.h
+c000000004C4894190000000000000337
+t1279824921
+s823
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTLayout.h
+c000000004C48941900000000000002F8
+t1279824921
+s760
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTLinearGradientBorderStyle.h
+c000000004C48941900000000000005DC
+t1279824921
+s1500
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTLinearGradientFillStyle.h
+c000000004C48941900000000000003D5
+t1279824921
+s981
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTMaskStyle.h
+c000000004C489419000000000000032D
+t1279824921
+s813
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTPartStyle.h
+c000000004C48941900000000000003CD
+t1279824921
+s973
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTPosition.h
+c000000004C48941900000000000002CA
+t1279824921
+s714
+
+N/Work/three20/Build/Products/three20/Three20Style/TTRectangleShape.h
+c000000004C48941900000000000002C8
+t1279824921
+s712
+i"Three20Style/TTShape.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTReflectiveFillStyle.h
+c000000004C4894190000000000000435
+t1279824921
+s1077
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTRoundedLeftArrowShape.h
+c000000004C489419000000000000032E
+t1279824921
+s814
+i"Three20Style/TTShape.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTRoundedRectangleShape.h
+c000000004C48941900000000000004DD
+t1279824921
+s1245
+i"Three20Style/TTShape.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTRoundedRightArrowShape.h
+c000000004C4894190000000000000330
+t1279824921
+s816
+i"Three20Style/TTShape.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTShadowStyle.h
+c000000004C4894190000000000000402
+t1279824921
+s1026
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTShape.h
+c000000004C48941900000000000004D8
+t1279824921
+s1240
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTShapeStyle.h
+c000000004C489419000000000000038A
+t1279824921
+s906
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTSolidBorderStyle.h
+c000000004C4894190000000000000399
+t1279824921
+s921
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTSolidFillStyle.h
+c000000004C489419000000000000033B
+t1279824921
+s827
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTSpeechBubbleShape.h
+c000000004C489419000000000000046A
+t1279824921
+s1130
+i"Three20Style/TTShape.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyle.h
+c000000004C4894190000000000000474
+t1279824921
+s1140
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyleContext.h
+c000000004C48941900000000000004BA
+t1279824921
+s1210
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyleDelegate.h
+c000000004C489419000000000000039D
+t1279824921
+s925
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyleSheet.h
+c000000004C48941900000000000003E3
+t1279824921
+s995
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledBlock.h
+c000000004C48941900000000000002B7
+t1279824921
+s695
+i"Three20Style/TTStyledElement.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledBoldNode.h
+c000000004C48941900000000000002B8
+t1279824921
+s696
+i"Three20Style/TTStyledInline.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledBoxFrame.h
+c000000004C4894190000000000000437
+t1279824921
+s1079
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyleDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledButtonNode.h
+c000000004C489419000000000000042F
+t1279824921
+s1071
+i"Three20Style/TTStyledInlineBlock.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledElement.h
+c000000004C4894190000000000000515
+t1279824921
+s1301
+i"Three20Style/TTStyledNode.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledFrame.h
+c000000004C48941900000000000005E0
+t1279824921
+s1504
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledImageFrame.h
+c000000004C489419000000000000046E
+t1279824921
+s1134
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyleDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledImageNode.h
+c000000004C489419000000000000043F
+t1279824921
+s1087
+i"Three20Style/TTStyledElement.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledInline.h
+c000000004C48941900000000000002B8
+t1279824921
+s696
+i"Three20Style/TTStyledElement.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledInlineBlock.h
+c000000004C48941900000000000002BD
+t1279824921
+s701
+i"Three20Style/TTStyledElement.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledInlineFrame.h
+c000000004C48941900000000000003F3
+t1279824921
+s1011
+i"Three20Style/TTStyledBoxFrame.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledItalicNode.h
+c000000004C48941900000000000002BA
+t1279824921
+s698
+i"Three20Style/TTStyledInline.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledLineBreakNode.h
+c000000004C48941900000000000002BB
+t1279824921
+s699
+i"Three20Style/TTStyledBlock.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledLinkNode.h
+c000000004C4894190000000000000423
+t1279824921
+s1059
+i"Three20Style/TTStyledInline.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledNode.h
+c000000004C489419000000000000047B
+t1279824921
+s1147
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledText.h
+c000000004C4894190000000000000EFB
+t1279824921
+s3835
+i<UIKit/UIKit.h>
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledTextDelegate.h
+c000000004C4894190000000000000314
+t1279824921
+s788
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledTextFrame.h
+c000000004C48941900000000000004D5
+t1279824921
+s1237
+i"Three20Style/TTStyledFrame.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledTextNode.h
+c000000004C489419000000000000037F
+t1279824921
+s895
+i"Three20Style/TTStyledNode.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/TTStyledTextParser.h
+c000000004C489419000000000000055F
+t1279824921
+s1375
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20Style/TTTextStyle.h
+c000000004C4894190000000000000B13
+t1279824921
+s2835
+i"Three20Style/TTStyle.h"
+
+N/Work/three20/Build/Products/three20/Three20Style/Three20Style.h
+c000000004C4894190000000000000C09
+t1279824921
+s3081
+i"Three20Core/Three20Core.h"
+i"Three20Network/Three20Network.h"
+i"Three20Style/TTGlobalStyle.h"
+i"Three20Style/TTPosition.h"
+i"Three20Style/TTDefaultStyleSheet.h"
+i"Three20Style/TTDefaultStyleSheet+DragRefreshHeader.h"
+i"Three20Style/TTLayout.h"
+i"Three20Style/TTFlowLayout.h"
+i"Three20Style/TTGridLayout.h"
+i"Three20Style/TTShape.h"
+i"Three20Style/TTRectangleShape.h"
+i"Three20Style/TTRoundedRectangleShape.h"
+i"Three20Style/TTRoundedRightArrowShape.h"
+i"Three20Style/TTRoundedLeftArrowShape.h"
+i"Three20Style/TTSpeechBubbleShape.h"
+i"Three20Style/TTStyle.h"
+i"Three20Style/TTStyleDelegate.h"
+i"Three20Style/TTStyleContext.h"
+i"Three20Style/TTContentStyle.h"
+i"Three20Style/TTPartStyle.h"
+i"Three20Style/TTShapeStyle.h"
+i"Three20Style/TTInsetStyle.h"
+i"Three20Style/TTBoxStyle.h"
+i"Three20Style/TTTextStyle.h"
+i"Three20Style/TTImageStyle.h"
+i"Three20Style/TTMaskStyle.h"
+i"Three20Style/TTBlendStyle.h"
+i"Three20Style/TTSolidFillStyle.h"
+i"Three20Style/TTLinearGradientFillStyle.h"
+i"Three20Style/TTReflectiveFillStyle.h"
+i"Three20Style/TTShadowStyle.h"
+i"Three20Style/TTInnerShadowStyle.h"
+i"Three20Style/TTSolidBorderStyle.h"
+i"Three20Style/TTHighlightBorderStyle.h"
+i"Three20Style/TTFourBorderStyle.h"
+i"Three20Style/TTBevelBorderStyle.h"
+i"Three20Style/TTLinearGradientBorderStyle.h"
+i"Three20Style/TTStyledText.h"
+i"Three20Style/TTStyledTextDelegate.h"
+i"Three20Style/TTStyledNode.h"
+i"Three20Style/TTStyledTextNode.h"
+i"Three20Style/TTStyledElement.h"
+i"Three20Style/TTStyledBlock.h"
+i"Three20Style/TTStyledInline.h"
+i"Three20Style/TTStyledInlineBlock.h"
+i"Three20Style/TTStyledBoldNode.h"
+i"Three20Style/TTStyledItalicNode.h"
+i"Three20Style/TTStyledLinkNode.h"
+i"Three20Style/TTStyledButtonNode.h"
+i"Three20Style/TTStyledImageNode.h"
+i"Three20Style/TTStyledLineBreakNode.h"
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyledBoxFrame.h"
+i"Three20Style/TTStyledInlineFrame.h"
+i"Three20Style/TTStyledTextFrame.h"
+i"Three20Style/TTStyledImageFrame.h"
+i"Three20Style/TTStyledTextParser.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTActionSheetController.h
+c000000004C4894240000000000000C84
+t1279824932
+s3204
+i"Three20UI/TTPopupViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTActionSheetControllerDelegate.h
+c000000004C4894240000000000000704
+t1279824932
+s1796
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTActivityLabel.h
+c000000004C4894240000000000000749
+t1279824932
+s1865
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTAlertViewController.h
+c000000004C4894240000000000000663
+t1279824932
+s1635
+i"Three20UI/TTPopupViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTAlertViewControllerDelegate.h
+c000000004C4894240000000000000394
+t1279824932
+s916
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTButton.h
+c000000004C4894240000000000000796
+t1279824932
+s1942
+i"Three20Style/TTStyleDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTButtonBar.h
+c000000004C48942400000000000003E5
+t1279824932
+s997
+i"Three20UI/TTView.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTErrorView.h
+c000000004C48942400000000000003FB
+t1279824932
+s1019
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTImageView.h
+c000000004C4894240000000000000B5C
+t1279824932
+s2908
+i"Three20UI/TTView.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTImageViewDelegate.h
+c000000004C48942400000000000004A4
+t1279824932
+s1188
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTLabel.h
+c000000004C4894240000000000000346
+t1279824932
+s838
+i"Three20UI/TTView.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTLauncherItem.h
+c000000004C48942400000000000005E5
+t1279824932
+s1509
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTLauncherView.h
+c000000004C4894240000000000000AEA
+t1279824932
+s2794
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTLauncherViewDelegate.h
+c000000004C48942400000000000004B1
+t1279824932
+s1201
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTLink.h
+c000000004C4894240000000000000460
+t1279824932
+s1120
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTListDataSource.h
+c000000004C48942400000000000003F3
+t1279824932
+s1011
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTMessageController.h
+c000000004C4894240000000000001A98
+t1279824932
+s6808
+i"Three20UI/TTViewController.h"
+i"Three20UI/TTTextEditorDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTMessageControllerDelegate.h
+c000000004C489424000000000000081A
+t1279824932
+s2074
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTMessageField.h
+c000000004C489424000000000000058E
+t1279824932
+s1422
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTMessageRecipientField.h
+c000000004C48942400000000000003CA
+t1279824932
+s970
+i"Three20UI/TTMessageField.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTMessageSubjectField.h
+c000000004C489424000000000000037B
+t1279824932
+s891
+i"Three20UI/TTMessageTextField.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTMessageTextField.h
+c000000004C4894240000000000000331
+t1279824932
+s817
+i"Three20UI/TTMessageField.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTModelViewController.h
+c000000004C4894240000000000001712
+t1279824932
+s5906
+i"Three20UI/TTViewController.h"
+i"Three20Network/TTModelDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTNavigationController.h
+c000000004C489425000000000000047D
+t1279824933
+s1149
+i"Three20UINavigator/TTBaseNavigationController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTNavigator.h
+c000000004C4894250000000000000435
+t1279824933
+s1077
+i"Three20UINavigator/TTBaseNavigator.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPageControl.h
+c000000004C48942400000000000004A9
+t1279824932
+s1193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPhoto.h
+c000000004C4894240000000000000515
+t1279824932
+s1301
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UINavigator/TTURLObject.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPhotoSource.h
+c000000004C48942400000000000004F7
+t1279824932
+s1271
+i"Three20Network/TTModel.h"
+i"Three20UINavigator/TTURLObject.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPhotoVersion.h
+c000000004C48942400000000000002EB
+t1279824932
+s747
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPhotoView.h
+c000000004C4894240000000000000581
+t1279824932
+s1409
+i"Three20UI/TTImageView.h"
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UI/TTImageViewDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPhotoViewController.h
+c000000004C4894240000000000000C70
+t1279824932
+s3184
+i"Three20UI/TTModelViewController.h"
+i"Three20UI/TTScrollViewDelegate.h"
+i"Three20UI/TTScrollViewDataSource.h"
+i"Three20UI/TTThumbsViewControllerDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPickerTextField.h
+c000000004C4894240000000000000533
+t1279824932
+s1331
+i"Three20UI/TTSearchTextField.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPopupViewController.h
+c000000004C4894240000000000000513
+t1279824932
+s1299
+i"Three20UI/TTModelViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPostController.h
+c000000004C4894240000000000000955
+t1279824932
+s2389
+i"Three20UI/TTPopupViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTPostControllerDelegate.h
+c000000004C48942400000000000005F1
+t1279824932
+s1521
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTRecursiveProgress.h
+c000000004C4894240000000000000E79
+t1279824932
+s3705
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTScrollView.h
+c000000004C4894240000000000000E27
+t1279824932
+s3623
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTScrollViewDataSource.h
+c000000004C489424000000000000058A
+t1279824932
+s1418
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTScrollViewDelegate.h
+c000000004C4894240000000000000763
+t1279824932
+s1891
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTSearchBar.h
+c000000004C489424000000000000085C
+t1279824932
+s2140
+i"Three20UI/TTView.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTSearchDisplayController.h
+c000000004C4894240000000000000637
+t1279824932
+s1591
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTSearchTextField.h
+c000000004C4894240000000000000703
+t1279824932
+s1795
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTSearchTextFieldDelegate.h
+c000000004C4894240000000000000341
+t1279824932
+s833
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTSearchlightLabel.h
+c000000004C4894240000000000000520
+t1279824932
+s1312
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTSectionedDataSource.h
+c000000004C4894240000000000000841
+t1279824932
+s2113
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTStyledTextLabel.h
+c000000004C48942400000000000008E4
+t1279824932
+s2276
+i"Three20Style/TTStyledTextDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTStyledTextTableCell.h
+c000000004C4894240000000000000331
+t1279824932
+s817
+i"Three20UI/TTTableViewCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTStyledTextTableItemCell.h
+c000000004C4894240000000000000341
+t1279824932
+s833
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTab.h
+c000000004C4894240000000000000374
+t1279824932
+s884
+i"Three20UI/TTButton.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTabBar.h
+c000000004C48942400000000000005B2
+t1279824932
+s1458
+i"Three20UI/TTView.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTabDelegate.h
+c000000004C48942400000000000002FA
+t1279824932
+s762
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTabGrid.h
+c000000004C48942400000000000002EC
+t1279824932
+s748
+i"Three20UI/TTTabBar.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTabItem.h
+c000000004C4894240000000000000409
+t1279824932
+s1033
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTabStrip.h
+c000000004C4894240000000000000301
+t1279824932
+s769
+i"Three20UI/TTTabBar.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableActivityItem.h
+c000000004C4894240000000000000319
+t1279824932
+s793
+i"Three20UI/TTTableItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableActivityItemCell.h
+c000000004C4894240000000000000385
+t1279824932
+s901
+i"Three20UI/TTTableViewCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableButton.h
+c000000004C48942400000000000002B1
+t1279824932
+s689
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableCaptionItem.h
+c000000004C4894240000000000000410
+t1279824932
+s1040
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableCaptionItemCell.h
+c000000004C48942400000000000002FF
+t1279824932
+s767
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableControlCell.h
+c000000004C489424000000000000039C
+t1279824932
+s924
+i"Three20UI/TTTableViewCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableControlItem.h
+c000000004C4894240000000000000392
+t1279824932
+s914
+i"Three20UI/TTTableItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableFlushViewCell.h
+c000000004C489424000000000000038D
+t1279824932
+s909
+i"Three20UI/TTTableViewCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableGrayTextItem.h
+c000000004C48942400000000000002B7
+t1279824932
+s695
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableHeaderView.h
+c000000004C48942400000000000002E2
+t1279824932
+s738
+i"Three20UI/TTView.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableImageItem.h
+c000000004C4894240000000000000564
+t1279824932
+s1380
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableImageItemCell.h
+c000000004C4894240000000000000338
+t1279824932
+s824
+i"Three20UI/TTTableTextItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableItem.h
+c000000004C4894240000000000000302
+t1279824932
+s770
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableLink.h
+c000000004C48942400000000000002AF
+t1279824932
+s687
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableLinkedItem.h
+c000000004C4894240000000000000442
+t1279824932
+s1090
+i"Three20UI/TTTableItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableLinkedItemCell.h
+c000000004C48942400000000000002F5
+t1279824932
+s757
+i"Three20UI/TTTableViewCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableLongTextItem.h
+c000000004C48942400000000000002B7
+t1279824932
+s695
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableMessageItem.h
+c000000004C4894240000000000000518
+t1279824932
+s1304
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableMessageItemCell.h
+c000000004C489424000000000000044A
+t1279824932
+s1098
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableMoreButton.h
+c000000004C489424000000000000036D
+t1279824932
+s877
+i"Three20UI/TTTableSubtitleItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableMoreButtonCell.h
+c000000004C48942400000000000003D1
+t1279824932
+s977
+i"Three20UI/TTTableSubtitleItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableRightCaptionItem.h
+c000000004C48942400000000000002C1
+t1279824932
+s705
+i"Three20UI/TTTableCaptionItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableRightCaptionItemCell.h
+c000000004C4894240000000000000304
+t1279824932
+s772
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableRightImageItem.h
+c000000004C48942400000000000002BB
+t1279824932
+s699
+i"Three20UI/TTTableImageItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableStyledTextItem.h
+c000000004C4894240000000000000482
+t1279824932
+s1154
+i"Three20UI/TTTableLinkedItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableSubtextItem.h
+c000000004C48942400000000000002BC
+t1279824932
+s700
+i"Three20UI/TTTableCaptionItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableSubtextItemCell.h
+c000000004C48942400000000000002FF
+t1279824932
+s767
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableSubtitleItem.h
+c000000004C48942400000000000005F5
+t1279824932
+s1525
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableSubtitleItemCell.h
+c000000004C4894240000000000000385
+t1279824932
+s901
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableSummaryItem.h
+c000000004C48942400000000000002B6
+t1279824932
+s694
+i"Three20UI/TTTableTextItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableTextItem.h
+c000000004C4894240000000000000406
+t1279824932
+s1030
+i"Three20UI/TTTableLinkedItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableTextItemCell.h
+c000000004C48942400000000000002C3
+t1279824932
+s707
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableView.h
+c000000004C48942400000000000006A2
+t1279824932
+s1698
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewCell.h
+c000000004C489424000000000000076F
+t1279824932
+s1903
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewController.h
+c000000004C4894240000000000001044
+t1279824932
+s4164
+i"Three20UI/TTModelViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewDataSource.h
+c000000004C4894240000000000000B6C
+t1279824932
+s2924
+i<UIKit/UIKit.h>
+i"Three20Network/TTModel.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewDelegate.h
+c000000004C4894240000000000000710
+t1279824932
+s1808
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewDragRefreshDelegate.h
+c000000004C48942400000000000003F9
+t1279824932
+s1017
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewGroupedVarHeightDelegate.h
+c000000004C489424000000000000033F
+t1279824932
+s831
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewItem.h
+c000000004C4894240000000000000371
+t1279824932
+s881
+i"Three20UI/TTTableItem.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewPlainDelegate.h
+c000000004C489424000000000000030D
+t1279824932
+s781
+i"Three20UI/TTTableViewDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewPlainVarHeightDelegate.h
+c000000004C48942400000000000002E5
+t1279824932
+s741
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTableViewVarHeightDelegate.h
+c000000004C489424000000000000031D
+t1279824932
+s797
+i"Three20UI/TTTableViewDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTextBarController.h
+c000000004C48942400000000000008AC
+t1279824932
+s2220
+i"Three20UI/TTPopupViewController.h"
+i"Three20UI/TTTextEditorDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTextBarDelegate.h
+c000000004C489424000000000000056B
+t1279824932
+s1387
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTextEditor.h
+c000000004C4894240000000000000691
+t1279824932
+s1681
+i"Three20UI/TTView.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTTextEditorDelegate.h
+c000000004C4894240000000000000534
+t1279824932
+s1332
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTThumbView.h
+c000000004C48942400000000000002D3
+t1279824932
+s723
+i"Three20UI/TTButton.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTThumbsDataSource.h
+c000000004C4894240000000000000486
+t1279824932
+s1158
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTThumbsTableViewCell.h
+c000000004C4894240000000000000521
+t1279824932
+s1313
+i"Three20UI/TTTableViewCell.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTThumbsTableViewCellDelegate.h
+c000000004C489424000000000000031B
+t1279824932
+s795
+
+N/Work/three20/Build/Products/three20/Three20UI/TTThumbsViewController.h
+c000000004C4894240000000000000578
+t1279824932
+s1400
+i"Three20UI/TTTableViewController.h"
+i"Three20UI/TTThumbsTableViewCellDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTThumbsViewControllerDelegate.h
+c000000004C4894240000000000000505
+t1279824932
+s1285
+i<Foundation/Foundation.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/TTView.h
+c000000004C489425000000000000041F
+t1279824933
+s1055
+i"Three20Style/TTStyleDelegate.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTViewController.h
+c000000004C48942500000000000006C8
+t1279824933
+s1736
+i"Three20UINavigator/TTNavigatorViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTWebController.h
+c000000004C489425000000000000091C
+t1279824933
+s2332
+i"Three20UI/TTModelViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UI/TTYouTubeView.h
+c000000004C48942500000000000003CF
+t1279824933
+s975
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UI/Three20UI.h
+c000000004C4894240000000000001411
+t1279824932
+s5137
+i"Three20UI/TTNavigator.h"
+i"Three20UI/TTViewController.h"
+i"Three20UI/TTNavigationController.h"
+i"Three20UI/TTWebController.h"
+i"Three20UI/TTMessageController.h"
+i"Three20UI/TTMessageControllerDelegate.h"
+i"Three20UI/TTMessageField.h"
+i"Three20UI/TTMessageRecipientField.h"
+i"Three20UI/TTMessageTextField.h"
+i"Three20UI/TTMessageSubjectField.h"
+i"Three20UI/TTAlertViewController.h"
+i"Three20UI/TTAlertViewControllerDelegate.h"
+i"Three20UI/TTActionSheetController.h"
+i"Three20UI/TTActionSheetControllerDelegate.h"
+i"Three20UI/TTPostController.h"
+i"Three20UI/TTPostControllerDelegate.h"
+i"Three20UI/TTTextBarController.h"
+i"Three20UI/TTTextBarDelegate.h"
+i"Three20Network/TTURLCache.h"
+i"Three20UI/TTView.h"
+i"Three20UI/TTImageView.h"
+i"Three20UI/TTImageViewDelegate.h"
+i"Three20UI/TTYouTubeView.h"
+i"Three20UI/TTScrollView.h"
+i"Three20UI/TTScrollViewDelegate.h"
+i"Three20UI/TTScrollViewDataSource.h"
+i"Three20UI/TTLauncherView.h"
+i"Three20UI/TTLauncherViewDelegate.h"
+i"Three20UI/TTLauncherItem.h"
+i"Three20UI/TTLabel.h"
+i"Three20UI/TTStyledTextLabel.h"
+i"Three20UI/TTActivityLabel.h"
+i"Three20UI/TTSearchlightLabel.h"
+i"Three20UI/TTButton.h"
+i"Three20UI/TTLink.h"
+i"Three20UI/TTTabBar.h"
+i"Three20UI/TTTabDelegate.h"
+i"Three20UI/TTTabStrip.h"
+i"Three20UI/TTTabGrid.h"
+i"Three20UI/TTTab.h"
+i"Three20UI/TTTabItem.h"
+i"Three20UI/TTButtonBar.h"
+i"Three20UI/TTPageControl.h"
+i"Three20UI/TTTextEditor.h"
+i"Three20UI/TTTextEditorDelegate.h"
+i"Three20UI/TTSearchTextField.h"
+i"Three20UI/TTSearchTextFieldDelegate.h"
+i"Three20UI/TTPickerTextField.h"
+i"Three20UI/TTSearchBar.h"
+i"Three20UI/TTTableViewController.h"
+i"Three20UI/TTSearchDisplayController.h"
+i"Three20UI/TTTableView.h"
+i"Three20UI/TTTableViewDelegate.h"
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+i"Three20UI/TTTableViewGroupedVarHeightDelegate.h"
+i"Three20UI/TTTableViewPlainDelegate.h"
+i"Three20UI/TTTableViewPlainVarHeightDelegate.h"
+i"Three20UI/TTTableViewDragRefreshDelegate.h"
+i"Three20UI/TTListDataSource.h"
+i"Three20UI/TTSectionedDataSource.h"
+i"Three20UI/TTTableHeaderView.h"
+i"Three20UI/TTTableViewCell.h"
+i"Three20UI/TTTableItem.h"
+i"Three20UI/TTTableLinkedItem.h"
+i"Three20UI/TTTableTextItem.h"
+i"Three20UI/TTTableCaptionItem.h"
+i"Three20UI/TTTableRightCaptionItem.h"
+i"Three20UI/TTTableSubtextItem.h"
+i"Three20UI/TTTableSubtitleItem.h"
+i"Three20UI/TTTableMessageItem.h"
+i"Three20UI/TTTableLongTextItem.h"
+i"Three20UI/TTTableGrayTextItem.h"
+i"Three20UI/TTTableSummaryItem.h"
+i"Three20UI/TTTableLink.h"
+i"Three20UI/TTTableButton.h"
+i"Three20UI/TTTableMoreButton.h"
+i"Three20UI/TTTableImageItem.h"
+i"Three20UI/TTTableRightImageItem.h"
+i"Three20UI/TTTableActivityItem.h"
+i"Three20UI/TTTableStyledTextItem.h"
+i"Three20UI/TTTableControlItem.h"
+i"Three20UI/TTTableViewItem.h"
+i"Three20UI/TTTableLinkedItemCell.h"
+i"Three20UI/TTTableTextItemCell.h"
+i"Three20UI/TTTableCaptionItemCell.h"
+i"Three20UI/TTTableSubtextItemCell.h"
+i"Three20UI/TTTableRightCaptionItemCell.h"
+i"Three20UI/TTTableSubtitleItemCell.h"
+i"Three20UI/TTTableMessageItemCell.h"
+i"Three20UI/TTTableMoreButtonCell.h"
+i"Three20UI/TTTableImageItemCell.h"
+i"Three20UI/TTStyledTextTableItemCell.h"
+i"Three20UI/TTStyledTextTableCell.h"
+i"Three20UI/TTTableActivityItemCell.h"
+i"Three20UI/TTTableControlCell.h"
+i"Three20UI/TTTableFlushViewCell.h"
+i"Three20UI/TTErrorView.h"
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UI/TTPhotoSource.h"
+i"Three20UI/TTPhoto.h"
+i"Three20UI/TTPhotoViewController.h"
+i"Three20UI/TTPhotoView.h"
+i"Three20UI/TTThumbsViewController.h"
+i"Three20UI/TTThumbsViewControllerDelegate.h"
+i"Three20UI/TTThumbsDataSource.h"
+i"Three20UI/TTThumbsTableViewCell.h"
+i"Three20UI/TTThumbsTableViewCellDelegate.h"
+i"Three20UI/TTThumbView.h"
+i"Three20UI/TTRecursiveProgress.h"
+
+N/Work/three20/Build/Products/three20/Three20UICommon/TTBaseViewController.h
+c000000004C4894200000000000000A15
+t1279824928
+s2581
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UICommon/TTGlobalUICommon.h
+c000000004C48942000000000000014A6
+t1279824928
+s5286
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UICommon/Three20UICommon.h
+c000000004C48942000000000000002CE
+t1279824928
+s718
+i"Three20UICommon/TTGlobalUICommon.h"
+i"Three20UICommon/TTBaseViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTBaseNavigationController.h
+c000000004C489422000000000000050F
+t1279824930
+s1295
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTBaseNavigator.h
+c000000004C4894220000000000001B38
+t1279824930
+s6968
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Three20UINavigator/TTNavigatorPersistenceMode.h"
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTGlobalNavigatorMetrics.h
+c000000004C48942200000000000006A1
+t1279824930
+s1697
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTNavigationMode.h
+c000000004C48942200000000000003E5
+t1279824930
+s997
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTNavigatorDelegate.h
+c000000004C4894220000000000000657
+t1279824930
+s1623
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTNavigatorPersistenceMode.h
+c000000004C4894220000000000000348
+t1279824930
+s840
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTNavigatorViewController.h
+c000000004C489422000000000000036A
+t1279824930
+s874
+i"Three20UICommon/TTBaseViewController.h"
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTURLAction.h
+c000000004C4894220000000000000A90
+t1279824930
+s2704
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h
+c000000004C4894220000000000000371
+t1279824930
+s881
+i"Three20UINavigator/TTURLPattern.h"
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTURLMap.h
+c000000004C489422000000000000161C
+t1279824930
+s5660
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Three20UINavigator/TTNavigationMode.h"
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h
+c000000004C48942200000000000006E0
+t1279824930
+s1760
+i"Three20UINavigator/TTURLPattern.h"
+i"Three20UINavigator/TTNavigationMode.h"
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTURLObject.h
+c000000004C4894220000000000000497
+t1279824930
+s1175
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/TTURLPattern.h
+c000000004C4894220000000000000511
+t1279824930
+s1297
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Work/three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h
+c000000004C489422000000000000054C
+t1279824930
+s1356
+i"Three20UINavigator/TTGlobalNavigatorMetrics.h"
+i"Three20UINavigator/TTURLObject.h"
+i"Three20UINavigator/TTNavigatorViewController.h"
+i"Three20UINavigator/TTBaseNavigationController.h"
+i"Three20UINavigator/TTNavigatorPersistenceMode.h"
+i"Three20UINavigator/TTBaseNavigator.h"
+i"Three20UINavigator/TTNavigatorDelegate.h"
+i"Three20UINavigator/TTURLAction.h"
+i"Three20UINavigator/TTURLMap.h"
+i"Three20UINavigator/TTNavigationMode.h"
+i"Three20UINavigator/TTURLPattern.h"
+i"Three20UINavigator/TTURLGeneratorPattern.h"
+i"Three20UINavigator/TTURLNavigatorPattern.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/NSObject+YAJL.h
+c000000004C4894C90000000000000F28
+t1279825097
+s3880
+i"YAJLGen.h"
+i"YAJLParser.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/TTURLJSONResponse.h
+c000000004C4894C9000000000000037E
+t1279825097
+s894
+i"Three20Network/TTURLResponse.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/YAJL.h
+c000000004C4894C9000000000000051F
+t1279825097
+s1311
+i"YAJLParser.h"
+i"YAJLDocument.h"
+i"YAJLGen.h"
+i"NSObject+YAJL.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/YAJLDocument.h
+c000000004C4894C90000000000000C85
+t1279825097
+s3205
+i"YAJLParser.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/YAJLGen.h
+c000000004C4894C90000000000000AD7
+t1279825097
+s2775
+i"yajl_gen.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/YAJLParser.h
+c000000004C4894C90000000000000EA8
+t1279825097
+s3752
+i"yajl_parse.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/extThree20JSON.h
+c000000004C4894C90000000000000281
+t1279825097
+s641
+i"extThree20JSON/TTURLJSONResponse.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/private/yajl_common.h
+c000000004C4894C90000000000000C3B
+t1279825097
+s3131
+
+N/Work/three20/Build/Products/three20/extThree20JSON/private/yajl_gen.h
+c000000004C4894C90000000000001C28
+t1279825097
+s7208
+i"yajl_common.h"
+
+N/Work/three20/Build/Products/three20/extThree20JSON/private/yajl_parse.h
+c000000004C4894C90000000000002132
+t1279825097
+s8498
+i"yajl_common.h"
+
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dgdrhotkcucdtkdttwygolopuuub/UnitTests_Prefix.pch.pth
+t1281032793
+s3308364
+
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch.pth
+t1281033391
+s3308364
+
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-efqhtfzrwmusqubvbulicchczsjg/UnitTests_Prefix.pch.pth
+t1281029101
+s2007976
+
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-hfhhyrnnylrdqhasgrqrktjcksgz/UnitTests_Prefix.pch.pth
+t2
+s0
+
+NUnitTests-Info.plist
+c000000004C5AF3890000000000000266
+t1281029001
+s614
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies302726191#302726191#0(0"0(0#1#0"8682645824#0"0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveManagerTest.o /Work/ObjectiveRecord/ActiveManagerTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302726191.777090
+e302726191.860727
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveManagerTest.o
+x/Work/ObjectiveRecord/ActiveManagerTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Work/ObjectiveRecord/ActiveManagerTest.m:11:1: warning: incomplete implementation
+o @implementation ActiveManagerTest
+o ^
+oIn file included from /Work/ObjectiveRecord/ActiveManagerTest.m:9:
+o/Work/ObjectiveRecord/ActiveManagerTest.h:24:1: note: method definition for 'testAppDelegate' not found
+o - (void) testAppDelegate;       // simple test on application
+o ^
+o1 warning generated.
+lSLF07#2@49"Compile /Work/ObjectiveRecord/ActiveManagerTest.m302726191#302726191#0(379"/Work/ObjectiveRecord/ActiveManagerTest.m:11:1: warning: incomplete implementation @implementation ActiveManagerTest ^In file included from /Work/ObjectiveRecord/ActiveManagerTest.m:9:/Work/ObjectiveRecord/ActiveManagerTest.h:24:1: note: method definition for 'testAppDelegate' not found - (void) testAppDelegate;       // simple test on application ^1 warning generated.1(22@25"Incomplete implementation302726191#0#83#1(13@49"Method definition for 'testAppDelegate' not found302726191#188#104#2(7@66"In file included from /Work/ObjectiveRecord/ActiveManagerTest.m:9:302726191#121#67#0(6@41"/Work/ObjectiveRecord/ActiveManagerTest.m302717100#9#0#9#0#0"0(13@94"Method definition for 'testAppDelegate' not found in /Work/ObjectiveRecord/ActiveManagerTest.h302726191#18446744073709551615#0#0(6@41"/Work/ObjectiveRecord/ActiveManagerTest.h302716856#24#1#0#0#0"0(6@41"/Work/ObjectiveRecord/ActiveManagerTest.h302716856#24#1#0#0#33"method definition for * not found0(6@41"/Work/ObjectiveRecord/ActiveManagerTest.m302717100#11#1#0#0#25"incomplete implementation0(0#0#41"/Work/ObjectiveRecord/ActiveManagerTest.m8684361760#2950"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I../three20/Build/Products/three20 -I../three20/Build/Products/three20/extThree20JSON -I../three20/Build/Products/three20/Three20 -I../three20/Build/Products/three20/Three20Core -I../three20/Build/Products/three20/Three20Network -I../three20/Build/Products/three20/Three20Style -I../three20/Build/Products/three20/Three20UI -I../three20/Build/Products/three20/Three20UICommon -I../three20/Build/Products/three20/Three20UINavigator -I../three20/Build/Products/three20/extThree20JSON/private -I../three20/Build/Products/three20/Three20Network/private -I../three20/Build/Products/three20/Three20Style/private -I../three20/Build/Products/three20/Three20UI/private -I../three20/Build/Products/three20/Three20UICommon/private -I../three20/Build/Products/three20/Three20UINavigator/private -I/Work/ObjectiveRecord/Libraries/Headers -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch -c /Work/ObjectiveRecord/ActiveManagerTest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveManagerTest.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveRecordTest.o /Work/ObjectiveRecord/ActiveRecordTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302726191.822085
+e302726191.872454
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveRecordTest.o
+x/Work/ObjectiveRecord/ActiveRecordTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@48"Compile /Work/ObjectiveRecord/ActiveRecordTest.m302726191#302726191#0(0"0(0#0#40"/Work/ObjectiveRecord/ActiveRecordTest.m8682505056#2948"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I../three20/Build/Products/three20 -I../three20/Build/Products/three20/extThree20JSON -I../three20/Build/Products/three20/Three20 -I../three20/Build/Products/three20/Three20Core -I../three20/Build/Products/three20/Three20Network -I../three20/Build/Products/three20/Three20Style -I../three20/Build/Products/three20/Three20UI -I../three20/Build/Products/three20/Three20UICommon -I../three20/Build/Products/three20/Three20UINavigator -I../three20/Build/Products/three20/extThree20JSON/private -I../three20/Build/Products/three20/Three20Network/private -I../three20/Build/Products/three20/Three20Style/private -I../three20/Build/Products/three20/Three20UI/private -I../three20/Build/Products/three20/Three20UICommon/private -I../three20/Build/Products/three20/Three20UINavigator/private -I/Work/ObjectiveRecord/Libraries/Headers -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch -c /Work/ObjectiveRecord/ActiveRecordTest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/ActiveRecordTest.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/CoreDataTestCase.o /Work/ObjectiveRecord/CoreDataTestCase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302726191.860932
+e302726191.910814
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/CoreDataTestCase.o
+x/Work/ObjectiveRecord/CoreDataTestCase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@48"Compile /Work/ObjectiveRecord/CoreDataTestCase.m302726191#302726191#0(0"0(0#0#40"/Work/ObjectiveRecord/CoreDataTestCase.m8681843744#2948"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I../three20/Build/Products/three20 -I../three20/Build/Products/three20/extThree20JSON -I../three20/Build/Products/three20/Three20 -I../three20/Build/Products/three20/Three20Core -I../three20/Build/Products/three20/Three20Network -I../three20/Build/Products/three20/Three20Style -I../three20/Build/Products/three20/Three20UI -I../three20/Build/Products/three20/Three20UICommon -I../three20/Build/Products/three20/Three20UINavigator -I../three20/Build/Products/three20/extThree20JSON/private -I../three20/Build/Products/three20/Three20Network/private -I../three20/Build/Products/three20/Three20Style/private -I../three20/Build/Products/three20/Three20UI/private -I../three20/Build/Products/three20/Three20UICommon/private -I../three20/Build/Products/three20/Three20UINavigator/private -I/Work/ObjectiveRecord/Libraries/Headers -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch -c /Work/ObjectiveRecord/CoreDataTestCase.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/CoreDataTestCase.o0#
+
+CCpResource build/Debug-iphonesimulator/UnitTests.octest/orders.json orders.json
+s302726191.470674
+e302726191.475290
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/UnitTests.octest/orders.json
+xorders.json
+lSLF07#2@16"Copy orders.json302726191#302726191#0(0"0(0#0#33"/Work/ObjectiveRecord/orders.json8685097600#409"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/orders.json /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest0#
+
+CDataModelCompile /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Test.mom /Work/ObjectiveRecord/Test.xcdatamodel
+s302726191.776194
+e302726191.821975
+r1
+xDataModelCompile
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Test.mom
+x/Work/ObjectiveRecord/Test.xcdatamodel
+lSLF07#2@46"Compile /Work/ObjectiveRecord/Test.xcdatamodel302726191#302726191#0(0"0(0#0#38"/Work/ObjectiveRecord/Test.xcdatamodel8684906176#332"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Work/ObjectiveRecord/Test.xcdatamodel /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Test.mom0#
+
+CGenerateDSYMFile /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest.dSYM /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests
+s302726191.941250
+e302726191.956081
+r1
+xGenerateDSYMFile
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest.dSYM
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/UnitTests.octest.dSYM build/Debug-iphonesimulator/UnitTests.octest/UnitTests302726191#302726191#0(0"0(0#0#76"/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests8679040832#344"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests -o /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest.dSYM0#
+
+CLd /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests normal i386
+s302726191.910895
+e302726191.941159
+r1
+xLd
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests
+xnormal
+xi386
+oclang: warning: argument unused during compilation: '-ObjC'
+lSLF07#2@81"Link /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests302726191#302726191#0(60"clang: warning: argument unused during compilation: '-ObjC'0(0#0#0"8680249984#1789"    cd /Work/ObjectiveRecord    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -arch i386 -bundle -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Work/ObjectiveRecord/build/Debug-iphonesimulator -L/Work/ObjectiveRecord/Libraries -L/Work/ObjectiveRecord -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -filelist /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/UnitTests.LinkFileList -mmacosx-version-min=10.6 -ObjC -force_load /Work/ObjectiveRecord/Libraries/libOCMock.a -framework Foundation -framework SenTestingKit -framework UIKit -Xlinker -objc_abi_version -Xlinker 2 -framework CoreData -lOCMock /Work/three20/Build/Products/Debug-iphonesimulator/libextThree20JSON+YAJL.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20Core.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20Network.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20Style.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20UI.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20UINavigator.a /Work/three20/Build/Products/Debug-iphonesimulator/libThree20UICommon.a -o /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/UnitTests0#
+
+CPhaseScriptExecution "Run Script" /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Script-C93094191208A0F300931448.sh
+s302726191.956179
+e302726192.195559
+r1
+xPhaseScriptExecution
+xRun Script
+x/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Script-C93094191208A0F300931448.sh
+o/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'
+o/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)
+oTest Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' started at 2010-08-05 14:36:32 -0400
+oTest Suite 'ActiveManagerTest' started at 2010-08-05 14:36:32 -0400
+oTest Suite 'ActiveManagerTest' finished at 2010-08-05 14:36:32 -0400.
+oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+o
+oTest Suite 'ActiveRecordTest' started at 2010-08-05 14:36:32 -0400
+oTest Case '-[ActiveRecordTest testShouldCreateNewRecord]' started.
+o2010-08-05 14:36:32.187 otest[42999:903] Error Domain=NSCocoaErrorDomain Code=258 "The operation couldn’t be completed. (Cocoa error 258.)" UserInfo=0xda60f0 {}
+o2010-08-05 14:36:32.188 otest[42999:903] (null)
+oTest Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).
+oTest Suite 'ActiveRecordTest' finished at 2010-08-05 14:36:32 -0400.
+oExecuted 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+o
+oTest Suite 'CoreDataTestCase' started at 2010-08-05 14:36:32 -0400
+oTest Suite 'CoreDataTestCase' finished at 2010-08-05 14:36:32 -0400.
+oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+o
+oTest Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' finished at 2010-08-05 14:36:32 -0400.
+oExecuted 1 test, with 0 failures (0 unexpected) in 0.004 (0.008) seconds
+o
+o/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)
+o/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'
+lSLF07#2@36"Run custom shell script 'Run Script'302726191#302726192#1(20@47"Run unit tests for architecture 'i386' (GC OFF)302726191#302726192#1(20@88"Run test suite /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)302726192#302726192#3(20@32"Run test suite ActiveManagerTest302726192#302726192#0(212"Test Suite 'ActiveManagerTest' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds0(0#0#23"0 out of 0 tests passed13"0.000 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds17"ActiveManagerTest20@31"Run test suite ActiveRecordTest302726192#302726192#1(20@39"Run test case testShouldCreateNewRecord302726192#302726192#0(360"Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' started.2010-08-05 14:36:32.187 otest[42999:903] Error Domain=NSCocoaErrorDomain Code=258 "The operation couldn’t be completed. (Cocoa error 258.)" UserInfo=0xda60f0 {}2010-08-05 14:36:32.188 otest[42999:903] (null)Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).0(0#0#0"13"0.004 seconds81"Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).25"testShouldCreateNewRecord569"Test Suite 'ActiveRecordTest' started at 2010-08-05 14:36:32 -0400Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' started.2010-08-05 14:36:32.187 otest[42999:903] Error Domain=NSCocoaErrorDomain Code=258 "The operation couldn’t be completed. (Cocoa error 258.)" UserInfo=0xda60f0 {}2010-08-05 14:36:32.188 otest[42999:903] (null)Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).Test Suite 'ActiveRecordTest' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) seconds0(0#0#22"1 out of 1 test passed13"0.004 seconds72"Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) seconds16"ActiveRecordTest20@31"Run test suite CoreDataTestCase302726192#302726192#0(210"Test Suite 'CoreDataTestCase' started at 2010-08-05 14:36:32 -0400Test Suite 'CoreDataTestCase' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds0(0#0#23"0 out of 0 tests passed13"0.000 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds16"CoreDataTestCase1317"Test Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'ActiveRecordTest' started at 2010-08-05 14:36:32 -0400Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' started.2010-08-05 14:36:32.187 otest[42999:903] Error Domain=NSCocoaErrorDomain Code=258 "The operation couldn’t be completed. (Cocoa error 258.)" UserInfo=0xda60f0 {}2010-08-05 14:36:32.188 otest[42999:903] (null)Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).Test Suite 'ActiveRecordTest' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) secondsTest Suite 'CoreDataTestCase' started at 2010-08-05 14:36:32 -0400Test Suite 'CoreDataTestCase' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.008) seconds0(0#0#22"1 out of 1 test passed13"0.004 seconds72"Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.008) seconds73"/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)1525"/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)Test Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'ActiveRecordTest' started at 2010-08-05 14:36:32 -0400Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' started.2010-08-05 14:36:32.187 otest[42999:903] Error Domain=NSCocoaErrorDomain Code=258 "The operation couldn’t be completed. (Cocoa error 258.)" UserInfo=0xda60f0 {}2010-08-05 14:36:32.188 otest[42999:903] (null)Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).Test Suite 'ActiveRecordTest' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) secondsTest Suite 'CoreDataTestCase' started at 2010-08-05 14:36:32 -0400Test Suite 'CoreDataTestCase' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.008) seconds/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)0(0#0#0"0"102"/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)0"1719"/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)Test Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' started at 2010-08-05 14:36:32 -0400Test Suite 'ActiveManagerTest' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'ActiveRecordTest' started at 2010-08-05 14:36:32 -0400Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' started.2010-08-05 14:36:32.187 otest[42999:903] Error Domain=NSCocoaErrorDomain Code=258 "The operation couldn’t be completed. (Cocoa error 258.)" UserInfo=0xda60f0 {}2010-08-05 14:36:32.188 otest[42999:903] (null)Test Case '-[ActiveRecordTest testShouldCreateNewRecord]' passed (0.004 seconds).Test Suite 'ActiveRecordTest' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) secondsTest Suite 'CoreDataTestCase' started at 2010-08-05 14:36:32 -0400Test Suite 'CoreDataTestCase' finished at 2010-08-05 14:36:32 -0400.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite '/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest(Tests)' finished at 2010-08-05 14:36:32 -0400.Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.008) seconds/Developer/Tools/RunPlatformUnitTests.include:446: note: Passed tests for architecture 'i386' (GC OFF)/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'0(0#0#0"8678346368#17384"    cd /Work/ObjectiveRecord    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER matt    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Work/ObjectiveRecord/build    setenv BUILD_ROOT /Work/ObjectiveRecord/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Work/ObjectiveRecord/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Work/ObjectiveRecord/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH UnitTests.octest    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources    setenv DERIVED_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/ObjectiveRecord.dst    setenv DWARF_DSYM_FILE_NAME UnitTests.octest.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Work/ObjectiveRecord/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH UnitTests.octest/Executables    setenv EXECUTABLE_FOLDER_PATH UnitTests.octest    setenv EXECUTABLE_NAME UnitTests    setenv EXECUTABLE_PATH UnitTests.octest/UnitTests    setenv FILE_LIST /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH UnitTests.octest/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Work/ObjectiveRecord/build/Debug-iphonesimulator /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME UnitTests.octest    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER UnitTests_Prefix.pch    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " __IPHONE_OS_VERSION_MIN_REQUIRED=30200"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Work/ObjectiveRecord/build/Debug-iphonesimulator/include\" ../three20/Build/Products/three20/** /Work/ObjectiveRecord/Libraries/Headers"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE UnitTests-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH UnitTests.octest/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/ObjectiveRecord.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER matt    setenv INSTALL_ROOT /tmp/ObjectiveRecord.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH UnitTests.octest/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Work/ObjectiveRecord/build/Debug-iphonesimulator\"  /Work/ObjectiveRecord/Libraries \"/Work/ObjectiveRecord\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal/i386/UnitTests.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv MYUtilities /Work/MYUtilities    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects    setenv OBJECT_FILE_DIR_normal /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Objects-normal    setenv OBJROOT /Work/ObjectiveRecord/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-ObjC -force_load /Work/ObjectiveRecord/Libraries/libOCMock.a -framework Foundation -framework SenTestingKit -framework UIKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH UnitTests.octest/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/PkgInfo    setenv PKGINFO_PATH UnitTests.octest/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH UnitTests.octest/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH UnitTests.octest/PrivateHeaders    setenv PRODUCT_NAME UnitTests    setenv PRODUCT_SETTINGS_PATH /Work/ObjectiveRecord/UnitTests-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT ObjectiveRecord    setenv PROJECT_DERIVED_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/DerivedSources    setenv PROJECT_DIR /Work/ObjectiveRecord    setenv PROJECT_FILE_PATH /Work/ObjectiveRecord/ObjectiveRecord.xcodeproj    setenv PROJECT_NAME ObjectiveRecord    setenv PROJECT_TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build    setenv PUBLIC_HEADERS_FOLDER_PATH UnitTests.octest/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Work/ObjectiveRecord/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH UnitTests.octest/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_NAME iphonesimulator4.0    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Work/ObjectiveRecord/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH UnitTests.octest/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH UnitTests.octest/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Work/ObjectiveRecord    setenv SRCROOT /Work/ObjectiveRecord    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SUPPORTED_DEVICE_FAMILIES 1    setenv SYMBOL_REPOSITORY_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/SymbolRepositories    setenv SYMROOT /Work/ObjectiveRecord/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv Shopify-iPhone-Toolbox /Work/Shopify-StoreSync/Shopify-iPhone-Toolbox    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME UnitTests+Three20    setenv TARGET_BUILD_DIR /Work/ObjectiveRecord/build/Debug-iphonesimulator    setenv TARGET_NAME UnitTests+Three20    setenv TARGET_TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build    setenv TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build    setenv TEMP_FILES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build    setenv TEMP_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build    setenv TEMP_ROOT /Work/ObjectiveRecord/build    setenv Three20 /Work/three20/    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH UnitTests.octest    setenv UNSTRIPPED_PRODUCT NO    setenv USER matt    setenv USER_APPS_DIR /Users/matt/Applications    setenv USER_LIBRARY_DIR /Users/matt/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH UnitTests.octest/version.plist    setenv VERSION_INFO_BUILDER matt    setenv VERSION_INFO_FILE UnitTests_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:UnitTests  PROJECT:ObjectiveRecord-\""    setenv WRAPPER_EXTENSION octest    setenv WRAPPER_NAME UnitTests.octest    setenv WRAPPER_SUFFIX .octest    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/Script-C93094191208A0F300931448.sh0#
+
+CProcessInfoPlistFile /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Info.plist UnitTests-Info.plist
+s302726191.465153
+e302726191.470598
+r1
+xProcessInfoPlistFile
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Info.plist
+xUnitTests-Info.plist
+lSLF07#2@28"Process UnitTests-Info.plist302726191#302726191#0(0"0(0#0#42"/Work/ObjectiveRecord/UnitTests-Info.plist8674922016#353"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility UnitTests-Info.plist -expandbuildsettings -format binary -platform iphonesimulator -o /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest/Info.plist0#
+
+CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dgdrhotkcucdtkdttwygolopuuub/UnitTests_Prefix.pch.pth UnitTests_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302725592.680363
+e302725593.190939
+r1
+xProcessPCH
+x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dgdrhotkcucdtkdttwygolopuuub/UnitTests_Prefix.pch.pth
+xUnitTests_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:
+oIn file included from ../three20/Build/Products/three20/Three20/Three20.h:70:
+oIn file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:
+o../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o @property (nonatomic) Class targetClass;
+o ^
+o../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: default property attribute 'assign' not appropriate for non-gc object
+oIn file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:
+oIn file included from ../three20/Build/Products/three20/Three20/Three20.h:70:
+oIn file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:42:
+o../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o @property (nonatomic)           Class             targetClass;
+o ^
+o../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: default property attribute 'assign' not appropriate for non-gc object
+o4 warnings generated.
+lSLF07#2@31"Precompile UnitTests_Prefix.pch302725592#302725593#0(1290"In file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed @property (nonatomic) Class targetClass; ^../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: default property attribute 'assign' not appropriate for non-gc objectIn file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:42:../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed @property (nonatomic)           Class             targetClass; ^../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: default property attribute 'assign' not appropriate for non-gc object4 warnings generated.4(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed302725593#246#170#4(7@99"In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:302725593#146#100#0(6@73"../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h302725593#41#0#41#0#0"0(7@77"In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:302725593#68#78#0(6@51"../three20/Build/Products/three20/Three20/Three20.h302725593#70#0#70#0#0"0(7@67"In file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:302725593#0#68#0(6@42"/Work/ObjectiveRecord/UnitTests_Prefix.pch302725526#6#0#6#0#0"0(13@157"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in ../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302725593#18446744073709551615#0#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302725593#24#1#0#0#0"0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302725593#24#1#0#0#77"no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed0(22@69"Default property attribute 'assign' not appropriate for non-gc object302725593#461#162#4(7@99"In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:302725593#18446744073709551615#0#0(6@73"../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h302725593#41#0#41#0#0"0(7@77"In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:302725593#18446744073709551615#0#0(6@51"../three20/Build/Products/three20/Three20/Three20.h302725593#70#0#70#0#0"0(7@67"In file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:302725593#18446744073709551615#0#0(6@42"/Work/ObjectiveRecord/UnitTests_Prefix.pch302725526#6#0#6#0#0"0(13@149"Default property attribute 'assign' not appropriate for non-gc object in ../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302725593#18446744073709551615#0#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302725593#24#1#0#0#0"0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302725593#24#1#0#0#69"default property attribute 'assign' not appropriate for non-gc object0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed302725593#869#170#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h302725593#30#1#0#0#77"no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed0(22@69"Default property attribute 'assign' not appropriate for non-gc object302725593#1106#162#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h302725593#30#1#0#0#69"default property attribute 'assign' not appropriate for non-gc object0(0#0#42"/Work/ObjectiveRecord/UnitTests_Prefix.pch8663403968#2817"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I../three20/Build/Products/three20 -I../three20/Build/Products/three20/extThree20JSON -I../three20/Build/Products/three20/Three20 -I../three20/Build/Products/three20/Three20Core -I../three20/Build/Products/three20/Three20Network -I../three20/Build/Products/three20/Three20Style -I../three20/Build/Products/three20/Three20UI -I../three20/Build/Products/three20/Three20UICommon -I../three20/Build/Products/three20/Three20UINavigator -I../three20/Build/Products/three20/extThree20JSON/private -I../three20/Build/Products/three20/Three20Network/private -I../three20/Build/Products/three20/Three20Style/private -I../three20/Build/Products/three20/Three20UI/private -I../three20/Build/Products/three20/Three20UICommon/private -I../three20/Build/Products/three20/Three20UINavigator/private -I/Work/ObjectiveRecord/Libraries/Headers -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources -c /Work/ObjectiveRecord/UnitTests_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dgdrhotkcucdtkdttwygolopuuub/UnitTests_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch.pth UnitTests_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302726191.475396
+e302726191.776100
+r1
+xProcessPCH
+x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch.pth
+xUnitTests_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:
+oIn file included from ../three20/Build/Products/three20/Three20/Three20.h:70:
+oIn file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:
+o../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o @property (nonatomic) Class targetClass;
+o ^
+o../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: default property attribute 'assign' not appropriate for non-gc object
+oIn file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:
+oIn file included from ../three20/Build/Products/three20/Three20/Three20.h:70:
+oIn file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:42:
+o../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o @property (nonatomic)           Class             targetClass;
+o ^
+o../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: default property attribute 'assign' not appropriate for non-gc object
+o4 warnings generated.
+lSLF07#2@31"Precompile UnitTests_Prefix.pch302726191#302726191#0(1290"In file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed @property (nonatomic) Class targetClass; ^../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h:24:1: warning: default property attribute 'assign' not appropriate for non-gc objectIn file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:42:../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed @property (nonatomic)           Class             targetClass; ^../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h:30:1: warning: default property attribute 'assign' not appropriate for non-gc object4 warnings generated.4(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed302726191#246#170#4(7@99"In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:302726191#146#100#0(6@73"../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h302726191#41#0#41#0#0"0(7@77"In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:302726191#68#78#0(6@51"../three20/Build/Products/three20/Three20/Three20.h302726191#70#0#70#0#0"0(7@67"In file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:302726191#0#68#0(6@42"/Work/ObjectiveRecord/UnitTests_Prefix.pch302725526#6#0#6#0#0"0(13@157"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in ../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302726191#18446744073709551615#0#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302726191#24#1#0#0#0"0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302726191#24#1#0#0#77"no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed0(22@69"Default property attribute 'assign' not appropriate for non-gc object302726191#461#162#4(7@99"In file included from ../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h:41:302726191#18446744073709551615#0#0(6@73"../three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h302726191#41#0#41#0#0"0(7@77"In file included from ../three20/Build/Products/three20/Three20/Three20.h:70:302726191#18446744073709551615#0#0(6@51"../three20/Build/Products/three20/Three20/Three20.h302726191#70#0#70#0#0"0(7@67"In file included from /Work/ObjectiveRecord/UnitTests_Prefix.pch:6:302726191#18446744073709551615#0#0(6@42"/Work/ObjectiveRecord/UnitTests_Prefix.pch302725526#6#0#6#0#0"0(13@149"Default property attribute 'assign' not appropriate for non-gc object in ../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302726191#18446744073709551615#0#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302726191#24#1#0#0#0"0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h302726191#24#1#0#0#69"default property attribute 'assign' not appropriate for non-gc object0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed302726191#869#170#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h302726191#30#1#0#0#77"no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed0(22@69"Default property attribute 'assign' not appropriate for non-gc object302726191#1106#162#0(6@76"../three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h302726191#30#1#0#0#69"default property attribute 'assign' not appropriate for non-gc object0(0#0#42"/Work/ObjectiveRecord/UnitTests_Prefix.pch8684884448#2817"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I../three20/Build/Products/three20 -I../three20/Build/Products/three20/extThree20JSON -I../three20/Build/Products/three20/Three20 -I../three20/Build/Products/three20/Three20Core -I../three20/Build/Products/three20/Three20Network -I../three20/Build/Products/three20/Three20Style -I../three20/Build/Products/three20/Three20UI -I../three20/Build/Products/three20/Three20UICommon -I../three20/Build/Products/three20/Three20UINavigator -I../three20/Build/Products/three20/extThree20JSON/private -I../three20/Build/Products/three20/Three20Network/private -I../three20/Build/Products/three20/Three20Style/private -I../three20/Build/Products/three20/Three20UI/private -I../three20/Build/Products/three20/Three20UICommon/private -I../three20/Build/Products/three20/Three20UINavigator/private -I/Work/ObjectiveRecord/Libraries/Headers -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/UnitTests+Three20.build/DerivedSources -c /Work/ObjectiveRecord/UnitTests_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-dmjovxkbirlevrgjcepqygwoudod/UnitTests_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-efqhtfzrwmusqubvbulicchczsjg/UnitTests_Prefix.pch.pth UnitTests_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-hfhhyrnnylrdqhasgrqrktjcksgz/UnitTests_Prefix.pch.pth UnitTests_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest
+s302726192.195641
+e302726192.198627
+r1
+xTouch
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest
+lSLF07#2@72"Touch /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest302726192#302726192#0(0"0(0#0#0"8682404032#249"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Work/ObjectiveRecord/build/Debug-iphonesimulator/UnitTests.octest0#
+

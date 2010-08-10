@@ -1,0 +1,674 @@
+TObjectiveRecord+Three20
+v7
+r0
+t302809566.511328
+cCheck dependencies
+cProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupportInflector.o /Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection.o /Work/ObjectiveRecord/ActiveConnection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection+Three20.o /Work/ObjectiveRecord/ActiveConnection+Three20.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser.o /Work/ObjectiveRecord/ActiveParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser+YAJL.o /Work/ObjectiveRecord/ActiveParser+YAJL.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupport.o /Work/ObjectiveRecord/ActiveSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveResult.o /Work/ObjectiveRecord/ActiveResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a normal i386
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C0FD15A0000000000000132
+t1276105050
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004BFDFEB400000000001CFA90
+t1274937012
+s1899152
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004BFDFEA8000000000000046B
+t1274937000
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFArray.h
+c000000004BFDFD720000000000007AC8
+t1274936690
+s31432
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+c000000004BFDFD7200000000000045BF
+t1274936690
+s17855
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+c000000004BFDFD72000000000000B1F9
+t1274936690
+s45561
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h
+c000000004BFDFE6E0000000000001B27
+t1274936942
+s6951
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h
+c000000004BFDFE6E0000000000000E3B
+t1274936942
+s3643
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSError.h
+c000000004BFDFE6E0000000000001DE5
+t1274936942
+s7653
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSException.h
+c000000004BFDFE6E0000000000002033
+t1274936942
+s8243
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNotification.h
+c000000004BFDFE6E000000000000059D
+t1274936942
+s1437
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h
+c000000004BFDFE6E0000000000002AD2
+t1274936942
+s10962
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+c000000004BFDFE6E000000000000049D
+t1274936942
+s1181
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h
+c000000004BFDFE6E0000000000000915
+t1274936942
+s2325
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h
+c000000004BFDFE6E0000000000006506
+t1274936942
+s25862
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/AvailabilityMacros.h
+c000000004BF4CBFA0000000000006724
+t1274334202
+s26404
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/TargetConditionals.h
+c000000004BF4CBFA00000000000031E9
+t1274334202
+s12777
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/dlfcn.h
+c000000004AB98DF40000000000000B1C
+t1253674484
+s2844
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/libkern/OSAtomic.h
+c000000004A5C14A60000000000002519
+t1247548582
+s9497
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/limits.h
+c000000004A5C14A6000000000000145A
+t1247548582
+s5210
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/mach-o/loader.h
+c000000004A4D4DFA000000000000EF91
+t1246580218
+s61329
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/objc/objc-runtime.h
+c000000004BFDF9F40000000000000032
+t1274935796
+s50
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/objc/runtime.h
+c000000004BFDF9F400000000000053F9
+t1274935796
+s21497
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdarg.h
+c000000004A5C14A600000000000000EA
+t1247548582
+s234
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdint.h
+c000000004A11A512000000000000190C
+t1242670354
+s6412
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/sys/types.h
+c000000004A73D6550000000000002905
+t1249105493
+s10501
+
+N/Work/ObjectiveRecord/ActiveConnection+Three20.h
+c000000004C57274800000000000000FD
+t1280780104
+s253
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveConnection+Three20.m
+c000000004C572793000000000000013A
+t1280780179
+s314
+i"ActiveConnection+Three20.h"
+i"ActiveConnection.h"
+
+N/Work/ObjectiveRecord/ActiveConnection.h
+c000000004C572CE80000000000000251
+t1280781544
+s593
+i<Foundation/Foundation.h>
+i"ActiveRequest.h"
+
+N/Work/ObjectiveRecord/ActiveConnection.m
+c000000004C572CDE0000000000000147
+t1280781534
+s327
+
+N/Work/ObjectiveRecord/ActiveManager.h
+c000000004C5B1E3F0000000000000450
+t1281039935
+s1104
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveManager.m
+c000000004C5C3E300000000000001114
+t1281113648
+s4372
+i"ActiveManager.h"
+i"ActiveConnection.h"
+
+N/Work/ObjectiveRecord/ActiveParser+YAJL.h
+c000000004C5723A100000000000000E8
+t1280779169
+s232
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveParser+YAJL.m
+c000000004C5723A100000000000000D9
+t1280779169
+s217
+i"ActiveParser+YAJL.h"
+
+N/Work/ObjectiveRecord/ActiveParser.h
+c000000004C48C49700000000000000DF
+t1279837335
+s223
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveParser.m
+c000000004C48C49700000000000000CB
+t1279837335
+s203
+i"ActiveParser.h"
+
+N/Work/ObjectiveRecord/ActiveRecord.h
+c000000004C5C4A05000000000000069B
+t1281116677
+s1691
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveRecord.m
+c000000004C5C4A150000000000001800
+t1281116693
+s6144
+i"ActiveRecord.h"
+i"ActiveSupportInflector.h"
+
+N/Work/ObjectiveRecord/ActiveRequest.h
+c000000004C571F4D00000000000002AC
+t1280778061
+s684
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveRequest.m
+c000000004C571F3E0000000000000255
+t1280778046
+s597
+i"ActiveRequest.h"
+
+N/Work/ObjectiveRecord/ActiveResult.h
+c000000004C586A9400000000000001B7
+t1280862868
+s439
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveResult.m
+c000000004C5731E7000000000000031F
+t1280782823
+s799
+i"ActiveResult.h"
+
+N/Work/ObjectiveRecord/ActiveSupport.h
+c000000004C5B2CAD00000000000004A1
+t1281043629
+s1185
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveSupport.m
+c000000004C56ED630000000000001008
+t1280765283
+s4104
+i"ActiveSupport.h"
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.h
+c000000004C5702A00000000000000325
+t1280770720
+s805
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m
+c000000004C570AA40000000000000F74
+t1280772772
+s3956
+i"ActiveSupportInflector.h"
+i"RegexKitLite.h"
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.h
+c000000004BC5E8E10000000000004130
+t1271261409
+s16688
+i<Foundation/NSArray.h>
+i<Foundation/NSError.h>
+i<Foundation/NSObjCRuntime.h>
+i<Foundation/NSRange.h>
+i<Foundation/NSString.h>
+i<limits.h>
+i<stdint.h>
+i<sys/types.h>
+i<TargetConditionals.h>
+i<AvailabilityMacros.h>
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m
+c000000004BCB02C90000000000032498
+t1271595721
+s205976
+i<CoreFoundation/CFBase.h>
+i<CoreFoundation/CFArray.h>
+i<CoreFoundation/CFString.h>
+i<Foundation/NSArray.h>
+i<Foundation/NSDictionary.h>
+i<Foundation/NSError.h>
+i<Foundation/NSException.h>
+i<Foundation/NSNotification.h>
+i<Foundation/NSRunLoop.h>
+i<Foundation/NSGarbageCollector.h>
+i<objc/runtime.h>
+i<objc/objc-runtime.h>
+i<libkern/OSAtomic.h>
+i<mach-o/loader.h>
+i<AvailabilityMacros.h>
+i<dlfcn.h>
+i<string.h>
+i<stdarg.h>
+i<stdlib.h>
+i<stdio.h>
+i"RegexKitLite.h"
+
+N/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h
+c000000004C5C358B000000000000016B
+t1281111435
+s363
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ObjectiveRecord.h
+c000000004C5C3E1F00000000000003BB
+t1281113631
+s955
+i"ActiveRecord.h"
+i"ActiveConnection.h"
+i"ActiveParser.h"
+i"ActiveSupport.h"
+i"ActiveManager.h"
+i"ActiveResult.h"
+i"NSManagedObjectContext+Additions.h"
+
+N/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch
+c000000004C586B3100000000000000F8
+t1280863025
+s248
+i<Foundation/Foundation.h>
+i<CoreData/CoreData.h>
+i"ObjectiveRecord.h"
+
+N/Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a
+t1281116766
+s378216
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection+Three20.o
+t1281116766
+s6360
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection.o
+t1281116765
+s8508
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveManager.o
+t1281116765
+s25976
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser+YAJL.o
+t1281116766
+s1184
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser.o
+t1281116766
+s1160
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRecord.o
+t1281116766
+s35568
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRequest.o
+t1281116766
+s11652
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveResult.o
+t1281116766
+s12224
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupport.o
+t1281116766
+s15312
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupportInflector.o
+t1281116765
+s23960
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ObjectiveRecord.LinkFileList
+c000000004C5C4A5C0000000000000605
+t1281116764
+s1541
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/RegexKitLite.o
+t1281116766
+s232140
+
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth
+t1281116764
+s1966388
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies302809564#302809564#0(0"0(0#1#0"8649226496#0"0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection+Three20.o /Work/ObjectiveRecord/ActiveConnection+Three20.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809565.966865
+e302809566.019307
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection+Three20.o
+x/Work/ObjectiveRecord/ActiveConnection+Three20.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@56"Compile /Work/ObjectiveRecord/ActiveConnection+Three20.m302809565#302809566#0(0"0(0#0#48"/Work/ObjectiveRecord/ActiveConnection+Three20.m8656978784#2005"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveConnection+Three20.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection+Three20.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection.o /Work/ObjectiveRecord/ActiveConnection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809565.907532
+e302809565.966754
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection.o
+x/Work/ObjectiveRecord/ActiveConnection.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@48"Compile /Work/ObjectiveRecord/ActiveConnection.m302809565#302809565#0(0"0(0#0#40"/Work/ObjectiveRecord/ActiveConnection.m8672486176#1989"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveConnection.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveConnection.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809565.798239
+e302809565.907244
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveManager.o
+x/Work/ObjectiveRecord/ActiveManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveManager.m302809565#302809565#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveManager.m8674387840#1983"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveManager.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveManager.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser+YAJL.o /Work/ObjectiveRecord/ActiveParser+YAJL.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809566.236934
+e302809566.305794
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser+YAJL.o
+x/Work/ObjectiveRecord/ActiveParser+YAJL.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@49"Compile /Work/ObjectiveRecord/ActiveParser+YAJL.m302809566#302809566#0(0"0(0#0#41"/Work/ObjectiveRecord/ActiveParser+YAJL.m8673976768#1991"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveParser+YAJL.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser+YAJL.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser.o /Work/ObjectiveRecord/ActiveParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809566.205648
+e302809566.236823
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser.o
+x/Work/ObjectiveRecord/ActiveParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveParser.m302809566#302809566#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveParser.m8674011712#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveParser.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveParser.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809566.067869
+e302809566.205337
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRecord.o
+x/Work/ObjectiveRecord/ActiveRecord.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Work/ObjectiveRecord/ActiveRecord.m:53:30:{53:30-53:67}: warning: method '-pluralize' not found (return type defaults to 'id')
+o         return [NSURL URLWithString:[[[self class] entityName] pluralize]];
+o                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+o }
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.m:148:12:{148:12-148:103}: warning: method '-findObjectByKey:forValue:' not found (return type defaults to 'id')
+o                 object = [self findObjectByKey:OR_ID_FIELD_NAME forValue:[dictionary objectForKey:OR_ID_FIELD_NAME]];
+o                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:170:16: warning: unused variable 'map' [-Wunused-variable]
+o         NSDictionary *map                       = [self map:data];
+o                       ^
+o/Work/ObjectiveRecord/ActiveRecord.m:240:1: warning: control reaches end of non-void function [-Wreturn-type]
+o }
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.m:244:1: warning: control reaches end of non-void function [-Wreturn-type]
+o }
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.m:13:1: warning: incomplete implementation
+o @implementation ActiveRecord : NSManagedObject 
+o ^
+oIn file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:
+oIn file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:
+o/Work/ObjectiveRecord/ActiveRecord.h:40:1: note: method definition for 'remove' not found
+o - (void) remove;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:41:1: note: method definition for 'removeAndPush' not found
+o - (void) removeAndPush;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:45:1: note: method definition for 'updateAndPush:' not found
+o - (void) updateAndPush:(NSDictionary *) row;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:19:1: note: method definition for 'find:limit:' not found
+o + (ActiveResult *) find:(id) query limit:(int) limit;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:26:1: note: method definition for 'average:' not found
+o + (NSNumber *) average:(NSString *) property;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:27:1: note: method definition for 'minimum:' not found
+o + (NSNumber *) minimum:(NSString *) property;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:28:1: note: method definition for 'maximum:' not found
+o + (NSNumber *) maximum:(NSString *) property;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:29:1: note: method definition for 'sum:' not found
+o + (NSNumber *) sum:(NSString *) property;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:31:1: note: method definition for 'first' not found
+o + (id) first;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:32:1: note: method definition for 'last' not found
+o + (id) last;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:33:1: note: method definition for 'all' not found
+o + (NSArray *) all;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:34:1: note: method definition for 'exists:' not found
+o + (BOOL) exists:(id) query;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:38:1: note: method definition for 'createAndPush:' not found
+o + (id) createAndPush:(NSDictionary *) row;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:39:1: note: method definition for 'empty' not found
+o + (void) empty;
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.h:42:1: note: method definition for 'remove:' not found
+o + (void) remove:(NSPredicate *) predicate;
+o ^
+o7 warnings generated.
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveRecord.m302809566#302809566#0(3426"/Work/ObjectiveRecord/ActiveRecord.m:53:30:{53:30-53:67}: warning: method '-pluralize' not found (return type defaults to 'id')         return [NSURL URLWithString:[[[self class] entityName] pluralize]];                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:67:1: warning: control reaches end of non-void function [-Wreturn-type] } ^/Work/ObjectiveRecord/ActiveRecord.m:148:12:{148:12-148:103}: warning: method '-findObjectByKey:forValue:' not found (return type defaults to 'id')                 object = [self findObjectByKey:OR_ID_FIELD_NAME forValue:[dictionary objectForKey:OR_ID_FIELD_NAME]];                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:170:16: warning: unused variable 'map' [-Wunused-variable]         NSDictionary *map                       = [self map:data];                       ^/Work/ObjectiveRecord/ActiveRecord.m:240:1: warning: control reaches end of non-void function [-Wreturn-type] } ^/Work/ObjectiveRecord/ActiveRecord.m:244:1: warning: control reaches end of non-void function [-Wreturn-type] } ^/Work/ObjectiveRecord/ActiveRecord.m:13:1: warning: incomplete implementation @implementation ActiveRecord : NSManagedObject  ^In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:/Work/ObjectiveRecord/ActiveRecord.h:40:1: note: method definition for 'remove' not found - (void) remove; ^/Work/ObjectiveRecord/ActiveRecord.h:41:1: note: method definition for 'removeAndPush' not found - (void) removeAndPush; ^/Work/ObjectiveRecord/ActiveRecord.h:45:1: note: method definition for 'updateAndPush:' not found - (void) updateAndPush:(NSDictionary *) row; ^/Work/ObjectiveRecord/ActiveRecord.h:19:1: note: method definition for 'find:limit:' not found + (ActiveResult *) find:(id) query limit:(int) limit; ^/Work/ObjectiveRecord/ActiveRecord.h:26:1: note: method definition for 'average:' not found + (NSNumber *) average:(NSString *) property; ^/Work/ObjectiveRecord/ActiveRecord.h:27:1: note: method definition for 'minimum:' not found + (NSNumber *) minimum:(NSString *) property; ^/Work/ObjectiveRecord/ActiveRecord.h:28:1: note: method definition for 'maximum:' not found + (NSNumber *) maximum:(NSString *) property; ^/Work/ObjectiveRecord/ActiveRecord.h:29:1: note: method definition for 'sum:' not found + (NSNumber *) sum:(NSString *) property; ^/Work/ObjectiveRecord/ActiveRecord.h:31:1: note: method definition for 'first' not found + (id) first; ^/Work/ObjectiveRecord/ActiveRecord.h:32:1: note: method definition for 'last' not found + (id) last; ^/Work/ObjectiveRecord/ActiveRecord.h:33:1: note: method definition for 'all' not found + (NSArray *) all; ^/Work/ObjectiveRecord/ActiveRecord.h:34:1: note: method definition for 'exists:' not found + (BOOL) exists:(id) query; ^/Work/ObjectiveRecord/ActiveRecord.h:38:1: note: method definition for 'createAndPush:' not found + (id) createAndPush:(NSDictionary *) row; ^/Work/ObjectiveRecord/ActiveRecord.h:39:1: note: method definition for 'empty' not found + (void) empty; ^/Work/ObjectiveRecord/ActiveRecord.h:42:1: note: method definition for 'remove:' not found + (void) remove:(NSPredicate *) predicate; ^7 warnings generated.7(22@60"Method '-pluralize' not found (return type defaults to 'id')302809566#0#128#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#53#30#0#0#49"method * not found (return type defaults to 'id')1(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#53#30#53#67#22@40"Control reaches end of non-void function302809566#280#109#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#67#1#0#0#40"control reaches end of non-void function0(22@76"Method '-findObjectByKey:forValue:' not found (return type defaults to 'id')302809566#395#148#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#148#12#0#0#49"method * not found (return type defaults to 'id')1(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#148#12#148#103#22@21"Unused variable 'map'302809566#780#96#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#170#16#0#0#17"unused variable *0(22@40"Control reaches end of non-void function302809566#969#110#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#240#1#0#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function302809566#1085#110#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#244#1#0#0#40"control reaches end of non-void function0(22@25"Incomplete implementation302809566#1201#78#15(13@40"Method definition for 'remove' not found302809566#1471#90#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#1405#66#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#1331#74#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@80"Method definition for 'remove' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#40#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#40#1#0#0#33"method definition for * not found0(13@47"Method definition for 'removeAndPush' not found302809566#1582#97#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@87"Method definition for 'removeAndPush' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#41#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#41#1#0#0#33"method definition for * not found0(13@48"Method definition for 'updateAndPush:' not found302809566#1707#98#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@88"Method definition for 'updateAndPush:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#45#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#45#1#0#0#33"method definition for * not found0(13@45"Method definition for 'find:limit:' not found302809566#1854#95#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@85"Method definition for 'find:limit:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#19#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#19#1#0#0#33"method definition for * not found0(13@42"Method definition for 'average:' not found302809566#2007#92#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@82"Method definition for 'average:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#26#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#26#1#0#0#33"method definition for * not found0(13@42"Method definition for 'minimum:' not found302809566#2149#92#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@82"Method definition for 'minimum:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#27#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#27#1#0#0#33"method definition for * not found0(13@42"Method definition for 'maximum:' not found302809566#2291#92#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@82"Method definition for 'maximum:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#28#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#28#1#0#0#33"method definition for * not found0(13@38"Method definition for 'sum:' not found302809566#2433#88#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@78"Method definition for 'sum:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#29#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#29#1#0#0#33"method definition for * not found0(13@39"Method definition for 'first' not found302809566#2567#89#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@79"Method definition for 'first' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#31#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#31#1#0#0#33"method definition for * not found0(13@38"Method definition for 'last' not found302809566#2674#88#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@78"Method definition for 'last' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#32#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#32#1#0#0#33"method definition for * not found0(13@37"Method definition for 'all' not found302809566#2779#87#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@77"Method definition for 'all' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#33#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#33#1#0#0#33"method definition for * not found0(13@41"Method definition for 'exists:' not found302809566#2889#91#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@81"Method definition for 'exists:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#34#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#34#1#0#0#33"method definition for * not found0(13@48"Method definition for 'createAndPush:' not found302809566#3012#98#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@88"Method definition for 'createAndPush:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#38#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#38#1#0#0#33"method definition for * not found0(13@39"Method definition for 'empty' not found302809566#3157#89#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@79"Method definition for 'empty' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#39#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#39#1#0#0#33"method definition for * not found0(13@41"Method definition for 'remove:' not found302809566#3266#91#3(7@65"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:29:302809566#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h302806431#29#0#29#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:302809566#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch302555825#8#0#8#0#0"0(13@81"Method definition for 'remove:' not found in /Work/ObjectiveRecord/ActiveRecord.h302809566#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#42#1#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h302809477#42#1#0#0#33"method definition for * not found0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302809493#13#1#0#0#25"incomplete implementation0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.m8673395328#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRecord.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRecord.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809566.019413
+e302809566.067374
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRequest.o
+x/Work/ObjectiveRecord/ActiveRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveRequest.m302809566#302809566#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.m8650819968#1983"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRequest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveRequest.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveResult.o /Work/ObjectiveRecord/ActiveResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809566.305896
+e302809566.397349
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveResult.o
+x/Work/ObjectiveRecord/ActiveResult.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveResult.m302809566#302809566#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.m8658878240#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveResult.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveResult.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupport.o /Work/ObjectiveRecord/ActiveSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809566.304017
+e302809566.415882
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupport.o
+x/Work/ObjectiveRecord/ActiveSupport.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveSupport.m302809566#302809566#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.m8667708096#1983"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupport.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupportInflector.o /Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809565.072633
+e302809565.798147
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupportInflector.o
+x/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m:31:14:{31:7-31:50}: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+o   if (result = [[[super init] alloc] autorelease]) {
+o       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m:31:14: note: use '==' to turn this assignment into an equality comparison
+o   if (result = [[[super init] alloc] autorelease]) {
+o              ^
+o              ==
+o/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m:31:14: note: place parentheses around the assignment to silence this warning
+o   if (result = [[[super init] alloc] autorelease]) {
+o              ^
+o       (                                          )
+o1 warning generated.
+lSLF07#2@77"Compile /Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m302809565#302809565#0(810"/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m:31:14:{31:7-31:50}: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]   if (result = [[[super init] alloc] autorelease]) {       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m:31:14: note: use '==' to turn this assignment into an equality comparison   if (result = [[[super init] alloc] autorelease]) {              ^              ==/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m:31:14: note: place parentheses around the assignment to silence this warning   if (result = [[[super init] alloc] autorelease]) {              ^       (                                          )1 warning generated.1(22@68"Using the result of an assignment as a condition without parentheses302809565#0#184#2(13@60"Use '==' to turn this assignment into an equality comparison302809565#289#144#0(6@69"/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m302465572#31#14#0#0#60"use '==' to turn this assignment into an equality comparison0(13@63"Place parentheses around the assignment to silence this warning302809565#520#147#0(6@69"/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m302465572#31#14#0#0#63"place parentheses around the assignment to silence this warning0(6@69"/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m302465572#31#14#0#0#68"using the result of an assignment as a condition without parentheses1(6@69"/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m302465572#31#7#31#50#0#0#69"/Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m8672220672#2024"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ActiveSupportInflector.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809565.071521
+e302809566.293082
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/RegexKitLite.o
+x/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@67"Compile /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m302809565#302809566#0(0"0(0#0#59"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m8672486400#2004"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/RegexKitLite.o0#
+
+CLibtool /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a normal i386
+s302809566.416144
+e302809566.511276
+r1
+xLibtool
+x/Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a
+xnormal
+xi386
+o/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF07#2@68"Libtool build/Debug-iphonesimulator/libObjectiveRecord.a normal i386302809566#302809566#0(136"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 0(0#0#0"8663741920#732"    cd /Work/ObjectiveRecord    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Work/ObjectiveRecord/build/Debug-iphonesimulator -filelist /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/Objects-normal/i386/ObjectiveRecord.LinkFileList -ObjC -framework Foundation -framework CoreData -o /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a0#
+
+CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s302809564.603345
+e302809565.071247
+r1
+xProcessPCH
+x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth
+xObjectiveRecord_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch302809564#302809565#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8658806176#1858"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord+Three20.build/DerivedSources -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth0#
+

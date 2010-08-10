@@ -1,0 +1,10 @@
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "ObjectiveRecord.h"
+#import <OCMock/OCMock.h>
+#import "CoreDataTestCase.h"
+
+
+#endif

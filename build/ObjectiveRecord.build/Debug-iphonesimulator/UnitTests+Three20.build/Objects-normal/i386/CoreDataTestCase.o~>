@@ -1,0 +1,2 @@
+/Work/ObjectiveRecord/CoreDataTestCase.m:84: warning: property 'activeManager' requires method '-activeManager' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Work/ObjectiveRecord/CoreDataTestCase.m:84: warning: property 'activeManager' requires the method 'setActiveManager:' to be defined - use @synthesize, @dynamic or provide a method implementation
