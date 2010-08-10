@@ -1,0 +1,7 @@
+ObjectiveRecord was inspired by existing Obj-C ports of ActiveRecord, with one main goal in mind... Network and data parsing independence. 
+
+With ObjectiveRecord, you can use any network library (NSURLConnection, three20, httpRiot, etc...) in coordination with any data parsing library (yajl_JSON, tiny_xml, etc...)
+
+Additional methods have been added such as "first", "last", and many convenient finder methods. 
+
+CoreData is great for many purposes, however working with your CoreData stacks can often be time consuming and verbose. By combining common methods and automated remote support, ObjectiveRecord seeks to dramatically decrease the liability of working with external datasets. 

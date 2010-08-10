@@ -114,7 +114,7 @@
 	
     NSDictionary *rels = [[[self activeManager] modelRelationships] objectForKey:self];
     if (rels == nil) {
-        // Cache relationships dictionary if not yet extant
+
         rels = [[self entityDescription] relationshipsByName];
         [[[self activeManager] modelRelationships] setObject:rels forKey:self];
     }
@@ -130,7 +130,7 @@
 	
     NSDictionary *attr = [[[self activeManager] modelAttributes] objectForKey:self];
     if (attr == nil) {
-        // Cache properties dictionary if not yet extant
+
         attr = [[self entityDescription] attributesByName];
         [[[self activeManager] modelAttributes] setObject:attr forKey:self];
     }
@@ -142,7 +142,6 @@
     NSDictionary *props = [[[self activeManager] modelProperties] objectForKey:self];
     if (props == nil) {
 		
-        // Cache properties dictionary if not yet extant
         props = [[self entityDescription] propertiesByName];
         [[[self activeManager] modelProperties] setObject:props forKey:self];
     }
@@ -150,11 +149,6 @@
     return props;
 }
 
-/**
- Returns the property description for a given property in a given model.
- By default, this caches the resulting dictionaries provided by Core Data
- in order to maximize efficiency (caching performed in #propertiesByName).
- */
 + (NSPropertyDescription *) propertyDescriptionForField:(NSString *)field inModel:(Class)modelClass {
 	
     return [[modelClass propertiesByName] objectForKey:field];
