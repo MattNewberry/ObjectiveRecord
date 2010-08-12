@@ -28,15 +28,36 @@
 		C93094531208A11F00931448 /* ActiveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C930943C1208A11F00931448 /* ActiveResult.m */; };
 		C93095F61208A22100931448 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93095F51208A22100931448 /* CoreData.framework */; };
 		C93096131208A22D00931448 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93095F51208A22100931448 /* CoreData.framework */; };
-		C930962D1208A34500931448 /* ActiveManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C930962C1208A34500931448 /* ActiveManagerTest.m */; };
 		C942A8ED121072EA00D36B29 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C942A8EC121072EA00D36B29 /* libicucore.dylib */; };
 		C942A98D121078ED00D36B29 /* CWInflector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C942A988121078ED00D36B29 /* CWInflector.mm */; };
 		C942A98E121078ED00D36B29 /* inflections.plist in Resources */ = {isa = PBXBuildFile; fileRef = C942A989121078ED00D36B29 /* inflections.plist */; };
 		C942A98F121078ED00D36B29 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C942A98C121078ED00D36B29 /* RegexKitLite.m */; };
 		C96FB1AF1209F8970075D298 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96FB1AE1209F8970075D298 /* libOCMock.a */; };
-		C96FB1D6120A05570075D298 /* ActiveRecordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FB1D5120A05570075D298 /* ActiveRecordTest.m */; };
 		C98467CD120B13260076A566 /* CoreDataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98467CC120B13260076A566 /* CoreDataTestCase.m */; };
 		C9A348081210AA4A00084D92 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */; };
+		C9A34BA612130A0000084D92 /* libYAJLIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A34B9D12130A0000084D92 /* libYAJLIPhone.a */; };
+		C9A34BD51213145700084D92 /* NSURLConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34BD41213145700084D92 /* NSURLConnector.m */; };
+		C9A34C2312131A6400084D92 /* ActiveConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34C2212131A6400084D92 /* ActiveConnectionTest.m */; };
+		C9A34C97121322DE00084D92 /* YAJLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34C96121322DE00084D92 /* YAJLParsing.m */; };
+		C9A34D6C1213A48D00084D92 /* ActiveMockConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34D6B1213A48D00084D92 /* ActiveMockConnection.m */; };
+		C9A34D6D1213A57700084D92 /* CWInflector.h in Headers */ = {isa = PBXBuildFile; fileRef = C942A987121078ED00D36B29 /* CWInflector.h */; };
+		C9A34D6E1213A57700084D92 /* CWInflector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C942A988121078ED00D36B29 /* CWInflector.mm */; };
+		C9A34D6F1213A57800084D92 /* NSArray+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE995120DDAF5008B4477 /* NSArray+Core.h */; };
+		C9A34D701213A57800084D92 /* NSArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE996120DDAF5008B4477 /* NSArray+Core.m */; };
+		C9A34D711213A57800084D92 /* NSManagedObjectContext+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */; };
+		C9A34D721213A57A00084D92 /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */; };
+		C9A34D731213A57A00084D92 /* NSMutableArray+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE997120DDAF5008B4477 /* NSMutableArray+Core.h */; };
+		C9A34D741213A57B00084D92 /* NSMutableArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE998120DDAF5008B4477 /* NSMutableArray+Core.m */; };
+		C9A34D751213A57B00084D92 /* NSObject+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE999120DDAF5008B4477 /* NSObject+Core.h */; };
+		C9A34D771213A57D00084D92 /* NSSet+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE99B120DDAF5008B4477 /* NSSet+Core.h */; };
+		C9A34D781213A57E00084D92 /* NSObject+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE99A120DDAF5008B4477 /* NSObject+Core.m */; };
+		C9A34D791213A57E00084D92 /* NSSet+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE99C120DDAF5008B4477 /* NSSet+Core.m */; };
+		C9A34D7A1213A57F00084D92 /* NSString+InflectionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */; };
+		C9A34D7B1213A57F00084D92 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */; };
+		C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */; };
+		C9A34D7D1213A58000084D92 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C942A98B121078ED00D36B29 /* RegexKitLite.h */; };
+		C9A34D7E1213A58000084D92 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C942A98C121078ED00D36B29 /* RegexKitLite.m */; };
+		C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A34C911213225A00084D92 /* ActiveParser.h */; };
 		C9F31820120B30AF000A87D7 /* Test.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C9F3181F120B30AF000A87D7 /* Test.xcdatamodel */; };
 		C9F31AE2120B3C04000A87D7 /* orders.json in Resources */ = {isa = PBXBuildFile; fileRef = C9F31AE1120B3C04000A87D7 /* orders.json */; };
 		C9F31B62120B422C000A87D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F31B61120B422C000A87D7 /* QuartzCore.framework */; };
@@ -49,6 +70,18 @@
 		C9F31B8D120B444E000A87D7 /* ActiveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C930943C1208A11F00931448 /* ActiveResult.m */; };
 		C9F31B92120B4494000A87D7 /* ActiveRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C93094301208A11F00931448 /* ActiveRequest.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A349791213057E00084D92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA747D9E0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveRecord_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -93,6 +126,23 @@
 		C98467CC120B13260076A566 /* CoreDataTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestCase.m; sourceTree = "<group>"; };
 		C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectionSupport.h"; sourceTree = "<group>"; };
 		C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectionSupport.m"; sourceTree = "<group>"; };
+		C9A34B9D12130A0000084D92 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYAJLIPhone.a; sourceTree = "<group>"; };
+		C9A34B9E12130A0000084D92 /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YAJL.h"; sourceTree = "<group>"; };
+		C9A34B9F12130A0000084D92 /* YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJL.h; sourceTree = "<group>"; };
+		C9A34BA012130A0000084D92 /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		C9A34BA112130A0000084D92 /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		C9A34BA212130A0000084D92 /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		C9A34BA312130A0000084D92 /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLDocument.h; sourceTree = "<group>"; };
+		C9A34BA412130A0000084D92 /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLGen.h; sourceTree = "<group>"; };
+		C9A34BA512130A0000084D92 /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParser.h; sourceTree = "<group>"; };
+		C9A34BD31213145700084D92 /* NSURLConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnector.h; sourceTree = "<group>"; };
+		C9A34BD41213145700084D92 /* NSURLConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnector.m; sourceTree = "<group>"; };
+		C9A34C2212131A6400084D92 /* ActiveConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveConnectionTest.m; sourceTree = "<group>"; };
+		C9A34C911213225A00084D92 /* ActiveParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveParser.h; sourceTree = "<group>"; };
+		C9A34C95121322DE00084D92 /* YAJLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParsing.h; sourceTree = "<group>"; };
+		C9A34C96121322DE00084D92 /* YAJLParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLParsing.m; sourceTree = "<group>"; };
+		C9A34D6A1213A48D00084D92 /* ActiveMockConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveMockConnection.h; sourceTree = "<group>"; };
+		C9A34D6B1213A48D00084D92 /* ActiveMockConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveMockConnection.m; sourceTree = "<group>"; };
 		C9F3181F120B30AF000A87D7 /* Test.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
 		C9F31AE1120B3C04000A87D7 /* orders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = orders.json; sourceTree = SOURCE_ROOT; };
 		C9F31B61120B422C000A87D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -114,6 +164,7 @@
 				C9F31B62120B422C000A87D7 /* QuartzCore.framework in Frameworks */,
 				C9F31B6A120B4266000A87D7 /* CoreGraphics.framework in Frameworks */,
 				C942A8ED121072EA00D36B29 /* libicucore.dylib in Frameworks */,
+				C9A34BA612130A0000084D92 /* libYAJLIPhone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +218,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9A34C86121321AA00084D92 /* ActiveParser */,
 				C91DE994120DDAEC008B4477 /* Utilities */,
-				C93094201208A11F00931448 /* ActiveSupportInflector */,
 				C93094291208A11F00931448 /* ActiveConnection */,
 				C93094261208A11F00931448 /* ObjectiveRecord.h */,
 				C93094271208A11F00931448 /* ActiveManager.h */,
@@ -195,6 +246,7 @@
 		C91DE994120DDAEC008B4477 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C93094201208A11F00931448 /* ActiveSupportInflector */,
 				C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */,
 				C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */,
 				C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */,
@@ -221,11 +273,12 @@
 				C942A98A121078ED00D36B29 /* RegexKitLite */,
 			);
 			path = ActiveSupportInflector;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		C93094291208A11F00931448 /* ActiveConnection */ = {
 			isa = PBXGroup;
 			children = (
+				C9A34BCF1213104200084D92 /* Connections */,
 				C930942A1208A11F00931448 /* ActiveConnection.h */,
 				C930942F1208A11F00931448 /* ActiveRequest.h */,
 				C93094301208A11F00931448 /* ActiveRequest.m */,
@@ -236,6 +289,7 @@
 		C930962A1208A31400931448 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C9A34B9C12130A0000084D92 /* libYAJLIPhone */,
 				C9F31823120B3502000A87D7 /* Data */,
 				C98467CB120B13260076A566 /* CoreDataTestCase.h */,
 				C98467CC120B13260076A566 /* CoreDataTestCase.m */,
@@ -268,6 +322,7 @@
 			children = (
 				C930962C1208A34500931448 /* ActiveManagerTest.m */,
 				C96FB1D5120A05570075D298 /* ActiveRecordTest.m */,
+				C9A34C2212131A6400084D92 /* ActiveConnectionTest.m */,
 			);
 			name = Unit;
 			sourceTree = "<group>";
@@ -277,6 +332,51 @@
 			children = (
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		C9A34B9C12130A0000084D92 /* libYAJLIPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C9A34B9D12130A0000084D92 /* libYAJLIPhone.a */,
+				C9A34B9E12130A0000084D92 /* NSObject+YAJL.h */,
+				C9A34B9F12130A0000084D92 /* YAJL.h */,
+				C9A34BA012130A0000084D92 /* yajl_common.h */,
+				C9A34BA112130A0000084D92 /* yajl_gen.h */,
+				C9A34BA212130A0000084D92 /* yajl_parse.h */,
+				C9A34BA312130A0000084D92 /* YAJLDocument.h */,
+				C9A34BA412130A0000084D92 /* YAJLGen.h */,
+				C9A34BA512130A0000084D92 /* YAJLParser.h */,
+			);
+			path = libYAJLIPhone;
+			sourceTree = "<group>";
+		};
+		C9A34BCF1213104200084D92 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				C9A34BD31213145700084D92 /* NSURLConnector.h */,
+				C9A34BD41213145700084D92 /* NSURLConnector.m */,
+				C9A34D6A1213A48D00084D92 /* ActiveMockConnection.h */,
+				C9A34D6B1213A48D00084D92 /* ActiveMockConnection.m */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		C9A34C86121321AA00084D92 /* ActiveParser */ = {
+			isa = PBXGroup;
+			children = (
+				C9A34C911213225A00084D92 /* ActiveParser.h */,
+				C9A34C94121322CF00084D92 /* Parsers */,
+			);
+			name = ActiveParser;
+			sourceTree = "<group>";
+		};
+		C9A34C94121322CF00084D92 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				C9A34C95121322DE00084D92 /* YAJLParsing.h */,
+				C9A34C96121322DE00084D92 /* YAJLParsing.m */,
+			);
+			name = Parsers;
 			sourceTree = "<group>";
 		};
 		C9F31823120B3502000A87D7 /* Data */ = {
@@ -306,6 +406,16 @@
 				C930944A1208A11F00931448 /* ActiveRecord.h in Headers */,
 				C93094501208A11F00931448 /* ActiveSupport.h in Headers */,
 				C93094521208A11F00931448 /* ActiveResult.h in Headers */,
+				C9A34D6D1213A57700084D92 /* CWInflector.h in Headers */,
+				C9A34D6F1213A57800084D92 /* NSArray+Core.h in Headers */,
+				C9A34D711213A57800084D92 /* NSManagedObjectContext+Additions.h in Headers */,
+				C9A34D731213A57A00084D92 /* NSMutableArray+Core.h in Headers */,
+				C9A34D751213A57B00084D92 /* NSObject+Core.h in Headers */,
+				C9A34D771213A57D00084D92 /* NSSet+Core.h in Headers */,
+				C9A34D7A1213A57F00084D92 /* NSString+InflectionSupport.h in Headers */,
+				C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */,
+				C9A34D7D1213A58000084D92 /* RegexKitLite.h in Headers */,
+				C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +429,7 @@
 				C93094161208A0F300931448 /* Resources */,
 				C93094171208A0F300931448 /* Sources */,
 				C93094181208A0F300931448 /* Frameworks */,
+				C9A349791213057E00084D92 /* CopyFiles */,
 				C93094191208A0F300931448 /* ShellScript */,
 			);
 			buildRules = (
@@ -405,8 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C930962D1208A34500931448 /* ActiveManagerTest.m in Sources */,
-				C96FB1D6120A05570075D298 /* ActiveRecordTest.m in Sources */,
 				C98467CD120B13260076A566 /* CoreDataTestCase.m in Sources */,
 				C9F31820120B30AF000A87D7 /* Test.xcdatamodel in Sources */,
 				C9F31B7E120B43AC000A87D7 /* Order.m in Sources */,
@@ -424,6 +533,10 @@
 				C942A98D121078ED00D36B29 /* CWInflector.mm in Sources */,
 				C942A98F121078ED00D36B29 /* RegexKitLite.m in Sources */,
 				C9A348081210AA4A00084D92 /* NSString+InflectionSupport.m in Sources */,
+				C9A34BD51213145700084D92 /* NSURLConnector.m in Sources */,
+				C9A34C2312131A6400084D92 /* ActiveConnectionTest.m in Sources */,
+				C9A34C97121322DE00084D92 /* YAJLParsing.m in Sources */,
+				C9A34D6C1213A48D00084D92 /* ActiveMockConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +549,14 @@
 				C930944B1208A11F00931448 /* ActiveRecord.m in Sources */,
 				C93094511208A11F00931448 /* ActiveSupport.m in Sources */,
 				C93094531208A11F00931448 /* ActiveResult.m in Sources */,
+				C9A34D6E1213A57700084D92 /* CWInflector.mm in Sources */,
+				C9A34D701213A57800084D92 /* NSArray+Core.m in Sources */,
+				C9A34D721213A57A00084D92 /* NSManagedObjectContext+Additions.m in Sources */,
+				C9A34D741213A57B00084D92 /* NSMutableArray+Core.m in Sources */,
+				C9A34D781213A57E00084D92 /* NSObject+Core.m in Sources */,
+				C9A34D791213A57E00084D92 /* NSSet+Core.m in Sources */,
+				C9A34D7B1213A57F00084D92 /* NSString+InflectionSupport.m in Sources */,
+				C9A34D7E1213A58000084D92 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,12 +641,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UnitTests_Prefix.pch;
 				GCC_VERSION = 4.2;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers/**";
 				INFOPLIST_FILE = "UnitTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/libYAJLIPhone\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -566,6 +688,7 @@
 					"\"$(SRCROOT)/../OCMock/Source/build/Debug-iphonesimulator\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Libraries\"",
+					"\"$(SRCROOT)/libYAJLIPhone\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (

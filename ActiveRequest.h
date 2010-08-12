@@ -17,12 +17,16 @@
 	NSDictionary	*_parameters;
 	NSDictionary	*_headers;
 	NSString		*_contentType;
+	NSString		*_user;
+	NSString		*_password;
 	
 	id				_delegate;
 	SEL				_didFinishSelector;
 	SEL				_didFailSelector;
 }
 
+@property (nonatomic, copy) NSString *user;
+@property (nonatomic, copy) NSString *password;
 @property (nonatomic, assign) id delegate;
 @property (nonatomic, assign) SEL didFinishSelector;
 @property (nonatomic, assign) SEL didFailSelector;

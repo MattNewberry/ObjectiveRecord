@@ -11,6 +11,8 @@
 
 @implementation ActiveRequest
 
+@synthesize user = _user;
+@synthesize password = _password;
 @synthesize delegate = _delegate;
 @synthesize didFinishSelector = _didFinishSelector;
 @synthesize didFailSelector = _didFailSelector;
@@ -29,6 +31,9 @@
 	[_parameters release];
 	[_headers release];
 	[_contentType release];
+
+	[_user release];
+	[_password release];
 
 	[super dealloc];
 }

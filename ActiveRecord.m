@@ -28,7 +28,7 @@
 + (ActiveManager *) activeManager{
 	
 	ActiveManager *manager = [ActiveManager shared];
-	[manager setDefaultDateFormat:[self dateFormat]];
+	[manager.defaultDateParser setDateFormat:[self dateFormat]];
 	
 	return manager;
 }
@@ -82,7 +82,7 @@
                 // Serialize dates if serializeDates is set
                 if ([value isKindOfClass:[NSDate class]] && serializeDates)
                     value = [[[self class] activeManager].defaultDateParser stringFromDate:value];
-				
+								
                 [dict setObject:value forKey:key];
             }
 			
@@ -360,6 +360,8 @@
 
 + (id) build:(id)parameters withOptions:(NSDictionary *)options {
 
+	id resource;
+	
     if ([parameters isKindOfClass:self])
         return parameters;
 	
@@ -380,34 +382,32 @@
 			
             if ([self exists:$I([resourceId intValue])]){
 				
-                id existingResource = [self findByID:$I([resourceId intValue])];
+                resource = [self findByID:$I([resourceId intValue])];
                 
-                BOOL shouldUpdate = [existingResource shouldUpdateWith:parameters];
+                BOOL shouldUpdate = [resource shouldUpdateWith:parameters];
                 if (shouldUpdate) {
-                    [existingResource update:parameters withOptions:options];
+                    [resource update:parameters withOptions:options];
                 }
                 else {
                     if ([[self class] activeManager].logLevel > 1)
                         NSLog(@"Skipping update of %@ with id %@ because it is already up-to-date", 
-							  [existingResource class], [existingResource valueForKey:[self localIDField]]);
+							  [resource class], [resource valueForKey:[self localIDField]]);
                 }
-				
-                return existingResource;
             }
         }
         
-        return [self create:parameters withOptions:options];
+        resource = [self create:parameters withOptions:options];
     }
-    
-    return nil;
-}
-
-- (void) update:(NSDictionary *)data{
 	
-	[self update:data withOptions:nil];
+	return resource;
 }
 
-- (void) update:(NSDictionary *) data withOptions:(NSDictionary *) options{
+- (id) update:(NSDictionary *)data{
+	
+	return [self update:data withOptions:nil];
+}
+
+- (id) update:(NSDictionary *) data withOptions:(NSDictionary *) options{
 	
 	NSMutableDictionary *dict	= [NSMutableDictionary dictionary];
 	NSDictionary *map			= [self map];
@@ -540,9 +540,11 @@
             }
         }
     }
+	
+	return self;
 }
 
-+ (void) update:(NSDictionary *)data predicate:(NSPredicate *)predicate{
++ (id) update:(NSDictionary *)data predicate:(NSPredicate *)predicate{
 	
 	ActiveResult *results = [self find:predicate];
 	
@@ -550,6 +552,8 @@
 	
 		[row update:data];
 	}
+	
+	return self;
 }
 
 - (BOOL) shouldUpdateWith:(NSDictionary *)dict {
@@ -626,6 +630,7 @@
 	
 	ActiveRequest *request = [ActiveRequest new];
 	[request setUrlPath:[self resourceURLForAction:Read]];
+	[request setHttpMethod:@"GET"];
 	[request setDelegate:[self class]];
 
 	[[[self class] activeManager] addRequest:request];	
@@ -638,16 +643,16 @@
 	[request setUrlPath:[self resourceURLForAction:Update]];
 	[request setDelegate:[self class]];
 	
-	if([self isInserted])
-		[request setHttpMethod:@"POST"];
-	else if([self isUpdated])
+	[request setHttpMethod:@"POST"];
+	
+	if([self isUpdated])
 		[request setHttpMethod:@"PUT"];
 	else if([self isDeleted])
 		[request setHttpMethod:@"DELETE"];
 	
 	if(![self isDeleted])
-		[request setHttpBody:[self toData]];
-	
+		[request setHttpBody:[[[self class] activeManager] serializeObject:[self properties:$D([NSNumber numberWithBool:YES], @"$serializeDates")]]];
+		
 	[[[self class] activeManager] addRequest:request];
 	[request release];
 }
@@ -728,11 +733,6 @@
 + (NSDictionary *) defaultCreateOrUpdateOptions { return [self defaultCreateOptions]; }
 
 + (NSDictionary *) defaultUpdateOptions { return nil; }
-
-- (NSData *) toData{
-	
-	return [NSKeyedArchiver archivedDataWithRootObject:self];
-}
 
 
 - (void) dealloc{

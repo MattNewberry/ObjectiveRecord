@@ -59,9 +59,9 @@ const typedef enum {
 + (void) removeAll;
 - (void) remove;
 + (void) remove:(NSPredicate *) predicate;
-- (void) update:(NSDictionary *) data;
-- (void) update:(NSDictionary *) data withOptions:(NSDictionary *) options;
-+ (void) update:(NSDictionary *)data predicate:(NSPredicate *)predicate;
+- (id) update:(NSDictionary *) data;
+- (id) update:(NSDictionary *) data withOptions:(NSDictionary *) options;
++ (id) update:(NSDictionary *)data predicate:(NSPredicate *)predicate;
 - (BOOL) shouldUpdateWith:(NSDictionary*)dict;
 
 - (void) push;
@@ -103,8 +103,6 @@ const typedef enum {
 
 - (void) didCreate;
 + (BOOL) remoteEnabled;
-
-- (NSData *) toData;
 
 - (NSDictionary *) map;
 

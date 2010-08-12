@@ -1,0 +1,4 @@
+/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:37: warning: incomplete implementation of category 'NSManagedObjectContext_Additions'
+/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:37: warning: method definition for '+create' not found
+/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:37: warning: method definition for '+shared' not found
+/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:11: warning: '_sharedInstance' defined but not used

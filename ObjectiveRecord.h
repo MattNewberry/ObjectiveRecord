@@ -8,6 +8,7 @@
 
 #import "ActiveRecord.h"
 #import "ActiveConnection.h"
+#import "ActiveParser.h"
 #import "ActiveSupport.h"
 #import "ActiveManager.h"
 #import "ActiveResult.h"

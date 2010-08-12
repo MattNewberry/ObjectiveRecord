@@ -5,6 +5,6 @@
 #import "ObjectiveRecord.h"
 #import <OCMock/OCMock.h>
 #import "CoreDataTestCase.h"
-
+#import "YAJL.h"
 
 #endif

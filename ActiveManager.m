@@ -17,9 +17,9 @@ static ActiveManager *_shared;
 
 @implementation ActiveManager
 
+@synthesize parsingClass = _parsingClass;
 @synthesize baseURL = _baseURL;
 @synthesize connectionClass = _connectionClass;
-@synthesize defaultDateFormat = _defaultDateFormat;
 @synthesize logLevel;
 @synthesize defaultDateParser = _defaultDateParser;
 @synthesize entityDescriptions = _entityDescriptions;
@@ -55,7 +55,6 @@ static ActiveManager *_shared;
 		self.managedObjectModel = moc == nil ? [self managedObjectModel] : [[moc persistentStoreCoordinator] managedObjectModel];
 		
 		self.defaultDateParser = [[NSDateFormatter alloc] init];
-        [self.defaultDateParser setDateFormat:self.defaultDateFormat];
         
 		self.entityDescriptions = [NSMutableDictionary dictionary];
         self.modelProperties = [NSMutableDictionary dictionary];
@@ -79,6 +78,13 @@ static ActiveManager *_shared;
 	[conn release];
 }
 
+- (NSData *) serializeObject:(id)object{
+	
+	id <ActiveParser> parser = [[[_parsingClass alloc] init] autorelease];
+	NSString *string = [parser parseToString:object];
+	
+	return [string dataUsingEncoding:NSUTF8StringEncoding];
+}
 
 - (void) setBaseURL:(NSString *) url{
 	
@@ -206,8 +212,9 @@ static ActiveManager *_shared;
 	[_modelProperties release];
 	[_modelRelationships release];
 	[_modelAttributes release];
-	[_defaultDateFormat release];
 	[_baseURL release];
+
+	[_parsingClass release];
 
 	[super dealloc];
 }

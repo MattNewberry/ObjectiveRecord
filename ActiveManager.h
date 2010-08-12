@@ -20,7 +20,6 @@
 	BOOL _resetModel;
 	
 	NSDateFormatter *_defaultDateParser;
-	NSString *_defaultDateFormat;
     
     NSMutableDictionary *_entityDescriptions;
     NSMutableDictionary *_modelProperties;
@@ -30,13 +29,14 @@
 	int logLevel;
 	
 	id _connectionClass;
+	id _parsingClass;
 	
 	NSString *_baseURL;
 }
 
+@property (nonatomic, assign) id parsingClass;
 @property (nonatomic, retain) NSString *baseURL;
 @property (nonatomic, assign) id connectionClass;
-@property (nonatomic, retain) NSString *defaultDateFormat;
 @property (nonatomic, assign) int logLevel;
 @property (nonatomic, retain) NSDateFormatter *defaultDateParser;
 @property (nonatomic, retain) NSMutableDictionary *entityDescriptions;
@@ -52,6 +52,7 @@
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;
 
 - (void) addRequest:(ActiveRequest *) request;
+- (NSData *) serializeObject:(id) object;
 
 - (NSManagedObjectContext*) managedObjectContext;
 - (NSManagedObjectModel*) managedObjectModel;

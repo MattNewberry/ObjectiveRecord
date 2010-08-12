@@ -13,17 +13,6 @@ static NSManagedObjectContext *_sharedInstance;
 @implementation NSManagedObjectContext (NSManagedObjectContext_Additions)
 
 
-+ (NSManagedObjectContext *) shared{
-	
-	if(!_sharedInstance){
-		
-		id delegate	= [[UIApplication sharedApplication] delegate];
-		_sharedInstance	= [delegate managedObjectContext];
-	}
-	
-	return _sharedInstance;
-}
-
 - (BOOL) save{
 	
 	NSError *error;
@@ -44,17 +33,5 @@ static NSManagedObjectContext *_sharedInstance;
 	
 	return YES;
 }
-
-+ (NSManagedObjectContext *) create{
-	
-	NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] init];
-	[moc setPersistentStoreCoordinator:[[NSManagedObjectContext shared] persistentStoreCoordinator]];
-	
-	[[NSNotificationCenter defaultCenter] addObserver:[[UIApplication sharedApplication] delegate] selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
-	
-	return [moc autorelease];
-}
-
-
 
 @end

@@ -18,8 +18,10 @@
 	NSPersistentStoreCoordinator *_persistentStoreCoordinator;  
 	
 	NSArray *_testData;
+	ActiveManager *_activeManager;
 }
 
+@property (nonatomic, retain) ActiveManager *activeManager;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;

@@ -11,9 +11,6 @@
 
 @interface NSManagedObjectContext (NSManagedObjectContext_Additions)
 
-+ (NSManagedObjectContext *) shared;
 - (BOOL) save;
-+ (NSManagedObjectContext *) create;
-
 
 @end
