@@ -342,7 +342,7 @@
         }
         
         if ([[self class] activeManager].logLevel > 1) {
-            NSLog(@"Created new %@ [#%@] in context %@", self, [resource valueForKey:[self localIDField]], [self managedObjectContext]);
+            NSLog(@"Created new %@", self);
             if ([[self class] activeManager].logLevel > 4)
                 NSLog(@"=> %@", resource);
         }
@@ -497,8 +497,8 @@
             // If it's an attribute, just assign the value to the object (unless the object is up-to-date)
             else if ([propertyDescription isKindOfClass:[NSAttributeDescription class]]) {                
                 
-                if ([[self class] activeManager].logLevel > 4)
-                    NSLog(@"[%@] Setting remote field: %@, local field: %@, value: %@", [self class], field, localField, value);
+                //if ([[self class] activeManager].logLevel > 4)
+                  //  NSLog(@"[%@] Setting remote field: %@, local field: %@, value: %@", [self class], field, localField, value);
                 
                 // Check if value is NSNull, which should be set as nil on fields (since NSNull is just used as a collection placeholder)
                 if ([value isEqual:[NSNull null]])
@@ -675,11 +675,13 @@
 	
 	for(ActiveRecord *record in [result objects])
 		[self build:record];
+	
+	[self save];
 }
 
 + (void) connectionDidFail:(ActiveResult *) result{
 	
-	NSLog(@"%@", [[result error] userInfo]);
+	NSLog(@"Connection Failed: %@", [result error]);
 }
 
 

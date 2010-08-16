@@ -29,14 +29,14 @@
 	return self;
 }
 
-- (void) send:(ActiveRequest *)request{
+- (void) send:(ActiveRequest *)activeRequest{
 		
 	self.request = request;
 		
-	NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[request.urlPath stringByAddingPercentEscapesUsingEncoding:4]]];
+	NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[activeRequest.urlPath stringByAddingPercentEscapesUsingEncoding:4]]];
 	
-	[urlRequest setHTTPMethod:request.httpMethod];
-	[urlRequest setHTTPBody:request.httpBody];
+	[urlRequest setHTTPMethod:activeRequest.httpMethod];
+	[urlRequest setHTTPBody:activeRequest.httpBody];
 	[urlRequest setAllHTTPHeaderFields:$D(@"application/json", @"Content-type")];
 	
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self startImmediately:NO];

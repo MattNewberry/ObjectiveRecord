@@ -27,6 +27,6 @@
 @property (nonatomic, assign) SEL didFinishSelector;
 @property (nonatomic, assign) SEL didFailSelector;
 
-- (void) send:(ActiveRequest *)request;
+- (void) send:(ActiveRequest *)activeRequest;
 
 @end

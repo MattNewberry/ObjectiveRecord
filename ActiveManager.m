@@ -74,8 +74,8 @@ static ActiveManager *_shared;
 	
 	NSInvocationOperation <ActiveConnection> *operation = [[NSInvocationOperation alloc] initWithTarget:conn selector:@selector(send:) object:request];	
 	[_requestQueue addOperation:operation];
-	[operation release];
-	[conn release];
+	//[operation release];
+	//[conn release];
 }
 
 - (NSData *) serializeObject:(id)object{

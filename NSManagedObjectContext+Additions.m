@@ -8,8 +8,6 @@
 
 #import "NSManagedObjectContext+Additions.h"
 
-static NSManagedObjectContext *_sharedInstance;
-
 @implementation NSManagedObjectContext (NSManagedObjectContext_Additions)
 
 

@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA747D9F0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch */; };
+		AA747D9F0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		C91DE6FC120C6CE7008B4477 /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */; };
 		C91DE99D120DDAF5008B4477 /* NSArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE996120DDAF5008B4477 /* NSArray+Core.m */; };
 		C91DE99E120DDAF5008B4477 /* NSMutableArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE998120DDAF5008B4477 /* NSMutableArray+Core.m */; };
 		C91DE99F120DDAF5008B4477 /* NSObject+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE99A120DDAF5008B4477 /* NSObject+Core.m */; };
 		C91DE9A0120DDAF5008B4477 /* NSSet+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE99C120DDAF5008B4477 /* NSSet+Core.m */; };
-		C93094411208A11F00931448 /* ObjectiveRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094261208A11F00931448 /* ObjectiveRecord.h */; };
-		C93094421208A11F00931448 /* ActiveManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094271208A11F00931448 /* ActiveManager.h */; };
+		C93094411208A11F00931448 /* ObjectiveRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094261208A11F00931448 /* ObjectiveRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93094421208A11F00931448 /* ActiveManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094271208A11F00931448 /* ActiveManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C93094431208A11F00931448 /* ActiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C93094281208A11F00931448 /* ActiveManager.m */; };
-		C93094441208A11F00931448 /* ActiveConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C930942A1208A11F00931448 /* ActiveConnection.h */; };
-		C93094481208A11F00931448 /* ActiveRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C930942F1208A11F00931448 /* ActiveRequest.h */; };
+		C93094441208A11F00931448 /* ActiveConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C930942A1208A11F00931448 /* ActiveConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93094481208A11F00931448 /* ActiveRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C930942F1208A11F00931448 /* ActiveRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C93094491208A11F00931448 /* ActiveRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C93094301208A11F00931448 /* ActiveRequest.m */; };
-		C930944A1208A11F00931448 /* ActiveRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094311208A11F00931448 /* ActiveRecord.h */; };
+		C930944A1208A11F00931448 /* ActiveRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094311208A11F00931448 /* ActiveRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C930944B1208A11F00931448 /* ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C93094321208A11F00931448 /* ActiveRecord.m */; };
-		C93094501208A11F00931448 /* ActiveSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094391208A11F00931448 /* ActiveSupport.h */; };
+		C93094501208A11F00931448 /* ActiveSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C93094391208A11F00931448 /* ActiveSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C93094511208A11F00931448 /* ActiveSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C930943A1208A11F00931448 /* ActiveSupport.m */; };
-		C93094521208A11F00931448 /* ActiveResult.h in Headers */ = {isa = PBXBuildFile; fileRef = C930943B1208A11F00931448 /* ActiveResult.h */; };
+		C93094521208A11F00931448 /* ActiveResult.h in Headers */ = {isa = PBXBuildFile; fileRef = C930943B1208A11F00931448 /* ActiveResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C93094531208A11F00931448 /* ActiveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C930943C1208A11F00931448 /* ActiveResult.m */; };
 		C93095F61208A22100931448 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93095F51208A22100931448 /* CoreData.framework */; };
 		C93096131208A22D00931448 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93095F51208A22100931448 /* CoreData.framework */; };
+		C934AB411219ACE20090B38C /* inflections.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = C942A989121078ED00D36B29 /* inflections.plist */; };
 		C942A8ED121072EA00D36B29 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C942A8EC121072EA00D36B29 /* libicucore.dylib */; };
 		C942A98D121078ED00D36B29 /* CWInflector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C942A988121078ED00D36B29 /* CWInflector.mm */; };
 		C942A98E121078ED00D36B29 /* inflections.plist in Resources */ = {isa = PBXBuildFile; fileRef = C942A989121078ED00D36B29 /* inflections.plist */; };
@@ -40,24 +41,24 @@
 		C9A34C2312131A6400084D92 /* ActiveConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34C2212131A6400084D92 /* ActiveConnectionTest.m */; };
 		C9A34C97121322DE00084D92 /* YAJLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34C96121322DE00084D92 /* YAJLParsing.m */; };
 		C9A34D6C1213A48D00084D92 /* ActiveMockConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A34D6B1213A48D00084D92 /* ActiveMockConnection.m */; };
-		C9A34D6D1213A57700084D92 /* CWInflector.h in Headers */ = {isa = PBXBuildFile; fileRef = C942A987121078ED00D36B29 /* CWInflector.h */; };
+		C9A34D6D1213A57700084D92 /* CWInflector.h in Headers */ = {isa = PBXBuildFile; fileRef = C942A987121078ED00D36B29 /* CWInflector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D6E1213A57700084D92 /* CWInflector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C942A988121078ED00D36B29 /* CWInflector.mm */; };
-		C9A34D6F1213A57800084D92 /* NSArray+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE995120DDAF5008B4477 /* NSArray+Core.h */; };
+		C9A34D6F1213A57800084D92 /* NSArray+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE995120DDAF5008B4477 /* NSArray+Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D701213A57800084D92 /* NSArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE996120DDAF5008B4477 /* NSArray+Core.m */; };
-		C9A34D711213A57800084D92 /* NSManagedObjectContext+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */; };
+		C9A34D711213A57800084D92 /* NSManagedObjectContext+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D721213A57A00084D92 /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */; };
-		C9A34D731213A57A00084D92 /* NSMutableArray+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE997120DDAF5008B4477 /* NSMutableArray+Core.h */; };
+		C9A34D731213A57A00084D92 /* NSMutableArray+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE997120DDAF5008B4477 /* NSMutableArray+Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D741213A57B00084D92 /* NSMutableArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE998120DDAF5008B4477 /* NSMutableArray+Core.m */; };
-		C9A34D751213A57B00084D92 /* NSObject+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE999120DDAF5008B4477 /* NSObject+Core.h */; };
-		C9A34D771213A57D00084D92 /* NSSet+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE99B120DDAF5008B4477 /* NSSet+Core.h */; };
+		C9A34D751213A57B00084D92 /* NSObject+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE999120DDAF5008B4477 /* NSObject+Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A34D771213A57D00084D92 /* NSSet+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE99B120DDAF5008B4477 /* NSSet+Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D781213A57E00084D92 /* NSObject+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE99A120DDAF5008B4477 /* NSObject+Core.m */; };
 		C9A34D791213A57E00084D92 /* NSSet+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE99C120DDAF5008B4477 /* NSSet+Core.m */; };
-		C9A34D7A1213A57F00084D92 /* NSString+InflectionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */; };
+		C9A34D7A1213A57F00084D92 /* NSString+InflectionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D7B1213A57F00084D92 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */; };
-		C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */; };
-		C9A34D7D1213A58000084D92 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C942A98B121078ED00D36B29 /* RegexKitLite.h */; };
+		C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A34D7D1213A58000084D92 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C942A98B121078ED00D36B29 /* RegexKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D7E1213A58000084D92 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C942A98C121078ED00D36B29 /* RegexKitLite.m */; };
-		C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A34C911213225A00084D92 /* ActiveParser.h */; };
+		C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A34C911213225A00084D92 /* ActiveParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9F31820120B30AF000A87D7 /* Test.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C9F3181F120B30AF000A87D7 /* Test.xcdatamodel */; };
 		C9F31AE2120B3C04000A87D7 /* orders.json in Resources */ = {isa = PBXBuildFile; fileRef = C9F31AE1120B3C04000A87D7 /* orders.json */; };
 		C9F31B62120B422C000A87D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F31B61120B422C000A87D7 /* QuartzCore.framework */; };
@@ -72,6 +73,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C934AB881219AE700090B38C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C934AB411219ACE20090B38C /* inflections.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A349791213057E00084D92 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,9 +456,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ObjectiveRecord" */;
 			buildPhases = (
+				C934AB6D1219AD660090B38C /* Resources */,
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
+				C934AB881219AE700090B38C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -490,6 +503,13 @@
 			files = (
 				C9F31AE2120B3C04000A87D7 /* orders.json in Resources */,
 				C942A98E121078ED00D36B29 /* inflections.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C934AB6D1219AD660090B38C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +598,7 @@
 				GCC_PREFIX_HEADER = ObjectiveRecord_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ObjectiveRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = /../Headers/ObjectiveRecord;
 			};
 			name = Debug;
 		};
