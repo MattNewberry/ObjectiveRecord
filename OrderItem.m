@@ -17,9 +17,4 @@
 @dynamic qty;
 @dynamic order;
 
-- (NSString *) resourceURLForAction:(Action)action{
-	
-	return $S(@"orders/%i/items/%i", [[self.order id] intValue], [self.id intValue]);
-}
-
 @end

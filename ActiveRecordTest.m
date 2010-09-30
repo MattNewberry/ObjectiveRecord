@@ -16,6 +16,12 @@
 
 @implementation ActiveRecordTest
 
+- (void) testShouldReturnNameWithoutRelationship{
+	
+	STAssertEqualObjects([Order entityName], @"Order", @"Failed to match entity name");
+	STAssertEqualObjects([OrderItem entityName], @"Item", @"Failed to match entity name");
+}
+
 - (void) testShouldCountAllRecords{
 
 	STAssertEquals([Order count], 2, @"Count not equal");
@@ -24,8 +30,7 @@
 
 - (void) testShouldCountAllRecordsWithPredicate{
 	
-	NSLog(@"%i", [Order count]);
-	//STAssertEquals([Order count:$P(@"id = 1")], 1, @"Count not equal with predicate");
+	STAssertEquals([Order count:$P(@"id = 1")], 1, @"Count not equal with predicate");
 }
 
 
@@ -137,29 +142,51 @@
 
 - (void) testShouldReturnURLForClass{
 	
-	STAssertEqualObjects([Order remoteURLForAction:Read], @"orders", @"Failed to return proper URL");
+	STAssertEqualObjects([Order remoteURLForAction:Read], @"orders.json", @"Failed to return proper URL");
 }
 
 - (void) testShouldReturnURLForRecord{
 	
 	Order *order = [Order first];
-	
-	STAssertEqualObjects([order resourceURLForAction:Read], @"orders/2", @"Failed to return proper resource URL");
+
+	STAssertEqualObjects([order resourceURLForAction:Read], @"orders/2.json", @"Failed to return proper resource URL");
 }
 
 - (void) testShouldReturnURLForRelationshipRecord{
 	
 	Order *order = [Order last];
 	OrderItem *item = [order.items anyObject];
-	
-	STAssertEqualObjects([item resourceURLForAction:Read], @"orders/1/items/1", @"Failed to return proper relationship URL");
+
+	STAssertEqualObjects([item resourceURLForAction:Read], @"orders/1/items/1.json", @"Failed to return proper relationship URL");
 }
 
-- (void) testShouldReturnURLForRelationshipRead{
+- (void) testShouldReturnObjectForURL{
 	
 	Order *order = [Order last];
 	
-	STAssertEqualObjects([order relationshipURL:@"items" forAction:Read], @"orders/1/items", @"Failed to return proper relationship read URL");
+	STAssertEqualObjects([order relationshipForURLPath:@"orders/1/items.json"], @"items", @"Failed to return object for URL");
+	STAssertNil([order relationshipForURLPath:@"orders/1.json"], @"Failed to return nil for relationship url");
+}
+
+- (void) testConnectionDidFinishForRelationship{
+	
+	Order *order = [Order last];
+	[order removeItems:order.items];
+	[order save];
+	
+	NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"items" ofType:@"json"];
+	NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+	
+	NSArray *items = [content yajl_JSON];
+	
+	ActiveResult *result = [[ActiveResult alloc] initWithResults:items];
+	result.urlPath = @"orders/1/items.json";
+	
+	[order connectionDidFinish:result];
+	
+	STAssertEquals((int)[order.items count], 1, @"Failed to add relationship items properly");
+		
+	[result release];
 }
 
 

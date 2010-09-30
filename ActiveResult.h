@@ -14,17 +14,24 @@
 
 	NSArray *_objects;
 	NSError *_error;
+	NSString *_urlPath;
+	
+	id _source;
 }
 
+@property (nonatomic, copy) NSString *urlPath;
+@property (nonatomic, retain) id source;
 @property (nonatomic, retain) NSArray *objects;
 @property (nonatomic, retain) NSError *error;
 
 - (id) initWithResults:(NSArray *)results;
+- (id) initWithSource:(id) resultSource;
+- (id) initWithError:(NSError*) errorRef;
 
-- (ActiveRecord *) object;
+- (id) object;
 - (BOOL) hasObjects;
 - (int) count;
-
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState*)state objects:(id*)stackbuf count:(NSUInteger)len;
 
 
 

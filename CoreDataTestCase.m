@@ -10,7 +10,6 @@
 #import "ActiveSupport.h"
 #import "ActiveManager.h"
 #import "Order.h"
-#import "NSURLConnector.h"
 #import "YAJLParsing.h"
 
 
@@ -27,7 +26,7 @@
 	_activeManager = [ActiveManager shared];
 	[_activeManager setManagedObjectContext:[self managedObjectContext]];
 	
-	[_activeManager setConnectionClass:[NSURLConnector class]];
+	//[_activeManager setConnectionClass:[NSURLConnector class]];
 	[_activeManager setParsingClass:[YAJLParsing class]];
 	
 	_testData = [self loadTestData];

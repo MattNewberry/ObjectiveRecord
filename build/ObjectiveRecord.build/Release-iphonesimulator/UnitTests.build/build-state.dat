@@ -1,0 +1,1324 @@
+TUnitTests
+v7
+r0
+t303843141.113309
+cCheck dependencies
+cProcessInfoPlistFile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Info.plist UnitTests-Info.plist
+cCpResource build/Release-iphonesimulator/UnitTests.octest/orders.json orders.json
+cCopyPlistFile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/inflections.plist ActiveSupportInflector/inflections.plist
+cDataModelCompile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Test.mom /Work/ObjectiveRecord/Test.xcdatamodel
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CoreDataTestCase.o /Work/ObjectiveRecord/CoreDataTestCase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o /Work/ObjectiveRecord/Order.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/OrderItem.o /Work/ObjectiveRecord/OrderItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveSupport.o /Work/ObjectiveRecord/ActiveSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveResult.o /Work/ObjectiveRecord/ActiveResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSManagedObjectContext+Additions.o /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSArray+Core.o /Work/ObjectiveRecord/NSArray+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSMutableArray+Core.o /Work/ObjectiveRecord/NSMutableArray+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSObject+Core.o /Work/ObjectiveRecord/NSObject+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSSet+Core.o /Work/ObjectiveRecord/NSSet+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CWInflector.o /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm normal i386 objective-c++ com.apple.compilers.llvmgcc42
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSString+InflectionSupport.o /Work/ObjectiveRecord/NSString+InflectionSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveConnectionTest.o /Work/ObjectiveRecord/ActiveConnectionTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/YAJLParsing.o /Work/ObjectiveRecord/YAJLParsing.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cPhaseScriptExecution "Run Script" /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Script-C93094191208A0F300931448.sh
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C0FD15A0000000000000132
+t1276105050
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
+c000000004BFE177E00000000000008A5
+t1274943358
+s2213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004BFDFEB400000000001CFA90
+t1274937012
+s1899152
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004BFDFEA8000000000000046B
+t1274937000
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFArray.h
+c000000004BFDFD720000000000007AC8
+t1274936690
+s31432
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+c000000004BFDFD7200000000000045BF
+t1274936690
+s17855
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+c000000004BFDFD72000000000000B1F9
+t1274936690
+s45561
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h
+c000000004BFDFE6E0000000000001B27
+t1274936942
+s6951
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h
+c000000004BFDFE6E0000000000000E3B
+t1274936942
+s3643
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSError.h
+c000000004BFDFE6E0000000000001DE5
+t1274936942
+s7653
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSException.h
+c000000004BFDFE6E0000000000002033
+t1274936942
+s8243
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNotification.h
+c000000004BFDFE6E000000000000059D
+t1274936942
+s1437
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h
+c000000004BFDFE6E0000000000002AD2
+t1274936942
+s10962
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+c000000004BFDFE6E000000000000049D
+t1274936942
+s1181
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h
+c000000004BFDFE6E0000000000000915
+t1274936942
+s2325
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h
+c000000004BFDFE6E0000000000006506
+t1274936942
+s25862
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004C0458E90000000000151D30
+t1275353321
+s1383728
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/AvailabilityMacros.h
+c000000004BF4CBFA0000000000006724
+t1274334202
+s26404
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/assert.h
+c000000004A5C14A60000000000000DCB
+t1247548582
+s3531
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/dlfcn.h
+c000000004AB98DF40000000000000B1C
+t1253674484
+s2844
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/libkern/OSAtomic.h
+c000000004A5C14A60000000000002519
+t1247548582
+s9497
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/limits.h
+c000000004A5C14A6000000000000145A
+t1247548582
+s5210
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdarg.h
+c000000004A5C14A600000000000000EA
+t1247548582
+s234
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdint.h
+c000000004A11A512000000000000190C
+t1242670354
+s6412
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/sys/types.h
+c000000004A73D6550000000000002905
+t1249105493
+s10501
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib/libicucore.dylib
+c000000004BFDFD45000000000020EBF0
+t1274936645
+s2157552
+
+N/Work/ObjectiveRecord/ActiveConnection.h
+c000000004C6990D40000000000000305
+t1281986772
+s773
+i<Foundation/Foundation.h>
+i"ActiveRequest.h"
+i"ActiveResult.h"
+
+N/Work/ObjectiveRecord/ActiveConnectionTest.m
+c000000004C7FEA9A0000000000000136
+t1283451546
+s310
+i"CoreDataTestCase.h"
+i"Order.h"
+
+N/Work/ObjectiveRecord/ActiveManager.h
+c000000004C76CE3C00000000000008CF
+t1282854460
+s2255
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveManager.m
+c000000004C7FECE000000000000019FE
+t1283452128
+s6654
+i"ActiveManager.h"
+i"ActiveConnection.h"
+
+N/Work/ObjectiveRecord/ActiveManagerTest.m
+c000000004C7FECA5000000000000038D
+t1283452069
+s909
+i"ActiveManager.h"
+
+N/Work/ObjectiveRecord/ActiveParser.h
+c000000004C62EA710000000000000122
+t1281550961
+s290
+
+N/Work/ObjectiveRecord/ActiveRecord.h
+c000000004C7FF3D90000000000000DE3
+t1283453913
+s3555
+i<Foundation/Foundation.h>
+i"ActiveConnection.h"
+
+N/Work/ObjectiveRecord/ActiveRecord.m
+c000000004C7FF3EA0000000000005DFF
+t1283453930
+s24063
+i"ActiveRecord.h"
+i"ObjectiveRecord+Utilities.h"
+i"ActiveRequest.h"
+
+N/Work/ObjectiveRecord/ActiveRecordTest.m
+c000000004C7FF1850000000000001003
+t1283453317
+s4099
+i"CoreDataTestCase.h"
+i"ObjectiveRecord.h"
+i"Order.h"
+i"OrderItem.h"
+
+N/Work/ObjectiveRecord/ActiveRequest.h
+c000000004C7E869300000000000004BC
+t1283360403
+s1212
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveRequest.m
+c000000004C7E867400000000000004D2
+t1283360372
+s1234
+i"ActiveRequest.h"
+
+N/Work/ObjectiveRecord/ActiveResult.h
+c000000004C76B22D00000000000002BD
+t1282847277
+s701
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveResult.m
+c000000004C76B2C30000000000000449
+t1282847427
+s1097
+i"ActiveResult.h"
+
+N/Work/ObjectiveRecord/ActiveSupport.h
+c000000004C5C603400000000000004A3
+t1281122356
+s1187
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveSupport.m
+c000000004C56ED630000000000001008
+t1280765283
+s4104
+i"ActiveSupport.h"
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.h
+c000000004C60414D00000000000002E4
+t1281376589
+s740
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm
+c000000004C60414D0000000000001583
+t1281376589
+s5507
+i"CWInflector.h"
+i"RegexKitLite/RegexKitLite.h"
+i<assert.h>
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h
+c000000004C60414D0000000000001EC0
+t1281376589
+s7872
+i<Foundation/NSObjCRuntime.h>
+i<Foundation/NSRange.h>
+i<Foundation/NSString.h>
+i<limits.h>
+i<stdint.h>
+i<sys/types.h>
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m
+c000000004C60414D000000000000F133
+t1281376589
+s61747
+i<CoreFoundation/CFBase.h>
+i<CoreFoundation/CFArray.h>
+i<CoreFoundation/CFString.h>
+i<Foundation/NSArray.h>
+i<Foundation/NSDictionary.h>
+i<Foundation/NSError.h>
+i<Foundation/NSException.h>
+i<Foundation/NSNotification.h>
+i<Foundation/NSRunLoop.h>
+i<Foundation/NSGarbageCollector.h>
+i<libkern/OSAtomic.h>
+i<AvailabilityMacros.h>
+i<dlfcn.h>
+i<string.h>
+i<stdarg.h>
+i<stdlib.h>
+i"RegexKitLite.h"
+
+N/Work/ObjectiveRecord/ActiveSupportInflector/inflections.plist
+c000000004C60414D00000000000005B5
+t1281376589
+s1461
+
+N/Work/ObjectiveRecord/CoreDataTestCase.h
+c000000004C62E41A0000000000000387
+t1281549338
+s903
+i<UIKit/UIKit.h>
+i<SenTestingKit/SenTestingKit.h>
+
+N/Work/ObjectiveRecord/CoreDataTestCase.m
+c000000004C6B17610000000000000A79
+t1282086753
+s2681
+i"CoreDataTestCase.h"
+i"ActiveSupport.h"
+i"ActiveManager.h"
+i"Order.h"
+i"YAJLParsing.h"
+
+N/Work/ObjectiveRecord/Libraries/libOCMock.a
+c000000004C59BEFD000000000007E9F8
+t1280950013
+s518648
+
+N/Work/ObjectiveRecord/NSArray+Core.h
+c000000004C607058000000000000027C
+t1281388632
+s636
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/NSArray+Core.m
+c000000004C60709F000000000000060C
+t1281388703
+s1548
+i"NSArray+Core.h"
+
+N/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h
+c000000004C636E640000000000000120
+t1281584740
+s288
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m
+c000000004C6450080000000000000306
+t1281642504
+s774
+i"NSManagedObjectContext+Additions.h"
+
+N/Work/ObjectiveRecord/NSMutableArray+Core.h
+c000000004C49FA0E000000000000021A
+t1279916558
+s538
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/NSMutableArray+Core.m
+c000000004C49FA0E0000000000000503
+t1279916558
+s1283
+i"NSMutableArray+Core.h"
+i"NSArray+Core.h"
+
+N/Work/ObjectiveRecord/NSObject+Core.h
+c000000004C49DF3F0000000000000104
+t1279909695
+s260
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/NSObject+Core.m
+c000000004C49DF3F00000000000002A6
+t1279909695
+s678
+i"NSObject+Core.h"
+
+N/Work/ObjectiveRecord/NSSet+Core.h
+c000000004C6071730000000000000159
+t1281388915
+s345
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/NSSet+Core.m
+c000000004C61C4010000000000000387
+t1281475585
+s903
+i"NSSet+Core.h"
+
+N/Work/ObjectiveRecord/NSString+InflectionSupport.h
+c000000004C61749600000000000003D4
+t1281455254
+s980
+
+N/Work/ObjectiveRecord/NSString+InflectionSupport.m
+c000000004C6072D80000000000000BAF
+t1281389272
+s2991
+i"NSString+InflectionSupport.h"
+
+N/Work/ObjectiveRecord/ObjectiveRecord+Utilities.h
+c000000004C696BE60000000000000171
+t1281977318
+s369
+i"NSArray+Core.h"
+i"NSMutableArray+Core.h"
+i"NSObject+Core.h"
+i"NSSet+Core.h"
+i"NSString+InflectionSupport.h"
+i"CWInflector.h"
+i"NSManagedObjectContext+Additions.h"
+
+N/Work/ObjectiveRecord/ObjectiveRecord.h
+c000000004C6974C30000000000000142
+t1281979587
+s322
+i"ActiveRecord.h"
+i"ActiveConnection.h"
+i"ActiveParser.h"
+i"ActiveSupport.h"
+i"ActiveManager.h"
+i"ActiveResult.h"
+i"CWInflector.h"
+
+N/Work/ObjectiveRecord/Order.h
+c000000004C5B0C5000000000000002D4
+t1281035344
+s724
+i<CoreData/CoreData.h>
+i"ActiveRecord.h"
+
+N/Work/ObjectiveRecord/Order.m
+c000000004C619DC70000000000000135
+t1281465799
+s309
+i"Order.h"
+i"OrderItem.h"
+
+N/Work/ObjectiveRecord/OrderItem.h
+c000000004C5DABBB0000000000000202
+t1281207227
+s514
+i<CoreData/CoreData.h>
+i"ActiveRecord.h"
+
+N/Work/ObjectiveRecord/OrderItem.m
+c000000004C7FF26200000000000001C6
+t1283453538
+s454
+i"OrderItem.h"
+i"Order.h"
+
+N/Work/ObjectiveRecord/Test.xcdatamodel
+c000000004C5DABCF0000000000000088
+t1281207247
+s136
+
+N/Work/ObjectiveRecord/YAJLParsing.h
+c000000004C62EC5C0000000000000115
+t1281551452
+s277
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/YAJLParsing.m
+c000000004C62EBFF0000000000000154
+t1281551359
+s340
+i"YAJLParsing.h"
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveConnectionTest.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManager.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManagerTest.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecord.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecordTest.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRequest.o
+t1282150340
+s16772
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveResult.o
+t1282150339
+s9352
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveSupport.o
+t1282150339
+s13540
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CWInflector.o
+t1282150340
+s19584
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CoreDataTestCase.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSArray+Core.o
+t1282150340
+s8820
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSManagedObjectContext+Additions.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSMutableArray+Core.o
+t1282150340
+s7008
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSObject+Core.o
+t1282150340
+s4644
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSSet+Core.o
+t1282150340
+s6120
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSString+InflectionSupport.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o
+t1282150339
+s1448
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/OrderItem.o
+t1282150339
+s4128
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/RegexKitLite.o
+t1282150340
+s60640
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/UnitTests.LinkFileList
+c000000004C6C0FC300000000000008F5
+t1282150339
+s2293
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/YAJLParsing.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Script-C93094191208A0F300931448.sh
+c000000004C6C0FC30000000000000062
+t1282150339
+s98
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest
+t1282150339
+s204
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest.dSYM
+t2
+s0
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Info.plist
+t1282150339
+s468
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Test.mom
+t1282150339
+s2829
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/UnitTests
+t2
+s0
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/inflections.plist
+t1282150339
+s1393
+
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/orders.json
+t1282150339
+s386
+
+N/Work/ObjectiveRecord/libYAJLIPhone/libYAJLIPhone.a
+c000000004C4874890000000000091984
+t1279816841
+s596356
+
+N/Work/ObjectiveRecord/orders.json
+c000000004C6C0FDD000000000000017A
+t1282150365
+s378
+
+NUnitTests-Info.plist
+c000000004C5AF3890000000000000266
+t1281029001
+s614
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies303843139#303843139#0(0"0(0#1#0"8641442112#0"0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveConnectionTest.o /Work/ObjectiveRecord/ActiveConnectionTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.670278
+e303843140.982862
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveConnectionTest.o
+x/Work/ObjectiveRecord/ActiveConnectionTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:
+o/Work/ObjectiveRecord/CoreDataTestCase.h:16:5: error: unknown type name 'NSManagedObjectContext'
+o     NSManagedObjectContext *_managedObjectContext;
+o     ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:17:2: error: unknown type name 'NSManagedObjectModel'
+o         NSManagedObjectModel *_managedObjectModel;
+o         ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:18:2: error: unknown type name 'NSPersistentStoreCoordinator'
+o         NSPersistentStoreCoordinator *_persistentStoreCoordinator;  
+o         ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:25:31: error: unknown type name 'NSManagedObjectContext'
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o                               ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:25:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:26:31: error: unknown type name 'NSManagedObjectModel'
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o                               ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:26:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:27:31: error: unknown type name 'NSPersistentStoreCoordinator'
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o                               ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:27:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o ^
+o/Work/ObjectiveRecord/ActiveConnectionTest.m:26:2:{26:2-26:65}: warning: method '-setBaseURL:' not found (return type defaults to 'id')
+o         [_activeManager setBaseURL:@"mndcreative.myshopify.com/admin/"];
+o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o1 warning and 9 errors generated.
+lSLF07#2@52"Compile /Work/ObjectiveRecord/ActiveConnectionTest.m303843140#303843140#0(2099"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:/Work/ObjectiveRecord/CoreDataTestCase.h:16:5: error: unknown type name 'NSManagedObjectContext'     NSManagedObjectContext *_managedObjectContext;     ^/Work/ObjectiveRecord/CoreDataTestCase.h:17:2: error: unknown type name 'NSManagedObjectModel'         NSManagedObjectModel *_managedObjectModel;         ^/Work/ObjectiveRecord/CoreDataTestCase.h:18:2: error: unknown type name 'NSPersistentStoreCoordinator'         NSPersistentStoreCoordinator *_persistentStoreCoordinator;           ^/Work/ObjectiveRecord/CoreDataTestCase.h:25:31: error: unknown type name 'NSManagedObjectContext' @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;                               ^/Work/ObjectiveRecord/CoreDataTestCase.h:25:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext; ^/Work/ObjectiveRecord/CoreDataTestCase.h:26:31: error: unknown type name 'NSManagedObjectModel' @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;                               ^/Work/ObjectiveRecord/CoreDataTestCase.h:26:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel; ^/Work/ObjectiveRecord/CoreDataTestCase.h:27:31: error: unknown type name 'NSPersistentStoreCoordinator' @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;                               ^/Work/ObjectiveRecord/CoreDataTestCase.h:27:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator; ^/Work/ObjectiveRecord/ActiveConnectionTest.m:26:2:{26:2-26:65}: warning: method '-setBaseURL:' not found (return type defaults to 'id')         [_activeManager setBaseURL:@"mndcreative.myshopify.com/admin/"];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1 warning and 9 errors generated.10(4@42"Unknown type name 'NSManagedObjectContext'303843140#70#97#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#0#70#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@86"Unknown type name 'NSManagedObjectContext' in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#16#5#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#16#5#0#0#19"unknown type name *0(4@40"Unknown type name 'NSManagedObjectModel'303843140#226#95#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@84"Unknown type name 'NSManagedObjectModel' in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#17#2#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#17#2#0#0#19"unknown type name *0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843140#384#103#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@92"Unknown type name 'NSPersistentStoreCoordinator' in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#18#2#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#18#2#0#0#19"unknown type name *0(4@42"Unknown type name 'NSManagedObjectContext'303843140#568#98#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@86"Unknown type name 'NSManagedObjectContext' in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#31#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843140#776#110#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@99"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#1#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#1#0#0#50"property with '*' attribute must be of object type0(4@40"Unknown type name 'NSManagedObjectModel'303843140#966#96#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@84"Unknown type name 'NSManagedObjectModel' in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#31#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843140#1168#110#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@99"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#1#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#1#0#0#50"property with '*' attribute must be of object type0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843140#1354#104#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@92"Unknown type name 'NSPersistentStoreCoordinator' in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#31#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843140#1580#110#2(7@69"In file included from /Work/ObjectiveRecord/ActiveConnectionTest.m:9:303843140#18446744073709551615#0#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#9#0#9#0#0"0(13@99"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/CoreDataTestCase.h303843140#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#1#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#1#0#0#50"property with '*' attribute must be of object type0(22@62"Method '-setBaseURL:' not found (return type defaults to 'id')303843140#1782#136#0(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#26#2#0#0#49"method * not found (return type defaults to 'id')1(6@44"/Work/ObjectiveRecord/ActiveConnectionTest.m303779514#26#2#26#65#0#0#44"/Work/ObjectiveRecord/ActiveConnectionTest.m8639852352#1918"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveConnectionTest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveConnectionTest.o1#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.397060
+e303843139.692256
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManager.o
+x/Work/ObjectiveRecord/ActiveManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/ActiveManager.m:9:
+o/Work/ObjectiveRecord/ActiveManager.h:15:2: error: unknown type name 'NSManagedObjectContext'
+o         NSManagedObjectContext *_managedObjectContext;
+o         ^
+o/Work/ObjectiveRecord/ActiveManager.h:16:2: error: unknown type name 'NSManagedObjectModel'
+o         NSManagedObjectModel *_managedObjectModel;
+o         ^
+o/Work/ObjectiveRecord/ActiveManager.h:17:2: error: unknown type name 'NSPersistentStoreCoordinator'
+o         NSPersistentStoreCoordinator *_persistentStoreCoordinator;
+o         ^
+o/Work/ObjectiveRecord/ActiveManager.h:51:31: error: unknown type name 'NSManagedObjectContext'
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o                               ^
+o/Work/ObjectiveRecord/ActiveManager.h:51:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:52:31: error: unknown type name 'NSManagedObjectModel'
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o                               ^
+o/Work/ObjectiveRecord/ActiveManager.h:52:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:53:31: error: unknown type name 'NSPersistentStoreCoordinator'
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o                               ^
+o/Work/ObjectiveRecord/ActiveManager.h:53:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:56:38: error: expected a type
+o - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;
+o                                      ^
+o/Work/ObjectiveRecord/ActiveManager.h:58:22: error: expected a type
+o - (void) addRequest:(ActiveRequest *) request;
+o                      ^
+o/Work/ObjectiveRecord/ActiveManager.h:61:4: error: expected a type
+o - (NSManagedObjectContext*) managedObjectContext;
+o    ^
+o/Work/ObjectiveRecord/ActiveManager.h:62:4: error: expected a type
+o - (NSManagedObjectModel*) managedObjectModel;
+o    ^
+o/Work/ObjectiveRecord/ActiveManager.h:63:4: error: expected a type
+o - (NSPersistentStoreCoordinator*) persistentStoreCoordinator;
+o    ^
+o/Work/ObjectiveRecord/ActiveManager.h:51:55: warning: type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext'
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o                                                       ^
+o/Work/ObjectiveRecord/ActiveManager.h:61:1: note: declared at
+o - (NSManagedObjectContext*) managedObjectContext;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:52:53: warning: type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel'
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o                                                     ^
+o/Work/ObjectiveRecord/ActiveManager.h:62:1: note: declared at
+o - (NSManagedObjectModel*) managedObjectModel;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:53:61: warning: type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator'
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o                                                             ^
+o/Work/ObjectiveRecord/ActiveManager.h:63:1: note: declared at
+o - (NSPersistentStoreCoordinator*) persistentStoreCoordinator;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.m:49:38: error: expected a type
+o - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc{
+o                                      ^
+o/Work/ObjectiveRecord/ActiveManager.m:57:8: warning: type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext'
+o                 self.managedObjectContext = moc == nil ? [self managedObjectContext] : moc;
+o                      ^
+oIn file included from /Work/ObjectiveRecord/ActiveManager.m:9:
+o/Work/ObjectiveRecord/ActiveManager.h:61:1: note: declared at
+o - (NSManagedObjectContext*) managedObjectContext;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.m:58:8: warning: type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator'
+o                 self.persistentStoreCoordinator = moc == nil ? [self persistentStoreCoordinator] : [moc persistentStoreCoordinator];
+o                      ^
+oIn file included from /Work/ObjectiveRecord/ActiveManager.m:9:
+o/Work/ObjectiveRecord/ActiveManager.h:63:1: note: declared at
+o - (NSPersistentStoreCoordinator*) persistentStoreCoordinator;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.m:59:8: warning: type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel'
+o                 self.managedObjectModel = moc == nil ? [self managedObjectModel] : [[moc persistentStoreCoordinator] managedObjectModel];
+o                      ^
+oIn file included from /Work/ObjectiveRecord/ActiveManager.m:9:
+o/Work/ObjectiveRecord/ActiveManager.h:62:1: note: declared at
+o - (NSManagedObjectModel*) managedObjectModel;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.m:87:6: error: cannot find protocol declaration for 'ActiveParser'
+o         id <ActiveParser> parser = [[[_parsingClass alloc] init] autorelease];
+o             ^
+o/Work/ObjectiveRecord/ActiveManager.m:88:21:{88:21-88:50}: warning: method '-parseToString:' not found (return type defaults to 'id')
+o         NSString *string = [parser parseToString:object];
+o                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveManager.m:109:4: error: expected a type
+o - (NSManagedObjectContext*) managedObjectContext {
+o    ^
+o/Work/ObjectiveRecord/ActiveManager.m:114:2: error: use of undeclared identifier 'NSPersistentStoreCoordinator'; did you mean '_persistentStoreCoordinator'?
+o         NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+o         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o         _persistentStoreCoordinator
+oIn file included from /Work/ObjectiveRecord/ActiveManager.m:9:
+o/Work/ObjectiveRecord/ActiveManager.h:17:32: note: '_persistentStoreCoordinator' declared here
+o         NSPersistentStoreCoordinator *_persistentStoreCoordinator;
+o                                       ^
+o/Work/ObjectiveRecord/ActiveManager.m:115:6: error: use of undeclared identifier 'coordinator'
+o         if (coordinator != nil) {
+o             ^
+ofatal error: too many errors emitted, stopping now
+o7 warnings and 20 errors generated.
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveManager.m303843139#303843139#0(6682"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:/Work/ObjectiveRecord/ActiveManager.h:15:2: error: unknown type name 'NSManagedObjectContext'         NSManagedObjectContext *_managedObjectContext;         ^/Work/ObjectiveRecord/ActiveManager.h:16:2: error: unknown type name 'NSManagedObjectModel'         NSManagedObjectModel *_managedObjectModel;         ^/Work/ObjectiveRecord/ActiveManager.h:17:2: error: unknown type name 'NSPersistentStoreCoordinator'         NSPersistentStoreCoordinator *_persistentStoreCoordinator;         ^/Work/ObjectiveRecord/ActiveManager.h:51:31: error: unknown type name 'NSManagedObjectContext' @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;                               ^/Work/ObjectiveRecord/ActiveManager.h:51:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext; ^/Work/ObjectiveRecord/ActiveManager.h:52:31: error: unknown type name 'NSManagedObjectModel' @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;                               ^/Work/ObjectiveRecord/ActiveManager.h:52:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel; ^/Work/ObjectiveRecord/ActiveManager.h:53:31: error: unknown type name 'NSPersistentStoreCoordinator' @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;                               ^/Work/ObjectiveRecord/ActiveManager.h:53:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator; ^/Work/ObjectiveRecord/ActiveManager.h:56:38: error: expected a type - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;                                      ^/Work/ObjectiveRecord/ActiveManager.h:58:22: error: expected a type - (void) addRequest:(ActiveRequest *) request;                      ^/Work/ObjectiveRecord/ActiveManager.h:61:4: error: expected a type - (NSManagedObjectContext*) managedObjectContext;    ^/Work/ObjectiveRecord/ActiveManager.h:62:4: error: expected a type - (NSManagedObjectModel*) managedObjectModel;    ^/Work/ObjectiveRecord/ActiveManager.h:63:4: error: expected a type - (NSPersistentStoreCoordinator*) persistentStoreCoordinator;    ^/Work/ObjectiveRecord/ActiveManager.h:51:55: warning: type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext' @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;                                                       ^/Work/ObjectiveRecord/ActiveManager.h:61:1: note: declared at - (NSManagedObjectContext*) managedObjectContext; ^/Work/ObjectiveRecord/ActiveManager.h:52:53: warning: type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel' @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;                                                     ^/Work/ObjectiveRecord/ActiveManager.h:62:1: note: declared at - (NSManagedObjectModel*) managedObjectModel; ^/Work/ObjectiveRecord/ActiveManager.h:53:61: warning: type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator' @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;                                                             ^/Work/ObjectiveRecord/ActiveManager.h:63:1: note: declared at - (NSPersistentStoreCoordinator*) persistentStoreCoordinator; ^/Work/ObjectiveRecord/ActiveManager.m:49:38: error: expected a type - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc{                                      ^/Work/ObjectiveRecord/ActiveManager.m:57:8: warning: type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext'                 self.managedObjectContext = moc == nil ? [self managedObjectContext] : moc;                      ^In file included from /Work/ObjectiveRecord/ActiveManager.m:9:/Work/ObjectiveRecord/ActiveManager.h:61:1: note: declared at - (NSManagedObjectContext*) managedObjectContext; ^/Work/ObjectiveRecord/ActiveManager.m:58:8: warning: type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator'                 self.persistentStoreCoordinator = moc == nil ? [self persistentStoreCoordinator] : [moc persistentStoreCoordinator];                      ^In file included from /Work/ObjectiveRecord/ActiveManager.m:9:/Work/ObjectiveRecord/ActiveManager.h:63:1: note: declared at - (NSPersistentStoreCoordinator*) persistentStoreCoordinator; ^/Work/ObjectiveRecord/ActiveManager.m:59:8: warning: type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel'                 self.managedObjectModel = moc == nil ? [self managedObjectModel] : [[moc persistentStoreCoordinator] managedObjectModel];                      ^In file included from /Work/ObjectiveRecord/ActiveManager.m:9:/Work/ObjectiveRecord/ActiveManager.h:62:1: note: declared at - (NSManagedObjectModel*) managedObjectModel; ^/Work/ObjectiveRecord/ActiveManager.m:87:6: error: cannot find protocol declaration for 'ActiveParser'         id <ActiveParser> parser = [[[_parsingClass alloc] init] autorelease];             ^/Work/ObjectiveRecord/ActiveManager.m:88:21:{88:21-88:50}: warning: method '-parseToString:' not found (return type defaults to 'id')         NSString *string = [parser parseToString:object];                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveManager.m:109:4: error: expected a type - (NSManagedObjectContext*) managedObjectContext {    ^/Work/ObjectiveRecord/ActiveManager.m:114:2: error: use of undeclared identifier 'NSPersistentStoreCoordinator'; did you mean '_persistentStoreCoordinator'?         NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~         _persistentStoreCoordinatorIn file included from /Work/ObjectiveRecord/ActiveManager.m:9:/Work/ObjectiveRecord/ActiveManager.h:17:32: note: '_persistentStoreCoordinator' declared here         NSPersistentStoreCoordinator *_persistentStoreCoordinator;                                       ^/Work/ObjectiveRecord/ActiveManager.m:115:6: error: use of undeclared identifier 'coordinator'         if (coordinator != nil) {             ^fatal error: too many errors emitted, stopping now7 warnings and 20 errors generated.27(4@42"Unknown type name 'NSManagedObjectContext'303843139#63#94#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#0#63#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@83"Unknown type name 'NSManagedObjectContext' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#15#2#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#15#2#0#0#19"unknown type name *0(4@40"Unknown type name 'NSManagedObjectModel'303843139#224#92#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@81"Unknown type name 'NSManagedObjectModel' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#16#2#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#16#2#0#0#19"unknown type name *0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843139#379#100#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@89"Unknown type name 'NSPersistentStoreCoordinator' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#17#2#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#17#2#0#0#19"unknown type name *0(4@42"Unknown type name 'NSManagedObjectContext'303843139#558#95#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@83"Unknown type name 'NSManagedObjectContext' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#31#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#763#107#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@96"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#1#0#0#50"property with '*' attribute must be of object type0(4@40"Unknown type name 'NSManagedObjectModel'303843139#950#93#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@81"Unknown type name 'NSManagedObjectModel' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#31#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#1149#107#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@96"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#1#0#0#50"property with '*' attribute must be of object type0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843139#1332#101#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@89"Unknown type name 'NSPersistentStoreCoordinator' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#31#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#1555#107#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@96"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#1#0#0#50"property with '*' attribute must be of object type0(4@15"Expected a type303843139#1754#68#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@56"Expected a type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#56#38#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#56#38#0#0#15"expected a type0(4@15"Expected a type303843139#1931#68#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@56"Expected a type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#58#22#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#58#22#0#0#15"expected a type0(4@15"Expected a type303843139#2071#67#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@56"Expected a type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#61#4#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#61#4#0#0#15"expected a type0(4@15"Expected a type303843139#2195#67#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@56"Expected a type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#62#4#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#62#4#0#0#15"expected a type0(4@15"Expected a type303843139#2315#67#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@56"Expected a type in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#63#4#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#63#4#0#0#15"expected a type0(22@94"Type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext'303843139#2451#149#3(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@135"Type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#55#0#0#0"0(13@11"Declared at303843139#2734#62#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@52"Declared at in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#61#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#61#1#0#0#11"declared at0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#55#0#0#52"type of property * does not match type of accessor *0(22@90"Type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel'303843139#2850#145#3(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@131"Type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#53#0#0#0"0(13@11"Declared at303843139#3123#62#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@52"Declared at in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#62#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#62#1#0#0#11"declared at0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#53#0#0#52"type of property * does not match type of accessor *0(22@106"Type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator'303843139#3235#161#3(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@147"Type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator' in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#61#0#0#0"0(13@11"Declared at303843139#3548#62#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@52"Declared at in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#63#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#63#1#0#0#11"declared at0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#61#0#0#52"type of property * does not match type of accessor *0(4@15"Expected a type303843139#3676#68#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#49#38#0#0#15"expected a type0(22@94"Type of property 'managedObjectContext' does not match type of accessor 'managedObjectContext'303843139#3853#148#1(13@11"Declared at303843139#4181#62#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@52"Declared at in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#61#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#61#1#0#0#11"declared at0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#57#8#0#0#52"type of property * does not match type of accessor *0(22@106"Type of property 'persistentStoreCoordinator' does not match type of accessor 'persistentStoreCoordinator'303843139#4297#160#1(13@11"Declared at303843139#4678#62#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@52"Declared at in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#63#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#63#1#0#0#11"declared at0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#58#8#0#0#52"type of property * does not match type of accessor *0(22@90"Type of property 'managedObjectModel' does not match type of accessor 'managedObjectModel'303843139#4806#144#1(13@11"Declared at303843139#5176#62#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@52"Declared at in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#62#1#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#62#1#0#0#11"declared at0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#59#8#0#0#52"type of property * does not match type of accessor *0(4@51"Cannot find protocol declaration for 'ActiveParser'303843139#5288#103#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#87#6#0#0#38"cannot find protocol declaration for *0(22@65"Method '-parseToString:' not found (return type defaults to 'id')303843139#5486#134#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#88#21#0#0#49"method * not found (return type defaults to 'id')1(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#88#21#88#50#4@15"Expected a type303843139#5737#68#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#109#4#0#0#15"expected a type0(4@104"Use of undeclared identifier 'NSPersistentStoreCoordinator'; did you mean '_persistentStoreCoordinator'?303843139#5863#157#1(13@43"'_persistentStoreCoordinator' declared here303843139#6246#95#2(7@62"In file included from /Work/ObjectiveRecord/ActiveManager.m:9:303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#9#0#9#0#0"0(13@84"'_persistentStoreCoordinator' declared here in /Work/ObjectiveRecord/ActiveManager.h303843139#18446744073709551615#0#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#17#32#0#0#0"0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#17#32#0#0#15"* declared here0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#114#2#0#0#47"use of undeclared identifier *; did you mean *?0(4@42"Use of undeclared identifier 'coordinator'303843139#6450#95#0(6@37"/Work/ObjectiveRecord/ActiveManager.m303779642#115#6#0#0#30"use of undeclared identifier *0(4@37"Too many errors emitted, stopping now303843139#6595#51#0(1@37"too many errors emitted, stopping now0(0#0#37"/Work/ObjectiveRecord/ActiveManager.m8613632896#1904"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveManager.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManager.o1#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveManagerTest.o /Work/ObjectiveRecord/ActiveManagerTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.608167
+e303843139.836429
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecord.o
+x/Work/ObjectiveRecord/ActiveRecord.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/ActiveRecord.m:9:
+o/Work/ObjectiveRecord/ActiveRecord.h:21:27:{21:1-21:24}: error: cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord'
+o @interface ActiveRecord : NSManagedObject <ActiveConnectionDelegate>{
+o ~~~~~~~~~~~~~~~~~~~~~~~   ^
+o/Work/ObjectiveRecord/ActiveRecord.h:83:4: error: expected a type
+o + (NSManagedObjectContext *) managedObjectContext;
+o    ^
+o/Work/ObjectiveRecord/ActiveRecord.h:85:4: error: expected a type
+o + (NSEntityDescription *) entityDescription;
+o    ^
+o/Work/ObjectiveRecord/ActiveRecord.h:86:4: error: expected a type
+o + (NSFetchRequest *) fetchRequest;
+o    ^
+o/Work/ObjectiveRecord/ActiveRecord.h:93:4: error: expected a type
+o + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field inModel:(Class)modelClass;
+o    ^
+o/Work/ObjectiveRecord/ActiveRecord.h:94:4: error: expected a type
+o + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field;
+o    ^
+oIn file included from /Work/ObjectiveRecord/ActiveRecord.m:10:
+oIn file included from /Work/ObjectiveRecord/ObjectiveRecord+Utilities.h:17:
+o/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h:12:12: error: cannot find interface declaration for 'NSManagedObjectContext'
+o @interface NSManagedObjectContext (NSManagedObjectContext_Additions)
+o            ^
+o/Work/ObjectiveRecord/ActiveRecord.m:14:32: error: cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord'
+o @implementation ActiveRecord : NSManagedObject 
+o                                ^
+o/Work/ObjectiveRecord/ActiveRecord.m:25:24: error: property 'managedObjectContext' not found on object of type 'ActiveManager *'
+o         [[self activeManager].managedObjectContext save];
+o                               ^
+o/Work/ObjectiveRecord/ActiveRecord.m:30:27: warning: receiver 'ActiveManager' is a forward class and corresponding @interface may not exist
+o         ActiveManager *manager = [ActiveManager shared];
+o                                  ^
+o/Work/ObjectiveRecord/ActiveRecord.m:30:27:{30:27-30:49}: warning: method '+shared' not found (return type defaults to 'id')
+o         ActiveManager *manager = [ActiveManager shared];
+o                                  ^~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:31:11: error: property 'defaultDateParser' not found on object of type 'ActiveManager *'
+o         [manager.defaultDateParser setDateFormat:[self dateFormat]];
+o                  ^
+o/Work/ObjectiveRecord/ActiveRecord.m:36:4: error: expected a type
+o + (NSManagedObjectContext *) managedObjectContext {
+o    ^
+o/Work/ObjectiveRecord/ActiveRecord.m:38:12:{38:12-38:55}: warning: method '-managedObjectContext' not found (return type defaults to 'id')
+o     return [[self activeManager] managedObjectContext];
+o            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:43:12: warning: implicit declaration of function '$S' is invalid in C99 [-Wimplicit-function-declaration]
+o     return $S(@"%@", self);
+o            ^
+o/Work/ObjectiveRecord/ActiveRecord.m:43:12:{43:12-43:27}: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'NSString *'
+o     return $S(@"%@", self);
+o            ^~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:46:4: error: expected a type
+o + (NSEntityDescription *) entityDescription{
+o    ^
+o/Work/ObjectiveRecord/ActiveRecord.m:48:10: error: use of undeclared identifier 'NSEntityDescription'; did you mean 'kSecAttrDescription'?
+o         return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:[self managedObjectContext]];
+o                 ^~~~~~~~~~~~~~~~~~~
+o                 kSecAttrDescription
+oIn file included from /Work/ObjectiveRecord/ActiveRecord.m:9:
+oIn file included from /Work/ObjectiveRecord/ActiveRecord.h:9:
+oIn file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:87:
+oIn file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h:14:
+oIn file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:28:
+o/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/SecItem.h:341:18: note: 'kSecAttrDescription' declared here
+o extern CFTypeRef kSecAttrDescription
+o                  ^
+o/Work/ObjectiveRecord/ActiveRecord.m:48:9:{48:10-48:29}: warning: receiver type 'CFTypeRef' (aka 'void const *') is not 'id' or interface pointer, consider casting it to 'id'
+o         return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:[self managedObjectContext]];
+o                ^~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:48:9:{48:9-48:113}: warning: method '-entityForName:inManagedObjectContext:' not found (return type defaults to 'id')
+o         return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:[self managedObjectContext]];
+o                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveRecord.m:73:10: error: use of undeclared identifier 'NSPropertyDescription'
+o     for (NSPropertyDescription *prop in [[[self class] entityDescription] properties]) {
+o          ^
+o/Work/ObjectiveRecord/ActiveRecord.m:73:86: error: expected expression
+o     for (NSPropertyDescription *prop in [[[self class] entityDescription] properties]) {
+o                                                                                      ^
+o/Work/ObjectiveRecord/ActiveRecord.m:111:1: error: expected expression
+o }
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.m:111:1: error: expected ')'
+o/Work/ObjectiveRecord/ActiveRecord.m:73:9: note: to match this '('
+o     for (NSPropertyDescription *prop in [[[self class] entityDescription] properties]) {
+o         ^
+o/Work/ObjectiveRecord/ActiveRecord.m:764:1: error: expected expression
+o 
+o ^
+o/Work/ObjectiveRecord/ActiveRecord.m:764:1: error: expected '}'
+ofatal error: too many errors emitted, stopping now
+o7 warnings and 20 errors generated.
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveRecord.m303843139#303843139#0(6352"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:/Work/ObjectiveRecord/ActiveRecord.h:21:27:{21:1-21:24}: error: cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord' @interface ActiveRecord : NSManagedObject <ActiveConnectionDelegate>{ ~~~~~~~~~~~~~~~~~~~~~~~   ^/Work/ObjectiveRecord/ActiveRecord.h:83:4: error: expected a type + (NSManagedObjectContext *) managedObjectContext;    ^/Work/ObjectiveRecord/ActiveRecord.h:85:4: error: expected a type + (NSEntityDescription *) entityDescription;    ^/Work/ObjectiveRecord/ActiveRecord.h:86:4: error: expected a type + (NSFetchRequest *) fetchRequest;    ^/Work/ObjectiveRecord/ActiveRecord.h:93:4: error: expected a type + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field inModel:(Class)modelClass;    ^/Work/ObjectiveRecord/ActiveRecord.h:94:4: error: expected a type + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field;    ^In file included from /Work/ObjectiveRecord/ActiveRecord.m:10:In file included from /Work/ObjectiveRecord/ObjectiveRecord+Utilities.h:17:/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h:12:12: error: cannot find interface declaration for 'NSManagedObjectContext' @interface NSManagedObjectContext (NSManagedObjectContext_Additions)            ^/Work/ObjectiveRecord/ActiveRecord.m:14:32: error: cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord' @implementation ActiveRecord : NSManagedObject                                 ^/Work/ObjectiveRecord/ActiveRecord.m:25:24: error: property 'managedObjectContext' not found on object of type 'ActiveManager *'         [[self activeManager].managedObjectContext save];                               ^/Work/ObjectiveRecord/ActiveRecord.m:30:27: warning: receiver 'ActiveManager' is a forward class and corresponding @interface may not exist         ActiveManager *manager = [ActiveManager shared];                                  ^/Work/ObjectiveRecord/ActiveRecord.m:30:27:{30:27-30:49}: warning: method '+shared' not found (return type defaults to 'id')         ActiveManager *manager = [ActiveManager shared];                                  ^~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:31:11: error: property 'defaultDateParser' not found on object of type 'ActiveManager *'         [manager.defaultDateParser setDateFormat:[self dateFormat]];                  ^/Work/ObjectiveRecord/ActiveRecord.m:36:4: error: expected a type + (NSManagedObjectContext *) managedObjectContext {    ^/Work/ObjectiveRecord/ActiveRecord.m:38:12:{38:12-38:55}: warning: method '-managedObjectContext' not found (return type defaults to 'id')     return [[self activeManager] managedObjectContext];            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:43:12: warning: implicit declaration of function '$S' is invalid in C99 [-Wimplicit-function-declaration]     return $S(@"%@", self);            ^/Work/ObjectiveRecord/ActiveRecord.m:43:12:{43:12-43:27}: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'NSString *'     return $S(@"%@", self);            ^~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:46:4: error: expected a type + (NSEntityDescription *) entityDescription{    ^/Work/ObjectiveRecord/ActiveRecord.m:48:10: error: use of undeclared identifier 'NSEntityDescription'; did you mean 'kSecAttrDescription'?         return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:[self managedObjectContext]];                 ^~~~~~~~~~~~~~~~~~~                 kSecAttrDescriptionIn file included from /Work/ObjectiveRecord/ActiveRecord.m:9:In file included from /Work/ObjectiveRecord/ActiveRecord.h:9:In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:87:In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h:14:In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:28:/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/SecItem.h:341:18: note: 'kSecAttrDescription' declared here extern CFTypeRef kSecAttrDescription                  ^/Work/ObjectiveRecord/ActiveRecord.m:48:9:{48:10-48:29}: warning: receiver type 'CFTypeRef' (aka 'void const *') is not 'id' or interface pointer, consider casting it to 'id'         return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:[self managedObjectContext]];                ^~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:48:9:{48:9-48:113}: warning: method '-entityForName:inManagedObjectContext:' not found (return type defaults to 'id')         return [NSEntityDescription entityForName:[self entityName] inManagedObjectContext:[self managedObjectContext]];                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveRecord.m:73:10: error: use of undeclared identifier 'NSPropertyDescription'     for (NSPropertyDescription *prop in [[[self class] entityDescription] properties]) {          ^/Work/ObjectiveRecord/ActiveRecord.m:73:86: error: expected expression     for (NSPropertyDescription *prop in [[[self class] entityDescription] properties]) {                                                                                      ^/Work/ObjectiveRecord/ActiveRecord.m:111:1: error: expected expression } ^/Work/ObjectiveRecord/ActiveRecord.m:111:1: error: expected ')'/Work/ObjectiveRecord/ActiveRecord.m:73:9: note: to match this '('     for (NSPropertyDescription *prop in [[[self class] entityDescription] properties]) {         ^/Work/ObjectiveRecord/ActiveRecord.m:764:1: error: expected expression  ^/Work/ObjectiveRecord/ActiveRecord.m:764:1: error: expected '}'fatal error: too many errors emitted, stopping now7 warnings and 20 errors generated.27(4@85"Cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord'303843139#62#150#2(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#0#62#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@125"Cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord' in /Work/ObjectiveRecord/ActiveRecord.h303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#21#27#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#21#27#0#0#56"cannot find interface declaration for *, superclass of *1(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#21#1#21#24#4@15"Expected a type303843139#312#66#2(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@55"Expected a type in /Work/ObjectiveRecord/ActiveRecord.h303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#83#4#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#83#4#0#0#15"expected a type0(4@15"Expected a type303843139#436#66#2(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@55"Expected a type in /Work/ObjectiveRecord/ActiveRecord.h303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#85#4#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#85#4#0#0#15"expected a type0(4@15"Expected a type303843139#554#66#2(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@55"Expected a type in /Work/ObjectiveRecord/ActiveRecord.h303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#86#4#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#86#4#0#0#15"expected a type0(4@15"Expected a type303843139#662#66#2(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@55"Expected a type in /Work/ObjectiveRecord/ActiveRecord.h303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#93#4#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#93#4#0#0#15"expected a type0(4@15"Expected a type303843139#835#66#2(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@55"Expected a type in /Work/ObjectiveRecord/ActiveRecord.h303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#94#4#0#0#0"0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#94#4#0#0#15"expected a type0(4@62"Cannot find interface declaration for 'NSManagedObjectContext'303843139#1121#134#0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h303277540#12#12#0#0#39"cannot find interface declaration for *0(4@85"Cannot find interface declaration for 'NSManagedObject', superclass of 'ActiveRecord'303843139#1339#137#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#14#32#0#0#56"cannot find interface declaration for *, superclass of *0(4@77"Property 'managedObjectContext' not found on object of type 'ActiveManager *'303843139#1559#129#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#25#24#0#0#40"property * not found on object of type *0(22@86"Receiver 'ActiveManager' is a forward class and corresponding @interface may not exist303843139#1780#140#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#30#27#0#0#72"receiver * is a forward class and corresponding @interface may not exist0(22@57"Method '+shared' not found (return type defaults to 'id')303843139#2014#125#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#30#27#0#0#49"method * not found (return type defaults to 'id')1(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#30#27#30#49#4@74"Property 'defaultDateParser' not found on object of type 'ActiveManager *'303843139#2254#126#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#31#11#0#0#40"property * not found on object of type *0(4@15"Expected a type303843139#2470#66#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#36#4#0#0#15"expected a type0(22@71"Method '-managedObjectContext' not found (return type defaults to 'id')303843139#2595#139#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#38#12#0#0#49"method * not found (return type defaults to 'id')1(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#38#12#38#55#22@55"Implicit declaration of function '$S' is invalid in C99303843139#2847#143#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#43#12#0#0#52"implicit declaration of function * is invalid in C990(22@104"Incompatible integer to pointer conversion returning 'int' from a function with result type 'NSString *'303843139#3033#172#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#43#12#0#0#44"incompatible integer to pointer conversion *1(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#43#12#43#27#4@15"Expected a type303843139#3262#66#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#46#4#0#0#15"expected a type0(4@87"Use of undeclared identifier 'NSEntityDescription'; did you mean 'kSecAttrDescription'?303843139#3380#139#1(13@35"'kSecAttrDescription' declared here303843139#4374#197#6(7@173"In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:28:303843139#18446744073709551615#0#0(6@147"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h296629546#28#0#28#0#0"0(7@182"In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h:14:303843139#18446744073709551615#0#0(6@156"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h296629743#14#0#14#0#0"0(7@177"In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:87:303843139#18446744073709551615#0#0(6@151"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h296629742#87#0#87#0#0"0(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.h:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h303779068#9#0#9#0#0"0(7@61"In file included from /Work/ObjectiveRecord/ActiveRecord.m:9:303843139#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#9#0#9#0#0"0(13@185"'kSecAttrDescription' declared here in /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/SecItem.h303843139#18446744073709551615#0#0(6@146"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/SecItem.h296629546#341#18#0#0#0"0(6@146"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Security.framework/Headers/SecItem.h296629546#341#18#0#0#15"* declared here0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#48#10#0#0#47"use of undeclared identifier *; did you mean *?0(22@108"Receiver type 'CFTypeRef' (aka 'void const *') is not 'id' or interface pointer, consider casting it to 'id'303843139#4629#175#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#48#9#0#0#77"receiver type * is not 'id' or interface pointer, consider casting it to 'id'1(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#48#10#48#29#22@88"Method '-entityForName:inManagedObjectContext:' not found (return type defaults to 'id')303843139#4963#155#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#48#9#0#0#49"method * not found (return type defaults to 'id')1(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#48#9#48#113#4@52"Use of undeclared identifier 'NSPropertyDescription'303843139#5361#104#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#73#10#0#0#30"use of undeclared identifier *0(4@19"Expected expression303843139#5567#71#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#73#86#0#0#19"expected expression0(4@19"Expected expression303843139#5816#71#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#111#1#0#0#19"expected expression0(4@12"Expected ')'303843139#5893#64#1(13@17"To match this '('303843139#5957#67#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#73#9#0#0#17"to match this '*'0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#111#1#0#0#10"expected *0(4@19"Expected expression303843139#6125#71#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#764#1#0#0#19"expected expression0(4@12"Expected '}'303843139#6201#64#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m303843114#764#1#0#0#10"expected *0(4@37"Too many errors emitted, stopping now303843139#6265#51#0(1@37"too many errors emitted, stopping now0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.m8642557696#1902"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveRecord.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecord.o1#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRecordTest.o /Work/ObjectiveRecord/ActiveRecordTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.860052
+e303843140.035188
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRequest.o
+x/Work/ObjectiveRecord/ActiveRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveRequest.m303843139#303843140#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.m8629357088#1904"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveRequest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveRequest.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveResult.o /Work/ObjectiveRecord/ActiveResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.836626
+e303843139.969722
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveResult.o
+x/Work/ObjectiveRecord/ActiveResult.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveResult.m303843139#303843140#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.m8637636000#1902"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveResult.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveResult.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveSupport.o /Work/ObjectiveRecord/ActiveSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.692346
+e303843139.859954
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveSupport.o
+x/Work/ObjectiveRecord/ActiveSupport.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveSupport.m303843139#303843139#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.m8637863040#1904"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/ActiveSupport.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CWInflector.o /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm normal i386 objective-c++ com.apple.compilers.llvmgcc42
+s303843140.313960
+e303843140.656136
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CWInflector.o
+x/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@67"Compile /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm303843140#303843140#0(0"0(0#0#59"/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm8637861632#2008"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -c /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CWInflector.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CoreDataTestCase.o /Work/ObjectiveRecord/CoreDataTestCase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.065857
+e303843139.607967
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CoreDataTestCase.o
+x/Work/ObjectiveRecord/CoreDataTestCase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:
+o/Work/ObjectiveRecord/CoreDataTestCase.h:16:5: error: unknown type name 'NSManagedObjectContext'
+o     NSManagedObjectContext *_managedObjectContext;
+o     ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:17:2: error: unknown type name 'NSManagedObjectModel'
+o         NSManagedObjectModel *_managedObjectModel;
+o         ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:18:2: error: unknown type name 'NSPersistentStoreCoordinator'
+o         NSPersistentStoreCoordinator *_persistentStoreCoordinator;  
+o         ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:25:31: error: unknown type name 'NSManagedObjectContext'
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o                               ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:25:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:26:31: error: unknown type name 'NSManagedObjectModel'
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o                               ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:26:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:27:31: error: unknown type name 'NSPersistentStoreCoordinator'
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o                               ^
+o/Work/ObjectiveRecord/CoreDataTestCase.h:27:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o ^
+oIn file included from /Work/ObjectiveRecord/CoreDataTestCase.m:11:
+o/Work/ObjectiveRecord/ActiveManager.h:15:2: error: unknown type name 'NSManagedObjectContext'
+o         NSManagedObjectContext *_managedObjectContext;
+o         ^
+o/Work/ObjectiveRecord/ActiveManager.h:16:2: error: unknown type name 'NSManagedObjectModel'
+o         NSManagedObjectModel *_managedObjectModel;
+o         ^
+o/Work/ObjectiveRecord/ActiveManager.h:17:2: error: unknown type name 'NSPersistentStoreCoordinator'
+o         NSPersistentStoreCoordinator *_persistentStoreCoordinator;
+o         ^
+o/Work/ObjectiveRecord/ActiveManager.h:51:31: error: unknown type name 'NSManagedObjectContext'
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o                               ^
+o/Work/ObjectiveRecord/ActiveManager.h:51:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:52:31: error: unknown type name 'NSManagedObjectModel'
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o                               ^
+o/Work/ObjectiveRecord/ActiveManager.h:52:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:53:31: error: unknown type name 'NSPersistentStoreCoordinator'
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o                               ^
+o/Work/ObjectiveRecord/ActiveManager.h:53:1: error: property with 'retain' attribute must be of object type
+o @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+o ^
+o/Work/ObjectiveRecord/ActiveManager.h:56:38: error: expected a type
+o - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;
+o                                      ^
+ofatal error: too many errors emitted, stopping now
+o20 errors generated.
+lSLF07#2@48"Compile /Work/ObjectiveRecord/CoreDataTestCase.m303843139#303843139#0(3785"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:/Work/ObjectiveRecord/CoreDataTestCase.h:16:5: error: unknown type name 'NSManagedObjectContext'     NSManagedObjectContext *_managedObjectContext;     ^/Work/ObjectiveRecord/CoreDataTestCase.h:17:2: error: unknown type name 'NSManagedObjectModel'         NSManagedObjectModel *_managedObjectModel;         ^/Work/ObjectiveRecord/CoreDataTestCase.h:18:2: error: unknown type name 'NSPersistentStoreCoordinator'         NSPersistentStoreCoordinator *_persistentStoreCoordinator;           ^/Work/ObjectiveRecord/CoreDataTestCase.h:25:31: error: unknown type name 'NSManagedObjectContext' @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;                               ^/Work/ObjectiveRecord/CoreDataTestCase.h:25:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext; ^/Work/ObjectiveRecord/CoreDataTestCase.h:26:31: error: unknown type name 'NSManagedObjectModel' @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;                               ^/Work/ObjectiveRecord/CoreDataTestCase.h:26:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel; ^/Work/ObjectiveRecord/CoreDataTestCase.h:27:31: error: unknown type name 'NSPersistentStoreCoordinator' @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;                               ^/Work/ObjectiveRecord/CoreDataTestCase.h:27:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator; ^In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:11:/Work/ObjectiveRecord/ActiveManager.h:15:2: error: unknown type name 'NSManagedObjectContext'         NSManagedObjectContext *_managedObjectContext;         ^/Work/ObjectiveRecord/ActiveManager.h:16:2: error: unknown type name 'NSManagedObjectModel'         NSManagedObjectModel *_managedObjectModel;         ^/Work/ObjectiveRecord/ActiveManager.h:17:2: error: unknown type name 'NSPersistentStoreCoordinator'         NSPersistentStoreCoordinator *_persistentStoreCoordinator;         ^/Work/ObjectiveRecord/ActiveManager.h:51:31: error: unknown type name 'NSManagedObjectContext' @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;                               ^/Work/ObjectiveRecord/ActiveManager.h:51:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext; ^/Work/ObjectiveRecord/ActiveManager.h:52:31: error: unknown type name 'NSManagedObjectModel' @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;                               ^/Work/ObjectiveRecord/ActiveManager.h:52:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel; ^/Work/ObjectiveRecord/ActiveManager.h:53:31: error: unknown type name 'NSPersistentStoreCoordinator' @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;                               ^/Work/ObjectiveRecord/ActiveManager.h:53:1: error: property with 'retain' attribute must be of object type @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator; ^/Work/ObjectiveRecord/ActiveManager.h:56:38: error: expected a type - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;                                      ^fatal error: too many errors emitted, stopping now20 errors generated.20(4@42"Unknown type name 'NSManagedObjectContext'303843139#66#97#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#0#66#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@86"Unknown type name 'NSManagedObjectContext' in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#16#5#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#16#5#0#0#19"unknown type name *0(4@40"Unknown type name 'NSManagedObjectModel'303843139#222#95#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@84"Unknown type name 'NSManagedObjectModel' in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#17#2#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#17#2#0#0#19"unknown type name *0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843139#380#103#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@92"Unknown type name 'NSPersistentStoreCoordinator' in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#18#2#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#18#2#0#0#19"unknown type name *0(4@42"Unknown type name 'NSManagedObjectContext'303843139#564#98#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@86"Unknown type name 'NSManagedObjectContext' in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#31#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#772#110#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@99"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#1#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#25#1#0#0#50"property with '*' attribute must be of object type0(4@40"Unknown type name 'NSManagedObjectModel'303843139#962#96#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@84"Unknown type name 'NSManagedObjectModel' in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#31#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#1164#110#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@99"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#1#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#26#1#0#0#50"property with '*' attribute must be of object type0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843139#1350#104#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@92"Unknown type name 'NSPersistentStoreCoordinator' in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#31#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#1576#110#2(7@65"In file included from /Work/ObjectiveRecord/CoreDataTestCase.m:9:303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.m303779553#9#0#9#0#0"0(13@99"Property with 'retain' attribute must be of object type in /Work/ObjectiveRecord/CoreDataTestCase.h303843139#18446744073709551615#0#0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#1#0#0#0"0(6@40"/Work/ObjectiveRecord/CoreDataTestCase.h303242138#27#1#0#0#50"property with '*' attribute must be of object type0(4@42"Unknown type name 'NSManagedObjectContext'303843139#1845#94#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#15#2#0#0#19"unknown type name *0(4@40"Unknown type name 'NSManagedObjectModel'303843139#2006#92#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#16#2#0#0#19"unknown type name *0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843139#2161#100#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#17#2#0#0#19"unknown type name *0(4@42"Unknown type name 'NSManagedObjectContext'303843139#2340#95#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#2545#107#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#51#1#0#0#50"property with '*' attribute must be of object type0(4@40"Unknown type name 'NSManagedObjectModel'303843139#2732#93#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#2931#107#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#52#1#0#0#50"property with '*' attribute must be of object type0(4@48"Unknown type name 'NSPersistentStoreCoordinator'303843139#3114#101#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#31#0#0#19"unknown type name *0(4@55"Property with 'retain' attribute must be of object type303843139#3337#107#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#53#1#0#0#50"property with '*' attribute must be of object type0(4@15"Expected a type303843139#3536#68#0(6@37"/Work/ObjectiveRecord/ActiveManager.h303779627#56#38#0#0#15"expected a type0(4@37"Too many errors emitted, stopping now303843139#3713#51#0(1@37"too many errors emitted, stopping now0(0#0#40"/Work/ObjectiveRecord/CoreDataTestCase.m8642933376#1910"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/CoreDataTestCase.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/CoreDataTestCase.o1#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSArray+Core.o /Work/ObjectiveRecord/NSArray+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.035285
+e303843140.168986
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSArray+Core.o
+x/Work/ObjectiveRecord/NSArray+Core.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@44"Compile /Work/ObjectiveRecord/NSArray+Core.m303843140#303843140#0(0"0(0#0#36"/Work/ObjectiveRecord/NSArray+Core.m8617838208#1902"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSArray+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSArray+Core.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSManagedObjectContext+Additions.o /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.969818
+e303843140.178444
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSManagedObjectContext+Additions.o
+x/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:9:
+o/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h:12:12: error: cannot find interface declaration for 'NSManagedObjectContext'
+o @interface NSManagedObjectContext (NSManagedObjectContext_Additions)
+o            ^
+o/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:11:17: error: cannot find interface declaration for 'NSManagedObjectContext'
+o @implementation NSManagedObjectContext (NSManagedObjectContext_Additions)
+o                 ^
+o/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:17:6:{17:6-17:24}: warning: method '-save:' not found (return type defaults to 'id')
+o         if(![self save:&error]) {
+o             ^~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:19:60: error: use of undeclared identifier 'NSDetailedErrorsKey'
+o                 NSArray* detailedErrors = [[error userInfo] objectForKey:NSDetailedErrorsKey];
+o                                                                          ^
+o1 warning and 3 errors generated.
+lSLF07#2@64"Compile /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m303843139#303843140#0(1065"In file included from /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:9:/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h:12:12: error: cannot find interface declaration for 'NSManagedObjectContext' @interface NSManagedObjectContext (NSManagedObjectContext_Additions)            ^/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:11:17: error: cannot find interface declaration for 'NSManagedObjectContext' @implementation NSManagedObjectContext (NSManagedObjectContext_Additions)                 ^/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:17:6:{17:6-17:24}: warning: method '-save:' not found (return type defaults to 'id')         if(![self save:&error]) {             ^~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:19:60: error: use of undeclared identifier 'NSDetailedErrorsKey'                 NSArray* detailedErrors = [[error userInfo] objectForKey:NSDetailedErrorsKey];                                                                          ^1 warning and 3 errors generated.4(4@62"Cannot find interface declaration for 'NSManagedObjectContext'303843140#82#134#2(7@81"In file included from /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m:9:303843140#0#82#0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m303335304#9#0#9#0#0"0(13@122"Cannot find interface declaration for 'NSManagedObjectContext' in /Work/ObjectiveRecord/NSManagedObjectContext+Additions.h303843140#18446744073709551615#0#0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h303277540#12#12#0#0#0"0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h303277540#12#12#0#0#39"cannot find interface declaration for *0(4@62"Cannot find interface declaration for 'NSManagedObjectContext'303843140#300#134#0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m303335304#11#17#0#0#39"cannot find interface declaration for *0(22@56"Method '-save:' not found (return type defaults to 'id')303843140#528#142#0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m303335304#17#6#0#0#49"method * not found (return type defaults to 'id')1(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m303335304#17#6#17#24#4@50"Use of undeclared identifier 'NSDetailedErrorsKey'303843140#737#122#0(6@56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m303335304#19#60#0#0#30"use of undeclared identifier *0(0#0#56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m8628522848#1942"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSManagedObjectContext+Additions.o1#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSMutableArray+Core.o /Work/ObjectiveRecord/NSMutableArray+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.169088
+e303843140.313881
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSMutableArray+Core.o
+x/Work/ObjectiveRecord/NSMutableArray+Core.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@51"Compile /Work/ObjectiveRecord/NSMutableArray+Core.m303843140#303843140#0(0"0(0#0#43"/Work/ObjectiveRecord/NSMutableArray+Core.m8643948640#1916"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSMutableArray+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSMutableArray+Core.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSObject+Core.o /Work/ObjectiveRecord/NSObject+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.178540
+e303843140.311704
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSObject+Core.o
+x/Work/ObjectiveRecord/NSObject+Core.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@45"Compile /Work/ObjectiveRecord/NSObject+Core.m303843140#303843140#0(0"0(0#0#37"/Work/ObjectiveRecord/NSObject+Core.m8642798752#1904"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSObject+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSObject+Core.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSSet+Core.o /Work/ObjectiveRecord/NSSet+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.312396
+e303843140.450311
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSSet+Core.o
+x/Work/ObjectiveRecord/NSSet+Core.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@42"Compile /Work/ObjectiveRecord/NSSet+Core.m303843140#303843140#0(0"0(0#0#34"/Work/ObjectiveRecord/NSSet+Core.m8638303104#1898"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSSet+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSSet+Core.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSString+InflectionSupport.o /Work/ObjectiveRecord/NSString+InflectionSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.656287
+e303843140.670041
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSString+InflectionSupport.o
+x/Work/ObjectiveRecord/NSString+InflectionSupport.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:9:12: error: cannot find interface declaration for 'NSString'
+o @interface NSString (InflectionSupport)
+o            ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:11:4: error: expected a type
+o - (NSString *)deCamelizeWith:(NSString *)delimiter;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:11:31: error: expected a type
+o - (NSString *)deCamelizeWith:(NSString *)delimiter;
+o                               ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:18:4: error: expected a type
+o - (NSString *)dasherize;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:25:4: error: expected a type
+o - (NSString *)underscore;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:32:4: error: expected a type
+o - (NSString *)camelize;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:33:4: error: expected a type
+o - (NSString *)camelizeCached;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:38:4: error: expected a type
+o - (NSString *)titleize;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:40:4: error: expected a type
+o - (NSString *)decapitalize;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.h:45:4: error: expected a type
+o - (NSString *)toClassName;
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:11:17: error: cannot find interface declaration for 'NSString'
+o @implementation NSString (InflectionSupport)
+o                 ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:13:8: error: unknown type name 'NSMutableDictionary'
+o static NSMutableDictionary *cachedCamelized;
+o        ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:15:4: error: expected a type
+o - (NSCharacterSet *)capitals {
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:16:10: error: use of undeclared identifier 'NSCharacterSet'
+o         return [NSCharacterSet uppercaseLetterCharacterSet];
+o                 ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:19:4: error: expected a type
+o - (NSString *)deCamelizeWith:(NSString *)delimiter {
+o    ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:19:31: error: expected a type
+o - (NSString *)deCamelizeWith:(NSString *)delimiter {
+o                               ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:21:2: error: use of undeclared identifier 'unichar'
+o         unichar *buffer = calloc([self length], sizeof(unichar));
+o         ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:22:22: error: use of undeclared identifier 'buffer'
+o         [self getCharacters:buffer ];
+o                             ^
+o/Work/ObjectiveRecord/NSString+InflectionSupport.m:23:2: error: use of undeclared identifier 'NSMutableString'
+o         NSMutableString *underscored = [NSMutableString string];
+o         ^
+ofatal error: too many errors emitted, stopping now
+o20 errors generated.
+lSLF07#2@58"Compile /Work/ObjectiveRecord/NSString+InflectionSupport.m303843140#303843140#0(2914"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:/Work/ObjectiveRecord/NSString+InflectionSupport.h:9:12: error: cannot find interface declaration for 'NSString' @interface NSString (InflectionSupport)            ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:11:4: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:11:31: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter;                               ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:18:4: error: expected a type - (NSString *)dasherize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:25:4: error: expected a type - (NSString *)underscore;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:32:4: error: expected a type - (NSString *)camelize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:33:4: error: expected a type - (NSString *)camelizeCached;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:38:4: error: expected a type - (NSString *)titleize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:40:4: error: expected a type - (NSString *)decapitalize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:45:4: error: expected a type - (NSString *)toClassName;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:11:17: error: cannot find interface declaration for 'NSString' @implementation NSString (InflectionSupport)                 ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:13:8: error: unknown type name 'NSMutableDictionary' static NSMutableDictionary *cachedCamelized;        ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:15:4: error: expected a type - (NSCharacterSet *)capitals {    ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:16:10: error: use of undeclared identifier 'NSCharacterSet'         return [NSCharacterSet uppercaseLetterCharacterSet];                 ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:19:4: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter {    ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:19:31: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter {                               ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:21:2: error: use of undeclared identifier 'unichar'         unichar *buffer = calloc([self length], sizeof(unichar));         ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:22:22: error: use of undeclared identifier 'buffer'         [self getCharacters:buffer ];                             ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:23:2: error: use of undeclared identifier 'NSMutableString'         NSMutableString *underscored = [NSMutableString string];         ^fatal error: too many errors emitted, stopping now20 errors generated.20(4@48"Cannot find interface declaration for 'NSString'303843140#76#113#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#0#76#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@102"Cannot find interface declaration for 'NSString' in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#9#12#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#9#12#0#0#39"cannot find interface declaration for *0(4@15"Expected a type303843140#244#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#4#0#0#15"expected a type0(4@15"Expected a type303843140#383#81#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#31#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#31#0#0#15"expected a type0(4@15"Expected a type303843140#550#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#18#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#18#4#0#0#15"expected a type0(4@15"Expected a type303843140#662#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#25#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#25#4#0#0#15"expected a type0(4@15"Expected a type303843140#775#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#32#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#32#4#0#0#15"expected a type0(4@15"Expected a type303843140#886#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#33#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#33#4#0#0#15"expected a type0(4@15"Expected a type303843140#1003#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#38#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#38#4#0#0#15"expected a type0(4@15"Expected a type303843140#1114#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#40#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#40#4#0#0#15"expected a type0(4@15"Expected a type303843140#1229#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#45#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#45#4#0#0#15"expected a type0(4@48"Cannot find interface declaration for 'NSString'303843140#1343#114#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#11#17#0#0#39"cannot find interface declaration for *0(4@39"Unknown type name 'NSMutableDictionary'303843140#1522#104#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#13#8#0#0#19"unknown type name *0(4@15"Expected a type303843140#1682#80#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#15#4#0#0#15"expected a type0(4@45"Use of undeclared identifier 'NSCharacterSet'303843140#1800#111#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#16#10#0#0#30"use of undeclared identifier *0(4@15"Expected a type303843140#1992#80#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#19#4#0#0#15"expected a type0(4@15"Expected a type303843140#2132#81#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#19#31#0#0#15"expected a type0(4@38"Use of undeclared identifier 'unichar'303843140#2300#103#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#21#2#0#0#30"use of undeclared identifier *0(4@37"Use of undeclared identifier 'buffer'303843140#2481#103#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#22#22#0#0#30"use of undeclared identifier *0(4@46"Use of undeclared identifier 'NSMutableString'303843140#2654#111#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#23#2#0#0#30"use of undeclared identifier *0(4@37"Too many errors emitted, stopping now303843140#2842#51#0(1@37"too many errors emitted, stopping now0(0#0#50"/Work/ObjectiveRecord/NSString+InflectionSupport.m8642464448#1930"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSString+InflectionSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSString+InflectionSupport.o1#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o /Work/ObjectiveRecord/Order.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.142192
+e303843139.259988
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o
+x/Work/ObjectiveRecord/Order.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@37"Compile /Work/ObjectiveRecord/Order.m303843139#303843139#0(0"0(0#0#29"/Work/ObjectiveRecord/Order.m8642476320#1888"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/Order.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/OrderItem.o /Work/ObjectiveRecord/OrderItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843139.260085
+e303843139.396962
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/OrderItem.o
+x/Work/ObjectiveRecord/OrderItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Work/ObjectiveRecord/OrderItem.m:22:9: warning: implicit declaration of function '$S' is invalid in C99 [-Wimplicit-function-declaration]
+o         return $S(@"orders/%i/items/%i", [[self.order id] intValue], [self.id intValue]);
+o                ^
+o/Work/ObjectiveRecord/OrderItem.m:22:9:{22:9-22:82}: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'NSString *'
+o         return $S(@"orders/%i/items/%i", [[self.order id] intValue], [self.id intValue]);
+o                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o2 warnings generated.
+lSLF07#2@41"Compile /Work/ObjectiveRecord/OrderItem.m303843139#303843139#0(618"/Work/ObjectiveRecord/OrderItem.m:22:9: warning: implicit declaration of function '$S' is invalid in C99 [-Wimplicit-function-declaration]         return $S(@"orders/%i/items/%i", [[self.order id] intValue], [self.id intValue]);                ^/Work/ObjectiveRecord/OrderItem.m:22:9:{22:9-22:82}: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'NSString *'         return $S(@"orders/%i/items/%i", [[self.order id] intValue], [self.id intValue]);                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2 warnings generated.2(22@55"Implicit declaration of function '$S' is invalid in C99303843139#0#139#0(6@33"/Work/ObjectiveRecord/OrderItem.m303147908#22#9#0#0#52"implicit declaration of function * is invalid in C990(22@104"Incompatible integer to pointer conversion returning 'int' from a function with result type 'NSString *'303843139#248#167#0(6@33"/Work/ObjectiveRecord/OrderItem.m303147908#22#9#0#0#44"incompatible integer to pointer conversion *1(6@33"/Work/ObjectiveRecord/OrderItem.m303147908#22#9#22#82#0#0#33"/Work/ObjectiveRecord/OrderItem.m8638682592#1896"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/OrderItem.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/OrderItem.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.450406
+e303843140.769381
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/RegexKitLite.o
+x/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:540:73:{540:73-540:147}: warning: expression result unused [-Wunused-value]
+o   if(capture == 0) { captureRange = cacheSlot->lastMatchRange; } else { RKLGetRangeForCapture(cacheSlot->icu_regex, status, capture, captureRange); }
+o                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:114:257: note: instantiated from:
+o #define RKLGetRangeForCapture(re, s, c, r) ({ int32_t start = uregex_start((re), (int32_t)(c), (s)); if(start == -1) { r = NSNotFoundRange; } else { r.location = (NSUInteger)start; r.length = (NSUInteger)uregex_end((re), (int32_t)(c), (s)) - r.location; } *(s); })
+o                                                                                                                                                                                                                                                                 ^~~~
+o1 warning generated.
+lSLF07#2@80"Compile /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303843140#303843140#0(1104"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:540:73:{540:73-540:147}: warning: expression result unused [-Wunused-value]   if(capture == 0) { captureRange = cacheSlot->lastMatchRange; } else { RKLGetRangeForCapture(cacheSlot->icu_regex, status, capture, captureRange); }                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:114:257: note: instantiated from: #define RKLGetRangeForCapture(re, s, c, r) ({ int32_t start = uregex_start((re), (int32_t)(c), (s)); if(start == -1) { r = NSNotFoundRange; } else { r.location = (NSUInteger)start; r.length = (NSUInteger)uregex_end((re), (int32_t)(c), (s)) - r.location; } *(s); })                                                                                                                                                                                                                                                                 ^~~~1 warning generated.1(22@24"Expression result unused303843140#0#149#1(13@91"Instantiated from: /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303843140#448#107#0(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#114#257#0#0#18"instantiated from:0(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#540#73#0#0#24"expression result unused1(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#540#73#540#147#0#0#72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m8637054464#1938"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/RegexKitLite.o0#
+
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/YAJLParsing.o /Work/ObjectiveRecord/YAJLParsing.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s303843140.769480
+e303843140.897289
+r0
+xCompileC
+xbuild/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/YAJLParsing.o
+x/Work/ObjectiveRecord/YAJLParsing.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Work/ObjectiveRecord/YAJLParsing.m:9:
+o/Work/ObjectiveRecord/YAJLParsing.h:12:36: error: cannot find protocol declaration for 'ActiveParser'
+o @interface YAJLParsing : NSObject <ActiveParser>{
+o                                    ^
+o/Work/ObjectiveRecord/YAJLParsing.m:16:9:{16:9-16:33}: warning: method '-yajl_JSONString' not found (return type defaults to 'id')
+o         return [object yajl_JSONString];
+o                ^~~~~~~~~~~~~~~~~~~~~~~~
+o/Work/ObjectiveRecord/YAJLParsing.m:21:9:{21:9-21:27}: warning: method '-yajl_JSON' not found (return type defaults to 'id')
+o         return [object yajl_JSON];
+o                ^~~~~~~~~~~~~~~~~~
+o2 warnings and 1 error generated.
+lSLF07#2@43"Compile /Work/ObjectiveRecord/YAJLParsing.m303843140#303843140#0(696"In file included from /Work/ObjectiveRecord/YAJLParsing.m:9:/Work/ObjectiveRecord/YAJLParsing.h:12:36: error: cannot find protocol declaration for 'ActiveParser' @interface YAJLParsing : NSObject <ActiveParser>{                                    ^/Work/ObjectiveRecord/YAJLParsing.m:16:9:{16:9-16:33}: warning: method '-yajl_JSONString' not found (return type defaults to 'id')         return [object yajl_JSONString];                ^~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/YAJLParsing.m:21:9:{21:9-21:27}: warning: method '-yajl_JSON' not found (return type defaults to 'id')         return [object yajl_JSON];                ^~~~~~~~~~~~~~~~~~2 warnings and 1 error generated.3(4@51"Cannot find protocol declaration for 'ActiveParser'303843140#61#102#2(7@60"In file included from /Work/ObjectiveRecord/YAJLParsing.m:9:303843140#0#61#0(6@35"/Work/ObjectiveRecord/YAJLParsing.m303244159#9#0#9#0#0"0(13@90"Cannot find protocol declaration for 'ActiveParser' in /Work/ObjectiveRecord/YAJLParsing.h303843140#18446744073709551615#0#0(6@35"/Work/ObjectiveRecord/YAJLParsing.h303244252#12#36#0#0#0"0(6@35"/Work/ObjectiveRecord/YAJLParsing.h303244252#12#36#0#0#38"cannot find protocol declaration for *0(22@66"Method '-yajl_JSONString' not found (return type defaults to 'id')303843140#252#131#0(6@35"/Work/ObjectiveRecord/YAJLParsing.m303244159#16#9#0#0#49"method * not found (return type defaults to 'id')1(6@35"/Work/ObjectiveRecord/YAJLParsing.m303244159#16#9#16#33#22@60"Method '-yajl_JSON' not found (return type defaults to 'id')303843140#466#125#0(6@35"/Work/ObjectiveRecord/YAJLParsing.m303244159#21#9#0#0#49"method * not found (return type defaults to 'id')1(6@35"/Work/ObjectiveRecord/YAJLParsing.m303244159#21#9#21#27#0#0#35"/Work/ObjectiveRecord/YAJLParsing.m8638355744#1900"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/YAJLParsing.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/YAJLParsing.o1#
+
+CCopyPlistFile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/inflections.plist ActiveSupportInflector/inflections.plist
+s303843139.040015
+e303843139.065027
+r1
+xCopyPlistFile
+x/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/inflections.plist
+xActiveSupportInflector/inflections.plist
+lSLF07#2@45"Copy ActiveSupportInflector/inflections.plist303843139#303843139#0(0"0(0#0#62"/Work/ObjectiveRecord/ActiveSupportInflector/inflections.plist8631602080#388"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 ActiveSupportInflector/inflections.plist --outdir /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest0#
+
+CCpResource build/Release-iphonesimulator/UnitTests.octest/orders.json orders.json
+s303843139.039050
+e303843139.055690
+r1
+xCpResource
+xbuild/Release-iphonesimulator/UnitTests.octest/orders.json
+xorders.json
+lSLF07#2@16"Copy orders.json303843139#303843139#0(0"0(0#0#33"/Work/ObjectiveRecord/orders.json8631763872#432"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Work/ObjectiveRecord/orders.json /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest0#
+
+CDataModelCompile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Test.mom /Work/ObjectiveRecord/Test.xcdatamodel
+s303843139.065138
+e303843139.142083
+r1
+xDataModelCompile
+x/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Test.mom
+x/Work/ObjectiveRecord/Test.xcdatamodel
+lSLF07#2@46"Compile /Work/ObjectiveRecord/Test.xcdatamodel303843139#303843139#0(0"0(0#0#38"/Work/ObjectiveRecord/Test.xcdatamodel8644503232#334"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Work/ObjectiveRecord/Test.xcdatamodel /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Test.mom0#
+
+CGenerateDSYMFile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest.dSYM /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/UnitTests
+r0
+
+CLd /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/UnitTests normal i386
+r0
+
+CPhaseScriptExecution "Run Script" /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Script-C93094191208A0F300931448.sh
+s303843140.982962
+e303843141.113245
+r0
+xPhaseScriptExecution
+xRun Script
+x/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Script-C93094191208A0F300931448.sh
+o/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'
+o/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)
+o2010-08-18 12:52:21.107 otest[17983:903] The executable for the test bundle at /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest could not be found.
+o/Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)
+o/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'
+lSLF07#2@36"Run custom shell script 'Run Script'303843140#303843141#1(20@47"Run unit tests for architecture 'i386' (GC OFF)303843141#303843141#0(376"/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)2010-08-18 12:52:21.107 otest[17983:903] The executable for the test bundle at /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest could not be found./Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)1(4@45"Failed tests for architecture 'i386' (GC OFF)303843141#18446744073709551615#0#0(6@0"303843141#0#0#0#0#0"0(0#0#0"0"103"/Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)0"610"/Developer/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'i386'/Developer/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'i386' (GC OFF)2010-08-18 12:52:21.107 otest[17983:903] The executable for the test bundle at /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest could not be found./Developer/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'i386' (GC OFF)/Developer/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'i386'Command /bin/sh failed with exit code 11(4@39"Command /bin/sh failed with exit code 1303843141#18446744073709551615#0#0(1@0"0(0#0#0"8644054272#17176"    cd /Work/ObjectiveRecord    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER matt    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv ActiveRecord /Work/ObjectiveRecord/    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Work/ObjectiveRecord/build    setenv BUILD_ROOT /Work/ObjectiveRecord/build    setenv BUILD_STYLE Release    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Work/ObjectiveRecord/build/Release-iphonesimulator    setenv CACHE_ROOT /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Release    setenv CONFIGURATION_BUILD_DIR /Work/ObjectiveRecord/build/Release-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator    setenv CONTENTS_FOLDER_PATH UnitTests.octest    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources    setenv DERIVED_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/ObjectiveRecord.dst    setenv DWARF_DSYM_FILE_NAME UnitTests.octest.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Work/ObjectiveRecord/build/Release-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH UnitTests.octest/Executables    setenv EXECUTABLE_FOLDER_PATH UnitTests.octest    setenv EXECUTABLE_NAME UnitTests    setenv EXECUTABLE_PATH UnitTests.octest/UnitTests    setenv FILE_LIST /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH UnitTests.octest/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Work/ObjectiveRecord/build/Release-iphonesimulator /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME UnitTests.octest    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " __IPHONE_OS_VERSION_MIN_REQUIRED=30200"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Work/ObjectiveRecord/build/Release-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE UnitTests-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH UnitTests.octest/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/ObjectiveRecord.dst    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER matt    setenv INSTALL_ROOT /tmp/ObjectiveRecord.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH UnitTests.octest/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Work/ObjectiveRecord/build/Release-iphonesimulator\"  \"/Work/ObjectiveRecord/../OCMock/Source/build/Debug-iphonesimulator\" \"/Work/ObjectiveRecord\" \"/Work/ObjectiveRecord/Libraries\" \"/Work/ObjectiveRecord/libYAJLIPhone\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/UnitTests.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv MYUtilities /Work/MYUtilities    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects    setenv OBJECT_FILE_DIR_normal /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal    setenv OBJROOT /Work/ObjectiveRecord/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-framework Foundation -framework SenTestingKit -framework UIKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH UnitTests.octest/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "objective-c objective-c++"    setenv PKGINFO_FILE_PATH /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/PkgInfo    setenv PKGINFO_PATH UnitTests.octest/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH UnitTests.octest/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH UnitTests.octest/PrivateHeaders    setenv PRODUCT_NAME UnitTests    setenv PRODUCT_SETTINGS_PATH /Work/ObjectiveRecord/UnitTests-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT ObjectiveRecord    setenv PROJECT_DERIVED_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/DerivedSources    setenv PROJECT_DIR /Work/ObjectiveRecord    setenv PROJECT_FILE_PATH /Work/ObjectiveRecord/ObjectiveRecord.xcodeproj    setenv PROJECT_NAME ObjectiveRecord    setenv PROJECT_TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build    setenv PUBLIC_HEADERS_FOLDER_PATH UnitTests.octest/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Work/ObjectiveRecord/build/Release-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH UnitTests.octest/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_NAME iphonesimulator4.0    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Work/ObjectiveRecord/build/Release-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH UnitTests.octest/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH UnitTests.octest/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Work/ObjectiveRecord    setenv SRCROOT /Work/ObjectiveRecord    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SUPPORTED_DEVICE_FAMILIES 1    setenv SYMBOL_REPOSITORY_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/SymbolRepositories    setenv SYMROOT /Work/ObjectiveRecord/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv Shopify-iPhone-Toolbox /Work/Shopify-StoreSync/Shopify-iPhone-Toolbox    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME UnitTests    setenv TARGET_BUILD_DIR /Work/ObjectiveRecord/build/Release-iphonesimulator    setenv TARGET_NAME UnitTests    setenv TARGET_TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build    setenv TEMP_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build    setenv TEMP_FILES_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build    setenv TEMP_FILE_DIR /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build    setenv TEMP_ROOT /Work/ObjectiveRecord/build    setenv Three20 /Work/three20/    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH UnitTests.octest    setenv UNSTRIPPED_PRODUCT NO    setenv USER matt    setenv USER_APPS_DIR /Users/matt/Applications    setenv USER_LIBRARY_DIR /Users/matt/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH UnitTests.octest/version.plist    setenv VERSION_INFO_BUILDER matt    setenv VERSION_INFO_FILE UnitTests_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:UnitTests  PROJECT:ObjectiveRecord-\""    setenv WRAPPER_EXTENSION octest    setenv WRAPPER_NAME UnitTests.octest    setenv WRAPPER_SUFFIX .octest    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Script-C93094191208A0F300931448.sh1#
+
+CProcessInfoPlistFile /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Info.plist UnitTests-Info.plist
+s303843139.025475
+e303843139.038962
+r1
+xProcessInfoPlistFile
+x/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Info.plist
+xUnitTests-Info.plist
+lSLF07#2@28"Process UnitTests-Info.plist303843139#303843139#0(0"0(0#0#42"/Work/ObjectiveRecord/UnitTests-Info.plist8633240576#355"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility UnitTests-Info.plist -expandbuildsettings -format binary -platform iphonesimulator -o /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/Info.plist0#
+
+CTouch /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest
+r0
+

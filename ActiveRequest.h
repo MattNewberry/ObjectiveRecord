@@ -11,20 +11,23 @@
 
 @interface ActiveRequest : NSObject {
 
-	NSString		*_urlPath;
-	NSString		*_httpMethod;
-	NSData			*_httpBody;
-	NSDictionary	*_parameters;
-	NSDictionary	*_headers;
-	NSString		*_contentType;
-	NSString		*_user;
-	NSString		*_password;
+	NSString			*_urlPath;
+	NSString			*_httpMethod;
+	NSData				*_httpBody;
+	NSMutableDictionary	*_parameters;
+	NSDictionary		*_headers;
+	NSString			*_contentType;
+	NSString			*_user;
+	NSString			*_password;
 	
 	id				_delegate;
 	SEL				_didFinishSelector;
 	SEL				_didFailSelector;
+	
+	BOOL			_batch;
 }
 
+@property (nonatomic, assign) BOOL batch;
 @property (nonatomic, retain) NSString *user;
 @property (nonatomic, retain) NSString *password;
 @property (nonatomic, assign) id delegate;
@@ -33,8 +36,13 @@
 @property (nonatomic, retain) NSString *urlPath;
 @property (nonatomic, retain) NSString *httpMethod;
 @property (nonatomic, retain) NSData *httpBody;
-@property (nonatomic, retain) NSDictionary *parameters;
+@property (nonatomic, retain) NSMutableDictionary *parameters;
 @property (nonatomic, retain) NSDictionary *headers;
 @property (nonatomic, retain) NSString *contentType;
+
++ (ActiveRequest *) requestWithURLPath:(NSString *) url;
+- (id) initWithURLPath:(NSString *) url;
+
+- (void) addParameters:(NSDictionary *) params;
 
 @end

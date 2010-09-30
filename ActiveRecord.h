@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ActiveConnection.h"
 
-@class ActiveManager, ActiveResult;
+@class ActiveManager, ActiveResult, ActiveRequest;
 
 const typedef enum {
     Create = 0,
@@ -23,6 +23,8 @@ const typedef enum {
 	id		_delegate;
 	SEL		_remoteDidFinishSelector;
 	SEL		_remoteDidFailSelector;
+	
+	int		_batchPage;
 }
 
 @property (nonatomic, assign) id delegate;
@@ -31,6 +33,7 @@ const typedef enum {
 
 
 + (void) save;
+- (ActiveRecord *) save;
 + (ActiveManager *) activeManager;
 
 + (ActiveResult *) find:(id) query;
@@ -52,6 +55,7 @@ const typedef enum {
 + (NSArray *) all;
 + (BOOL) exists:(NSNumber *) itemID;
 
++ (id) blank;
 + (id) create:(id)parameters;
 + (id) create:(id)parameters withOptions:(NSDictionary*)options;
 + (id) build:(id)parameters;
@@ -65,9 +69,22 @@ const typedef enum {
 - (BOOL) shouldUpdateWith:(NSDictionary*)dict;
 
 - (void) push;
-- (void) fetch;
-+ (void) pull;
+- (void) push:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (ActiveRequest *) requestForPush;
 
+- (void) fetch;
+- (void) fetchRelationship:(NSString *) relationship delegate:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
+- (void) fetchRelationship:(NSString *) relationship didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) fetch:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
+- (void) fetch:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (ActiveRequest *) requestForFetch;
+
++ (void) pull;
++ (void) pull:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
++ (void) pull:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
++ (ActiveRequest *) requestForPull;
+
+- (NSString *) relationshipForURLPath:(NSString *) urlPath;
 
 
 /*	Utilities	*/
@@ -88,6 +105,7 @@ const typedef enum {
 + (NSDictionary *) attributesByName;
 + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field inModel:(Class)modelClass;
 + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field;
+- (NSDictionary *) properties:(NSDictionary *) options;
 - (NSMutableDictionary *) properties:(NSDictionary*)options withoutObjects:(NSMutableArray*)withouts;
 
 + (NSDictionary *) defaultCreateOptions;
@@ -100,9 +118,16 @@ const typedef enum {
 + (NSString *) createdAtField;
 + (NSString *) updatedAtField;
 + (NSString *) dateFormat;
+- (NSString *) dateFormatPreprocessor:(NSString *) date; 
 
 - (void) didCreate;
+- (void) willCreate;
+- (void) didUpdate;
+- (void) willUpdate;
+
 + (BOOL) remoteEnabled;
++ (BOOL) usesRootNode;
++ (BOOL) shouldParseEntityNameFromRelationships;
 
 - (NSDictionary *) map;
 

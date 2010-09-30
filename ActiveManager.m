@@ -8,6 +8,7 @@
 
 #import "ActiveManager.h"
 #import "ActiveConnection.h"
+#import "NSThread+Blocks.m"
 
 #define OR_CORE_DATE_STORE_TYPE		NSSQLiteStoreType
 #define OR_CORE_DATE_STORE_NAME		@"CoreData.sqlite"
@@ -17,8 +18,11 @@ static ActiveManager *_shared;
 
 @implementation ActiveManager
 
+@synthesize activeConnection = _activeConnection;
+@synthesize remoteContentFormat = _remoteContentFormat;
+@synthesize remoteContentType = _remoteContentType;
 @synthesize parsingClass = _parsingClass;
-@synthesize baseURL = _baseURL;
+@synthesize baseRemoteURL = _baseRemoteURL;
 @synthesize connectionClass = _connectionClass;
 @synthesize logLevel;
 @synthesize defaultDateParser = _defaultDateParser;
@@ -49,6 +53,8 @@ static ActiveManager *_shared;
 	if(self = [super init]){
 		
 		self.requestQueue = [[NSOperationQueue alloc] init];
+		self.remoteContentType = @"application/json";
+		self.remoteContentFormat = @"json";
 		
 		self.managedObjectContext = moc == nil ? [self managedObjectContext] : moc;
 		self.persistentStoreCoordinator = moc == nil ? [self persistentStoreCoordinator] : [moc persistentStoreCoordinator];
@@ -61,21 +67,58 @@ static ActiveManager *_shared;
         self.modelRelationships = [NSMutableDictionary dictionary];
 		
 		self.logLevel = 2;
+		
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
 	}
 	
 	return self;
 }
 
+- (void) setConnectionClass:(id)activeConnectionClass{
+	
+	_connectionClass = activeConnectionClass;
+	
+	_activeConnection = [_connectionClass new];
+}
+
 - (void) addRequest:(ActiveRequest *) request{
 	
-	id conn = [_connectionClass new];
+	[self addRequest:request delegate:request.delegate didFinishSelector:nil didFailSelector:nil];
+}
+
+- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
 	
-	[request setUrlPath:[_baseURL stringByAppendingString:request.urlPath]];
+	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	request.didFailSelector = didFailSelector;
+	request.didFinishSelector = didFinishSelector;
+	request.delegate = delegate;
 	
-	NSInvocationOperation <ActiveConnection> *operation = [[NSInvocationOperation alloc] initWithTarget:conn selector:@selector(send:) object:request];	
+	NSInvocationOperation <ActiveConnection> *operation = [[NSInvocationOperation alloc] initWithTarget:_activeConnection selector:@selector(send:) object:request];
 	[_requestQueue addOperation:operation];
-	//[operation release];
-	//[conn release];
+	[operation release];
+}
+
+- (void) addRequest:(ActiveRequest *) request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+	
+	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	
+	[NSThread performBlockInBackground:^{
+		
+		ActiveResult *result = (ActiveResult *) [_activeConnection send:request];
+		
+		if(result.error == nil && didFinishBlock){
+			
+			[[NSThread mainThread] performBlock:^{
+				didFinishBlock(result);
+			}];
+		}
+		else if(didFailBlock){
+			
+			[[NSThread mainThread] performBlock:^{
+				didFailBlock(result);
+			}];
+		}
+	}];
 }
 
 - (NSData *) serializeObject:(id)object{
@@ -86,21 +129,17 @@ static ActiveManager *_shared;
 	return [string dataUsingEncoding:NSUTF8StringEncoding];
 }
 
-- (void) setBaseURL:(NSString *) url{
-	
-	_baseURL = @"";
-	
-	if([url rangeOfString:@"http://"].location == NSNotFound)
-		_baseURL = @"http://";
-	
-	_baseURL = [_baseURL stringByAppendingString:url];
-	
-	if(![[_baseURL substringWithRange:NSMakeRange([_baseURL length] - 1, 1)] isEqual:@"/"])
-		_baseURL = [_baseURL stringByAppendingString:@"/"];
-}
+
 
 
 /*	Core Data		*/
+
+- (void) managedObjectContextDidSave:(NSNotification *)notification{
+	
+	NSManagedObjectContext *moc = [notification object];
+	if(moc != [self managedObjectContext])
+		[[self managedObjectContext] mergeChangesFromContextDidSaveNotification:notification];		
+}
 
 - (NSManagedObjectContext*) managedObjectContext {
 	if( _managedObjectContext != nil ) {
@@ -212,9 +251,12 @@ static ActiveManager *_shared;
 	[_modelProperties release];
 	[_modelRelationships release];
 	[_modelAttributes release];
-	[_baseURL release];
+	[_baseRemoteURL release];
 
 	[_parsingClass release];
+	[_remoteContentType release];
+	[_remoteContentFormat release];
+	[_activeConnection release];
 
 	[super dealloc];
 }

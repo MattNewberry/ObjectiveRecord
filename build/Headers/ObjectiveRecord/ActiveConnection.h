@@ -25,7 +25,7 @@ const typedef enum{
 - (void) setDidFailSelector:(SEL) selector;
 
 @required
-- (void) send:(ActiveRequest *) activeRequest;
+- (ActiveResult *) send:(ActiveRequest *) activeRequest;
 
 @end
 

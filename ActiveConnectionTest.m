@@ -19,17 +19,7 @@
 
 @implementation ActiveConnectionTest
 
-- (void) setUp{
-	
-	[super setUp];
-	
-	[_activeManager setBaseURL:@"mndcreative.myshopify.com/admin/"];
-}
 
-- (void) testShouldValidateRequest{
-
-	[[Order first] push];
-}
 
 
 @end

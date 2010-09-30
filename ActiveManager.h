@@ -29,13 +29,20 @@
 	int logLevel;
 	
 	id _connectionClass;
+	id _activeConnection;
 	id _parsingClass;
 	
-	NSString *_baseURL;
+	
+	NSString *_baseRemoteURL;
+	NSString *_remoteContentType;
+	NSString *_remoteContentFormat;
 }
 
+@property (nonatomic, retain) id activeConnection;
+@property (nonatomic, copy) NSString *remoteContentFormat;
+@property (nonatomic, copy) NSString *remoteContentType;
 @property (nonatomic, assign) id parsingClass;
-@property (nonatomic, retain) NSString *baseURL;
+@property (nonatomic, retain) NSString *baseRemoteURL;
 @property (nonatomic, assign) id connectionClass;
 @property (nonatomic, assign) int logLevel;
 @property (nonatomic, retain) NSDateFormatter *defaultDateParser;
@@ -52,6 +59,8 @@
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;
 
 - (void) addRequest:(ActiveRequest *) request;
+- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;
+- (void) addRequest:(ActiveRequest *) request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
 - (NSData *) serializeObject:(id) object;
 
 - (NSManagedObjectContext*) managedObjectContext;

@@ -158,32 +158,38 @@ t1274938762
 s3215120
 
 N/Work/ObjectiveRecord/ActiveConnection.h
-c000000004C61C3BF00000000000002EC
-t1281475519
-s748
+c000000004C6990D40000000000000305
+t1281986772
+s773
 i<Foundation/Foundation.h>
 i"ActiveRequest.h"
 i"ActiveResult.h"
 
 N/Work/ObjectiveRecord/ActiveConnectionTest.m
-c000000004C62F89900000000000001DC
-t1281554585
-s476
+c000000004C7FEA9A0000000000000136
+t1283451546
+s310
 i"CoreDataTestCase.h"
 i"Order.h"
 
 N/Work/ObjectiveRecord/ActiveManager.h
-c000000004C62F7B100000000000007C3
-t1281554353
-s1987
+c000000004C76CE3C00000000000008CF
+t1282854460
+s2255
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveManager.m
-c000000004C636E8E00000000000017B7
-t1281584782
-s6071
+c000000004C7FECE000000000000019FE
+t1283452128
+s6654
 i"ActiveManager.h"
 i"ActiveConnection.h"
+
+N/Work/ObjectiveRecord/ActiveManagerTest.m
+c000000004C7FECA5000000000000038D
+t1283452069
+s909
+i"ActiveManager.h"
 
 N/Work/ObjectiveRecord/ActiveMockConnection.h
 c000000004C636D36000000000000024C
@@ -203,42 +209,51 @@ t1281550961
 s290
 
 N/Work/ObjectiveRecord/ActiveRecord.h
-c000000004C62E7B50000000000000C93
-t1281550261
-s3219
+c000000004C7FF88E0000000000000E6D
+t1283455118
+s3693
 i<Foundation/Foundation.h>
 i"ActiveConnection.h"
 
 N/Work/ObjectiveRecord/ActiveRecord.m
-c000000004C636BA300000000000056B3
-t1281584035
-s22195
+c000000004C7FF7B10000000000005E92
+t1283454897
+s24210
 i"ActiveRecord.h"
 i"ObjectiveRecord+Utilities.h"
 i"ActiveRequest.h"
 
+N/Work/ObjectiveRecord/ActiveRecordTest.m
+c000000004C7FF1850000000000001003
+t1283453317
+s4099
+i"CoreDataTestCase.h"
+i"ObjectiveRecord.h"
+i"Order.h"
+i"OrderItem.h"
+
 N/Work/ObjectiveRecord/ActiveRequest.h
-c000000004C62DF8A000000000000040F
-t1281548170
-s1039
+c000000004C7E869300000000000004BC
+t1283360403
+s1212
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveRequest.m
-c000000004C62DF880000000000000340
-t1281548168
-s832
+c000000004C7E867400000000000004D2
+t1283360372
+s1234
 i"ActiveRequest.h"
 
 N/Work/ObjectiveRecord/ActiveResult.h
-c000000004C5C54A400000000000001FB
-t1281119396
-s507
+c000000004C76B22D00000000000002BD
+t1282847277
+s701
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveResult.m
-c000000004C5C58BF000000000000039D
-t1281120447
-s925
+c000000004C76B2C30000000000000449
+t1282847427
+s1097
 i"ActiveResult.h"
 
 N/Work/ObjectiveRecord/ActiveSupport.h
@@ -313,14 +328,13 @@ i<UIKit/UIKit.h>
 i<SenTestingKit/SenTestingKit.h>
 
 N/Work/ObjectiveRecord/CoreDataTestCase.m
-c000000004C62ECB70000000000000A92
-t1281551543
-s2706
+c000000004C6B17610000000000000A79
+t1282086753
+s2681
 i"CoreDataTestCase.h"
 i"ActiveSupport.h"
 i"ActiveManager.h"
 i"Order.h"
-i"NSURLConnector.h"
 i"YAJLParsing.h"
 
 N/Work/ObjectiveRecord/Libraries/Headers/OCMock/NSNotificationCenter+OCMAdditions.h
@@ -466,15 +480,16 @@ i"CWInflector.h"
 i"NSManagedObjectContext+Additions.h"
 
 N/Work/ObjectiveRecord/ObjectiveRecord.h
-c000000004C696BCD000000000000012A
-t1281977293
-s298
+c000000004C6974C30000000000000142
+t1281979587
+s322
 i"ActiveRecord.h"
 i"ActiveConnection.h"
 i"ActiveParser.h"
 i"ActiveSupport.h"
 i"ActiveManager.h"
 i"ActiveResult.h"
+i"CWInflector.h"
 
 N/Work/ObjectiveRecord/Order.h
 c000000004C5B0C5000000000000002D4
@@ -498,9 +513,9 @@ i<CoreData/CoreData.h>
 i"ActiveRecord.h"
 
 N/Work/ObjectiveRecord/OrderItem.m
-c000000004C61740400000000000001C1
-t1281455108
-s449
+c000000004C7FF26200000000000001C6
+t1283453538
+s454
 i"OrderItem.h"
 i"Order.h"
 
@@ -568,11 +583,19 @@ N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.buil
 t2
 s0
 
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveManagerTest.o
+t2
+s0
+
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveMockConnection.o
 t2
 s0
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveRecord.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveRecordTest.o
 t2
 s0
 
@@ -657,11 +680,19 @@ N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.buil
 t2
 s0
 
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveManagerTest.o
+t2
+s0
+
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveMockConnection.o
 t2
 s0
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveRecord.o
+t2
+s0
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveRecordTest.o
 t2
 s0
 
@@ -800,9 +831,9 @@ s8498
 i"yajl_common.h"
 
 N/Work/ObjectiveRecord/orders.json
-c000000004C5DB038000000000000016A
-t1281208376
-s362
+c000000004C6C0FDD000000000000017A
+t1282150365
+s378
 
 N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UnitTests_Prefix-cmaoitlhbwstbjfwdnbwufzijglz/UnitTests_Prefix.pch.gch
 t2
@@ -831,10 +862,16 @@ r0
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveManagerTest.o /Work/ObjectiveRecord/ActiveManagerTest.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveMockConnection.o /Work/ObjectiveRecord/ActiveMockConnection.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveRecordTest.o /Work/ObjectiveRecord/ActiveRecordTest.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv6/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal armv6 objective-c com.apple.compilers.gcc.4_2
@@ -891,10 +928,16 @@ r0
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveManagerTest.o /Work/ObjectiveRecord/ActiveManagerTest.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveMockConnection.o /Work/ObjectiveRecord/ActiveMockConnection.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveRecordTest.o /Work/ObjectiveRecord/ActiveRecordTest.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphoneos/UnitTests.build/Objects-normal/armv7/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal armv7 objective-c com.apple.compilers.gcc.4_2

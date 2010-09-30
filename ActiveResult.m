@@ -11,6 +11,8 @@
 
 @implementation ActiveResult
 
+@synthesize urlPath = _urlPath;
+@synthesize source = _source;
 @synthesize objects=_objects;
 @synthesize error=_error;
 
@@ -24,21 +26,42 @@
 	return self;
 }
 
+- (id) initWithSource:(id) resultSource{
+	
+	if (self = [super init]){
+		
+		_source = [resultSource retain];
+	}
+	
+	return self;
+}
+
+- (id) initWithError:(NSError*) errorRef {
+    if (self = [super init]) {
+        _error = [errorRef retain];
+    }
+    return self;
+}
+
 - (void)dealloc{
 	[_objects release];
 	[_error release];
 
+	[_source release];
+
+	[_urlPath release];
+
 	[super dealloc];
 }
 
-- (ActiveRecord *) object{
+- (id) object{
 	
 	return _objects != nil && [_objects count] > 0 ? [_objects objectAtIndex:0] : nil;
 }
 
 - (BOOL) hasObjects{
 	
-	return [_objects count] > 0 ? NO : YES;
+	return !![_objects count] > 0;
 }
 
 - (int) count{

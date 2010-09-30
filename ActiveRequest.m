@@ -11,6 +11,7 @@
 
 @implementation ActiveRequest
 
+@synthesize batch = _batch;
 @synthesize user = _user;
 @synthesize password = _password;
 @synthesize delegate = _delegate;
@@ -23,6 +24,27 @@
 @synthesize headers = _headers;
 @synthesize contentType = _contentType;
 
+- (id) initWithURLPath:(NSString *) url{
+	
+	if(self = [super init]){
+		
+		self.urlPath = url;
+		self.parameters = [[NSMutableDictionary alloc] init];
+	}
+	
+	return self;
+}
+
++ (ActiveRequest *) requestWithURLPath:(NSString *) url{
+	
+	return [[[ActiveRequest alloc] initWithURLPath:url] autorelease];
+}
+
+- (void) addParameters:(NSDictionary *) params{
+	
+	[_parameters addEntriesFromDictionary:params];
+}
+
 - (void)dealloc
 {
 	[_urlPath release];
@@ -34,6 +56,7 @@
 
 	[_user release];
 	[_password release];
+
 
 	[super dealloc];
 }

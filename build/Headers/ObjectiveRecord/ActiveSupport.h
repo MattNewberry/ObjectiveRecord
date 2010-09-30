@@ -20,6 +20,7 @@
 #define $F(f) [NSNumber numberWithFloat:f]
 #define toArray(object) (object != nil ? ([object isKindOfClass:[NSArray class]] ? object : [NSArray arrayWithObject:object]) : [NSArray array])
 #define $P(...) [NSPredicate predicateWithFormat:__VA_ARGS__]
+#define $SORT(i) [ActiveSupport sortDescriptorsFromString:i]
 
 #pragma mark -
 #pragma mark Helpers
