@@ -14,7 +14,7 @@
 #define OR_CORE_DATE_STORE_NAME		@"CoreData.sqlite"
 #define OR_CORE_DATE_BATCH_SIZE		25
 
-static ActiveManager *_shared;
+static ActiveManager *_shared = nil;
 
 @implementation ActiveManager
 
@@ -77,49 +77,83 @@ static ActiveManager *_shared;
 - (void) setConnectionClass:(id)activeConnectionClass{
 	
 	_connectionClass = activeConnectionClass;
-	
-	_activeConnection = [_connectionClass new];
 }
 
 - (void) addRequest:(ActiveRequest *) request{
 	
-	[self addRequest:request delegate:request.delegate didFinishSelector:nil didFailSelector:nil];
+	[self addRequest:request delegate:request.delegate didParseObjectSelector:request.didParseObjectSelector didFinishSelector:request.didFinishSelector didFailSelector:request.didFailSelector];
 }
 
-- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
-	
-	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
-	request.didFailSelector = didFailSelector;
-	request.didFinishSelector = didFinishSelector;
-	request.delegate = delegate;
-	
-	NSInvocationOperation <ActiveConnection> *operation = [[NSInvocationOperation alloc] initWithTarget:_activeConnection selector:@selector(send:) object:request];
-	[_requestQueue addOperation:operation];
-	[operation release];
-}
-
-- (void) addRequest:(ActiveRequest *) request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
 	
 	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
 	
-	[NSThread performBlockInBackground:^{
+	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
 		
-		ActiveResult *result = (ActiveResult *) [_activeConnection send:request];
+		id <ActiveConnection> conn = [[_connectionClass alloc] init];
+		[conn setResponseDelegate:delegate];
+		[conn setDidFinishSelector:didFinishSelector];
+		[conn setDidFailSelector:didFailSelector];
 		
-		if(result.error == nil && didFinishBlock){
-			
-			[[NSThread mainThread] performBlock:^{
-				didFinishBlock(result);
-			}];
-		}
-		else if(didFailBlock){
-			
-			[[NSThread mainThread] performBlock:^{
-				didFailBlock(result);
-			}];
-		}
+		[conn send:request];
 	}];
+	
+	[operation start];
 }
+
+- (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+	
+	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	
+	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+		
+		id <ActiveConnection> conn = [[_connectionClass alloc] init];
+		[conn setDidFailBlock:didFailBlock];
+		[conn setDidFinishBlock:didFinishBlock];
+		[conn setDidParseObjectBlock:didParseObjectBlock];
+		
+		[conn send:request];
+	}];
+	
+	[operation start];
+}
+
+- (ActiveResult *) addSyncronousRequest:(ActiveRequest *)request{
+	
+	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	
+	return [[[_connectionClass new] autorelease] performSelector:@selector(sendSyncronously:) withObject:request];
+}
+
+- (void) addSyncronousRequest:(ActiveRequest *)request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
+	
+	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	
+	ActiveResult *result = [[[_connectionClass new] autorelease] performSelector:@selector(sendSyncronously:) withObject:request];
+	
+	if(result.error != nil)
+		[delegate performSelector:didFinishSelector withObject:result];
+	else
+		[delegate performSelector:didFailSelector withObject:result];
+}
+
+- (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+	
+	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	
+	ActiveResult *result = [[[_connectionClass new] autorelease] performSelector:@selector(sendSyncronously:) withObject:request];
+	
+	if(result.error != nil)
+		[NSThread performBlockOnMainThread:^{
+			didFinishBlock(result);
+		}];
+	else
+		[NSThread performBlockOnMainThread:^{
+			didFailBlock(result);
+		}];
+}
+
+
 
 - (NSData *) serializeObject:(id)object{
 	
@@ -141,6 +175,17 @@ static ActiveManager *_shared;
 		[[self managedObjectContext] mergeChangesFromContextDidSaveNotification:notification];		
 }
 
+- (NSManagedObjectContext*) newManagedObjectContext{
+	
+	NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] init];
+	[moc setPersistentStoreCoordinator: [self persistentStoreCoordinator]];
+	[moc setUndoManager:nil];
+	[moc setMergePolicy:NSMergeByPropertyStoreTrumpMergePolicy];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
+	
+	return [moc autorelease];
+}
+
 - (NSManagedObjectContext*) managedObjectContext {
 	if( _managedObjectContext != nil ) {
 		return _managedObjectContext;
@@ -148,10 +193,8 @@ static ActiveManager *_shared;
 	
 	NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
 	if (coordinator != nil) {
-		_managedObjectContext = [[NSManagedObjectContext alloc] init];
-		[_managedObjectContext setPersistentStoreCoordinator: coordinator];
-		[_managedObjectContext setUndoManager:nil];
-		[_managedObjectContext setRetainsRegisteredObjects:YES];
+		
+		_managedObjectContext = [[self newManagedObjectContext] retain];
 	}
 	return _managedObjectContext;
 }
@@ -238,6 +281,26 @@ static ActiveManager *_shared;
 
 - (NSString *)applicationDocumentsDirectory {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+- (id)copyWithZone:(NSZone *)zone	{
+    return self;
+}
+
+- (id)retain {
+    return self;
+}
+
+- (unsigned)retainCount {
+    return UINT_MAX;  // denotes an object that cannot be released
+}
+
+- (void)release {
+    //do nothing
+}
+
+- (id)autorelease {
+    return self;
 }
 
 - (void)dealloc{

@@ -23,7 +23,6 @@ const typedef enum {
 	id		_delegate;
 	SEL		_remoteDidFinishSelector;
 	SEL		_remoteDidFailSelector;
-	
 	int		_batchPage;
 }
 
@@ -38,10 +37,12 @@ const typedef enum {
 
 + (ActiveResult *) find:(id) query;
 + (id) findByID:(NSNumber *)itemID;
++ (id) findByID:(NSNumber *)itemID moc:(NSManagedObjectContext *)moc;	// Sigh
 + (ActiveResult *) find:(id) query limit:(int) limit;
 + (ActiveResult *) find:(id) query sortBy:(NSString *)sortBy;
 + (ActiveResult *) find:(id) query sortBy:(NSString *)sortBy limit:(int)limit;
 + (ActiveResult *) find:(id) query sortBy:(NSString *)sortBy limit:(int)limit fields:(NSArray *)fields;
++ (ActiveResult *) find:(id) query sortBy:(NSString *)sortBy limit:(int)limit fields:(NSArray *)fields moc:(NSManagedObjectContext *) moc;
 
 + (int) count;
 + (int) count:(NSPredicate *) predicate;
@@ -72,7 +73,7 @@ const typedef enum {
 - (void) push:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
 - (ActiveRequest *) requestForPush;
 
-- (void) fetch;
+- (ActiveResult *) fetch;
 - (void) fetchRelationship:(NSString *) relationship delegate:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
 - (void) fetchRelationship:(NSString *) relationship didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
 - (void) fetch:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
@@ -80,8 +81,8 @@ const typedef enum {
 - (ActiveRequest *) requestForFetch;
 
 + (void) pull;
-+ (void) pull:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
-+ (void) pull:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
++ (void) pull:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
++ (void) pull:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
 + (ActiveRequest *) requestForPull;
 
 - (NSString *) relationshipForURLPath:(NSString *) urlPath;
@@ -105,7 +106,7 @@ const typedef enum {
 + (NSDictionary *) attributesByName;
 + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field inModel:(Class)modelClass;
 + (NSPropertyDescription *) propertyDescriptionForField:(NSString*)field;
-- (NSDictionary *) properties:(NSDictionary *) options;
+- (NSMutableDictionary *) properties:(NSDictionary *) options;
 - (NSMutableDictionary *) properties:(NSDictionary*)options withoutObjects:(NSMutableArray*)withouts;
 
 + (NSDictionary *) defaultCreateOptions;
@@ -121,9 +122,9 @@ const typedef enum {
 - (NSString *) dateFormatPreprocessor:(NSString *) date; 
 
 - (void) didCreate;
-- (void) willCreate;
+- (void) willCreate:(id) parameters;
 - (void) didUpdate;
-- (void) willUpdate;
+- (void) willUpdate:(id) parameters;
 
 + (BOOL) remoteEnabled;
 + (BOOL) usesRootNode;

@@ -59,13 +59,20 @@
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;
 
 - (void) addRequest:(ActiveRequest *) request;
-- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;
-- (void) addRequest:(ActiveRequest *) request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;
+- (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+
+- (ActiveResult *) addSyncronousRequest:(ActiveRequest *)request;
+- (void) addSyncronousRequest:(ActiveRequest *)request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;
+- (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+
+
 - (NSData *) serializeObject:(id) object;
 
-- (NSManagedObjectContext*) managedObjectContext;
-- (NSManagedObjectModel*) managedObjectModel;
-- (NSPersistentStoreCoordinator*) persistentStoreCoordinator;
+- (NSManagedObjectContext *) newManagedObjectContext;
+- (NSManagedObjectContext *) managedObjectContext;
+- (NSManagedObjectModel *) managedObjectModel;
+- (NSPersistentStoreCoordinator *) persistentStoreCoordinator;
 - (NSString *) applicationDocumentsDirectory;
 
 @end

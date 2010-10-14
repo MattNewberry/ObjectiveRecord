@@ -189,5 +189,12 @@
 	[result release];
 }
 
+- (void) testShouldReturnProperRelationshipForURL{
+	
+	Order *order = [Order last];
+	NSLog(@"%@", [order relationshipForURLPath:@"http://mndcreative.myshopify.com/admin/orders/1/items/1.json"]);
+	STAssertEqualObjects([order relationshipForURLPath:@"http://mndcreative.myshopify.com/admin/orders/1/items/1.json"], @"items", @"Failed to return proper relationship for URL");
+}
+
 
 @end

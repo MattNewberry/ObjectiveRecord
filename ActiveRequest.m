@@ -11,6 +11,8 @@
 
 @implementation ActiveRequest
 
+@synthesize didParseObjectSelector = _didParseObjectSelector;
+@synthesize totalBatches = _totalBatches;
 @synthesize batch = _batch;
 @synthesize user = _user;
 @synthesize password = _password;
@@ -56,6 +58,8 @@
 
 	[_user release];
 	[_password release];
+
+
 
 
 	[super dealloc];

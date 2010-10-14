@@ -1,7 +1,7 @@
 TObjectiveRecord
 v7
 r0
-t305147920.652928
+t307305200.515949
 cCheck dependencies
 cCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord_Prefix.pch ObjectiveRecord_Prefix.pch
 cCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord.h ObjectiveRecord.h
@@ -21,8 +21,8 @@ cCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSString+Inflec
 cCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord+Utilities.h ObjectiveRecord+Utilities.h
 cCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/RegexKitLite.h ActiveSupportInflector/RegexKitLite/RegexKitLite.h
 cCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveParser.h ActiveParser.h
-cProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch.gch ObjectiveRecord_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvmgcc42
+cProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch.pth ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-bplrtradxynfzkejvfzfbkfjiyhh/ObjectiveRecord_Prefix.pch.gch ObjectiveRecord_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvmgcc42
 cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -36,11 +36,13 @@ cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.buil
 cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSSet+Core.o /Work/ObjectiveRecord/NSSet+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSString+InflectionSupport.o /Work/ObjectiveRecord/NSString+InflectionSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSThread+Blocks.o /Work/ObjectiveRecord/NSThread+Blocks.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a normal i386
 cPBXCp build/Debug-iphonesimulator/inflections.plist ActiveSupportInflector/inflections.plist
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
-c000000004C0FD15A0000000000000132
-t1276105050
+c000000004C8720B10000000000000132
+t1283924145
 s306
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
@@ -232,9 +234,9 @@ i"ActiveConnection+Three20.h"
 i"ActiveConnection.h"
 
 N/Work/ObjectiveRecord/ActiveConnection.h
-c000000004C6990D40000000000000305
-t1281986772
-s773
+c000000004C810E94000000000000030F
+t1283526292
+s783
 i<Foundation/Foundation.h>
 i"ActiveRequest.h"
 i"ActiveResult.h"
@@ -245,17 +247,18 @@ t1280781534
 s327
 
 N/Work/ObjectiveRecord/ActiveManager.h
-c000000004C76CE3C00000000000008CF
-t1282854460
-s2255
+c000000004C8137550000000000000A08
+t1283536725
+s2568
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveManager.m
-c000000004C7FECE000000000000019FE
-t1283452128
-s6654
+c000000004C878EEC0000000000001E05
+t1283952364
+s7685
 i"ActiveManager.h"
 i"ActiveConnection.h"
+i"NSThread+Blocks.m"
 
 N/Work/ObjectiveRecord/ActiveParser+YAJL.h
 c000000004C5723A100000000000000E8
@@ -280,48 +283,48 @@ t1281550961
 s290
 
 N/Work/ObjectiveRecord/ActiveRecord.h
-c000000004C7FF88E0000000000000E6D
-t1283455118
-s3693
+c000000004C8E94BD0000000000001205
+t1284412605
+s4613
 i<Foundation/Foundation.h>
 i"ActiveConnection.h"
 
 N/Work/ObjectiveRecord/ActiveRecord.m
-c000000004C7FF7B10000000000005E92
-t1283454897
-s24210
+c000000004CA0E36F00000000000078BB
+t1285612399
+s30907
 i"ActiveRecord.h"
 i"ObjectiveRecord+Utilities.h"
 i"ActiveRequest.h"
 
 N/Work/ObjectiveRecord/ActiveRequest.h
-c000000004C7E869300000000000004BC
-t1283360403
-s1212
+c000000004C93810600000000000004F8
+t1284735238
+s1272
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveRequest.m
-c000000004C7E867400000000000004D2
-t1283360372
-s1234
+c000000004C93810500000000000004EF
+t1284735237
+s1263
 i"ActiveRequest.h"
 
 N/Work/ObjectiveRecord/ActiveResult.h
-c000000004C76B22D00000000000002BD
-t1282847277
-s701
+c000000004C8535F0000000000000031F
+t1283798512
+s799
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveResult.m
-c000000004C76B2C30000000000000449
-t1282847427
-s1097
+c000000004C8535F700000000000004FB
+t1283798519
+s1275
 i"ActiveResult.h"
 
 N/Work/ObjectiveRecord/ActiveSupport.h
-c000000004C5C603400000000000004A3
-t1281122356
-s1187
+c000000004C851D0A00000000000004E0
+t1283792138
+s1248
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveSupport.m
@@ -448,6 +451,18 @@ t1281388703
 s1548
 i"NSArray+Core.h"
 
+N/Work/ObjectiveRecord/NSFaultingMutableSet+Additions.h
+c000000004C81328B00000000000000F7
+t1283535499
+s247
+i<Foundation/Foundation.h>
+
+N/Work/ObjectiveRecord/NSFaultingMutableSet+Additions.m
+c000000004C81329F000000000000011A
+t1283535519
+s282
+i"NSFaultingMutableSet+Additions.h"
+
 N/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h
 c000000004C636E640000000000000120
 t1281584740
@@ -486,14 +501,14 @@ s678
 i"NSObject+Core.h"
 
 N/Work/ObjectiveRecord/NSSet+Core.h
-c000000004C6071730000000000000159
-t1281388915
+c000000004C8134C20000000000000159
+t1283536066
 s345
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/NSSet+Core.m
-c000000004C61C4010000000000000387
-t1281475585
+c000000004C8134BF0000000000000387
+t1283536063
 s903
 i"NSSet+Core.h"
 
@@ -508,10 +523,16 @@ t1281389272
 s2991
 i"NSString+InflectionSupport.h"
 
+N/Work/ObjectiveRecord/NSThread+Blocks.m
+c000000004C8103F1000000000000040B
+t1283523569
+s1035
+
 N/Work/ObjectiveRecord/ObjectiveRecord+Utilities.h
-c000000004C696BE60000000000000171
-t1281977318
-s369
+c000000004C811B61000000000000018D
+t1283529569
+s397
+i"NSThread+Blocks.m"
 i"NSArray+Core.h"
 i"NSMutableArray+Core.h"
 i"NSObject+Core.h"
@@ -541,75 +562,75 @@ i<CoreData/CoreData.h>
 i"ObjectiveRecord.h"
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveConnection.h
-t1283358930
-s773
+t1283535886
+s783
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveManager.h
-t1283358930
-s2255
+t1283536726
+s2568
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveParser.h
-t1283358930
+t1283535886
 s290
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveRecord.h
-t1283455119
-s3693
+t1284412606
+s4613
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveRequest.h
-t1283361062
-s1212
+t1284735251
+s1272
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveResult.h
-t1283358930
-s701
+t1283798520
+s799
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveSupport.h
-t1283358930
-s1187
+t1283792140
+s1248
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/CWInflector.h
-t1283358930
+t1283535886
 s740
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSArray+Core.h
-t1283358930
+t1283535886
 s636
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSManagedObjectContext+Additions.h
-t1283358930
+t1283535886
 s288
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSMutableArray+Core.h
-t1283358930
+t1283535886
 s538
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSObject+Core.h
-t1283358930
+t1283535886
 s260
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSSet+Core.h
-t1283358930
+t1283536688
 s345
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSString+InflectionSupport.h
-t1283358930
+t1283535886
 s980
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord+Utilities.h
-t1283358930
-s369
+t1283535886
+s397
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord.h
-t1283358930
+t1283535886
 s322
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord_Prefix.pch
-t1283358930
+t1283535886
 s248
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord/RegexKitLite.h
-t1283358930
+t1283535886
 s7872
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/Headers/ObjectiveRecord/ActiveConnection.h
@@ -689,8 +710,8 @@ t1281979750
 s1461
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a
-t1283454808
-s359736
+t1285612400
+s410064
 
 N/Work/ObjectiveRecord/build/Debug-iphonesimulator/usr/local/include/CWInflector.h
 t1281976939
@@ -741,8 +762,8 @@ t1280948869
 s11680
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o
-t1283455120
-s46456
+t1285612081
+s59880
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveParser+YAJL.o
 t1280948869
@@ -753,61 +774,69 @@ t1280948869
 s5024
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o
-t2
-s0
+t1285612400
+s126720
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o
-t1283455120
-s20420
+t1285612081
+s21660
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o
-t1283455120
-s15464
+t1285612081
+s14540
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o
-t1283455120
-s15312
+t1285612081
+s15412
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupportInflector.o
 t1280948869
 s25804
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/CWInflector.o
-t1283455120
-s22424
+t1285612082
+s21128
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSArray+Core.o
-t1283455120
-s10124
+t1285612082
+s10304
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSFaultingMutableSet+Additions.o
+t2
+s0
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSManagedObjectContext+Additions.o
-t1283455120
-s7576
+t1285612082
+s7688
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSMutableArray+Core.o
-t1283455120
-s8696
+t1285612082
+s8812
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSObject+Core.o
-t1283455120
-s5180
+t1285612082
+s5288
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSSet+Core.o
-t1283455120
-s6784
+t1285612082
+s6908
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSString+InflectionSupport.o
-t1283455120
-s15916
+t1285612082
+s16084
+
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSThread+Blocks.o
+t1285612082
+s6656
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ObjectiveRecord.LinkFileList
-c000000004C7E80D200000000000006B7
-t1283358930
-s1719
+c000000004C81340E000000000000073B
+t1283535886
+s1851
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o
-t1283455120
-s81364
+t1285612082
+s84264
 
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/StaticAnalyzer/normal/i386/ActiveManager.plist
 t1283358631
@@ -865,13 +894,21 @@ N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/Shared
 t1280863027
 s11477648
 
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-bplrtradxynfzkejvfzfbkfjiyhh/ObjectiveRecord_Prefix.pch.gch
+t1285612081
+s9986608
+
 N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth
-t1283455119
-s1981776
+t1284735252
+s1985108
 
 N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch.gch
-t1283455120
-s9970224
+t1284735253
+s9986608
+
+N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch.pth
+t1285612080
+s1997008
 
 N/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-gwqmurkwfqkuxweiwchuwrnixmzx/ObjectiveRecord_Prefix.pch.gch
 t1280862973
@@ -1013,7 +1050,7 @@ lSLF07#2@58"Analyze /Work/ObjectiveRecord/NSString+InflectionSupport.m305051431#
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies305147919#305147919#0(0"0(0#1#0"8666446784#0"0#
+lSLF07#2@18"Check dependencies307305200#307305200#0(0"0(0#1#0"8688578752#0"0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveConnection+Three20.o /Work/ObjectiveRecord/ActiveConnection+Three20.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641669.596401
@@ -1061,8 +1098,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveManager.m302641669#302641669#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveManager.m8608676800#1891"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-agvostooaivjhxfdijxaflirdowf/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveManager.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o /Work/ObjectiveRecord/ActiveManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.132644
-e305147920.224152
+s307304881.273746
+e307304881.648389
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o
@@ -1071,7 +1108,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveManager.m305147920#305147920#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveManager.m8667602112#1927"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveManager.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o0#
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveManager.m307304881#307304881#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveManager.m8690240032#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveManager.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveManager.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveParser+YAJL.o /Work/ObjectiveRecord/ActiveParser+YAJL.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641669.867454
@@ -1157,9 +1194,9 @@ o/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '-remo
 lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveRecord.m302641669#302641669#0(3459"/Work/ObjectiveRecord/ActiveRecord.m: In function '+[ActiveRecord managedObjectContext]':/Work/ObjectiveRecord/ActiveRecord.m:24: warning: 'NSManagedObjectContext' may not respond to '+shared'/Work/ObjectiveRecord/ActiveRecord.m:24: warning: (Messages without a matching method signature/Work/ObjectiveRecord/ActiveRecord.m:24: warning: will be assumed to return 'id' and accept/Work/ObjectiveRecord/ActiveRecord.m:24: warning: '...' as arguments.)/Work/ObjectiveRecord/ActiveRecord.m: In function '+[ActiveRecord url]':/Work/ObjectiveRecord/ActiveRecord.m:53: warning: 'NSString' may not respond to '-pluralize'/Work/ObjectiveRecord/ActiveRecord.m: In function '+[ActiveRecord findByID:]':/Work/ObjectiveRecord/ActiveRecord.m:67: warning: control reaches end of non-void function/Work/ObjectiveRecord/ActiveRecord.m: In function '+[ActiveRecord build:]':/Work/ObjectiveRecord/ActiveRecord.m:114: warning: 'ActiveRecord' may not respond to '+findObjectByKey:forValue:'/Work/ObjectiveRecord/ActiveRecord.m: In function '-[ActiveRecord push]':/Work/ObjectiveRecord/ActiveRecord.m:132: warning: control reaches end of non-void function/Work/ObjectiveRecord/ActiveRecord.m: In function '+[ActiveRecord pull]':/Work/ObjectiveRecord/ActiveRecord.m:136: warning: control reaches end of non-void function/Work/ObjectiveRecord/ActiveRecord.m: At top level:/Work/ObjectiveRecord/ActiveRecord.m:153: warning: incomplete implementation of class 'ActiveRecord'/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+update:data:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+remove:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+empty' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+createAndPush:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+create:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+exists:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+all' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+last' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+first' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+sum:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+maximum:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+minimum:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+average:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+count:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+count' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '+find:limit:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: incomplete implementation of class 'ActiveRecord'/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '-updateAndPush:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '-update:' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '-removeAndPush' not found/Work/ObjectiveRecord/ActiveRecord.m:153: warning: method definition for '-remove' not found30(22@53"'NSManagedObjectContext' may not respond to '+shared'302641669#90#104#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#24#0#24#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)302641669#194#96#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#24#0#24#0#0"0(22@42"'NSString' may not respond to '-pluralize'302641669#526#93#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#53#0#53#0#26"'*' may not respond to '*'0(22@40"Control reaches end of non-void function302641669#698#91#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#67#0#67#0#40"control reaches end of non-void function0(22@62"'ActiveRecord' may not respond to '+findObjectByKey:forValue:'302641669#865#114#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#114#0#114#0#26"'*' may not respond to '*'0(22@40"Control reaches end of non-void function302641669#1053#92#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#132#0#132#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function302641669#1219#92#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#136#0#136#0#40"control reaches end of non-void function0(23@13"At top level:302641669#1311#52#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#0#0#0#0#0"0(22@49"Incomplete implementation of class 'ActiveRecord'302641669#1363#101#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#38"incomplete implementation of class '*'0(22@47"Method definition for '+update:data:' not found302641669#1464#99#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@42"Method definition for '+remove:' not found302641669#1563#94#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@40"Method definition for '+empty' not found302641669#1657#92#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@49"Method definition for '+createAndPush:' not found302641669#1749#101#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@42"Method definition for '+create:' not found302641669#1850#94#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@42"Method definition for '+exists:' not found302641669#1944#94#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@38"Method definition for '+all' not found302641669#2038#90#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@39"Method definition for '+last' not found302641669#2128#91#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@40"Method definition for '+first' not found302641669#2219#92#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@39"Method definition for '+sum:' not found302641669#2311#91#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@43"Method definition for '+maximum:' not found302641669#2402#95#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@43"Method definition for '+minimum:' not found302641669#2497#95#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@43"Method definition for '+average:' not found302641669#2592#95#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@41"Method definition for '+count:' not found302641669#2687#93#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@40"Method definition for '+count' not found302641669#2780#92#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@46"Method definition for '+find:limit:' not found302641669#2872#98#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@49"Incomplete implementation of class 'ActiveRecord'302641669#2970#101#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#38"incomplete implementation of class '*'0(22@49"Method definition for '-updateAndPush:' not found302641669#3071#101#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@42"Method definition for '-update:' not found302641669#3172#94#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@48"Method definition for '-removeAndPush' not found302641669#3266#100#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(22@41"Method definition for '-remove' not found302641669#3366#93#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m302478010#153#0#153#0#35"method definition for '*' not found0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.m8603931840#1889"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-agvostooaivjhxfdijxaflirdowf/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRecord.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o /Work/ObjectiveRecord/ActiveRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.182037
-e305147920.211244
-r0
+s307305200.116105
+e307305200.453661
+r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o
 x/Work/ObjectiveRecord/ActiveRecord.m
@@ -1167,27 +1204,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Work/ObjectiveRecord/ActiveRecord.m:19:13: error: property implementation must have its declaration in interface 'ActiveRecord'
-o @synthesize remoteDidFinishBlock = _remoteDidFinishBlock;
-o             ^
-oIn file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:
-oIn file included from /Work/ObjectiveRecord/ObjectiveRecord.h:9:
-o/Work/ObjectiveRecord/ActiveRecord.h:34:36: warning: property '_remoteDidFinishBlock' requires method '_remoteDidFinishBlock' to be defined - use @synthesize, @dynamic or provide a method implementation
-o @property (copy) RemoteStatusBlock      _remoteDidFinishBlock;
-o                                         ^
-o/Work/ObjectiveRecord/ActiveRecord.m:14:1: note: implementation is here
-o @implementation ActiveRecord : NSManagedObject 
-o ^
-oIn file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:
-oIn file included from /Work/ObjectiveRecord/ObjectiveRecord.h:9:
-o/Work/ObjectiveRecord/ActiveRecord.h:34:36: warning: property '_remoteDidFinishBlock' requires method 'set_remoteDidFinishBlock:' to be defined - use @synthesize, @dynamic or provide a method implementation
-o @property (copy) RemoteStatusBlock      _remoteDidFinishBlock;
-o                                         ^
-o/Work/ObjectiveRecord/ActiveRecord.m:14:1: note: implementation is here
-o @implementation ActiveRecord : NSManagedObject 
-o ^
-o2 warnings and 1 error generated.
-lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveRecord.m305147920#305147920#0(1387"/Work/ObjectiveRecord/ActiveRecord.m:19:13: error: property implementation must have its declaration in interface 'ActiveRecord' @synthesize remoteDidFinishBlock = _remoteDidFinishBlock;             ^In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:9:/Work/ObjectiveRecord/ActiveRecord.h:34:36: warning: property '_remoteDidFinishBlock' requires method '_remoteDidFinishBlock' to be defined - use @synthesize, @dynamic or provide a method implementation @property (copy) RemoteStatusBlock      _remoteDidFinishBlock;                                         ^/Work/ObjectiveRecord/ActiveRecord.m:14:1: note: implementation is here @implementation ActiveRecord : NSManagedObject  ^In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:9:/Work/ObjectiveRecord/ActiveRecord.h:34:36: warning: property '_remoteDidFinishBlock' requires method 'set_remoteDidFinishBlock:' to be defined - use @synthesize, @dynamic or provide a method implementation @property (copy) RemoteStatusBlock      _remoteDidFinishBlock;                                         ^/Work/ObjectiveRecord/ActiveRecord.m:14:1: note: implementation is here @implementation ActiveRecord : NSManagedObject  ^2 warnings and 1 error generated.3(4@77"Property implementation must have its declaration in interface 'ActiveRecord'305147920#0#129#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m305147697#19#13#0#0#64"property implementation must have its declaration in interface *0(22@149"Property '_remoteDidFinishBlock' requires method '_remoteDidFinishBlock' to be defined - use @synthesize, @dynamic or provide a method implementation305147920#342#203#4(7@64"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:9:305147920#277#65#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h303672387#9#0#9#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:305147920#203#74#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch303669966#8#0#8#0#0"0(13@189"Property '_remoteDidFinishBlock' requires method '_remoteDidFinishBlock' to be defined - use @synthesize, @dynamic or provide a method implementation in /Work/ObjectiveRecord/ActiveRecord.h305147920#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h305147918#34#36#0#0#0"0(13@22"Implementation is here305147920#652#72#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m305147697#14#1#0#0#22"implementation is here0(6@36"/Work/ObjectiveRecord/ActiveRecord.h305147918#34#36#0#0#105"property * requires method * to be defined - use @synthesize, @dynamic or provide a method implementation0(22@153"Property '_remoteDidFinishBlock' requires method 'set_remoteDidFinishBlock:' to be defined - use @synthesize, @dynamic or provide a method implementation305147920#915#207#4(7@64"In file included from /Work/ObjectiveRecord/ObjectiveRecord.h:9:305147920#18446744073709551615#0#0(6@39"/Work/ObjectiveRecord/ObjectiveRecord.h303672387#9#0#9#0#0"0(7@73"In file included from /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch:8:305147920#18446744073709551615#0#0(6@48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch303669966#8#0#8#0#0"0(13@193"Property '_remoteDidFinishBlock' requires method 'set_remoteDidFinishBlock:' to be defined - use @synthesize, @dynamic or provide a method implementation in /Work/ObjectiveRecord/ActiveRecord.h305147920#18446744073709551615#0#0(6@36"/Work/ObjectiveRecord/ActiveRecord.h305147918#34#36#0#0#0"0(13@22"Implementation is here305147920#1229#72#0(6@36"/Work/ObjectiveRecord/ActiveRecord.m305147697#14#1#0#0#22"implementation is here0(6@36"/Work/ObjectiveRecord/ActiveRecord.h305147918#34#36#0#0#105"property * requires method * to be defined - use @synthesize, @dynamic or provide a method implementation0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.m8665719552#1925"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRecord.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o1#
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveRecord.m307305200#307305200#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.m8687110976#1979"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRecord.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRecord.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641669.652152
@@ -1203,8 +1220,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveRequest.m302641669#302641669#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.m8604153696#1891"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-agvostooaivjhxfdijxaflirdowf/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRequest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o /Work/ObjectiveRecord/ActiveRequest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.133948
-e305147920.181932
+s307304881.302541
+e307304881.612045
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o
@@ -1213,7 +1230,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveRequest.m305147920#305147920#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.m8665949728#1927"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRequest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o0#
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveRequest.m307304881#307304881#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.m8660695456#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveRequest.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveRequest.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o /Work/ObjectiveRecord/ActiveResult.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641670.007072
@@ -1229,8 +1246,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveResult.m302641670#302641670#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.m8609916640#1889"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-agvostooaivjhxfdijxaflirdowf/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveResult.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o /Work/ObjectiveRecord/ActiveResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.224295
-e305147920.277158
+s307304881.728191
+e307304881.815080
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o
@@ -1239,7 +1256,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveResult.m305147920#305147920#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.m8626480480#1925"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveResult.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o0#
+lSLF07#2@44"Compile /Work/ObjectiveRecord/ActiveResult.m307304881#307304881#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.m8688701952#1979"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveResult.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveResult.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o /Work/ObjectiveRecord/ActiveSupport.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641669.915735
@@ -1255,8 +1272,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveSupport.m302641669#302641670#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.m8609217568#1891"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-agvostooaivjhxfdijxaflirdowf/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o /Work/ObjectiveRecord/ActiveSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.211331
-e305147920.257130
+s307304881.648487
+e307304881.728086
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o
@@ -1265,7 +1282,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveSupport.m305147920#305147920#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.m8655430528#1927"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o0#
+lSLF07#2@45"Compile /Work/ObjectiveRecord/ActiveSupport.m307304881#307304881#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.m8690431360#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupport.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ActiveSupportInflector.o /Work/ObjectiveRecord/ActiveSupportInflector/ActiveSupportInflector.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641669.304986
@@ -1284,8 +1301,8 @@ CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.buil
 r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/CWInflector.o /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm normal i386 objective-c++ com.apple.compilers.llvmgcc42
-s305147920.257233
-e305147920.406911
+s307304881.815186
+e307304882.024970
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/CWInflector.o
@@ -1294,11 +1311,11 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@67"Compile /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm305147920#305147920#0(0"0(0#0#59"/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm8664874336#2003"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/CWInflector.o0#
+lSLF07#2@67"Compile /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm307304881#307304882#0(0"0(0#0#59"/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm8660501760#2003"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-bplrtradxynfzkejvfzfbkfjiyhh/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.mm -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/CWInflector.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSArray+Core.o /Work/ObjectiveRecord/NSArray+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.277420
-e305147920.353556
+s307304881.987373
+e307304882.045326
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSArray+Core.o
@@ -1307,11 +1324,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@44"Compile /Work/ObjectiveRecord/NSArray+Core.m305147920#305147920#0(0"0(0#0#36"/Work/ObjectiveRecord/NSArray+Core.m8664761696#1925"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSArray+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSArray+Core.o0#
+lSLF07#2@44"Compile /Work/ObjectiveRecord/NSArray+Core.m307304881#307304882#0(0"0(0#0#36"/Work/ObjectiveRecord/NSArray+Core.m8690267968#1979"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSArray+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSArray+Core.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSFaultingMutableSet+Additions.o /Work/ObjectiveRecord/NSFaultingMutableSet+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSManagedObjectContext+Additions.o /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.353654
-e305147920.398174
+s307304882.025078
+e307304882.085609
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSManagedObjectContext+Additions.o
@@ -1320,11 +1340,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@64"Compile /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m305147920#305147920#0(0"0(0#0#56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m8672900000#1965"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSManagedObjectContext+Additions.o0#
+lSLF07#2@64"Compile /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m307304882#307304882#0(0"0(0#0#56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m8690134240#2019"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSManagedObjectContext+Additions.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSManagedObjectContext+Additions.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSMutableArray+Core.o /Work/ObjectiveRecord/NSMutableArray+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.398279
-e305147920.448731
+s307304882.045433
+e307304882.103249
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSMutableArray+Core.o
@@ -1333,11 +1353,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@51"Compile /Work/ObjectiveRecord/NSMutableArray+Core.m305147920#305147920#0(0"0(0#0#43"/Work/ObjectiveRecord/NSMutableArray+Core.m8666233280#1939"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSMutableArray+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSMutableArray+Core.o0#
+lSLF07#2@51"Compile /Work/ObjectiveRecord/NSMutableArray+Core.m307304882#307304882#0(0"0(0#0#43"/Work/ObjectiveRecord/NSMutableArray+Core.m8688691968#1993"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSMutableArray+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSMutableArray+Core.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSObject+Core.o /Work/ObjectiveRecord/NSObject+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.407031
-e305147920.454234
+s307304882.085709
+e307304882.151678
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSObject+Core.o
@@ -1346,11 +1366,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@45"Compile /Work/ObjectiveRecord/NSObject+Core.m305147920#305147920#0(0"0(0#0#37"/Work/ObjectiveRecord/NSObject+Core.m8665745696#1927"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSObject+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSObject+Core.o0#
+lSLF07#2@45"Compile /Work/ObjectiveRecord/NSObject+Core.m307304882#307304882#0(0"0(0#0#37"/Work/ObjectiveRecord/NSObject+Core.m8663965024#1981"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSObject+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSObject+Core.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSSet+Core.o /Work/ObjectiveRecord/NSSet+Core.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.448829
-e305147920.503727
+s307304882.103358
+e307304882.166760
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSSet+Core.o
@@ -1359,11 +1379,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@42"Compile /Work/ObjectiveRecord/NSSet+Core.m305147920#305147920#0(0"0(0#0#34"/Work/ObjectiveRecord/NSSet+Core.m8664870080#1921"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSSet+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSSet+Core.o0#
+lSLF07#2@42"Compile /Work/ObjectiveRecord/NSSet+Core.m307304882#307304882#0(0"0(0#0#34"/Work/ObjectiveRecord/NSSet+Core.m8660707008#1975"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSSet+Core.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSSet+Core.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSString+InflectionSupport.o /Work/ObjectiveRecord/NSString+InflectionSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.454339
-e305147920.540236
+s307304882.151786
+e307304882.223984
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSString+InflectionSupport.o
@@ -1372,7 +1392,20 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@58"Compile /Work/ObjectiveRecord/NSString+InflectionSupport.m305147920#305147920#0(0"0(0#0#50"/Work/ObjectiveRecord/NSString+InflectionSupport.m8664759744#1953"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSString+InflectionSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSString+InflectionSupport.o0#
+lSLF07#2@58"Compile /Work/ObjectiveRecord/NSString+InflectionSupport.m307304882#307304882#0(0"0(0#0#50"/Work/ObjectiveRecord/NSString+InflectionSupport.m8590404032#2007"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSString+InflectionSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSString+InflectionSupport.o0#
+
+CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSThread+Blocks.o /Work/ObjectiveRecord/NSThread+Blocks.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s307304882.224499
+e307304882.281980
+r1
+xCompileC
+xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSThread+Blocks.o
+x/Work/ObjectiveRecord/NSThread+Blocks.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@47"Compile /Work/ObjectiveRecord/NSThread+Blocks.m307304882#307304882#0(0"0(0#0#39"/Work/ObjectiveRecord/NSThread+Blocks.m8672346912#1985"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/NSThread+Blocks.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/NSThread+Blocks.o0#
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302641669.303860
@@ -1391,8 +1424,8 @@ CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.buil
 r0
 
 CCompileC build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147920.504301
-e305147920.652771
+s307304882.166868
+e307304882.428560
 r1
 xCompileC
 xbuild/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o
@@ -1408,169 +1441,169 @@ o/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:114:25
 o #define RKLGetRangeForCapture(re, s, c, r) ({ int32_t start = uregex_start((re), (int32_t)(c), (s)); if(start == -1) { r = NSNotFoundRange; } else { r.location = (NSUInteger)start; r.length = (NSUInteger)uregex_end((re), (int32_t)(c), (s)) - r.location; } *(s); })
 o                                                                                                                                                                                                                                                                 ^~~~
 o1 warning generated.
-lSLF07#2@80"Compile /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m305147920#305147920#0(1104"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:540:73:{540:73-540:147}: warning: expression result unused [-Wunused-value]   if(capture == 0) { captureRange = cacheSlot->lastMatchRange; } else { RKLGetRangeForCapture(cacheSlot->icu_regex, status, capture, captureRange); }                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:114:257: note: instantiated from: #define RKLGetRangeForCapture(re, s, c, r) ({ int32_t start = uregex_start((re), (int32_t)(c), (s)); if(start == -1) { r = NSNotFoundRange; } else { r.location = (NSUInteger)start; r.length = (NSUInteger)uregex_end((re), (int32_t)(c), (s)) - r.location; } *(s); })                                                                                                                                                                                                                                                                 ^~~~1 warning generated.1(22@24"Expression result unused305147920#0#149#1(13@91"Instantiated from: /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m305147920#448#107#0(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#114#257#0#0#18"instantiated from:0(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#540#73#0#0#24"expression result unused1(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#540#73#540#147#0#0#72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m8664553824#1961"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o0#
+lSLF07#2@80"Compile /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m307304882#307304882#0(1104"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:540:73:{540:73-540:147}: warning: expression result unused [-Wunused-value]   if(capture == 0) { captureRange = cacheSlot->lastMatchRange; } else { RKLGetRangeForCapture(cacheSlot->icu_regex, status, capture, captureRange); }                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m:114:257: note: instantiated from: #define RKLGetRangeForCapture(re, s, c, r) ({ int32_t start = uregex_start((re), (int32_t)(c), (s)); if(start == -1) { r = NSNotFoundRange; } else { r.location = (NSUInteger)start; r.length = (NSUInteger)uregex_end((re), (int32_t)(c), (s)) - r.location; } *(s); })                                                                                                                                                                                                                                                                 ^~~~1 warning generated.1(22@24"Expression result unused307304882#0#149#1(13@91"Instantiated from: /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m307304882#448#107#0(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#114#257#0#0#18"instantiated from:0(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#540#73#0#0#24"expression result unused1(6@72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m303069389#540#73#540#147#0#0#72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m8652974464#2015"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -include /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch -c /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/RegexKitLite.o0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveConnection.h ActiveConnection.h
-s305051730.045850
-e305051730.070216
+s305228686.566821
+e305228686.591678
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveConnection.h
 xActiveConnection.h
-lSLF07#2@23"Copy ActiveConnection.h305051730#305051730#0(0"0(0#0#40"/Work/ObjectiveRecord/ActiveConnection.h8666936544#426"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveConnection.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@23"Copy ActiveConnection.h305228686#305228686#0(0"0(0#0#40"/Work/ObjectiveRecord/ActiveConnection.h8656504224#426"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveConnection.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveManager.h ActiveManager.h
-s305051730.042499
-e305051730.070113
+s305229526.140391
+e305229526.145541
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveManager.h
 xActiveManager.h
-lSLF07#2@20"Copy ActiveManager.h305051730#305051730#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveManager.h8667186496#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveManager.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@20"Copy ActiveManager.h305229526#305229526#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveManager.h8657741984#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveManager.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveParser.h ActiveParser.h
-s305051730.095436
-e305051730.108391
+s305228686.620388
+e305228686.629265
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveParser.h
 xActiveParser.h
-lSLF07#2@19"Copy ActiveParser.h305051730#305051730#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveParser.h8590597440#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveParser.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@19"Copy ActiveParser.h305228686#305228686#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveParser.h8677385600#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveParser.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveRecord.h ActiveRecord.h
-s305147919.500223
-e305147919.505699
+s306105406.128993
+e306105406.133899
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveRecord.h
 xActiveRecord.h
-lSLF07#2@19"Copy ActiveRecord.h305147919#305147919#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.h8665420192#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveRecord.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@19"Copy ActiveRecord.h306105406#306105406#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveRecord.h8677146816#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveRecord.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveRequest.h ActiveRequest.h
-s305053862.797782
-e305053862.805952
+s306428051.434630
+e306428051.530479
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveRequest.h
 xActiveRequest.h
-lSLF07#2@20"Copy ActiveRequest.h305053862#305053862#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.h8627060864#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveRequest.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@20"Copy ActiveRequest.h306428051#306428051#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveRequest.h22236725031141488#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveRequest.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveResult.h ActiveResult.h
-s305051730.060589
-e305051730.071356
+s305491320.186115
+e305491320.237350
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveResult.h
 xActiveResult.h
-lSLF07#2@19"Copy ActiveResult.h305051730#305051730#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.h8655840960#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveResult.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@19"Copy ActiveResult.h305491320#305491320#0(0"0(0#0#36"/Work/ObjectiveRecord/ActiveResult.h8671605504#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveResult.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveSupport.h ActiveSupport.h
-s305051730.058419
-e305051730.095152
+s305484940.684299
+e305484940.691503
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ActiveSupport.h
 xActiveSupport.h
-lSLF07#2@20"Copy ActiveSupport.h305051730#305051730#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.h8658365536#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupport.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@20"Copy ActiveSupport.h305484940#305484940#0(0"0(0#0#37"/Work/ObjectiveRecord/ActiveSupport.h8650203296#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupport.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/CWInflector.h ActiveSupportInflector/CWInflector.h
-s305051730.064795
-e305051730.095256
+s305228686.582149
+e305228686.592162
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/CWInflector.h
 xActiveSupportInflector/CWInflector.h
-lSLF07#2@41"Copy ActiveSupportInflector/CWInflector.h305051730#305051730#0(0"0(0#0#58"/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.h8655210304#444"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@41"Copy ActiveSupportInflector/CWInflector.h305228686#305228686#0(0"0(0#0#58"/Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.h8663525568#444"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupportInflector/CWInflector.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSArray+Core.h NSArray+Core.h
-s305051730.066679
-e305051730.095363
+s305228686.583168
+e305228686.623366
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSArray+Core.h
 xNSArray+Core.h
-lSLF07#2@19"Copy NSArray+Core.h305051730#305051730#0(0"0(0#0#36"/Work/ObjectiveRecord/NSArray+Core.h8652614144#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSArray+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@19"Copy NSArray+Core.h305228686#305228686#0(0"0(0#0#36"/Work/ObjectiveRecord/NSArray+Core.h8648714848#422"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSArray+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSManagedObjectContext+Additions.h NSManagedObjectContext+Additions.h
-s305051730.071447
-e305051730.094602
+s305228686.592237
+e305228686.622839
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSManagedObjectContext+Additions.h
 xNSManagedObjectContext+Additions.h
-lSLF07#2@39"Copy NSManagedObjectContext+Additions.h305051730#305051730#0(0"0(0#0#56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h8651523168#442"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSManagedObjectContext+Additions.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@39"Copy NSManagedObjectContext+Additions.h305228686#305228686#0(0"0(0#0#56"/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h8678145408#442"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSManagedObjectContext+Additions.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSMutableArray+Core.h NSMutableArray+Core.h
-s305051730.073462
-e305051730.094726
+s305228686.594319
+e305228686.622956
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSMutableArray+Core.h
 xNSMutableArray+Core.h
-lSLF07#2@26"Copy NSMutableArray+Core.h305051730#305051730#0(0"0(0#0#43"/Work/ObjectiveRecord/NSMutableArray+Core.h8649949632#429"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSMutableArray+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@26"Copy NSMutableArray+Core.h305228686#305228686#0(0"0(0#0#43"/Work/ObjectiveRecord/NSMutableArray+Core.h8669147104#429"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSMutableArray+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSObject+Core.h NSObject+Core.h
-s305051730.076185
-e305051730.104674
+s305228686.604478
+e305228686.623060
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSObject+Core.h
 xNSObject+Core.h
-lSLF07#2@20"Copy NSObject+Core.h305051730#305051730#0(0"0(0#0#37"/Work/ObjectiveRecord/NSObject+Core.h8647511328#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSObject+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@20"Copy NSObject+Core.h305228686#305228686#0(0"0(0#0#37"/Work/ObjectiveRecord/NSObject+Core.h8645141312#423"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSObject+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSSet+Core.h NSSet+Core.h
-s305051730.079445
-e305051730.094836
+s305229488.507716
+e305229488.517135
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSSet+Core.h
 xNSSet+Core.h
-lSLF07#2@17"Copy NSSet+Core.h305051730#305051730#0(0"0(0#0#34"/Work/ObjectiveRecord/NSSet+Core.h8641569312#420"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSSet+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@17"Copy NSSet+Core.h305229488#305229488#0(0"0(0#0#34"/Work/ObjectiveRecord/NSSet+Core.h8688836128#420"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSSet+Core.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSString+InflectionSupport.h NSString+InflectionSupport.h
-s305051730.080838
-e305051730.094947
+s305228686.610428
+e305228686.623267
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/NSString+InflectionSupport.h
 xNSString+InflectionSupport.h
-lSLF07#2@33"Copy NSString+InflectionSupport.h305051730#305051730#0(0"0(0#0#50"/Work/ObjectiveRecord/NSString+InflectionSupport.h8631841856#436"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSString+InflectionSupport.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@33"Copy NSString+InflectionSupport.h305228686#305228686#0(0"0(0#0#50"/Work/ObjectiveRecord/NSString+InflectionSupport.h8691339328#436"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/NSString+InflectionSupport.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord+Utilities.h ObjectiveRecord+Utilities.h
-s305051730.082728
-e305051730.095049
+s305228686.615882
+e305228686.624159
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord+Utilities.h
 xObjectiveRecord+Utilities.h
-lSLF07#2@32"Copy ObjectiveRecord+Utilities.h305051730#305051730#0(0"0(0#0#49"/Work/ObjectiveRecord/ObjectiveRecord+Utilities.h8620877792#435"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ObjectiveRecord+Utilities.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@32"Copy ObjectiveRecord+Utilities.h305228686#305228686#0(0"0(0#0#49"/Work/ObjectiveRecord/ObjectiveRecord+Utilities.h8688811616#435"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ObjectiveRecord+Utilities.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord.h ObjectiveRecord.h
-s305051730.041576
-e305051730.070006
+s305228686.560351
+e305228686.591486
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord.h
 xObjectiveRecord.h
-lSLF07#2@22"Copy ObjectiveRecord.h305051730#305051730#0(0"0(0#0#39"/Work/ObjectiveRecord/ObjectiveRecord.h8667328448#425"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ObjectiveRecord.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@22"Copy ObjectiveRecord.h305228686#305228686#0(0"0(0#0#39"/Work/ObjectiveRecord/ObjectiveRecord.h8691118592#425"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ObjectiveRecord.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord_Prefix.pch ObjectiveRecord_Prefix.pch
-s305051730.040798
-e305051730.069888
+s305228686.559590
+e305228686.591369
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/ObjectiveRecord_Prefix.pch
 xObjectiveRecord_Prefix.pch
-lSLF07#2@31"Copy ObjectiveRecord_Prefix.pch305051730#305051730#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8667711552#434"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@31"Copy ObjectiveRecord_Prefix.pch305228686#305228686#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8606329184#434"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/../Headers/ObjectiveRecord/RegexKitLite.h ActiveSupportInflector/RegexKitLite/RegexKitLite.h
-s305051730.089110
-e305051730.104799
+s305228686.618033
+e305228686.624272
 r1
 xCpHeader
 xbuild/Debug-iphonesimulator/../Headers/ObjectiveRecord/RegexKitLite.h
 xActiveSupportInflector/RegexKitLite/RegexKitLite.h
-lSLF07#2@55"Copy ActiveSupportInflector/RegexKitLite/RegexKitLite.h305051730#305051730#0(0"0(0#0#72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h8615549248#458"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
+lSLF07#2@55"Copy ActiveSupportInflector/RegexKitLite/RegexKitLite.h305228686#305228686#0(0"0(0#0#72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h8679344864#458"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/../Headers/ObjectiveRecord0#
 
 CCpHeader build/Debug-iphonesimulator/Headers/ObjectiveRecord/ActiveConnection.h ActiveConnection.h
 s303670163.246994
@@ -1825,15 +1858,15 @@ xActiveSupportInflector/RegexKitLite/RegexKitLite.h
 lSLF07#2@55"Copy ActiveSupportInflector/RegexKitLite/RegexKitLite.h303669739#303669739#0(0"0(0#0#72"/Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h8619263232#449"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Work/ObjectiveRecord/ActiveSupportInflector/RegexKitLite/RegexKitLite.h /Work/ObjectiveRecord/build/Debug-iphonesimulator/usr/local/include0#
 
 CLibtool /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a normal i386
-s305147608.066607
-e305147608.081920
+s307305200.453745
+e307305200.515800
 r1
 xLibtool
 x/Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a
 xnormal
 xi386
 o/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF07#2@68"Libtool build/Debug-iphonesimulator/libObjectiveRecord.a normal i386305147608#305147608#0(136"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 0(0#0#0"8681248768#724"    cd /Work/ObjectiveRecord    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Work/ObjectiveRecord/build/Debug-iphonesimulator -filelist /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ObjectiveRecord.LinkFileList -ObjC -framework Foundation -framework CoreData -o /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a0#
+lSLF07#2@68"Libtool build/Debug-iphonesimulator/libObjectiveRecord.a normal i386307305200#307305200#0(136"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 0(0#0#0"8689651232#724"    cd /Work/ObjectiveRecord    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Work/ObjectiveRecord/build/Debug-iphonesimulator -filelist /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/Objects-normal/i386/ObjectiveRecord.LinkFileList -ObjC -framework Foundation -framework CoreData -o /Work/ObjectiveRecord/build/Debug-iphonesimulator/libObjectiveRecord.a0#
 
 CPBXCp build/Debug-iphonesimulator/inflections.plist ActiveSupportInflector/inflections.plist
 s303672550.592278
@@ -1871,8 +1904,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch302555826#302555827#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8654797568#1774"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-akbggjyedstgrwghbfaeojnidqri/ObjectiveRecord_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s305147919.506051
-e305147919.713707
+s306428051.530705
+e306428052.539832
 r1
 xProcessPCH
 x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth
@@ -1881,7 +1914,28 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch305147919#305147919#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8651110880#1810"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth0#
+lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch306428051#306428052#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8617448160#1810"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-dpgtnmjzagmlqphkkxrqacqzulzs/ObjectiveRecord_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch.pth ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s307304876.929197
+e307304880.722890
+r1
+xProcessPCH
+x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch.pth
+xObjectiveRecord_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from <built-in>:141:
+o<command line>:2:9: warning: '__IPHONE_OS_VERSION_MIN_REQUIRED' macro redefined
+o #define __IPHONE_OS_VERSION_MIN_REQUIRED 40000
+o         ^
+o<command line>:1:9: note: previous definition is here
+o #define __IPHONE_OS_VERSION_MIN_REQUIRED 30200
+o         ^
+o1 warning generated.
+lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch307304876#307304880#0(311"In file included from <built-in>:141:<command line>:2:9: warning: '__IPHONE_OS_VERSION_MIN_REQUIRED' macro redefined #define __IPHONE_OS_VERSION_MIN_REQUIRED 40000         ^<command line>:1:9: note: previous definition is here #define __IPHONE_OS_VERSION_MIN_REQUIRED 30200         ^1 warning generated.1(22@50"'__IPHONE_OS_VERSION_MIN_REQUIRED' macro redefined307304879#38#80#3(7@37"In file included from <built-in>:141:307304879#0#38#0(6@10"<built-in>307304879#141#0#141#0#0"0(13@68"'__IPHONE_OS_VERSION_MIN_REQUIRED' macro redefined in <command line>307304879#18446744073709551615#0#0(6@14"<command line>307304879#2#9#0#0#0"0(13@27"Previous definition is here307304879#177#54#2(7@37"In file included from <built-in>:141:307304879#18446744073709551615#0#0(6@10"<built-in>307304879#141#0#141#0#0"0(13@45"Previous definition is here in <command line>307304879#18446744073709551615#0#0(6@14"<command line>307304879#1#9#0#0#0"0(6@14"<command line>307304879#1#9#0#0#27"previous definition is here0(6@14"<command line>307304879#2#9#0#0#17"* macro redefined0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8688914176#1864"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fexceptions -fasm-blocks -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-fnjwpaxgqrgryyeezguyfbbirpaa/ObjectiveRecord_Prefix.pch.pth0#
 
 CProcessPCH /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-gwqmurkwfqkuxweiwchuwrnixmzx/ObjectiveRecord_Prefix.pch.gch ObjectiveRecord_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s302555773.134253
@@ -1896,9 +1950,22 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch302555773#302555773#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8654479328#1774"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-gwqmurkwfqkuxweiwchuwrnixmzx/ObjectiveRecord_Prefix.pch.gch0#
 
+CProcessPCH++ /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-bplrtradxynfzkejvfzfbkfjiyhh/ObjectiveRecord_Prefix.pch.gch ObjectiveRecord_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvmgcc42
+s307304876.930461
+e307304881.273642
+r1
+xProcessPCH++
+x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-bplrtradxynfzkejvfzfbkfjiyhh/ObjectiveRecord_Prefix.pch.gch
+xObjectiveRecord_Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch307304876#307304881#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8688810944#1866"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-bplrtradxynfzkejvfzfbkfjiyhh/ObjectiveRecord_Prefix.pch.gch0#
+
 CProcessPCH++ /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch.gch ObjectiveRecord_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvmgcc42
-s305147919.507109
-e305147920.132501
+s306428051.532024
+e306428053.077484
 r1
 xProcessPCH++
 x/var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch.gch
@@ -1907,5 +1974,5 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch305147919#305147920#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8637611840#1866"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch.gch0#
+lSLF07#2@37"Precompile ObjectiveRecord_Prefix.pch306428051#306428053#0(0"0(0#0#48"/Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch8617382496#1866"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/ObjectiveRecord-project-headers.hmap -F/Work/ObjectiveRecord/build/Debug-iphonesimulator -I/Work/ObjectiveRecord/build/Debug-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Debug-iphonesimulator/ObjectiveRecord.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -c /Work/ObjectiveRecord/ObjectiveRecord_Prefix.pch -o /var/folders/Ve/VeTtdom4EFWiU1iMdjsqnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ObjectiveRecord_Prefix-eekcmnqmxloblbfvkusovtzmeanq/ObjectiveRecord_Prefix.pch.gch0#
 

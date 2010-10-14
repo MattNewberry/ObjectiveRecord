@@ -22,9 +22,6 @@
 
 + (void) save{
 	
-	if([self activeManager].logLevel > 1)
-		NSLog(@"Created: %i, Updated: %i, Deleted: %i", [[[self managedObjectContext] insertedObjects] count], [[[self managedObjectContext] updatedObjects] count], [[[self managedObjectContext] deletedObjects] count]);
-	
 	[[self activeManager].managedObjectContext save];
 }
 
@@ -230,11 +227,19 @@
 
 + (id) findByID:(NSNumber *) itemID{
 	
+	return [self findByID:itemID moc:[self managedObjectContext]];
+}
+
++ (id) findByID:(NSNumber *)itemID moc:(NSManagedObjectContext *)moc{
+	
 	if([self propertyDescriptionForField:[self localIDField]] == nil)
 		return nil;
 	
-	ActiveResult *result = [self find:$P($S(@"%@ = %i", [self localIDField], [itemID intValue]))];
-
+	if(!moc)
+		moc = [self managedObjectContext];
+	
+	ActiveResult *result = [self find:$P($S(@"%@ = %i", [self localIDField], [itemID intValue])) sortBy:nil limit:1 fields:$A([self localIDField]) moc:moc];
+	
 	return [result object];
 }
 
@@ -260,6 +265,11 @@
 
 + (ActiveResult *) find:(id) query sortBy:(NSString *)sortBy limit:(int)limit fields:(NSArray *)fields{
 	
+	return [self find:query sortBy:sortBy limit:limit fields:fields moc:[self managedObjectContext]];
+}
+
++ (ActiveResult *) find:(id) query sortBy:(NSString *)sortBy limit:(int)limit fields:(NSArray *)fields moc:(NSManagedObjectContext *)moc{
+	
     NSFetchRequest *fetch = [self fetchRequest];
 	[fetch setEntity:[self entityDescription]];
 	[fetch setPredicate:[ActiveSupport predicateFromObject:query]];
@@ -273,7 +283,11 @@
 		[fetch setFetchLimit:limit];
 	
 	NSError *error;
-	NSArray *results = [[self managedObjectContext] executeFetchRequest:fetch error:&error];
+	
+	if(!moc)
+		moc = [self managedObjectContext];
+		
+	NSArray *results = [moc executeFetchRequest:fetch error:&error];
 
 	ActiveResult *result = [[[ActiveResult alloc] initWithResults:results] autorelease];
 
@@ -363,8 +377,9 @@
     }
     else {
 		
+		NSManagedObjectContext *moc = !![options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
 		ActiveRecord *resource = [[self alloc] initWithEntity:[self entityDescription] 
-							   insertIntoManagedObjectContext:[self managedObjectContext]];
+							   insertIntoManagedObjectContext:moc];
 		
 		NSMutableDictionary *dict	= [NSMutableDictionary dictionary];
 		NSDictionary *map			= [resource map];
@@ -377,7 +392,7 @@
 		
         [resource update:dict withOptions:options];
 		
-		[resource willCreate];
+		[resource willCreate:options];
         
         if ([[self class] activeManager].logLevel > 1) {
             NSLog(@"Created new %@", self);
@@ -425,18 +440,19 @@
 						
 		if (resourceId != nil && [self exists:$I([resourceId intValue])]){
 			
-			resource = [self findByID:$I([resourceId intValue])];
+			NSManagedObjectContext *moc = !![options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
+			resource = [self findByID:$I([resourceId intValue]) moc:moc];
 
-			BOOL shouldUpdate = [resource shouldUpdateWith:parameters];
-			if (shouldUpdate) {
+			//BOOL shouldUpdate = [resource shouldUpdateWith:parameters];
+			//if (shouldUpdate) {
 
 				[resource update:parameters withOptions:options];
-			}
-			else {
-				if ([[self class] activeManager].logLevel > 1)
-					NSLog(@"Skipping update of %@ with id %@ because it is already up-to-date", 
-						  [resource class], [resource valueForKey:[self localIDField]]);
-			}
+			//}
+			//else {
+			//	if ([[self class] activeManager].logLevel > 1)
+					//NSLog(@"Skipping update of %@ with id %@ because it is already up-to-date", 
+						  //[resource class], [resource valueForKey:[self localIDField]]);
+			//}
 		}
 		else
 			resource = [self create:parameters withOptions:options];
@@ -456,12 +472,12 @@
 	NSDictionary *map			= [self map];
 		
 	for(NSString *key in [data keyEnumerator]){
-		
+
 		NSString *mappedKey = [[map allKeys] indexOfObject:key] == NSNotFound ? key : [map objectForKey:key];
 		[dict setObject:[data objectForKey:key] forKey:[mappedKey stringByReplacingOccurrencesOfString:@"-" withString:@"_"]];
 	}
-	
-	[self willUpdate];
+		
+	[self willUpdate:options];
 			
 	// Loop through and apply fields in dictionary (if they exist on the object)
     for (NSString *field in [dict allKeys]) {
@@ -493,7 +509,7 @@
 				
                 // If the value is a dictionary or array, use it to create or update an resource                
                 if ([value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSArray class]]) {
-                    newRelatedResources = [relationshipClass build:value];
+                    newRelatedResources = [relationshipClass build:value withOptions:options];
                     if ([newRelatedResources isKindOfClass:[NSArray class]])
                         newRelatedResources = [NSMutableSet setWithArray:newRelatedResources];
                 }
@@ -538,10 +554,12 @@
                     }
                 }
             }
+			
+			
             
             // If it's an attribute, just assign the value to the object (unless the object is up-to-date)
-            else if ([propertyDescription isKindOfClass:[NSAttributeDescription class]]) {                
-                
+            else if ([propertyDescription isKindOfClass:[NSAttributeDescription class]]) {  
+				                
                 //if ([[self class] activeManager].logLevel > 4)
                   //  NSLog(@"[%@] Setting remote field: %@, local field: %@, value: %@", [self class], field, localField, value);
                 
@@ -703,11 +721,11 @@
 	return $S(@"%@/%i/%@.%@", [[[[[self class] entityName] lowercaseString] underscore] pluralForm], [[self valueForKey:[[self class] localIDField]] intValue], relationship, [[self class] activeManager].remoteContentFormat);
 }
 
-- (void) fetch{
+- (ActiveResult *) fetch{
 	
 	ActiveRequest *request = [self requestForFetch];
 
-	[[[self class] activeManager] addRequest:request];	
+	return [[[self class] activeManager] addSyncronousRequest:request];	
 }
 
 - (void) fetch:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector{
@@ -743,7 +761,7 @@
 	if(relationship)
 		request.urlPath = [self relationshipURL:relationship forAction:Read];
 		
-	[[[self class] activeManager] addRequest:request didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
+	[[[self class] activeManager] addSyncronousRequest:request didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
 }
 
 - (ActiveRequest *) requestForFetch{
@@ -781,12 +799,14 @@
 	
 	ActiveRequest *request = [self requestForPush];
 	
-	[[[self class] activeManager] addRequest:request didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
+	[[[self class] activeManager] addRequest:request didParseObjectBlock:nil didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
 }
 
 - (ActiveRequest *) requestForPush{
 	
-	ActiveRequest *request = [ActiveRequest requestWithURLPath:[self resourceURLForAction:Update]];
+	Action action = [self isInserted] ? Create : Update;
+	
+	ActiveRequest *request = [ActiveRequest requestWithURLPath:[self resourceURLForAction:action]];
 	[request setDelegate:_delegate];
 	[request setDidFinishSelector:_remoteDidFinishSelector];
 	[request setDidFailSelector:_remoteDidFailSelector];
@@ -820,22 +840,23 @@
 	[[self activeManager] addRequest:request];
 }
 
-+ (void) pull:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector{
++ (void) pull:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector{
 	
 	ActiveRequest *request = [self requestForPull];
 	request.didFinishSelector = didFinishSelector;
 	request.didFailSelector = didFailSelector;
+	request.didParseObjectSelector = didParseObjectSelector;
 	request.delegate = delegate;
 	
 	[[[self class] activeManager] addRequest:request];
 }
 
 
-+ (void) pull:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
++ (void) pull:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
 	
 	ActiveRequest *request = [self requestForPull];
 	
-	[[[self class] activeManager] addRequest:request didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
+	[[[self class] activeManager] addRequest:request didParseObjectBlock:didParseObjectBlock didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
 	
 	[self save];
 }
@@ -852,30 +873,17 @@
 
 - (NSString *) relationshipForURLPath:(NSString *) urlPath{
 	
-	NSMutableString *path = [NSMutableString stringWithString:urlPath];
+	NSString *url = [urlPath stringByReplacingOccurrencesOfString:$S(@".%@", [[[self class] activeManager] remoteContentFormat]) withString:@""];
+	NSArray *divider = [url componentsSeparatedByString:@"?"];
+	NSArray *pieces = [[divider objectAtIndex:0] componentsSeparatedByString:@"/"];
+	[pieces makeObjectsPerformSelector:@selector(lowercaseString)];
 	
-	[path replaceOccurrencesOfString:[ActiveManager shared].baseRemoteURL withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [path length])];
-	[path replaceOccurrencesOfString:[[[self class] entityName] pluralForm] withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [path length])];
-
-	NSRange querySearch = [path rangeOfString:@"?"];
-	
-	if(querySearch.location != NSNotFound)
-		[path deleteCharactersInRange:NSMakeRange(querySearch.location, [path length] - querySearch.location)];
-	
-	NSMutableArray *pieces = [NSMutableArray arrayWithArray:[path componentsSeparatedByString:@"/"]];
-	
-	NSRange search = [[pieces lastObject] rangeOfString:$S(@".%@", [[self class] activeManager].remoteContentFormat)];
-	if(search.location != NSNotFound){
-		
-		NSMutableString *value = [NSMutableString stringWithString:[pieces lastObject]];
-		[value replaceCharactersInRange:search withString:@""];
-		[pieces replaceObjectAtIndex:([pieces count]-1) withObject:value];
+	for(NSString *relationship in [[self class] relationshipsByName]){
+		if([pieces containsObject:[relationship lowercaseString]])
+			return [relationship lowercaseString];		
 	}
 	
-	if([pieces count] > 0 && [[pieces objectAtIndex:0] length] == 0)
-		[pieces removeObjectAtIndex:0];
-	
-	return [pieces count] == 1 ? nil : [pieces lastObject];
+	return nil;
 }
 
 - (Class) classForRelationship:(NSString *) relationship{
@@ -891,10 +899,13 @@
 
 + (void) connectionDidFinish:(ActiveResult *) result{
 	
-	for(id object in result)
-		[self build:object];
+	if([result count] > 0){
 	
-	[self save];
+		for(id object in result)
+			[self build:object];
+		
+		[self save];
+	}
 }
 
 + (void) connectionDidFail:(ActiveResult *) result{
@@ -903,31 +914,33 @@
 }
 
 - (void) connectionDidFinish:(ActiveResult *) result{
-	
-	NSString *relationship = [self relationshipForURLPath:result.urlPath];
-
-	if(relationship){
 		
+	NSString *relationship = [self relationshipForURLPath:result.urlPath];
+		
+	if(relationship){
+
 		NSRelationshipDescription *destEntity = [[[self class] relationshipsByName] objectForKey:relationship];
 		NSArray *propertyNames = [[[destEntity destinationEntity] propertiesByName] allKeys];
-		
+
 		if(![propertyNames containsObject:[[self class] localIDField]])
 			[self performSelector:NSSelectorFromString($S(@"remove%@:", [relationship capitalizedString])) withObject:[self valueForKey:relationship]];			
 		
 		Class relatedClass = [self classForRelationship:relationship];
-		
+
 		NSMutableSet *objects = [NSMutableSet setWithCapacity:[result count]];
 		
 		for(id object in result.objects){
 			ActiveRecord *builtObject = [relatedClass build:object];
-			
+						
 			if(builtObject)
 				[objects addObject:builtObject];
 		}
-				
+
 		[self performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
-	}else
+	}else{
+
 		[self update:[result object]];
+	}
 	
 	[self save];
 }
@@ -989,11 +1002,11 @@
 
 - (void) didCreate {}
 
-- (void) willCreate{}
+- (void) willCreate:(id) parameters{}
 
 - (void) didUpdate {}
 
-- (void) willUpdate{}
+- (void) willUpdate:(id) parameters{}
 
 + (NSDictionary *) defaultCreateOptions { return nil; }
 
@@ -1007,7 +1020,7 @@
 
 
 - (void) dealloc{
-		
+	
 	[super dealloc];
 }
 

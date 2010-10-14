@@ -28,8 +28,8 @@ cCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Ob
 cPhaseScriptExecution "Run Script" /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Script-C93094191208A0F300931448.sh
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
-c000000004C0FD15A0000000000000132
-t1276105050
+c000000004C8720B10000000000000132
+t1283924145
 s306
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
@@ -137,6 +137,11 @@ c000000004A5C14A60000000000000DCB
 t1247548582
 s3531
 
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/dispatch/dispatch.h
+c000000004BF4B81500000000000002C9
+t1274329109
+s713
+
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/dlfcn.h
 c000000004AB98DF40000000000000B1C
 t1253674484
@@ -183,9 +188,9 @@ t1274936645
 s2157552
 
 N/Work/ObjectiveRecord/ActiveConnection.h
-c000000004C6990D40000000000000305
-t1281986772
-s773
+c000000004CB728500000000000000354
+t1287071824
+s852
 i<Foundation/Foundation.h>
 i"ActiveRequest.h"
 i"ActiveResult.h"
@@ -198,22 +203,23 @@ i"CoreDataTestCase.h"
 i"Order.h"
 
 N/Work/ObjectiveRecord/ActiveManager.h
-c000000004C76CE3C00000000000008CF
-t1282854460
-s2255
+c000000004CB5EEC10000000000000A78
+t1286991553
+s2680
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveManager.m
-c000000004C7FECE000000000000019FE
-t1283452128
-s6654
+c000000004CB620AA00000000000021AF
+t1287004330
+s8623
 i"ActiveManager.h"
 i"ActiveConnection.h"
+i"NSThread+Blocks.m"
 
 N/Work/ObjectiveRecord/ActiveManagerTest.m
-c000000004C7FECA5000000000000038D
-t1283452069
-s909
+c000000004C8160E40000000000000393
+t1283547364
+s915
 i"ActiveManager.h"
 
 N/Work/ObjectiveRecord/ActiveParser.h
@@ -222,57 +228,57 @@ t1281550961
 s290
 
 N/Work/ObjectiveRecord/ActiveRecord.h
-c000000004C7FF3D90000000000000DE3
-t1283453913
-s3555
+c000000004CB620640000000000001303
+t1287004260
+s4867
 i<Foundation/Foundation.h>
 i"ActiveConnection.h"
 
 N/Work/ObjectiveRecord/ActiveRecord.m
-c000000004C7FF3EA0000000000005DFF
-t1283453930
-s24063
+c000000004CB621660000000000007831
+t1287004518
+s30769
 i"ActiveRecord.h"
 i"ObjectiveRecord+Utilities.h"
 i"ActiveRequest.h"
 
 N/Work/ObjectiveRecord/ActiveRecordTest.m
-c000000004C7FF1850000000000001003
-t1283453317
-s4099
+c000000004CACAAA4000000000000144D
+t1286384292
+s5197
 i"CoreDataTestCase.h"
 i"ObjectiveRecord.h"
 i"Order.h"
 i"OrderItem.h"
 
 N/Work/ObjectiveRecord/ActiveRequest.h
-c000000004C7E869300000000000004BC
-t1283360403
-s1212
+c000000004CB72953000000000000054A
+t1287072083
+s1354
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveRequest.m
-c000000004C7E867400000000000004D2
-t1283360372
-s1234
+c000000004CB72950000000000000051A
+t1287072080
+s1306
 i"ActiveRequest.h"
 
 N/Work/ObjectiveRecord/ActiveResult.h
-c000000004C76B22D00000000000002BD
-t1282847277
-s701
+c000000004C8535F0000000000000031F
+t1283798512
+s799
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveResult.m
-c000000004C76B2C30000000000000449
-t1282847427
-s1097
+c000000004C8535F700000000000004FB
+t1283798519
+s1275
 i"ActiveResult.h"
 
 N/Work/ObjectiveRecord/ActiveSupport.h
-c000000004C5C603400000000000004A3
-t1281122356
-s1187
+c000000004C851D0A00000000000004E0
+t1283792138
+s1248
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/ActiveSupport.m
@@ -368,15 +374,15 @@ s1548
 i"NSArray+Core.h"
 
 N/Work/ObjectiveRecord/NSManagedObjectContext+Additions.h
-c000000004C636E640000000000000120
-t1281584740
+c000000004CADE85E0000000000000120
+t1286465630
 s288
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/NSManagedObjectContext+Additions.m
-c000000004C6450080000000000000306
-t1281642504
-s774
+c000000004CB6007500000000000003C2
+t1286996085
+s962
 i"NSManagedObjectContext+Additions.h"
 
 N/Work/ObjectiveRecord/NSMutableArray+Core.h
@@ -405,14 +411,14 @@ s678
 i"NSObject+Core.h"
 
 N/Work/ObjectiveRecord/NSSet+Core.h
-c000000004C6071730000000000000159
-t1281388915
+c000000004C8134C20000000000000159
+t1283536066
 s345
 i<Foundation/Foundation.h>
 
 N/Work/ObjectiveRecord/NSSet+Core.m
-c000000004C61C4010000000000000387
-t1281475585
+c000000004C8134BF0000000000000387
+t1283536063
 s903
 i"NSSet+Core.h"
 
@@ -427,10 +433,17 @@ t1281389272
 s2991
 i"NSString+InflectionSupport.h"
 
+N/Work/ObjectiveRecord/NSThread+Blocks.m
+c000000004CACE8830000000000000607
+t1286400131
+s1543
+i<dispatch/dispatch.h>
+
 N/Work/ObjectiveRecord/ObjectiveRecord+Utilities.h
-c000000004C696BE60000000000000171
-t1281977318
-s369
+c000000004C811B61000000000000018D
+t1283529569
+s397
+i"NSThread+Blocks.m"
 i"NSArray+Core.h"
 i"NSMutableArray+Core.h"
 i"NSObject+Core.h"
@@ -473,9 +486,9 @@ i<CoreData/CoreData.h>
 i"ActiveRecord.h"
 
 N/Work/ObjectiveRecord/OrderItem.m
-c000000004C7FF26200000000000001C6
-t1283453538
-s454
+c000000004C811F010000000000000135
+t1283530497
+s309
 i"OrderItem.h"
 i"Order.h"
 
@@ -560,6 +573,10 @@ N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitT
 t2
 s0
 
+N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSThread+Blocks.o
+t2
+s0
+
 N/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o
 t1282150339
 s1448
@@ -610,9 +627,18 @@ N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/inflection
 t1282150339
 s1393
 
+N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/items.json
+t2
+s0
+
 N/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/orders.json
 t1282150339
 s386
+
+N/Work/ObjectiveRecord/items.json
+c000000004C8163070000000000000036
+t1283547911
+s54
 
 N/Work/ObjectiveRecord/libYAJLIPhone/libYAJLIPhone.a
 c000000004C4874890000000000091984
@@ -625,9 +651,9 @@ t1282150365
 s378
 
 NUnitTests-Info.plist
-c000000004C5AF3890000000000000266
-t1281029001
-s614
+c000000004C81604E000000000000028E
+t1283547214
+s654
 
 CCheck dependencies
 r0
@@ -1186,6 +1212,9 @@ ofatal error: too many errors emitted, stopping now
 o20 errors generated.
 lSLF07#2@58"Compile /Work/ObjectiveRecord/NSString+InflectionSupport.m303843140#303843140#0(2914"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:/Work/ObjectiveRecord/NSString+InflectionSupport.h:9:12: error: cannot find interface declaration for 'NSString' @interface NSString (InflectionSupport)            ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:11:4: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:11:31: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter;                               ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:18:4: error: expected a type - (NSString *)dasherize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:25:4: error: expected a type - (NSString *)underscore;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:32:4: error: expected a type - (NSString *)camelize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:33:4: error: expected a type - (NSString *)camelizeCached;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:38:4: error: expected a type - (NSString *)titleize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:40:4: error: expected a type - (NSString *)decapitalize;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.h:45:4: error: expected a type - (NSString *)toClassName;    ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:11:17: error: cannot find interface declaration for 'NSString' @implementation NSString (InflectionSupport)                 ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:13:8: error: unknown type name 'NSMutableDictionary' static NSMutableDictionary *cachedCamelized;        ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:15:4: error: expected a type - (NSCharacterSet *)capitals {    ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:16:10: error: use of undeclared identifier 'NSCharacterSet'         return [NSCharacterSet uppercaseLetterCharacterSet];                 ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:19:4: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter {    ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:19:31: error: expected a type - (NSString *)deCamelizeWith:(NSString *)delimiter {                               ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:21:2: error: use of undeclared identifier 'unichar'         unichar *buffer = calloc([self length], sizeof(unichar));         ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:22:22: error: use of undeclared identifier 'buffer'         [self getCharacters:buffer ];                             ^/Work/ObjectiveRecord/NSString+InflectionSupport.m:23:2: error: use of undeclared identifier 'NSMutableString'         NSMutableString *underscored = [NSMutableString string];         ^fatal error: too many errors emitted, stopping now20 errors generated.20(4@48"Cannot find interface declaration for 'NSString'303843140#76#113#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#0#76#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@102"Cannot find interface declaration for 'NSString' in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#9#12#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#9#12#0#0#39"cannot find interface declaration for *0(4@15"Expected a type303843140#244#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#4#0#0#15"expected a type0(4@15"Expected a type303843140#383#81#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#31#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#11#31#0#0#15"expected a type0(4@15"Expected a type303843140#550#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#18#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#18#4#0#0#15"expected a type0(4@15"Expected a type303843140#662#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#25#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#25#4#0#0#15"expected a type0(4@15"Expected a type303843140#775#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#32#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#32#4#0#0#15"expected a type0(4@15"Expected a type303843140#886#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#33#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#33#4#0#0#15"expected a type0(4@15"Expected a type303843140#1003#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#38#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#38#4#0#0#15"expected a type0(4@15"Expected a type303843140#1114#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#40#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#40#4#0#0#15"expected a type0(4@15"Expected a type303843140#1229#80#2(7@75"In file included from /Work/ObjectiveRecord/NSString+InflectionSupport.m:9:303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#9#0#9#0#0"0(13@69"Expected a type in /Work/ObjectiveRecord/NSString+InflectionSupport.h303843140#18446744073709551615#0#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#45#4#0#0#0"0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.h303148054#45#4#0#0#15"expected a type0(4@48"Cannot find interface declaration for 'NSString'303843140#1343#114#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#11#17#0#0#39"cannot find interface declaration for *0(4@39"Unknown type name 'NSMutableDictionary'303843140#1522#104#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#13#8#0#0#19"unknown type name *0(4@15"Expected a type303843140#1682#80#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#15#4#0#0#15"expected a type0(4@45"Use of undeclared identifier 'NSCharacterSet'303843140#1800#111#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#16#10#0#0#30"use of undeclared identifier *0(4@15"Expected a type303843140#1992#80#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#19#4#0#0#15"expected a type0(4@15"Expected a type303843140#2132#81#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#19#31#0#0#15"expected a type0(4@38"Use of undeclared identifier 'unichar'303843140#2300#103#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#21#2#0#0#30"use of undeclared identifier *0(4@37"Use of undeclared identifier 'buffer'303843140#2481#103#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#22#22#0#0#30"use of undeclared identifier *0(4@46"Use of undeclared identifier 'NSMutableString'303843140#2654#111#0(6@50"/Work/ObjectiveRecord/NSString+InflectionSupport.m303082072#23#2#0#0#30"use of undeclared identifier *0(4@37"Too many errors emitted, stopping now303843140#2842#51#0(1@37"too many errors emitted, stopping now0(0#0#50"/Work/ObjectiveRecord/NSString+InflectionSupport.m8642464448#1930"    cd /Work/ObjectiveRecord    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-generated-files.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-own-target-headers.hmap -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-all-target-headers.hmap -iquote /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/UnitTests-project-headers.hmap -F/Work/ObjectiveRecord/build/Release-iphonesimulator -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -F/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/Developer/Library/Frameworks -I/Work/ObjectiveRecord/build/Release-iphonesimulator/include -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources/i386 -I/Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/DerivedSources -c /Work/ObjectiveRecord/NSString+InflectionSupport.m -o /Work/ObjectiveRecord/build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSString+InflectionSupport.o1#
 
+CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/NSThread+Blocks.o /Work/ObjectiveRecord/NSThread+Blocks.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC build/ObjectiveRecord.build/Release-iphonesimulator/UnitTests.build/Objects-normal/i386/Order.o /Work/ObjectiveRecord/Order.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s303843139.142192
 e303843139.259988
@@ -1271,6 +1300,9 @@ xCopyPlistFile
 x/Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest/inflections.plist
 xActiveSupportInflector/inflections.plist
 lSLF07#2@45"Copy ActiveSupportInflector/inflections.plist303843139#303843139#0(0"0(0#0#62"/Work/ObjectiveRecord/ActiveSupportInflector/inflections.plist8631602080#388"    cd /Work/ObjectiveRecord    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 ActiveSupportInflector/inflections.plist --outdir /Work/ObjectiveRecord/build/Release-iphonesimulator/UnitTests.octest0#
+
+CCpResource build/Release-iphonesimulator/UnitTests.octest/items.json items.json
+r0
 
 CCpResource build/Release-iphonesimulator/UnitTests.octest/orders.json orders.json
 s303843139.039050

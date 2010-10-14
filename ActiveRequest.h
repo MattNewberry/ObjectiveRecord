@@ -23,10 +23,14 @@
 	id				_delegate;
 	SEL				_didFinishSelector;
 	SEL				_didFailSelector;
+	SEL				_didParseObjectSelector;
 	
 	BOOL			_batch;
+	NSUInteger _totalBatches;
 }
 
+@property (nonatomic, assign) SEL didParseObjectSelector;
+@property (nonatomic, assign) NSUInteger totalBatches;
 @property (nonatomic, assign) BOOL batch;
 @property (nonatomic, retain) NSString *user;
 @property (nonatomic, retain) NSString *password;

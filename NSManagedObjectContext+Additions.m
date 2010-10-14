@@ -13,6 +13,9 @@
 
 - (BOOL) save{
 	
+	if([ActiveManager shared].logLevel > 1)
+		NSLog(@"Created: %i, Updated: %i, Deleted: %i", [[self insertedObjects] count], [[self updatedObjects] count], [[self deletedObjects] count]);
+	
 	NSError *error;
 	if(![self save:&error]) {
 		NSLog(@"Failed to save to data store: %@", [error localizedDescription]);

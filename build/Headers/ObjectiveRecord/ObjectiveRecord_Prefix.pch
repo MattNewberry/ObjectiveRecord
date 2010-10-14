@@ -7,3 +7,5 @@
 	#import <CoreData/CoreData.h>
 	#import "ObjectiveRecord.h"
 #endif
+
+#import <Availability.h>

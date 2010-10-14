@@ -117,8 +117,8 @@
 		C93094271208A11F00931448 /* ActiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveManager.h; sourceTree = SOURCE_ROOT; };
 		C93094281208A11F00931448 /* ActiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveManager.m; sourceTree = SOURCE_ROOT; };
 		C930942A1208A11F00931448 /* ActiveConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveConnection.h; sourceTree = SOURCE_ROOT; };
-		C930942F1208A11F00931448 /* ActiveRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveRequest.h; sourceTree = SOURCE_ROOT; };
-		C93094301208A11F00931448 /* ActiveRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRequest.m; sourceTree = SOURCE_ROOT; };
+		C930942F1208A11F00931448 /* ActiveRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveRequest.h; sourceTree = "<group>"; };
+		C93094301208A11F00931448 /* ActiveRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRequest.m; sourceTree = "<group>"; };
 		C93094311208A11F00931448 /* ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveRecord.h; sourceTree = SOURCE_ROOT; };
 		C93094321208A11F00931448 /* ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRecord.m; sourceTree = SOURCE_ROOT; };
 		C93094391208A11F00931448 /* ActiveSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveSupport.h; sourceTree = SOURCE_ROOT; };
@@ -240,6 +240,8 @@
 				C93094321208A11F00931448 /* ActiveRecord.m */,
 				C93094391208A11F00931448 /* ActiveSupport.h */,
 				C930943A1208A11F00931448 /* ActiveSupport.m */,
+				C930942F1208A11F00931448 /* ActiveRequest.h */,
+				C93094301208A11F00931448 /* ActiveRequest.m */,
 				C930943B1208A11F00931448 /* ActiveResult.h */,
 				C930943C1208A11F00931448 /* ActiveResult.m */,
 			);
@@ -293,8 +295,6 @@
 			children = (
 				C9A34BCF1213104200084D92 /* Connections */,
 				C930942A1208A11F00931448 /* ActiveConnection.h */,
-				C930942F1208A11F00931448 /* ActiveRequest.h */,
-				C93094301208A11F00931448 /* ActiveRequest.m */,
 			);
 			name = ActiveConnection;
 			sourceTree = SOURCE_ROOT;
@@ -616,6 +616,7 @@
 				GCC_PREFIX_HEADER = ObjectiveRecord_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ObjectiveRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = /../Headers/ObjectiveRecord;
 			};
 			name = Release;
 		};
@@ -625,7 +626,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
