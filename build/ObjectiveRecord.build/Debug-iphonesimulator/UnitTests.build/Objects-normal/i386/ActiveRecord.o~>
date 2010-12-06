@@ -1,4 +1,0 @@
-<command-line>: warning: "__IPHONE_OS_VERSION_MIN_REQUIRED" redefined
-<command-line>: warning: this is the location of the previous definition
-/Work/ObjectiveRecord/ActiveRecord.m: In function '-[ActiveRecord properties:]':
-/Work/ObjectiveRecord/ActiveRecord.m:82: warning: incompatible Objective-C types initializing 'struct NSDictionary *', expected 'struct NSMutableDictionary *'

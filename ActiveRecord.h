@@ -76,6 +76,7 @@ const typedef enum {
 - (ActiveResult *) fetch;
 - (void) fetchRelationship:(NSString *) relationship delegate:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
 - (void) fetchRelationship:(NSString *) relationship didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) fetchProperties:(NSDictionary *) properties;
 - (void) fetch:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
 - (void) fetch:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
 - (ActiveRequest *) requestForFetch;
@@ -121,13 +122,14 @@ const typedef enum {
 + (NSString *) dateFormat;
 - (NSString *) dateFormatPreprocessor:(NSString *) date; 
 
-- (void) didCreate;
+- (void) didCreate:(id) parameters;
 - (void) willCreate:(id) parameters;
-- (void) didUpdate;
+- (void) didUpdate:(id) parameters;
 - (void) willUpdate:(id) parameters;
 
 + (BOOL) remoteEnabled;
 + (BOOL) usesRootNode;
++ (NSString *) rootNodeName;
 + (BOOL) shouldParseEntityNameFromRelationships;
 
 - (NSDictionary *) map;

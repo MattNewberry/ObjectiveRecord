@@ -36,10 +36,11 @@
 {
 	block();
 }
-+ (void)performBlockInBackground:(void (^)())block
-{
++ (void)performBlockInBackground:(void (^)())block{
 	#ifdef __IPHONE_4_0
-	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), block);
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+		block();
+	});
 	#else
 	[NSThread performSelectorInBackground:@selector(ng_runBlock:)
 	                           withObject:[[block copy] autorelease]];
@@ -49,7 +50,9 @@
 + (void)performBlockOnMainThread:(void (^)())block{
 	
 	#ifdef __IPHONE_4_0
-	dispatch_async(dispatch_get_main_queue(), block);
+	dispatch_async(dispatch_get_main_queue(), ^{
+		block();
+	});
 	#else
 	[NSThread performSelectorOnMainThread:@selector(ng_runBlock:)
 	                           withObject:[[block copy] autorelease]];

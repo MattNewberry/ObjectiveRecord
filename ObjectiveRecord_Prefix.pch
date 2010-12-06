@@ -6,6 +6,7 @@
     #import <Foundation/Foundation.h>
 	#import <CoreData/CoreData.h>
 	#import "ObjectiveRecord.h"
+	#import <dispatch/queue.h>
 #endif
 
 #import <Availability.h>

@@ -90,9 +90,15 @@ static NSMutableDictionary *cachedCamelized;
 }
 
 - (NSString *)titleize {
+	
 	NSArray *words = [self componentsSeparatedByString:@" "];
+	
 	NSMutableString *output = [NSMutableString string];
 	for (NSString *word in words) {
+		
+		if([word length] == 0)
+			continue;
+		
 		[output appendString:[[word substringToIndex:1] uppercaseString]];
 		[output appendString:[[word substringFromIndex:1] lowercaseString]];
 		[output appendString:@" "];

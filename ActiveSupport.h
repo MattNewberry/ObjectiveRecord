@@ -15,6 +15,7 @@
 
 #define $D(...) [NSDictionary dictionaryWithObjectsAndKeys: __VA_ARGS__, nil]
 #define $A(...) [NSArray arrayWithObjects: __VA_ARGS__, nil]
+#define $MA(...) [NSMutableArray arrayWithObjects: __VA_ARGS__, nil]
 #define $S(format, ...) [NSString stringWithFormat:format, ## __VA_ARGS__]
 #define $I(i) [NSNumber numberWithInt:i]
 #define $F(f) [NSNumber numberWithFloat:f]

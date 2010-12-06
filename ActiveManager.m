@@ -11,7 +11,7 @@
 #import "NSThread+Blocks.m"
 
 #define OR_CORE_DATE_STORE_TYPE		NSSQLiteStoreType
-#define OR_CORE_DATE_STORE_NAME		@"CoreData.sqlite"
+#define OR_CORE_DATE_STORE_NAME		@"CoreDataStore.sqlite"
 #define OR_CORE_DATE_BATCH_SIZE		25
 
 static ActiveManager *_shared = nil;
@@ -67,8 +67,6 @@ static ActiveManager *_shared = nil;
         self.modelRelationships = [NSMutableDictionary dictionary];
 		
 		self.logLevel = 2;
-		
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
 	}
 	
 	return self;
@@ -84,50 +82,63 @@ static ActiveManager *_shared = nil;
 	[self addRequest:request delegate:request.delegate didParseObjectSelector:request.didParseObjectSelector didFinishSelector:request.didFinishSelector didFailSelector:request.didFailSelector];
 }
 
-- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
+- (void) addBaseURL:(ActiveRequest *)request{
 	
 	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+}
+
+- (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
 	
-	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-		
+	if([request.urlPath rangeOfString:@"http"].length == 0)
+		[self addBaseURL:request];
+	
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+				
 		id <ActiveConnection> conn = [[_connectionClass alloc] init];
 		[conn setResponseDelegate:delegate];
 		[conn setDidFinishSelector:didFinishSelector];
 		[conn setDidFailSelector:didFailSelector];
 		
 		[conn send:request];
-	}];
-	
-	[operation start];
+	});
 }
 
 - (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
 	
-	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	[self addRequest:request toQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0) didParseObjectBlock:didParseObjectBlock didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
+}
+
+- (void) addRequest:(ActiveRequest *) request toQueue:(dispatch_queue_t)queue didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
 	
-	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-		
+	if([request.urlPath rangeOfString:@"http"].length == 0)
+		[self addBaseURL:request];
+	
+	dispatch_async(queue, ^{
+				
 		id <ActiveConnection> conn = [[_connectionClass alloc] init];
+		[conn setResponseDelegate:request.delegate];
 		[conn setDidFailBlock:didFailBlock];
 		[conn setDidFinishBlock:didFinishBlock];
 		[conn setDidParseObjectBlock:didParseObjectBlock];
 		
 		[conn send:request];
-	}];
-	
-	[operation start];
+	});
 }
 
 - (ActiveResult *) addSyncronousRequest:(ActiveRequest *)request{
 	
-	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	if([request.urlPath rangeOfString:@"http"].length == 0)
+		[self addBaseURL:request];
 	
 	return [[[_connectionClass new] autorelease] performSelector:@selector(sendSyncronously:) withObject:request];
 }
 
 - (void) addSyncronousRequest:(ActiveRequest *)request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector{
 	
-	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
+	if([request.urlPath rangeOfString:@"http"].length == 0)
+		[self addBaseURL:request];
 	
 	ActiveResult *result = [[[_connectionClass new] autorelease] performSelector:@selector(sendSyncronously:) withObject:request];
 	
@@ -135,11 +146,16 @@ static ActiveManager *_shared = nil;
 		[delegate performSelector:didFinishSelector withObject:result];
 	else
 		[delegate performSelector:didFailSelector withObject:result];
+	
+	[pool release];
 }
 
 - (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
 	
-	[request setUrlPath:[[ActiveManager shared].baseRemoteURL stringByAppendingString:request.urlPath]];
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
+	if([request.urlPath rangeOfString:@"http"].length == 0)
+		[self addBaseURL:request];
 	
 	ActiveResult *result = [[[_connectionClass new] autorelease] performSelector:@selector(sendSyncronously:) withObject:request];
 	
@@ -151,6 +167,8 @@ static ActiveManager *_shared = nil;
 		[NSThread performBlockOnMainThread:^{
 			didFailBlock(result);
 		}];
+	
+	[pool release];
 }
 
 
@@ -170,9 +188,7 @@ static ActiveManager *_shared = nil;
 
 - (void) managedObjectContextDidSave:(NSNotification *)notification{
 	
-	NSManagedObjectContext *moc = [notification object];
-	if(moc != [self managedObjectContext])
-		[[self managedObjectContext] mergeChangesFromContextDidSaveNotification:notification];		
+	[_managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:) withObject:notification waitUntilDone:YES];
 }
 
 - (NSManagedObjectContext*) newManagedObjectContext{
@@ -201,10 +217,20 @@ static ActiveManager *_shared = nil;
 
 
 - (NSManagedObjectModel*) managedObjectModel {
-	if( _managedObjectModel != nil ) {
+	if( _managedObjectModel != nil )
 		return _managedObjectModel;
-	}
-	_managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+	
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"Shopify_Mobile" ofType:@"momd"];
+	
+	if(!path)
+		path = [[NSBundle mainBundle] pathForResource:@"Shopify_Mobile" ofType:@"mom"];
+	
+    NSURL *momURL = [NSURL fileURLWithPath:path];
+	_managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
+	
+	if(!_managedObjectModel)
+		_managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+	
 	return _managedObjectModel;
 }
 
@@ -221,7 +247,8 @@ static ActiveManager *_shared = nil;
 
 
 - (NSDictionary*) migrationOptions {
-	return nil;
+	
+	return $D([NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption);
 }
 
 
@@ -269,7 +296,7 @@ static ActiveManager *_shared = nil;
 			  addPersistentStoreWithType: OR_CORE_DATE_STORE_TYPE
 			  configuration: nil
 			  URL: storeUrl
-			  options: nil
+			  options: options
 			  error: &error
 			  ]) {
 			// Something is terribly wrong here.

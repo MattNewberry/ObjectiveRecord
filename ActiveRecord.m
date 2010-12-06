@@ -238,8 +238,11 @@
 	if(!moc)
 		moc = [self managedObjectContext];
 	
-	ActiveResult *result = [self find:$P($S(@"%@ = %i", [self localIDField], [itemID intValue])) sortBy:nil limit:1 fields:$A([self localIDField]) moc:moc];
+	if(![[self propertiesByName] objectForKey:[self localIDField]])
+		return nil;
 	
+	ActiveResult *result = [self find:$P($S(@"%@ = %i", [self localIDField], [itemID intValue])) sortBy:nil limit:1 fields:$A([self localIDField]) moc:moc];
+
 	return [result object];
 }
 
@@ -377,7 +380,7 @@
     }
     else {
 		
-		NSManagedObjectContext *moc = !![options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
+		NSManagedObjectContext *moc = [options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
 		ActiveRecord *resource = [[self alloc] initWithEntity:[self entityDescription] 
 							   insertIntoManagedObjectContext:moc];
 		
@@ -389,11 +392,10 @@
 			NSString *mappedKey = [[map allKeys] indexOfObject:key] == NSNotFound ? key : [map objectForKey:key];
 			[dict setObject:[parameters objectForKey:key] forKey:[mappedKey stringByReplacingOccurrencesOfString:@"-" withString:@"_"]];
 		}
-		
-        [resource update:dict withOptions:options];
-		
+				
+        [resource update:dict withOptions:options];		
 		[resource willCreate:options];
-        
+		        
         if ([[self class] activeManager].logLevel > 1) {
             NSLog(@"Created new %@", self);
             if ([[self class] activeManager].logLevel > 4)
@@ -404,7 +406,7 @@
 		if ([resource respondsToSelector:createdAtSel] && [resource valueForKey:[self createdAtField]] == nil)
 			[resource setValue:[NSDate date] forKey:[self createdAtField]];
 		
-        [resource didCreate];
+        [resource didCreate:options];
 		
         return [resource autorelease];
     }
@@ -440,19 +442,10 @@
 						
 		if (resourceId != nil && [self exists:$I([resourceId intValue])]){
 			
-			NSManagedObjectContext *moc = !![options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
+			NSManagedObjectContext *moc = [options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
 			resource = [self findByID:$I([resourceId intValue]) moc:moc];
 
-			//BOOL shouldUpdate = [resource shouldUpdateWith:parameters];
-			//if (shouldUpdate) {
-
-				[resource update:parameters withOptions:options];
-			//}
-			//else {
-			//	if ([[self class] activeManager].logLevel > 1)
-					//NSLog(@"Skipping update of %@ with id %@ because it is already up-to-date", 
-						  //[resource class], [resource valueForKey:[self localIDField]]);
-			//}
+			[resource update:parameters withOptions:options];
 		}
 		else
 			resource = [self create:parameters withOptions:options];
@@ -479,11 +472,8 @@
 		
 	[self willUpdate:options];
 			
-	// Loop through and apply fields in dictionary (if they exist on the object)
     for (NSString *field in [dict allKeys]) {
 		
-        // Get local field name (by default, this is the same as the remote name)
-        // If this is an ID field, use remote/localIdField methods; otherwise, localNameForRemoteField
         NSString *localField = nil;
         if ([field isEqualToString:[[self class] remoteIDField]])
             localField = [[self class] localIDField];
@@ -520,7 +510,7 @@
 				
                 // ===== Apply related resources to self ===== //
                 
-                NSString *rule = !![relationshipOptions objectForKey:@"rule"] ? [relationshipOptions objectForKey:@"rule"] : @"destroy";
+                NSString *rule = [relationshipOptions objectForKey:@"rule"] ? [relationshipOptions objectForKey:@"rule"] : @"destroy";
                 
                 // To-many relationships
                 if ([relationshipDescription isToMany]) {
@@ -555,56 +545,55 @@
                 }
             }
 			
-			
-            
-            // If it's an attribute, just assign the value to the object (unless the object is up-to-date)
             else if ([propertyDescription isKindOfClass:[NSAttributeDescription class]]) {  
-				                
-                //if ([[self class] activeManager].logLevel > 4)
-                  //  NSLog(@"[%@] Setting remote field: %@, local field: %@, value: %@", [self class], field, localField, value);
-                
-                // Check if value is NSNull, which should be set as nil on fields (since NSNull is just used as a collection placeholder)
+				                                
                 if ([value isEqual:[NSNull null]])
                     [self setValue:nil forKey:localField];
 				
                 else {
-                    // Perform additional processing on value based on attribute type
                     switch ([(NSAttributeDescription *)propertyDescription attributeType]) {
 							
                         case NSDateAttributeType:
-
-                            if (value != nil && [value isKindOfClass:[NSString class]])
-								value = [[[self class] activeManager].defaultDateParser dateFromString:[self dateFormatPreprocessor:value]];
-
+							
+                            if ([value isKindOfClass:[NSString class]]){
+								
+								NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+								[formatter setDateFormat:[[self class] dateFormat]];
+								[self setValue:[formatter dateFromString:[self dateFormatPreprocessor:value]] forKey:localField];
+								[formatter release];
+							}
+								
                             break;
 							
 						case NSInteger16AttributeType:
 						case NSInteger32AttributeType:
 						case NSInteger64AttributeType:
-							value = $I([value intValue]);
+							[self setValue:$I([value intValue]) forKey:localField];
 							break;
 						
 						case NSFloatAttributeType:
 						case NSDecimalAttributeType:
-							value = $F([value floatValue]);
+							[self setValue:$F([value floatValue]) forKey:localField];
 							break;
 						
 						case NSDoubleAttributeType:
-							value = [NSNumber numberWithDouble:[value doubleValue]];
+							[self setValue:[NSNumber numberWithDouble:[value doubleValue]] forKey:localField];
 							break;
 						
 						case NSBooleanAttributeType:
-							value = [NSNumber numberWithBool:[value boolValue]];
+							[self setValue:[NSNumber numberWithBool:[value boolValue]] forKey:localField];
+							break;
+						case NSStringAttributeType:
+							[self setValue:value forKey:localField];
 							break;
                     }
-					
-                    [self setValue:value forKey:localField];
+                    
                 }
             }
         }
     }
 	
-	[self didUpdate];
+	[self didUpdate:options];
 
 	return self;
 }
@@ -728,6 +717,14 @@
 	return [[[self class] activeManager] addSyncronousRequest:request];	
 }
 
+- (void) fetchProperties:(NSDictionary *) properties{
+	
+	ActiveRequest *request = [self requestForFetch];
+	[request addParameters:properties];
+	
+	[[[self class] activeManager] addRequest:request didParseObjectBlock:nil didFinishBlock:nil didFailBlock:nil];
+}
+
 - (void) fetch:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector{
 	
 	[self fetchRelationship:nil delegate:delegate didFinishSelector:didFinishSelector didFailSelector:didFailSelector];
@@ -749,7 +746,6 @@
 	
 	request.didFinishSelector = didFinishSelector;
 	request.didFailSelector = didFailSelector;
-	request.delegate = delegate;
 	
 	[[[self class] activeManager] addRequest:request];
 }
@@ -761,14 +757,14 @@
 	if(relationship)
 		request.urlPath = [self relationshipURL:relationship forAction:Read];
 		
-	[[[self class] activeManager] addSyncronousRequest:request didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
+	[[[self class] activeManager] addRequest:request didParseObjectBlock:nil didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
 }
 
 - (ActiveRequest *) requestForFetch{
 	
 	ActiveRequest *request = [ActiveRequest requestWithURLPath:[self resourceURLForAction:Read]];
-	[request setHttpMethod:@"GET"];
-	[request setDelegate:self];
+	request.httpMethod = @"GET";
+	request.delegate = self;
 	
 	return request;
 }
@@ -821,7 +817,7 @@
 		
 		NSDictionary *properties = [self properties:$D([NSNumber numberWithBool:YES], @"$serializeDates", [NSNumber numberWithBool:NO], @"$relationships")];
 		
-		NSDictionary *post = [[self class] usesRootNode] ? $D(properties, [[[self class] entityName] lowercaseString]) : properties;
+		NSDictionary *post = [[self class] usesRootNode] ? $D(properties, [[self class] rootNodeName]) : properties;
 		
 		[request setHttpBody:[[[self class] activeManager] serializeObject:post]];
 	}
@@ -898,7 +894,7 @@
 #pragma mark Remote Delegate
 
 + (void) connectionDidFinish:(ActiveResult *) result{
-	
+
 	if([result count] > 0){
 	
 		for(id object in result)
@@ -914,7 +910,7 @@
 }
 
 - (void) connectionDidFinish:(ActiveResult *) result{
-		
+			
 	NSString *relationship = [self relationshipForURLPath:result.urlPath];
 		
 	if(relationship){
@@ -999,12 +995,16 @@
 	return YES;
 }
 
++ (NSString *) rootNodeName{
+	
+	return [[self entityName] lowercaseString];
+}
 
-- (void) didCreate {}
+- (void) didCreate:(id) parameters {}
 
 - (void) willCreate:(id) parameters{}
 
-- (void) didUpdate {}
+- (void) didUpdate:(id) parameters {}
 
 - (void) willUpdate:(id) parameters{}
 
