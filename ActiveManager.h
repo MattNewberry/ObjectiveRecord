@@ -32,15 +32,14 @@
 	id _activeConnection;
 	id _parsingClass;
 	
-	
 	NSString *_baseRemoteURL;
 	NSString *_remoteContentType;
 	NSString *_remoteContentFormat;
 }
 
 @property (nonatomic, retain) id activeConnection;
-@property (nonatomic, copy) NSString *remoteContentFormat;
-@property (nonatomic, copy) NSString *remoteContentType;
+@property (nonatomic, retain) NSString *remoteContentFormat;
+@property (nonatomic, retain) NSString *remoteContentType;
 @property (nonatomic, assign) id parsingClass;
 @property (nonatomic, retain) NSString *baseRemoteURL;
 @property (nonatomic, assign) id connectionClass;

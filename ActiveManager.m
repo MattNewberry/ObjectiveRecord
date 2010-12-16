@@ -52,7 +52,7 @@ static ActiveManager *_shared = nil;
 	
 	if(self = [super init]){
 		
-		self.requestQueue = [[NSOperationQueue alloc] init];
+		_requestQueue = [[NSOperationQueue alloc] init];
 		self.remoteContentType = @"application/json";
 		self.remoteContentFormat = @"json";
 		
@@ -60,7 +60,7 @@ static ActiveManager *_shared = nil;
 		self.persistentStoreCoordinator = moc == nil ? [self persistentStoreCoordinator] : [moc persistentStoreCoordinator];
 		self.managedObjectModel = moc == nil ? [self managedObjectModel] : [[moc persistentStoreCoordinator] managedObjectModel];
 		
-		self.defaultDateParser = [[NSDateFormatter alloc] init];
+		_defaultDateParser = [[NSDateFormatter alloc] init];
         
 		self.entityDescriptions = [NSMutableDictionary dictionary];
         self.modelProperties = [NSMutableDictionary dictionary];
@@ -94,7 +94,7 @@ static ActiveManager *_shared = nil;
 	
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
 				
-		id <ActiveConnection> conn = [[_connectionClass alloc] init];
+		id <ActiveConnection> conn = [[[_connectionClass alloc] init] autorelease];
 		[conn setResponseDelegate:delegate];
 		[conn setDidFinishSelector:didFinishSelector];
 		[conn setDidFailSelector:didFailSelector];
@@ -115,7 +115,7 @@ static ActiveManager *_shared = nil;
 	
 	dispatch_async(queue, ^{
 				
-		id <ActiveConnection> conn = [[_connectionClass alloc] init];
+		id <ActiveConnection> conn = [[[_connectionClass alloc] init] autorelease];
 		[conn setResponseDelegate:request.delegate];
 		[conn setDidFailBlock:didFailBlock];
 		[conn setDidFinishBlock:didFinishBlock];
@@ -188,7 +188,14 @@ static ActiveManager *_shared = nil;
 
 - (void) managedObjectContextDidSave:(NSNotification *)notification{
 	
-	[_managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:) withObject:notification waitUntilDone:YES];
+	@try {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[[ActiveManager shared].managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:) withObject:notification waitUntilDone:YES];
+		});
+	}
+	@catch (NSException * e) {
+		//Shouldn't be here
+	}	
 }
 
 - (NSManagedObjectContext*) newManagedObjectContext{
@@ -199,7 +206,7 @@ static ActiveManager *_shared = nil;
 	[moc setMergePolicy:NSMergeByPropertyStoreTrumpMergePolicy];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
 	
-	return [moc autorelease];
+	return moc;
 }
 
 - (NSManagedObjectContext*) managedObjectContext {

@@ -31,7 +31,7 @@
 	if(self = [super init]){
 		
 		self.urlPath = url;
-		self.parameters = [[NSMutableDictionary alloc] init];
+		_parameters = [[NSMutableDictionary alloc] init];
 	}
 	
 	return self;

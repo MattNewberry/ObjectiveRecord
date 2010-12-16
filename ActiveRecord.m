@@ -559,6 +559,7 @@
 								
 								NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 								[formatter setDateFormat:[[self class] dateFormat]];
+
 								[self setValue:[formatter dateFromString:[self dateFormatPreprocessor:value]] forKey:localField];
 								[formatter release];
 							}

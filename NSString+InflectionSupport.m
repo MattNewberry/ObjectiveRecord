@@ -91,6 +91,9 @@ static NSMutableDictionary *cachedCamelized;
 
 - (NSString *)titleize {
 	
+	if([self length] == 0)
+		return self;
+	
 	NSArray *words = [self componentsSeparatedByString:@" "];
 	
 	NSMutableString *output = [NSMutableString string];
