@@ -27,7 +27,7 @@
 
 - (ActiveRecord *) save{
 	
-	[[[self class] activeManager].managedObjectContext save];
+	[[self class] save];
 	
 	return self;
 }
@@ -380,9 +380,8 @@
     }
     else {
 		
-		NSManagedObjectContext *moc = [options objectForKey:@"moc"] ? [options objectForKey:@"moc"] : [self managedObjectContext];
 		ActiveRecord *resource = [[self alloc] initWithEntity:[self entityDescription] 
-							   insertIntoManagedObjectContext:moc];
+							   insertIntoManagedObjectContext:[ActiveManager shared].managedObjectContext];
 		
 		NSMutableDictionary *dict	= [NSMutableDictionary dictionary];
 		NSDictionary *map			= [resource map];
@@ -454,15 +453,22 @@
 	return resource;
 }
 
+- (ActiveRecord *) threadSafe{
+	
+	return [[self managedObjectContext] isEqual:[ActiveManager shared].managedObjectContext] ? self : (ActiveRecord *) [[ActiveManager shared].managedObjectContext objectWithID:[self objectID]];
+}
+
 - (id) update:(NSDictionary *)data{
 	
 	return [self update:data withOptions:[[self class] defaultUpdateOptions]];
 }
 
 - (id) update:(NSDictionary *) data withOptions:(NSDictionary *) options{
-		
+	
+	ActiveRecord *threadSafeSelf = [self threadSafe];
+	
 	NSMutableDictionary *dict	= [NSMutableDictionary dictionary];
-	NSDictionary *map			= [self map];
+	NSDictionary *map			= [threadSafeSelf map];
 		
 	for(NSString *key in [data keyEnumerator]){
 
@@ -470,29 +476,29 @@
 		[dict setObject:[data objectForKey:key] forKey:[mappedKey stringByReplacingOccurrencesOfString:@"-" withString:@"_"]];
 	}
 		
-	[self willUpdate:options];
+	[threadSafeSelf willUpdate:options];
 			
     for (NSString *field in [dict allKeys]) {
 		
         NSString *localField = nil;
-        if ([field isEqualToString:[[self class] remoteIDField]])
-            localField = [[self class] localIDField];
+        if ([field isEqualToString:[[threadSafeSelf class] remoteIDField]])
+            localField = [[threadSafeSelf class] localIDField];
         else
-            localField = [[self class] localNameForRemoteField:field];
+            localField = [[threadSafeSelf class] localNameForRemoteField:field];
         
-        NSPropertyDescription *propertyDescription = [[self class] propertyDescriptionForField:localField inModel:[self class]];
+        NSPropertyDescription *propertyDescription = [[threadSafeSelf class] propertyDescriptionForField:localField inModel:[threadSafeSelf class]];
 
         if (propertyDescription != nil) {
             id value = [dict objectForKey:field];
             
             // If property is a relationship, do some cascading object creation/updation
             if ([propertyDescription isKindOfClass:[NSRelationshipDescription class]]) {
-				
+								
                 // Get relationship class from core data info
                 NSRelationshipDescription *relationshipDescription = (NSRelationshipDescription *)propertyDescription;
                 Class relationshipClass = NSClassFromString([[relationshipDescription destinationEntity] managedObjectClassName]);
                 id newRelatedResources;
-                id existingRelatedResources = [self valueForKey:localField];
+                id existingRelatedResources = [threadSafeSelf valueForKey:localField];
 								
                 // ===== Get related resources from value ===== //
 				NSDictionary *relationshipOptions = [options objectForKey:relationshipClass];
@@ -511,7 +517,7 @@
                 // ===== Apply related resources to self ===== //
                 
                 NSString *rule = [relationshipOptions objectForKey:@"rule"] ? [relationshipOptions objectForKey:@"rule"] : @"destroy";
-                
+                				
                 // To-many relationships
                 if ([relationshipDescription isToMany]) {
                     
@@ -527,7 +533,7 @@
                     }
                     
                     // Default action is to replace the set with no further reprecussions (old resources will still persist)
-                    [self setValue:newRelatedResources forKey:localField];
+                    [threadSafeSelf setValue:newRelatedResources forKey:localField];
                 }
                 
                 // Singular relationships
@@ -536,7 +542,7 @@
                     if (![newRelatedResources isEqual:existingRelatedResources]) {
                         
                         // Set new value
-                        [self setValue:newRelatedResources forKey:localField];
+                        [threadSafeSelf setValue:newRelatedResources forKey:localField];
                         
                         // If relationship rule is destroy, get rid of the old resource
                         if ([rule isEqualToString:@"destroy"])
@@ -548,7 +554,7 @@
             else if ([propertyDescription isKindOfClass:[NSAttributeDescription class]]) {  
 				                                
                 if ([value isEqual:[NSNull null]])
-                    [self setValue:nil forKey:localField];
+                    [threadSafeSelf setValue:nil forKey:localField];
 				
                 else {
                     switch ([(NSAttributeDescription *)propertyDescription attributeType]) {
@@ -558,9 +564,9 @@
                             if ([value isKindOfClass:[NSString class]]){
 								
 								NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-								[formatter setDateFormat:[[self class] dateFormat]];
+								[formatter setDateFormat:[[threadSafeSelf class] dateFormat]];
 
-								[self setValue:[formatter dateFromString:[self dateFormatPreprocessor:value]] forKey:localField];
+								[threadSafeSelf setValue:[formatter dateFromString:[threadSafeSelf dateFormatPreprocessor:value]] forKey:localField];
 								[formatter release];
 							}
 								
@@ -569,23 +575,23 @@
 						case NSInteger16AttributeType:
 						case NSInteger32AttributeType:
 						case NSInteger64AttributeType:
-							[self setValue:$I([value intValue]) forKey:localField];
+							[threadSafeSelf setValue:$I([value intValue]) forKey:localField];
 							break;
 						
 						case NSFloatAttributeType:
 						case NSDecimalAttributeType:
-							[self setValue:$F([value floatValue]) forKey:localField];
+							[threadSafeSelf setValue:$F([value floatValue]) forKey:localField];
 							break;
 						
 						case NSDoubleAttributeType:
-							[self setValue:[NSNumber numberWithDouble:[value doubleValue]] forKey:localField];
+							[threadSafeSelf setValue:[NSNumber numberWithDouble:[value doubleValue]] forKey:localField];
 							break;
 						
 						case NSBooleanAttributeType:
-							[self setValue:[NSNumber numberWithBool:[value boolValue]] forKey:localField];
+							[threadSafeSelf setValue:[NSNumber numberWithBool:[value boolValue]] forKey:localField];
 							break;
 						case NSStringAttributeType:
-							[self setValue:value forKey:localField];
+							[threadSafeSelf setValue:value forKey:localField];
 							break;
                     }
                     
@@ -594,9 +600,9 @@
         }
     }
 	
-	[self didUpdate:options];
+	[threadSafeSelf didUpdate:options];
 
-	return self;
+	return threadSafeSelf;
 }
 
 + (id) update:(NSDictionary *)data predicate:(NSPredicate *)predicate{
@@ -758,7 +764,13 @@
 	if(relationship)
 		request.urlPath = [self relationshipURL:relationship forAction:Read];
 		
-	[[[self class] activeManager] addRequest:request didParseObjectBlock:nil didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
+	[[[self class] activeManager] addRequest:request didParseObjectBlock:nil didFinishBlock:^(ActiveResult *result){
+		
+		[self connectionDidFinish:result];
+		
+		didFinishBlock(result);
+		
+	} didFailBlock:didFailBlock];
 }
 
 - (ActiveRequest *) requestForFetch{
@@ -913,16 +925,18 @@
 - (void) connectionDidFinish:(ActiveResult *) result{
 			
 	NSString *relationship = [self relationshipForURLPath:result.urlPath];
-		
+	
+	ActiveRecord *threadSafeSelf = [self threadSafe];
+			
 	if(relationship){
 
-		NSRelationshipDescription *destEntity = [[[self class] relationshipsByName] objectForKey:relationship];
+		NSRelationshipDescription *destEntity = [[[threadSafeSelf class] relationshipsByName] objectForKey:relationship];
 		NSArray *propertyNames = [[[destEntity destinationEntity] propertiesByName] allKeys];
 
-		if(![propertyNames containsObject:[[self class] localIDField]])
-			[self performSelector:NSSelectorFromString($S(@"remove%@:", [relationship capitalizedString])) withObject:[self valueForKey:relationship]];			
+		if(![propertyNames containsObject:[[threadSafeSelf class] localIDField]])
+			[threadSafeSelf performSelector:NSSelectorFromString($S(@"remove%@:", [relationship capitalizedString])) withObject:[self valueForKey:relationship]];			
 		
-		Class relatedClass = [self classForRelationship:relationship];
+		Class relatedClass = [threadSafeSelf classForRelationship:relationship];
 
 		NSMutableSet *objects = [NSMutableSet setWithCapacity:[result count]];
 		
@@ -932,14 +946,18 @@
 			if(builtObject)
 				[objects addObject:builtObject];
 		}
+		
+		NSLog(@"%@", objects);
+				
+		if(objects)
+			[threadSafeSelf performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
+	}
+	else{
 
-		[self performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
-	}else{
-
-		[self update:[result object]];
+		[threadSafeSelf update:[result object]];
 	}
 	
-	[self save];
+	[threadSafeSelf save];
 }
 
 - (void) connectionDidFail:(ActiveResult *) result{

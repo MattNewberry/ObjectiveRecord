@@ -55,7 +55,6 @@
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 + (ActiveManager *) shared;
-- (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc;
 
 - (void) addRequest:(ActiveRequest *) request;
 - (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;

@@ -13,6 +13,7 @@
 #define OR_CORE_DATE_STORE_TYPE		NSSQLiteStoreType
 #define OR_CORE_DATE_STORE_NAME		@"CoreDataStore.sqlite"
 #define OR_CORE_DATE_BATCH_SIZE		25
+#define kRKManagedObjectContextKey @"RKManagedObjectContext"
 
 static ActiveManager *_shared = nil;
 
@@ -45,20 +46,15 @@ static ActiveManager *_shared = nil;
 
 - (id) init{
 	
-	return [self initWithManagedObjectContext:nil];
-}
-
-- (id) initWithManagedObjectContext:(NSManagedObjectContext *) moc{
-	
 	if(self = [super init]){
 		
 		_requestQueue = [[NSOperationQueue alloc] init];
 		self.remoteContentType = @"application/json";
 		self.remoteContentFormat = @"json";
-		
-		self.managedObjectContext = moc == nil ? [self managedObjectContext] : moc;
-		self.persistentStoreCoordinator = moc == nil ? [self persistentStoreCoordinator] : [moc persistentStoreCoordinator];
-		self.managedObjectModel = moc == nil ? [self managedObjectModel] : [[moc persistentStoreCoordinator] managedObjectModel];
+	
+		self.managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+		self.persistentStoreCoordinator = [self persistentStoreCoordinator];
+		self.managedObjectContext = [self newManagedObjectContext];
 		
 		_defaultDateParser = [[NSDateFormatter alloc] init];
         
@@ -187,42 +183,49 @@ static ActiveManager *_shared = nil;
 /*	Core Data		*/
 
 - (void) managedObjectContextDidSave:(NSNotification *)notification{
-	
-	@try {
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[[ActiveManager shared].managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:) withObject:notification waitUntilDone:YES];
-		});
-	}
-	@catch (NSException * e) {
-		//Shouldn't be here
-	}	
+		
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[[ActiveManager shared].managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)
+																	  withObject:notification
+																   waitUntilDone:YES];	
+	});
 }
 
 - (NSManagedObjectContext*) newManagedObjectContext{
 	
 	NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] init];
-	[moc setPersistentStoreCoordinator: [self persistentStoreCoordinator]];
+	[moc setPersistentStoreCoordinator:self.persistentStoreCoordinator];
 	[moc setUndoManager:nil];
-	[moc setMergePolicy:NSMergeByPropertyStoreTrumpMergePolicy];
+	[moc setMergePolicy:NSOverwriteMergePolicy];
+	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
 	
 	return moc;
 }
 
 - (NSManagedObjectContext*) managedObjectContext {
-	if( _managedObjectContext != nil ) {
-		return _managedObjectContext;
-	}
 	
-	NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-	if (coordinator != nil) {
+	//Taken from RestKit	
+	if ([NSThread isMainThread]) {
+		return _managedObjectContext;
 		
-		_managedObjectContext = [[self newManagedObjectContext] retain];
+	} else {
+		
+		NSMutableDictionary *threadDictionary = [[NSThread currentThread] threadDictionary];
+		NSManagedObjectContext *backgroundThreadContext = [threadDictionary objectForKey:kRKManagedObjectContextKey];
+		
+		if (!backgroundThreadContext) {
+			
+			backgroundThreadContext = [self newManagedObjectContext];					
+			[threadDictionary setObject:backgroundThreadContext forKey:kRKManagedObjectContextKey];			
+			[backgroundThreadContext release];
+		}
+		return backgroundThreadContext;
 	}
-	return _managedObjectContext;
 }
 
 
+/*
 - (NSManagedObjectModel*) managedObjectModel {
 	if( _managedObjectModel != nil )
 		return _managedObjectModel;
@@ -240,6 +243,7 @@ static ActiveManager *_shared = nil;
 	
 	return _managedObjectModel;
 }
+*/
 
 
 - (NSString*) storePath {
@@ -269,7 +273,7 @@ static ActiveManager *_shared = nil;
 	
 	NSError* error;
 	_persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
-								  initWithManagedObjectModel: [self managedObjectModel]];
+								  initWithManagedObjectModel: _managedObjectModel];
 	
 	NSDictionary* options = [self migrationOptions];
 	

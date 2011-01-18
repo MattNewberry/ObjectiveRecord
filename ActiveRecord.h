@@ -55,6 +55,7 @@ const typedef enum {
 + (id) last;
 + (NSArray *) all;
 + (BOOL) exists:(NSNumber *) itemID;
+- (ActiveRecord *) threadSafe;
 
 + (id) blank;
 + (id) create:(id)parameters;
