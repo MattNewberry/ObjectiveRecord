@@ -36,6 +36,8 @@
 		C942A98E121078ED00D36B29 /* inflections.plist in Resources */ = {isa = PBXBuildFile; fileRef = C942A989121078ED00D36B29 /* inflections.plist */; };
 		C95BA44C123023AB005AB2DD /* ActiveRecordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FB1D5120A05570075D298 /* ActiveRecordTest.m */; };
 		C95BA44D123023B4005AB2DD /* ActiveManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C930962C1208A34500931448 /* ActiveManagerTest.m */; };
+		C9685A4D12F08C94009D7CF0 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */; };
+		C9685A4E12F08C94009D7CF0 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */; };
 		C96FB1AF1209F8970075D298 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96FB1AE1209F8970075D298 /* libOCMock.a */; };
 		C98467CD120B13260076A566 /* CoreDataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98467CC120B13260076A566 /* CoreDataTestCase.m */; };
 		C9A348081210AA4A00084D92 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */; };
@@ -58,6 +60,7 @@
 		C9A34D7B1213A57F00084D92 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */; };
 		C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A34C911213225A00084D92 /* ActiveParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9BC075712E74BFA00FC8CF4 /* ActiveSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC075612E74BFA00FC8CF4 /* ActiveSupportTest.m */; };
 		C9C3E986126E0ED8007D8FC0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C3E984126E0ED8007D8FC0 /* RegexKitLite.m */; };
 		C9C3E987126E0ED8007D8FC0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C3E984126E0ED8007D8FC0 /* RegexKitLite.m */; };
 		C9C3E988126E0ED8007D8FC0 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C3E985126E0ED8007D8FC0 /* RegexKitLite.h */; };
@@ -132,11 +135,17 @@
 		C942A987121078ED00D36B29 /* CWInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWInflector.h; sourceTree = "<group>"; };
 		C942A988121078ED00D36B29 /* CWInflector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CWInflector.mm; sourceTree = "<group>"; };
 		C942A989121078ED00D36B29 /* inflections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = inflections.plist; sourceTree = "<group>"; };
+		C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		C96FB1AE1209F8970075D298 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		C96FB1BD1209F95B0075D298 /* UnitTests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTests_Prefix.pch; sourceTree = "<group>"; };
 		C96FB1D5120A05570075D298 /* ActiveRecordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRecordTest.m; sourceTree = "<group>"; };
 		C98467CB120B13260076A566 /* CoreDataTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTestCase.h; sourceTree = "<group>"; };
 		C98467CC120B13260076A566 /* CoreDataTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestCase.m; sourceTree = "<group>"; };
+		C9846E1912EBA52100116495 /* ObjectiveRecordMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveRecordMac-Info.plist"; sourceTree = "<group>"; };
+		C9846E2E12EBA5A200116495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9846E5912EBA66E00116495 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9846E6312EBA6E600116495 /* Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mac-Info.plist"; sourceTree = "<group>"; };
 		C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectionSupport.h"; sourceTree = "<group>"; };
 		C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectionSupport.m"; sourceTree = "<group>"; };
 		C9A34B9D12130A0000084D92 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYAJLIPhone.a; sourceTree = "<group>"; };
@@ -152,6 +161,7 @@
 		C9A34C911213225A00084D92 /* ActiveParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveParser.h; sourceTree = "<group>"; };
 		C9A34C95121322DE00084D92 /* YAJLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParsing.h; sourceTree = "<group>"; };
 		C9A34C96121322DE00084D92 /* YAJLParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLParsing.m; sourceTree = "<group>"; };
+		C9BC075612E74BFA00FC8CF4 /* ActiveSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveSupportTest.m; sourceTree = "<group>"; };
 		C9C3E984126E0ED8007D8FC0 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		C9C3E985126E0ED8007D8FC0 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		C9E4EB1512319A58006FB8C2 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = items.json; sourceTree = "<group>"; };
@@ -211,6 +221,10 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				C930941C1208A0F300931448 /* UnitTests-Info.plist */,
+				C9846E1912EBA52100116495 /* ObjectiveRecordMac-Info.plist */,
+				C9846E2E12EBA5A200116495 /* Foundation.framework */,
+				C9846E5912EBA66E00116495 /* Cocoa.framework */,
+				C9846E6312EBA6E600116495 /* Mac-Info.plist */,
 			);
 			name = ObjectiveRecord;
 			sourceTree = "<group>";
@@ -286,6 +300,8 @@
 				C942A988121078ED00D36B29 /* CWInflector.mm */,
 				C942A989121078ED00D36B29 /* inflections.plist */,
 				C942A98A121078ED00D36B29 /* RegexKitLite */,
+				C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */,
+				C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */,
 			);
 			path = ActiveSupportInflector;
 			sourceTree = "<group>";
@@ -336,6 +352,7 @@
 				C930962C1208A34500931448 /* ActiveManagerTest.m */,
 				C96FB1D5120A05570075D298 /* ActiveRecordTest.m */,
 				C9A34C2212131A6400084D92 /* ActiveConnectionTest.m */,
+				C9BC075612E74BFA00FC8CF4 /* ActiveSupportTest.m */,
 			);
 			name = Unit;
 			sourceTree = "<group>";
@@ -426,6 +443,7 @@
 				C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */,
 				C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */,
 				C9C3E988126E0ED8007D8FC0 /* RegexKitLite.h in Headers */,
+				C9685A4D12F08C94009D7CF0 /* GTMNSString+HTML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +577,7 @@
 				C95BA44D123023B4005AB2DD /* ActiveManagerTest.m in Sources */,
 				C932F1B41231464300A98B35 /* NSThread+Blocks.m in Sources */,
 				C9C3E986126E0ED8007D8FC0 /* RegexKitLite.m in Sources */,
+				C9BC075712E74BFA00FC8CF4 /* ActiveSupportTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +599,7 @@
 				C9A34D7B1213A57F00084D92 /* NSString+InflectionSupport.m in Sources */,
 				C932F1B51231464300A98B35 /* NSThread+Blocks.m in Sources */,
 				C9C3E987126E0ED8007D8FC0 /* RegexKitLite.m in Sources */,
+				C9685A4E12F08C94009D7CF0 /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

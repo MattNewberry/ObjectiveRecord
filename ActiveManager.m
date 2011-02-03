@@ -52,11 +52,12 @@ static ActiveManager *_shared = nil;
 		self.remoteContentType = @"application/json";
 		self.remoteContentFormat = @"json";
 	
-		self.managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+		self.managedObjectModel = [self managedObjectModel];
 		self.persistentStoreCoordinator = [self persistentStoreCoordinator];
-		self.managedObjectContext = [self newManagedObjectContext];
+		_managedObjectContext = [self newManagedObjectContext];
 		
 		_defaultDateParser = [[NSDateFormatter alloc] init];
+		[_defaultDateParser setTimeZone:[NSTimeZone localTimeZone]];
         
 		self.entityDescriptions = [NSMutableDictionary dictionary];
         self.modelProperties = [NSMutableDictionary dictionary];
@@ -184,11 +185,14 @@ static ActiveManager *_shared = nil;
 
 - (void) managedObjectContextDidSave:(NSNotification *)notification{
 		
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[[ActiveManager shared].managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)
-																	  withObject:notification
-																   waitUntilDone:YES];	
-	});
+	[self.managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)
+												withObject:notification
+											 waitUntilDone:YES];
+}
+
+- (void)mergeChanges:(NSNotification *)notification {
+
+	[self performSelectorOnMainThread:@selector(managedObjectContextDidSave:) withObject:notification waitUntilDone:YES];
 }
 
 - (NSManagedObjectContext*) newManagedObjectContext{
@@ -197,9 +201,7 @@ static ActiveManager *_shared = nil;
 	[moc setPersistentStoreCoordinator:self.persistentStoreCoordinator];
 	[moc setUndoManager:nil];
 	[moc setMergePolicy:NSOverwriteMergePolicy];
-	
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:moc];
-	
+		
 	return moc;
 }
 
@@ -219,13 +221,17 @@ static ActiveManager *_shared = nil;
 			backgroundThreadContext = [self newManagedObjectContext];					
 			[threadDictionary setObject:backgroundThreadContext forKey:kRKManagedObjectContextKey];			
 			[backgroundThreadContext release];
+			
+			[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeChanges:)
+														 name:NSManagedObjectContextDidSaveNotification
+													   object:backgroundThreadContext];
 		}
 		return backgroundThreadContext;
 	}
 }
 
 
-/*
+
 - (NSManagedObjectModel*) managedObjectModel {
 	if( _managedObjectModel != nil )
 		return _managedObjectModel;
@@ -243,7 +249,7 @@ static ActiveManager *_shared = nil;
 	
 	return _managedObjectModel;
 }
-*/
+
 
 
 - (NSString*) storePath {

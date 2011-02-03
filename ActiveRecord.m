@@ -9,6 +9,7 @@
 #import "ActiveRecord.h"
 #import "ObjectiveRecord+Utilities.h"
 #import "ActiveRequest.h"
+#import "GTMNSString+HTML.h"
 
 
 @implementation ActiveRecord : NSManagedObject 
@@ -454,8 +455,8 @@
 }
 
 - (ActiveRecord *) threadSafe{
-	
-	return [[self managedObjectContext] isEqual:[ActiveManager shared].managedObjectContext] ? self : (ActiveRecord *) [[ActiveManager shared].managedObjectContext objectWithID:[self objectID]];
+		
+	return (ActiveRecord *) [[ActiveManager shared].managedObjectContext existingObjectWithID:[self objectID] error:nil];
 }
 
 - (id) update:(NSDictionary *)data{
@@ -591,6 +592,10 @@
 							[threadSafeSelf setValue:[NSNumber numberWithBool:[value boolValue]] forKey:localField];
 							break;
 						case NSStringAttributeType:
+							
+							if([value isKindOfClass:[NSString class]])
+								[value unescapeFromHTML];
+							
 							[threadSafeSelf setValue:value forKey:localField];
 							break;
                     }
@@ -946,9 +951,7 @@
 			if(builtObject)
 				[objects addObject:builtObject];
 		}
-		
-		NSLog(@"%@", objects);
-				
+						
 		if(objects)
 			[threadSafeSelf performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
 	}

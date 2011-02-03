@@ -12,10 +12,13 @@
 
 
 - (BOOL) save{
+		
+	int insertedObjects = [[self insertedObjects] count];
+	int updatedObjects = [[self updatedObjects] count];
+	int deletedObjects = [[self deletedObjects] count];
 	
-	if([ActiveManager shared].logLevel > 1)
-		NSLog(@"Created: %i, Updated: %i, Deleted: %i", [[self insertedObjects] count], [[self updatedObjects] count], [[self deletedObjects] count]);
-	
+	NSDate *startTime = [NSDate date];
+		
 	NSError *error;
 	if(![self save:&error]) {
 		NSLog(@"Failed to save to data store: %@", [error localizedDescription]);
@@ -31,6 +34,9 @@
 		
 		return NO;
 	}
+	
+	if([ActiveManager shared].logLevel > 0)
+		NSLog(@"Created: %i, Updated: %i, Deleted: %i, Time: %f seconds", insertedObjects, updatedObjects, deletedObjects, ([startTime timeIntervalSinceNow] *-1));
 	
 	return YES;
 }

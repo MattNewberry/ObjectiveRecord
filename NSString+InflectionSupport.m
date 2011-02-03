@@ -96,17 +96,17 @@ static NSMutableDictionary *cachedCamelized;
 	
 	NSArray *words = [self componentsSeparatedByString:@" "];
 	
-	NSMutableString *output = [NSMutableString string];
-	for (NSString *word in words) {
+	NSMutableArray *output = [NSMutableArray array];
+	
+	for(NSString *word in words){
 		
-		if([word length] == 0)
+		if([word stringIsEmptyOrWhitespace])
 			continue;
 		
-		[output appendString:[[word substringToIndex:1] uppercaseString]];
-		[output appendString:[[word substringFromIndex:1] lowercaseString]];
-		[output appendString:@" "];
+		[output addObject:[[word lowercaseString] capitalizedString]];
 	}
-	return [output substringToIndex:[self length]];
+		
+	return [output componentsJoinedByString:@" "];
 }
 
 - (NSString *)decapitalize {
@@ -117,6 +117,14 @@ static NSMutableDictionary *cachedCamelized;
 	NSString *result = [self camelize];
 	return [result stringByReplacingCharactersInRange:NSMakeRange(0,1) 
 										 withString:[[result substringWithRange:NSMakeRange(0,1)] uppercaseString]];
+}
+
+//// From three20, renamed to avoid any issues
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)stringIsEmptyOrWhitespace {
+	return !self.length ||
+	![self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length;
 }
 
 @end
