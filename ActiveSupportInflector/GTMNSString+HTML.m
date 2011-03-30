@@ -507,7 +507,7 @@ static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
       } else {
         // "standard" sequences
         for (unsigned i = 0; i < sizeof(gAsciiHTMLEscapeMap) / sizeof(HTMLEscapeMap); ++i) {
-          if ([escapeString isEqualToString:gAsciiHTMLEscapeMap[i].escapeSequence]) {
+          if ([escapeString rangeOfString:gAsciiHTMLEscapeMap[i].escapeSequence options:NSCaseInsensitiveSearch].location != NSNotFound){
             [finalString replaceCharactersInRange:escapeRange withString:[NSString stringWithCharacters:&gAsciiHTMLEscapeMap[i].uchar length:1]];
             break;
           }

@@ -123,10 +123,10 @@ const typedef enum {
 + (NSString *) dateFormat;
 - (NSString *) dateFormatPreprocessor:(NSString *) date; 
 
-- (void) didCreate:(id) parameters;
-- (void) willCreate:(id) parameters;
-- (void) didUpdate:(id) parameters;
-- (void) willUpdate:(id) parameters;
+- (void) didCreate:(id) parameters data:(NSDictionary *)data;
+- (void) willCreate:(id) parameters data:(NSDictionary *)data;
+- (void) didUpdate:(id) parameters data:(NSDictionary *)data;
+- (void) willUpdate:(id) parameters data:(NSDictionary *)data;
 
 + (BOOL) remoteEnabled;
 + (BOOL) usesRootNode;

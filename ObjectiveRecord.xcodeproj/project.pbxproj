@@ -144,7 +144,6 @@
 		C98467CC120B13260076A566 /* CoreDataTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestCase.m; sourceTree = "<group>"; };
 		C9846E1912EBA52100116495 /* ObjectiveRecordMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveRecordMac-Info.plist"; sourceTree = "<group>"; };
 		C9846E2E12EBA5A200116495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C9846E5912EBA66E00116495 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C9846E6312EBA6E600116495 /* Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mac-Info.plist"; sourceTree = "<group>"; };
 		C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectionSupport.h"; sourceTree = "<group>"; };
 		C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectionSupport.m"; sourceTree = "<group>"; };
@@ -223,7 +222,6 @@
 				C930941C1208A0F300931448 /* UnitTests-Info.plist */,
 				C9846E1912EBA52100116495 /* ObjectiveRecordMac-Info.plist */,
 				C9846E2E12EBA5A200116495 /* Foundation.framework */,
-				C9846E5912EBA66E00116495 /* Cocoa.framework */,
 				C9846E6312EBA6E600116495 /* Mac-Info.plist */,
 			);
 			name = ObjectiveRecord;
@@ -640,7 +638,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = ObjectiveRecord;
 				PUBLIC_HEADERS_FOLDER_PATH = /../Headers/ObjectiveRecord;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

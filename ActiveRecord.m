@@ -394,7 +394,7 @@
 		}
 				
         [resource update:dict withOptions:options];		
-		[resource willCreate:options];
+		[resource willCreate:options data:dict];
 		        
         if ([[self class] activeManager].logLevel > 1) {
             NSLog(@"Created new %@", self);
@@ -406,7 +406,7 @@
 		if ([resource respondsToSelector:createdAtSel] && [resource valueForKey:[self createdAtField]] == nil)
 			[resource setValue:[NSDate date] forKey:[self createdAtField]];
 		
-        [resource didCreate:options];
+        [resource didCreate:options data:dict];
 		
         return [resource autorelease];
     }
@@ -476,8 +476,8 @@
 		NSString *mappedKey = [[map allKeys] indexOfObject:key] == NSNotFound ? key : [map objectForKey:key];
 		[dict setObject:[data objectForKey:key] forKey:[mappedKey stringByReplacingOccurrencesOfString:@"-" withString:@"_"]];
 	}
-		
-	[threadSafeSelf willUpdate:options];
+    
+	[threadSafeSelf willUpdate:options data:dict];
 			
     for (NSString *field in [dict allKeys]) {
 		
@@ -564,11 +564,10 @@
 							
                             if ([value isKindOfClass:[NSString class]]){
 								
-								NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-								[formatter setDateFormat:[[threadSafeSelf class] dateFormat]];
-
+                                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                                [formatter setDateFormat:[[threadSafeSelf class] dateFormat]];
 								[threadSafeSelf setValue:[formatter dateFromString:[threadSafeSelf dateFormatPreprocessor:value]] forKey:localField];
-								[formatter release];
+                                [formatter release];
 							}
 								
                             break;
@@ -593,10 +592,14 @@
 							break;
 						case NSStringAttributeType:
 							
-							if([value isKindOfClass:[NSString class]])
-								[value unescapeFromHTML];
+							if([value isKindOfClass:[NSString class]]){
+                                
+                                [value unescapeFromHTML];
+                                [threadSafeSelf setValue:value forKey:localField];
+                            }
+                            else                       
+                                [threadSafeSelf setValue:[[[self class] activeManager].defaultNumberFormatter stringFromNumber:value] forKey:localField];
 							
-							[threadSafeSelf setValue:value forKey:localField];
 							break;
                     }
                     
@@ -605,7 +608,7 @@
         }
     }
 	
-	[threadSafeSelf didUpdate:options];
+	[threadSafeSelf didUpdate:options data:dict];
 
 	return threadSafeSelf;
 }
@@ -765,6 +768,7 @@
 - (void) fetchRelationship:(NSString *) relationship didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
 	
 	ActiveRequest *request = [self requestForFetch];
+    request.delegate = nil;
 	
 	if(relationship)
 		request.urlPath = [self relationshipURL:relationship forAction:Read];
@@ -928,32 +932,36 @@
 }
 
 - (void) connectionDidFinish:(ActiveResult *) result{
-			
+    			
 	NSString *relationship = [self relationshipForURLPath:result.urlPath];
 	
 	ActiveRecord *threadSafeSelf = [self threadSafe];
 			
 	if(relationship){
 
-		NSRelationshipDescription *destEntity = [[[threadSafeSelf class] relationshipsByName] objectForKey:relationship];
-		NSArray *propertyNames = [[[destEntity destinationEntity] propertiesByName] allKeys];
+        [threadSafeSelf update:$D([result objects], relationship)];
+        
+//		NSRelationshipDescription *destEntity = [[[threadSafeSelf class] relationshipsByName] objectForKey:relationship];
+//		NSArray *propertyNames = [[[destEntity destinationEntity] propertiesByName] allKeys];
+//
+//		if(![propertyNames containsObject:[[threadSafeSelf class] localIDField]])
+//			[threadSafeSelf performSelector:NSSelectorFromString($S(@"remove%@:", [relationship capitalizedString])) withObject:[self valueForKey:relationship]];			
+//		
+//		Class relatedClass = [threadSafeSelf classForRelationship:relationship];
+        
+        
 
-		if(![propertyNames containsObject:[[threadSafeSelf class] localIDField]])
-			[threadSafeSelf performSelector:NSSelectorFromString($S(@"remove%@:", [relationship capitalizedString])) withObject:[self valueForKey:relationship]];			
-		
-		Class relatedClass = [threadSafeSelf classForRelationship:relationship];
-
-		NSMutableSet *objects = [NSMutableSet setWithCapacity:[result count]];
-		
-		for(id object in result.objects){
-			ActiveRecord *builtObject = [relatedClass build:object];
-						
-			if(builtObject)
-				[objects addObject:builtObject];
-		}
-						
-		if(objects)
-			[threadSafeSelf performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
+//		NSMutableSet *objects = [NSMutableSet setWithCapacity:[result count]];
+//		
+//		for(id object in result.objects){
+//			ActiveRecord *builtObject = [relatedClass build:object];
+//						
+//			if(builtObject)
+//				[objects addObject:builtObject];
+//		}
+//						
+//		//if(objects)
+//			//[threadSafeSelf performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
 	}
 	else{
 
@@ -1022,13 +1030,13 @@
 	return [[self entityName] lowercaseString];
 }
 
-- (void) didCreate:(id) parameters {}
+- (void) didCreate:(id) parameters data:(NSDictionary *) data{}
 
-- (void) willCreate:(id) parameters{}
+- (void) willCreate:(id) parameters data:(NSDictionary *) data{}
 
-- (void) didUpdate:(id) parameters {}
+- (void) didUpdate:(id) parameters data:(NSDictionary *) data{}
 
-- (void) willUpdate:(id) parameters{}
+- (void) willUpdate:(id) parameters data:(NSDictionary *) data{}
 
 + (NSDictionary *) defaultCreateOptions { return nil; }
 

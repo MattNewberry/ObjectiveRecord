@@ -20,6 +20,7 @@
 	BOOL _resetModel;
 	
 	NSDateFormatter *_defaultDateParser;
+    NSNumberFormatter *_defaultNumberFormatter;
     
     NSMutableDictionary *_entityDescriptions;
     NSMutableDictionary *_modelProperties;
@@ -45,6 +46,7 @@
 @property (nonatomic, assign) id connectionClass;
 @property (nonatomic, assign) int logLevel;
 @property (nonatomic, retain) NSDateFormatter *defaultDateParser;
+@property (nonatomic, retain) NSNumberFormatter *defaultNumberFormatter;
 @property (nonatomic, retain) NSMutableDictionary *entityDescriptions;
 @property (nonatomic, retain) NSMutableDictionary *modelProperties;
 @property (nonatomic, retain) NSMutableDictionary *modelRelationships;

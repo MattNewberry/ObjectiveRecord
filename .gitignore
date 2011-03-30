@@ -2,5 +2,5 @@ build/*
 .DS_Store
 *.pbxuser
 *.perspectivev3
-*.xcodeproj/*
+#*.xcodeproj/*
 *.mode1v3

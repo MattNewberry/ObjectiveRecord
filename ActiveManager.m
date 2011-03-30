@@ -14,6 +14,7 @@
 #define OR_CORE_DATE_STORE_NAME		@"CoreDataStore.sqlite"
 #define OR_CORE_DATE_BATCH_SIZE		25
 #define kRKManagedObjectContextKey @"RKManagedObjectContext"
+#define OR_CORE_DATA_MIGRATION_NEED @"coreDataMigrationNeeded"
 
 static ActiveManager *_shared = nil;
 
@@ -27,6 +28,7 @@ static ActiveManager *_shared = nil;
 @synthesize connectionClass = _connectionClass;
 @synthesize logLevel;
 @synthesize defaultDateParser = _defaultDateParser;
+@synthesize defaultNumberFormatter = _defaultNumberFormatter;
 @synthesize entityDescriptions = _entityDescriptions;
 @synthesize modelProperties = _modelProperties;
 @synthesize modelRelationships = _modelRelationships;
@@ -37,7 +39,7 @@ static ActiveManager *_shared = nil;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 + (ActiveManager *) shared{
-	
+    	
 	if(_shared == nil)
 		_shared = [[ActiveManager alloc] init];
 	
@@ -58,6 +60,8 @@ static ActiveManager *_shared = nil;
 		
 		_defaultDateParser = [[NSDateFormatter alloc] init];
 		[_defaultDateParser setTimeZone:[NSTimeZone localTimeZone]];
+        
+        _defaultNumberFormatter = [[NSNumberFormatter alloc] init];
         
 		self.entityDescriptions = [NSMutableDictionary dictionary];
         self.modelProperties = [NSMutableDictionary dictionary];
@@ -109,17 +113,29 @@ static ActiveManager *_shared = nil;
 	
 	if([request.urlPath rangeOfString:@"http"].length == 0)
 		[self addBaseURL:request];
-	
-	dispatch_async(queue, ^{
-				
-		id <ActiveConnection> conn = [[[_connectionClass alloc] init] autorelease];
-		[conn setResponseDelegate:request.delegate];
-		[conn setDidFailBlock:didFailBlock];
-		[conn setDidFinishBlock:didFinishBlock];
-		[conn setDidParseObjectBlock:didParseObjectBlock];
-		
-		[conn send:request];
-	});
+    
+    if(dispatch_get_current_queue() == queue){
+        
+        id <ActiveConnection> conn = [[_connectionClass alloc] init];
+        [conn setResponseDelegate:request.delegate];
+        [conn setDidFailBlock:didFailBlock];
+        [conn setDidFinishBlock:didFinishBlock];
+        [conn setDidParseObjectBlock:didParseObjectBlock];
+        
+        [conn send:request];
+        [conn release];
+    }
+	else
+        dispatch_async(queue, ^{
+                            
+            id <ActiveConnection> conn = [[[_connectionClass alloc] init] autorelease];
+            [conn setResponseDelegate:request.delegate];
+            [conn setDidFailBlock:didFailBlock];
+            [conn setDidFinishBlock:didFinishBlock];
+            [conn setDidParseObjectBlock:didParseObjectBlock];
+            
+            [conn send:request];
+        });
 }
 
 - (ActiveResult *) addSyncronousRequest:(ActiveRequest *)request{
@@ -184,7 +200,7 @@ static ActiveManager *_shared = nil;
 /*	Core Data		*/
 
 - (void) managedObjectContextDidSave:(NSNotification *)notification{
-		
+            
 	[self.managedObjectContext performSelectorOnMainThread:@selector(mergeChangesFromContextDidSaveNotification:)
 												withObject:notification
 											 waitUntilDone:YES];
@@ -201,13 +217,16 @@ static ActiveManager *_shared = nil;
 	[moc setPersistentStoreCoordinator:self.persistentStoreCoordinator];
 	[moc setUndoManager:nil];
 	[moc setMergePolicy:NSOverwriteMergePolicy];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeChanges:)
+                                                 name:NSManagedObjectContextDidSaveNotification
+                                               object:moc];
 		
 	return moc;
 }
 
 - (NSManagedObjectContext*) managedObjectContext {
 	
-	//Taken from RestKit	
 	if ([NSThread isMainThread]) {
 		return _managedObjectContext;
 		
@@ -221,10 +240,6 @@ static ActiveManager *_shared = nil;
 			backgroundThreadContext = [self newManagedObjectContext];					
 			[threadDictionary setObject:backgroundThreadContext forKey:kRKManagedObjectContextKey];			
 			[backgroundThreadContext release];
-			
-			[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeChanges:)
-														 name:NSManagedObjectContextDidSaveNotification
-													   object:backgroundThreadContext];
 		}
 		return backgroundThreadContext;
 	}
@@ -276,8 +291,9 @@ static ActiveManager *_shared = nil;
 	
 	NSString* storePath = [self storePath];
 	NSURL *storeUrl = [self storeUrl];
+    
+    NSError* error;
 	
-	NSError* error;
 	_persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
 								  initWithManagedObjectModel: _managedObjectModel];
 	
@@ -297,6 +313,11 @@ static ActiveManager *_shared = nil;
 			_modelCreated = YES;
 		}
 	}
+    
+    BOOL compatible = [_managedObjectModel isConfiguration:nil compatibleWithStoreMetadata:[NSPersistentStoreCoordinator metadataForPersistentStoreOfType:OR_CORE_DATE_STORE_TYPE URL:storeUrl error:&error]];
+    
+    if(!compatible)
+        [[NSNotificationCenter defaultCenter] postNotificationName:OR_CORE_DATA_MIGRATION_NEED object:nil];
 	
 	if (![_persistentStoreCoordinator
 		  addPersistentStoreWithType: OR_CORE_DATE_STORE_TYPE
@@ -354,6 +375,7 @@ static ActiveManager *_shared = nil;
 	[_persistentStoreCoordinator release];
 
 	[_defaultDateParser release];
+    [_defaultNumberFormatter release];
 	[_entityDescriptions release];
 	[_modelProperties release];
 	[_modelRelationships release];

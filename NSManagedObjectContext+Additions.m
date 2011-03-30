@@ -13,10 +13,10 @@
 
 - (BOOL) save{
 		
-	int insertedObjects = [[self insertedObjects] count];
-	int updatedObjects = [[self updatedObjects] count];
-	int deletedObjects = [[self deletedObjects] count];
-	
+	int insertedObjectsCount = [[self insertedObjects] count];
+	int updatedObjectsCount = [[self updatedObjects] count];
+	int deletedObjectsCount = [[self deletedObjects] count];
+    	
 	NSDate *startTime = [NSDate date];
 		
 	NSError *error;
@@ -29,14 +29,14 @@
 			}
 		}
 		else {
-			NSLog(@"  %@", [error userInfo]);
+			NSLog(@"  Error:%@", [error userInfo]);
 		}
 		
 		return NO;
 	}
 	
 	if([ActiveManager shared].logLevel > 0)
-		NSLog(@"Created: %i, Updated: %i, Deleted: %i, Time: %f seconds", insertedObjects, updatedObjects, deletedObjects, ([startTime timeIntervalSinceNow] *-1));
+		NSLog(@"Created: %i, Updated: %i, Deleted: %i, Time: %f seconds", insertedObjectsCount, updatedObjectsCount, deletedObjectsCount, ([startTime timeIntervalSinceNow] *-1));
 	
 	return YES;
 }
