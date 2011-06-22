@@ -27,7 +27,5 @@
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain) NSArray *testData;
 
-- (NSArray *) loadTestData;
-- (void) loadTestRecords;
 
 @end

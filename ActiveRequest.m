@@ -28,7 +28,7 @@
 
 - (id) initWithURLPath:(NSString *) url{
 	
-	if(self = [super init]){
+	if(self == [super init]){
 		
 		self.urlPath = url;
 		_parameters = [[NSMutableDictionary alloc] init];

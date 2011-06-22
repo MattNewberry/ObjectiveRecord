@@ -25,28 +25,7 @@
 		    		
 	_activeManager = [ActiveManager shared];
 	[_activeManager setManagedObjectContext:[self managedObjectContext]];
-	
-	//[_activeManager setConnectionClass:[NSURLConnector class]];
 	[_activeManager setParsingClass:[YAJLParsing class]];
-	
-	_testData = [self loadTestData];
-	
-	[self loadTestRecords];
-}
-
-- (NSArray *) loadTestData{
-	
-	NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"orders" ofType:@"json"];
-	NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-	
-	return [content yajl_JSON];
-}
-
-- (void) loadTestRecords{
-	
-	[Order create:[_testData objectAtIndex:0]];
-	[Order create:[_testData objectAtIndex:1]];
-	[Order save];
 }
 
 
@@ -70,7 +49,7 @@
         return _managedObjectModel;
     }
     _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:
-						   [NSArray arrayWithObject:[NSBundle bundleWithIdentifier:@"com.jadedpixel.shopify"]]] retain]; 
+                            [NSArray arrayWithObject:[NSBundle bundleForClass:[self class]]]] retain]; 
 
     return _managedObjectModel;
 }

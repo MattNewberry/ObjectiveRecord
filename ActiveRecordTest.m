@@ -16,6 +16,37 @@
 
 @implementation ActiveRecordTest
 
+- (void) setUp{
+    
+    [super setUp];
+    [_activeManager loadSeedFiles:$A(@"Order.json") groupName:nil];
+}
+
+- (void) tearDown{
+    
+    [Order removeAll];
+}
+
+- (void) testShouldLoadSeedData{
+    
+    STAssertTrue([_activeManager loadAllSeedFiles], @"Failed to seed files");
+    STAssertEquals([Order count], 2, @"Failed to seed files");
+}
+
+- (void) testShouldLoadHashedSeedData{
+    
+    [Order removeAll];
+    STAssertTrue([_activeManager loadSeedFiles:$A(@"Order_Hash.json") groupName:nil], @"Failed to seed files");
+    STAssertEquals([Order count], 2, @"Failed to seed files");
+}
+
+- (void) testShouldLoadHashedSeedDataByGroup{
+    
+    [Order removeAll];
+    STAssertTrue([_activeManager loadSeedFiles:$A(@"Order_Hash.json") groupName:@"matt"], @"Failed to seed files");
+    STAssertEquals([Order count], 1, @"Failed to seed files");
+}
+
 - (void) testShouldReturnNameWithoutRelationship{
 	
 	STAssertEqualObjects([Order entityName], @"Order", @"Failed to match entity name");

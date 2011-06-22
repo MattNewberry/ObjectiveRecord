@@ -93,8 +93,11 @@ const typedef enum {
 /*	Utilities	*/
 
 + (NSString *) remoteURLForAction:(Action) action;
++ (NSString *) remoteURLForAction:(Action)action withContentFormat:(BOOL) withContentFormat;
 - (NSString *) resourceURLForAction:(Action) action;
+- (NSString *) resourceURLForAction:(Action)action withContentFormat:(BOOL) withContentFormat;
 - (NSString *) relationshipURL:(NSString *) relationship forAction:(Action) action;
+- (NSString *) relationshipURL:(NSString *)relationship forAction:(Action)action withContentFormat:(BOOL) withContentFormat;
 
 + (NSManagedObjectContext *) managedObjectContext;
 + (NSString *) entityName;
@@ -122,6 +125,7 @@ const typedef enum {
 + (NSString *) updatedAtField;
 + (NSString *) dateFormat;
 - (NSString *) dateFormatPreprocessor:(NSString *) date; 
++ (NSString *) classPrefix;
 
 - (void) didCreate:(id) parameters data:(NSDictionary *)data;
 - (void) willCreate:(id) parameters data:(NSDictionary *)data;

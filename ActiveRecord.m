@@ -48,7 +48,10 @@
 
 + (NSString *) entityName {
 	
-	NSString *name = $S(@"%@", self);
+	NSMutableString *name = [NSMutableString stringWithString:$S(@"%@", self)];
+    
+    if([[self classPrefix] length] > 0)
+        [name replaceOccurrencesOfString:[self classPrefix] withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [[self classPrefix] length])];
 		
 	if(![self shouldParseEntityNameFromRelationships] || ![self hasRelationships])
 		return name;
@@ -592,11 +595,8 @@
 							break;
 						case NSStringAttributeType:
 							
-							if([value isKindOfClass:[NSString class]]){
-                                
-                                [value unescapeFromHTML];
-                                [threadSafeSelf setValue:value forKey:localField];
-                            }
+							if([value isKindOfClass:[NSString class]])
+                                [threadSafeSelf setValue:[value unescapeFromHTML] forKey:localField];
                             else                       
                                 [threadSafeSelf setValue:[[[self class] activeManager].defaultNumberFormatter stringFromNumber:value] forKey:localField];
 							
@@ -683,21 +683,36 @@
 
 + (NSString *) remoteURLForAction:(Action)action{
 	
-	return $S(@"%@.%@", [[[[self entityName] lowercaseString] underscore] pluralForm], [self activeManager].remoteContentFormat);
+	return [self remoteURLForAction:action withContentFormat:YES];
+}
+
++ (NSString *) remoteURLForAction:(Action)action withContentFormat:(BOOL) withContentFormat{
+    
+    NSMutableArray *pieces = [NSMutableArray array];
+    [pieces addObject:$S(@"%@", [[[[self entityName] lowercaseString] underscore] pluralForm])];
+    
+    if(withContentFormat)
+        [pieces addObject:$S(@"%@", [self activeManager].remoteContentFormat)];
+    
+    return [pieces componentsJoinedByString:@"."];
 }
 
 - (NSString *) resourceURLForAction:(Action)action{
 	
-	NSMutableArray *pieces = [NSMutableArray arrayWithObject:[[$S(@"%@", [self class]) pluralForm] lowercaseString]];
+	return [self resourceURLForAction:action withContentFormat:YES];
+}
+
+- (NSString *) resourceURLForAction:(Action)action withContentFormat:(BOOL) withContentFormat{
+    
+    NSMutableArray *pieces = [NSMutableArray arrayWithObject:[[$S(@"%@", [self class]) pluralForm] lowercaseString]];
 	
-	if(![self isInserted])
-		[pieces addObject:$S(@"%i", [[self valueForKey:[[self class] localIDField]] intValue])];
+	[pieces addObject:$S(@"%i", [[self valueForKey:[[self class] localIDField]] intValue])];
 	
 	NSMutableString *name = [NSMutableString stringWithString:[pieces objectAtIndex:0]];
 	
 	if(![[self class] shouldParseEntityNameFromRelationships] || ![[self class] hasRelationships])
 		return [pieces componentsJoinedByString:@"/"];
-		
+    
 	for(NSString *key in [[self class] relationshipsByName]){
 		
 		NSRange search = [[pieces objectAtIndex:0] rangeOfString:key options:NSCaseInsensitiveSearch];
@@ -716,13 +731,29 @@
 				[pieces insertObject:relatedId atIndex:1];
 		}
 	}
-		
-	return $S(@"%@.%@", [pieces componentsJoinedByString:@"/"], [[self class] activeManager].remoteContentFormat);
+    
+    if(withContentFormat)
+        [pieces replaceObjectAtIndex:[pieces count]-1 withObject:$S(@"%@.%@", [pieces lastObject], [[self class] activeManager].remoteContentFormat)];
+    
+	return [pieces componentsJoinedByString:@"/"];
 }
 
 - (NSString *) relationshipURL:(NSString *) relationship forAction:(Action) action{
 	
-	return $S(@"%@/%i/%@.%@", [[[[[self class] entityName] lowercaseString] underscore] pluralForm], [[self valueForKey:[[self class] localIDField]] intValue], relationship, [[self class] activeManager].remoteContentFormat);
+	return [self relationshipURL:relationship forAction:action withContentFormat:YES];
+}
+
+- (NSString *) relationshipURL:(NSString *)relationship forAction:(Action)action withContentFormat:(BOOL) withContentFormat{
+    
+    NSMutableArray *pieces = [NSMutableArray array];
+    [pieces addObject:[[[[[self class] entityName] lowercaseString] underscore] pluralForm]];
+    [pieces addObject:$S(@"%i", [[self valueForKey:[[self class] localIDField]] intValue])];
+    [pieces addObject:relationship];
+    
+    if(withContentFormat)
+        [pieces replaceObjectAtIndex:[pieces count]-1 withObject:$S(@"%@.%@", [pieces lastObject], [[self class] activeManager].remoteContentFormat)];
+    
+    return [pieces componentsJoinedByString:@"/"];
 }
 
 - (ActiveResult *) fetch{
@@ -996,8 +1027,14 @@
 }
 
 + (NSString *) defaultSort{
+    
+    NSString *field = @"id";
 	
-	return @"id DESC";
+    NSDictionary *properties = [self propertiesByName];
+    
+    if([[properties allKeys] containsObject:field])
+        return $S(@"%@ DESC", field);
+    else return $S(@"%@ DESC", [[properties allKeys] first]);
 }
 
 + (NSString *) createdAtField{
@@ -1028,6 +1065,11 @@
 + (NSString *) rootNodeName{
 	
 	return [[self entityName] lowercaseString];
+}
+
++ (NSString *) classPrefix{
+    
+    return @"";
 }
 
 - (void) didCreate:(id) parameters data:(NSDictionary *) data{}

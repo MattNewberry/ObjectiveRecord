@@ -15,6 +15,7 @@
 	NSArray *_objects;
 	NSError *_error;
 	NSString *_urlPath;
+    NSDictionary *_headers;
 	
 	id _source;
 }
@@ -23,6 +24,7 @@
 @property (nonatomic, retain) id source;
 @property (nonatomic, retain) NSArray *objects;
 @property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSDictionary *headers;
 
 - (id) initWithResults:(NSArray *)results;
 - (id) initWithSource:(id) resultSource;

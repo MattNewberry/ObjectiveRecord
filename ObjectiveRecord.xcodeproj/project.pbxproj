@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA747D9F0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA747D9F0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ObjectiveRecord_Prefix.pch */; settings = {ATTRIBUTES = (); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		C91DE6FC120C6CE7008B4477 /* NSManagedObjectContext+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */; };
 		C91DE99D120DDAF5008B4477 /* NSArray+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C91DE996120DDAF5008B4477 /* NSArray+Core.m */; };
@@ -36,7 +36,7 @@
 		C942A98E121078ED00D36B29 /* inflections.plist in Resources */ = {isa = PBXBuildFile; fileRef = C942A989121078ED00D36B29 /* inflections.plist */; };
 		C95BA44C123023AB005AB2DD /* ActiveRecordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FB1D5120A05570075D298 /* ActiveRecordTest.m */; };
 		C95BA44D123023B4005AB2DD /* ActiveManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C930962C1208A34500931448 /* ActiveManagerTest.m */; };
-		C9685A4D12F08C94009D7CF0 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */; };
+		C9685A4D12F08C94009D7CF0 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9685A4E12F08C94009D7CF0 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */; };
 		C96FB1AF1209F8970075D298 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96FB1AE1209F8970075D298 /* libOCMock.a */; };
 		C98467CD120B13260076A566 /* CoreDataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98467CC120B13260076A566 /* CoreDataTestCase.m */; };
@@ -63,10 +63,10 @@
 		C9BC075712E74BFA00FC8CF4 /* ActiveSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC075612E74BFA00FC8CF4 /* ActiveSupportTest.m */; };
 		C9C3E986126E0ED8007D8FC0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C3E984126E0ED8007D8FC0 /* RegexKitLite.m */; };
 		C9C3E987126E0ED8007D8FC0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C3E984126E0ED8007D8FC0 /* RegexKitLite.m */; };
-		C9C3E988126E0ED8007D8FC0 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C3E985126E0ED8007D8FC0 /* RegexKitLite.h */; };
-		C9E4EB1612319A58006FB8C2 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = C9E4EB1512319A58006FB8C2 /* items.json */; };
+		C9C3E988126E0ED8007D8FC0 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C3E985126E0ED8007D8FC0 /* RegexKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D739C713B281330092D205 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */; };
+		C9D739C913B2877C0092D205 /* Seeders in Resources */ = {isa = PBXBuildFile; fileRef = C9D739C813B2877C0092D205 /* Seeders */; };
 		C9F31820120B30AF000A87D7 /* Test.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C9F3181F120B30AF000A87D7 /* Test.xcdatamodel */; };
-		C9F31AE2120B3C04000A87D7 /* orders.json in Resources */ = {isa = PBXBuildFile; fileRef = C9F31AE1120B3C04000A87D7 /* orders.json */; };
 		C9F31B62120B422C000A87D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F31B61120B422C000A87D7 /* QuartzCore.framework */; };
 		C9F31B6A120B4266000A87D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F31B69120B4266000A87D7 /* CoreGraphics.framework */; };
 		C9F31B7E120B43AC000A87D7 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F31B7B120B43AC000A87D7 /* Order.m */; };
@@ -135,8 +135,8 @@
 		C942A987121078ED00D36B29 /* CWInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWInflector.h; sourceTree = "<group>"; };
 		C942A988121078ED00D36B29 /* CWInflector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CWInflector.mm; sourceTree = "<group>"; };
 		C942A989121078ED00D36B29 /* inflections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = inflections.plist; sourceTree = "<group>"; };
-		C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ActiveSupportInflector/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ActiveSupportInflector/GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		C96FB1AE1209F8970075D298 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		C96FB1BD1209F95B0075D298 /* UnitTests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTests_Prefix.pch; sourceTree = "<group>"; };
 		C96FB1D5120A05570075D298 /* ActiveRecordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveRecordTest.m; sourceTree = "<group>"; };
@@ -163,9 +163,8 @@
 		C9BC075612E74BFA00FC8CF4 /* ActiveSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveSupportTest.m; sourceTree = "<group>"; };
 		C9C3E984126E0ED8007D8FC0 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		C9C3E985126E0ED8007D8FC0 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
-		C9E4EB1512319A58006FB8C2 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = items.json; sourceTree = "<group>"; };
+		C9D739C813B2877C0092D205 /* Seeders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Seeders; sourceTree = "<group>"; };
 		C9F3181F120B30AF000A87D7 /* Test.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
-		C9F31AE1120B3C04000A87D7 /* orders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = orders.json; sourceTree = SOURCE_ROOT; };
 		C9F31B61120B422C000A87D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C9F31B69120B4266000A87D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C9F31B7A120B43AC000A87D7 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
@@ -273,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				C93094201208A11F00931448 /* ActiveSupportInflector */,
+				C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */,
+				C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */,
 				C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */,
 				C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */,
 				C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */,
@@ -298,8 +299,6 @@
 				C942A988121078ED00D36B29 /* CWInflector.mm */,
 				C942A989121078ED00D36B29 /* inflections.plist */,
 				C942A98A121078ED00D36B29 /* RegexKitLite */,
-				C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */,
-				C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */,
 			);
 			path = ActiveSupportInflector;
 			sourceTree = "<group>";
@@ -406,12 +405,11 @@
 		C9F31823120B3502000A87D7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C9D739C813B2877C0092D205 /* Seeders */,
 				C9F31B7A120B43AC000A87D7 /* Order.h */,
 				C9F31B7B120B43AC000A87D7 /* Order.m */,
 				C9F31B7C120B43AC000A87D7 /* OrderItem.h */,
 				C9F31B7D120B43AC000A87D7 /* OrderItem.m */,
-				C9F31AE1120B3C04000A87D7 /* orders.json */,
-				C9E4EB1512319A58006FB8C2 /* items.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -432,16 +430,16 @@
 				C93094501208A11F00931448 /* ActiveSupport.h in Headers */,
 				C93094521208A11F00931448 /* ActiveResult.h in Headers */,
 				C9A34D6D1213A57700084D92 /* CWInflector.h in Headers */,
+				C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */,
 				C9A34D6F1213A57800084D92 /* NSArray+Core.h in Headers */,
 				C9A34D711213A57800084D92 /* NSManagedObjectContext+Additions.h in Headers */,
 				C9A34D731213A57A00084D92 /* NSMutableArray+Core.h in Headers */,
 				C9A34D751213A57B00084D92 /* NSObject+Core.h in Headers */,
 				C9A34D771213A57D00084D92 /* NSSet+Core.h in Headers */,
 				C9A34D7A1213A57F00084D92 /* NSString+InflectionSupport.h in Headers */,
-				C9A34D7C1213A58000084D92 /* ObjectiveRecord+Utilities.h in Headers */,
-				C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */,
 				C9C3E988126E0ED8007D8FC0 /* RegexKitLite.h in Headers */,
 				C9685A4D12F08C94009D7CF0 /* GTMNSString+HTML.h in Headers */,
+				C9A34D7F1213A58400084D92 /* ActiveParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,9 +470,9 @@
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ObjectiveRecord" */;
 			buildPhases = (
 				C934AB6D1219AD660090B38C /* Resources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
-				D2AAC07C0554694100DB518D /* Frameworks */,
 				C934AB881219AE700090B38C /* CopyFiles */,
 			);
 			buildRules = (
@@ -517,9 +515,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F31AE2120B3C04000A87D7 /* orders.json in Resources */,
 				C942A98E121078ED00D36B29 /* inflections.plist in Resources */,
-				C9E4EB1612319A58006FB8C2 /* items.json in Resources */,
+				C9D739C913B2877C0092D205 /* Seeders in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +573,7 @@
 				C932F1B41231464300A98B35 /* NSThread+Blocks.m in Sources */,
 				C9C3E986126E0ED8007D8FC0 /* RegexKitLite.m in Sources */,
 				C9BC075712E74BFA00FC8CF4 /* ActiveSupportTest.m in Sources */,
+				C9D739C713B281330092D205 /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +609,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/ObjectiveRecord.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -618,9 +620,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveRecord_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "\"/../$(PRODUCT_NAME)/$(PRODUCT_NAME)/Private\"";
 				PRODUCT_NAME = ObjectiveRecord;
-				PUBLIC_HEADERS_FOLDER_PATH = /../Headers/ObjectiveRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"/../$(PRODUCT_NAME)/$(PRODUCT_NAME)\"";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = Build;
+				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv6 armv7 i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -630,15 +638,24 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/ObjectiveRecord.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ObjectiveRecord_Prefix.pch;
 				GCC_VERSION = "";
 				INSTALL_PATH = /usr/local/lib;
 				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "\"/../$(PRODUCT_NAME)/$(PRODUCT_NAME)/Private\"";
 				PRODUCT_NAME = ObjectiveRecord;
-				PUBLIC_HEADERS_FOLDER_PATH = /../Headers/ObjectiveRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"/../$(PRODUCT_NAME)/$(PRODUCT_NAME)\"";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = Build;
+				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv6 armv7 i386 x86_64";
 			};
 			name = Release;
 		};
@@ -680,6 +697,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../Rackspace\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -725,6 +744,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../Rackspace\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -739,6 +760,10 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
 					"-framework",
 					Foundation,
 					"-framework",
@@ -753,6 +778,92 @@
 			};
 			name = Release;
 		};
+		C991792E134A5B7D00741A52 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = "Ad Hoc";
+		};
+		C991792F134A5B7D00741A52 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/ObjectiveRecord.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ObjectiveRecord_Prefix.pch;
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "\"/../$(PRODUCT_NAME)/$(PRODUCT_NAME)/Private\"";
+				PRODUCT_NAME = ObjectiveRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"/../$(PRODUCT_NAME)/$(PRODUCT_NAME)\"";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = Build;
+				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv6 armv7 i386 x86_64";
+			};
+			name = "Ad Hoc";
+		};
+		C9917930134A5B7D00741A52 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../Rackspace\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../OCMock/Source/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Libraries\"",
+					"\"$(SRCROOT)/libYAJLIPhone\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = "Ad Hoc";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -761,6 +872,7 @@
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
 				1DEB922008733DC00010E9CD /* Release */,
+				C991792F134A5B7D00741A52 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -770,6 +882,7 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+				C991792E134A5B7D00741A52 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -779,6 +892,7 @@
 			buildConfigurations = (
 				C930941D1208A0F400931448 /* Debug */,
 				C930941E1208A0F400931448 /* Release */,
+				C9917930134A5B7D00741A52 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,6 +15,7 @@
 #define OR_CORE_DATE_BATCH_SIZE		25
 #define kRKManagedObjectContextKey @"RKManagedObjectContext"
 #define OR_CORE_DATA_MIGRATION_NEED @"coreDataMigrationNeeded"
+#define OR_SEED_DIR                 @"Seeders"
 
 static ActiveManager *_shared = nil;
 
@@ -48,7 +49,7 @@ static ActiveManager *_shared = nil;
 
 - (id) init{
 	
-	if(self = [super init]){
+	if((self = [super init])){
 		
 		_requestQueue = [[NSOperationQueue alloc] init];
 		self.remoteContentType = @"application/json";
@@ -116,7 +117,7 @@ static ActiveManager *_shared = nil;
     
     if(dispatch_get_current_queue() == queue){
         
-        id <ActiveConnection> conn = [[_connectionClass alloc] init];
+        NSObject <ActiveConnection> *conn = [[_connectionClass alloc] init];
         [conn setResponseDelegate:request.delegate];
         [conn setDidFailBlock:didFailBlock];
         [conn setDidFinishBlock:didFinishBlock];
@@ -194,7 +195,11 @@ static ActiveManager *_shared = nil;
 	return [string dataUsingEncoding:NSUTF8StringEncoding];
 }
 
-
+- (id) parseString:(NSString *) content{
+    
+    id <ActiveParser> parser = [[[_parsingClass alloc] init] autorelease];
+    return [parser parse:content];
+}
 
 
 /*	Core Data		*/
@@ -241,31 +246,42 @@ static ActiveManager *_shared = nil;
 			[threadDictionary setObject:backgroundThreadContext forKey:kRKManagedObjectContextKey];			
 			[backgroundThreadContext release];
 		}
+        
 		return backgroundThreadContext;
 	}
 }
 
 
-
 - (NSManagedObjectModel*) managedObjectModel {
+    
 	if( _managedObjectModel != nil )
 		return _managedObjectModel;
-	
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"Shopify_Mobile" ofType:@"momd"];
-	
-	if(!path)
-		path = [[NSBundle mainBundle] pathForResource:@"Shopify_Mobile" ofType:@"mom"];
-	
-    NSURL *momURL = [NSURL fileURLWithPath:path];
-	_managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
-	
-	if(!_managedObjectModel)
-		_managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+    
+    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSBundle bundleForClass:[self class]] bundlePath] error:nil];
+    NSArray *momFiles = [files filteredArrayUsingPredicate:$P(@"self ENDSWITH '.mom' OR self ENDSWITH '.momd'")];
+	    
+    BOOL modelExists = NO;
+    
+    if([momFiles count] > 0){
+        
+        for(NSString *file in momFiles){
+            
+            NSURL *momURL = [NSURL fileURLWithPath:file];
+            _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
+            
+            if(_managedObjectModel != nil){
+                
+                modelExists = YES;
+                break;
+            }
+        }
+    }
+    
+    if(!modelExists)
+        _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
 	
 	return _managedObjectModel;
 }
-
-
 
 - (NSString*) storePath {
 	return [[self applicationDocumentsDirectory]
@@ -347,6 +363,54 @@ static ActiveManager *_shared = nil;
 - (NSString *)applicationDocumentsDirectory {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
+
+- (BOOL) loadAllSeedFiles{
+    
+    return [self loadSeedFilesForGroupName:nil];
+}
+
+- (BOOL) loadSeedFilesForGroupName:(NSString *) groupName{
+    
+    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:OR_SEED_DIR error:nil];
+    
+    return [self loadSeedFiles:files groupName:groupName];
+}
+
+- (BOOL) loadSeedFiles:(NSArray *) files groupName:(NSString *) groupName{
+    
+    NSError *error = nil;
+    
+    for(NSString *file in files){
+        
+        NSString *content = [NSString stringWithContentsOfFile:$S(@"%@/%@", OR_SEED_DIR, file) encoding:NSUTF8StringEncoding error:&error];
+
+        id value = [self parseString:content];
+        
+        if(value == nil){
+            
+            error = [NSError errorWithDomain:@"com.objectiverecord" code:1 userInfo:$D(file, content)];
+            continue;
+        }
+                
+        NSString *class = [[[file stringByDeletingPathExtension] componentsSeparatedByString:@"_"] objectAtIndex:0];                
+        Class modelClass = NSClassFromString(class);        
+        
+        if([value isKindOfClass:[NSDictionary class]]){
+                        
+            [value enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
+                
+                if(groupName == nil || (groupName != nil && [groupName isEqualToString:key]))
+                    [modelClass build:obj];
+            }];
+        }
+        else
+            [modelClass build:value];
+        
+    }
+    
+    return error == nil;
+}
+
 
 - (id)copyWithZone:(NSZone *)zone	{
     return self;

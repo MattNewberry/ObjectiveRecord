@@ -1,0 +1,6 @@
+{
+    "matt":{"id":1, "name":"Matthew Newberry", "created_at":"2010-05-30T18:18:00+01:00", "price":599.99, "items":[{"id":1, "name":"iPhone 4", "price":599.99, "qty":1}]},
+
+    "tobi":{"id":2, "name":"Tobias Lütke", "created_at":"2010-05-30T18:18:00+01:00", "price":1499.98, "items":[{"id":2,"name":"iPhone 4", "price":599.99, "qty":1},{"id":3,"name":"iPad", "price":899.99, "qty":1}]}
+}
+

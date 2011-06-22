@@ -7,6 +7,7 @@
 //
 
 #import "ActiveManager.h"
+#import "YAJLParsing.h"
 
 @interface ActiveManagerTest : SenTestCase{	
 
@@ -20,6 +21,7 @@
 - (void) setUp{
 	
 	_activeManager = [ActiveManager shared];
+    [_activeManager setParsingClass:[YAJLParsing class]];
 }
 
 - (void) testShouldVerifybaseRemoteURL{

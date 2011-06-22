@@ -4,31 +4,57 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ActiveRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Build.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>3</integer>
 		</dict>
-		<key>ObjectiveRecord.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>UnitTests.xcscheme</key>
+		<key>ObjectiveRecord 2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>ObjectiveRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>UnitTests 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>UnitTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C930941A1208A0F300931448</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9B653CA13A9332200565B38</key>
 		<dict>
 			<key>primary</key>
 			<true/>

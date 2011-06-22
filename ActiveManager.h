@@ -69,11 +69,16 @@
 
 
 - (NSData *) serializeObject:(id) object;
+- (id) parseString:(NSString *) content;
 
 - (NSManagedObjectContext *) newManagedObjectContext;
 - (NSManagedObjectContext *) managedObjectContext;
 - (NSManagedObjectModel *) managedObjectModel;
 - (NSPersistentStoreCoordinator *) persistentStoreCoordinator;
 - (NSString *) applicationDocumentsDirectory;
+
+- (BOOL) loadAllSeedFiles;
+- (BOOL) loadSeedFilesForGroupName:(NSString *) groupName;
+- (BOOL) loadSeedFiles:(NSArray *) files groupName:(NSString *) groupName;
 
 @end

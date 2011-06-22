@@ -15,6 +15,7 @@
 @synthesize source = _source;
 @synthesize objects=_objects;
 @synthesize error=_error;
+@synthesize headers=_headers;
 
 - (id) initWithResults:(NSArray *)results{
 	
@@ -43,17 +44,6 @@
     return self;
 }
 
-- (void)dealloc{
-	[_objects release];
-	[_error release];
-
-	[_source release];
-
-	[_urlPath release];
-
-	[super dealloc];
-}
-
 - (id) object{
 	
 	return _objects != nil && [_objects count] > 0 ? [_objects objectAtIndex:0] : nil;
@@ -69,9 +59,18 @@
 	return [self hasObjects] ? [_objects count] : 0;
 }
 
-
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState*)state objects:(id*)stackbuf count:(NSUInteger)len {
     return [_objects countByEnumeratingWithState:state objects:stackbuf count:len];
+}
+
+- (void)dealloc{
+	[_objects release];
+	[_error release];
+    [_headers release];
+	[_source release];
+	[_urlPath release];
+    
+	[super dealloc];
 }
 
 @end
