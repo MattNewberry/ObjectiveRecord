@@ -968,36 +968,10 @@
 	
 	ActiveRecord *threadSafeSelf = [self threadSafe];
 			
-	if(relationship){
-
+	if(relationship)
         [threadSafeSelf update:$D([result objects], relationship)];
-        
-//		NSRelationshipDescription *destEntity = [[[threadSafeSelf class] relationshipsByName] objectForKey:relationship];
-//		NSArray *propertyNames = [[[destEntity destinationEntity] propertiesByName] allKeys];
-//
-//		if(![propertyNames containsObject:[[threadSafeSelf class] localIDField]])
-//			[threadSafeSelf performSelector:NSSelectorFromString($S(@"remove%@:", [relationship capitalizedString])) withObject:[self valueForKey:relationship]];			
-//		
-//		Class relatedClass = [threadSafeSelf classForRelationship:relationship];
-        
-        
-
-//		NSMutableSet *objects = [NSMutableSet setWithCapacity:[result count]];
-//		
-//		for(id object in result.objects){
-//			ActiveRecord *builtObject = [relatedClass build:object];
-//						
-//			if(builtObject)
-//				[objects addObject:builtObject];
-//		}
-//						
-//		//if(objects)
-//			//[threadSafeSelf performSelector:NSSelectorFromString($S(@"add%@:", [relationship capitalizedString])) withObject:objects];
-	}
-	else{
-
+	else
 		[threadSafeSelf update:[result object]];
-	}
 	
 	[threadSafeSelf save];
 }
@@ -1008,7 +982,18 @@
 }
 
 
++ (BOOL) seed{
+    
+    return [self seedGroup:nil];
+}
 
++ (BOOL) seedGroup:(NSString *) groupName{
+    
+    NSArray *files = [ActiveManager seedFiles];
+    NSArray *seeds = [files filteredArrayUsingPredicate:$P(@"self BEGINSWITH %@", [self entityName])];
+    
+    return [[ActiveManager shared] loadSeedFiles:seeds groupName:groupName];
+}
 
 
 

@@ -13,7 +13,7 @@
 #define OR_CORE_DATE_STORE_TYPE		NSSQLiteStoreType
 #define OR_CORE_DATE_STORE_NAME		@"CoreDataStore.sqlite"
 #define OR_CORE_DATE_BATCH_SIZE		25
-#define kRKManagedObjectContextKey @"RKManagedObjectContext"
+#define OR_MOC_KEY                  @"managedObjectContext"
 #define OR_CORE_DATA_MIGRATION_NEED @"coreDataMigrationNeeded"
 #define OR_SEED_DIR                 @"Seeders"
 
@@ -21,7 +21,6 @@ static ActiveManager *_shared = nil;
 
 @implementation ActiveManager
 
-@synthesize activeConnection = _activeConnection;
 @synthesize remoteContentFormat = _remoteContentFormat;
 @synthesize remoteContentType = _remoteContentType;
 @synthesize parsingClass = _parsingClass;
@@ -34,7 +33,6 @@ static ActiveManager *_shared = nil;
 @synthesize modelProperties = _modelProperties;
 @synthesize modelRelationships = _modelRelationships;
 @synthesize modelAttributes = _modelAttributes;
-@synthesize requestQueue = _requestQueue;
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -51,7 +49,6 @@ static ActiveManager *_shared = nil;
 	
 	if((self = [super init])){
 		
-		_requestQueue = [[NSOperationQueue alloc] init];
 		self.remoteContentType = @"application/json";
 		self.remoteContentFormat = @"json";
 	
@@ -238,12 +235,12 @@ static ActiveManager *_shared = nil;
 	} else {
 		
 		NSMutableDictionary *threadDictionary = [[NSThread currentThread] threadDictionary];
-		NSManagedObjectContext *backgroundThreadContext = [threadDictionary objectForKey:kRKManagedObjectContextKey];
+		NSManagedObjectContext *backgroundThreadContext = [threadDictionary objectForKey:OR_MOC_KEY];
 		
 		if (!backgroundThreadContext) {
 			
 			backgroundThreadContext = [self newManagedObjectContext];					
-			[threadDictionary setObject:backgroundThreadContext forKey:kRKManagedObjectContextKey];			
+			[threadDictionary setObject:backgroundThreadContext forKey:OR_MOC_KEY];			
 			[backgroundThreadContext release];
 		}
         
@@ -364,16 +361,20 @@ static ActiveManager *_shared = nil;
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
+
++ (NSArray *) seedFiles{
+    
+   return [[NSFileManager defaultManager] contentsOfDirectoryAtPath:OR_SEED_DIR error:nil]; 
+}
+
 - (BOOL) loadAllSeedFiles{
     
     return [self loadSeedFilesForGroupName:nil];
 }
 
 - (BOOL) loadSeedFilesForGroupName:(NSString *) groupName{
-    
-    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:OR_SEED_DIR error:nil];
-    
-    return [self loadSeedFiles:files groupName:groupName];
+        
+    return [self loadSeedFiles:[[self class] seedFiles] groupName:groupName];
 }
 
 - (BOOL) loadSeedFiles:(NSArray *) files groupName:(NSString *) groupName{
@@ -403,7 +404,7 @@ static ActiveManager *_shared = nil;
                     [modelClass build:obj];
             }];
         }
-        else
+        else if(groupName == nil)
             [modelClass build:value];
         
     }
@@ -433,7 +434,6 @@ static ActiveManager *_shared = nil;
 }
 
 - (void)dealloc{
-	[_requestQueue release];
 	[_managedObjectContext release];
 	[_managedObjectModel release];
 	[_persistentStoreCoordinator release];
@@ -449,7 +449,6 @@ static ActiveManager *_shared = nil;
 	[_parsingClass release];
 	[_remoteContentType release];
 	[_remoteContentFormat release];
-	[_activeConnection release];
 
 	[super dealloc];
 }

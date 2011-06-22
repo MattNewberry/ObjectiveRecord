@@ -249,8 +249,6 @@
 				C93094281208A11F00931448 /* ActiveManager.m */,
 				C93094311208A11F00931448 /* ActiveRecord.h */,
 				C93094321208A11F00931448 /* ActiveRecord.m */,
-				C93094391208A11F00931448 /* ActiveSupport.h */,
-				C930943A1208A11F00931448 /* ActiveSupport.m */,
 				C930942F1208A11F00931448 /* ActiveRequest.h */,
 				C93094301208A11F00931448 /* ActiveRequest.m */,
 				C930943B1208A11F00931448 /* ActiveResult.h */,
@@ -271,23 +269,10 @@
 		C91DE994120DDAEC008B4477 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C93094391208A11F00931448 /* ActiveSupport.h */,
+				C930943A1208A11F00931448 /* ActiveSupport.m */,
 				C93094201208A11F00931448 /* ActiveSupportInflector */,
-				C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */,
-				C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */,
-				C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */,
-				C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */,
-				C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */,
-				C932F1B31231464300A98B35 /* NSThread+Blocks.m */,
-				C91DE995120DDAF5008B4477 /* NSArray+Core.h */,
-				C91DE996120DDAF5008B4477 /* NSArray+Core.m */,
-				C91DE997120DDAF5008B4477 /* NSMutableArray+Core.h */,
-				C91DE998120DDAF5008B4477 /* NSMutableArray+Core.m */,
-				C91DE999120DDAF5008B4477 /* NSObject+Core.h */,
-				C91DE99A120DDAF5008B4477 /* NSObject+Core.m */,
-				C91DE99B120DDAF5008B4477 /* NSSet+Core.h */,
-				C91DE99C120DDAF5008B4477 /* NSSet+Core.m */,
-				C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */,
-				C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */,
+				C9D73A5413B29F7B0092D205 /* Additions */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -400,6 +385,29 @@
 				C9A34C96121322DE00084D92 /* YAJLParsing.m */,
 			);
 			name = Parsers;
+			sourceTree = "<group>";
+		};
+		C9D73A5413B29F7B0092D205 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				C9685A4B12F08C94009D7CF0 /* GTMNSString+HTML.h */,
+				C9685A4C12F08C94009D7CF0 /* GTMNSString+HTML.m */,
+				C91DE6FA120C6CE7008B4477 /* NSManagedObjectContext+Additions.h */,
+				C91DE6FB120C6CE7008B4477 /* NSManagedObjectContext+Additions.m */,
+				C91DE9A3120DDB23008B4477 /* ObjectiveRecord+Utilities.h */,
+				C932F1B31231464300A98B35 /* NSThread+Blocks.m */,
+				C91DE995120DDAF5008B4477 /* NSArray+Core.h */,
+				C91DE996120DDAF5008B4477 /* NSArray+Core.m */,
+				C91DE997120DDAF5008B4477 /* NSMutableArray+Core.h */,
+				C91DE998120DDAF5008B4477 /* NSMutableArray+Core.m */,
+				C91DE999120DDAF5008B4477 /* NSObject+Core.h */,
+				C91DE99A120DDAF5008B4477 /* NSObject+Core.m */,
+				C91DE99B120DDAF5008B4477 /* NSSet+Core.h */,
+				C91DE99C120DDAF5008B4477 /* NSSet+Core.m */,
+				C9A348061210AA4A00084D92 /* NSString+InflectionSupport.h */,
+				C9A348071210AA4A00084D92 /* NSString+InflectionSupport.m */,
+			);
+			name = Additions;
 			sourceTree = "<group>";
 		};
 		C9F31823120B3502000A87D7 /* Data */ = {

@@ -47,6 +47,20 @@
     STAssertEquals([Order count], 1, @"Failed to seed files");
 }
 
+- (void) testShouldLoadSeedsBasedUponClassName{
+    
+    [Order removeAll];
+    [Order seed];
+    STAssertEquals([Order count], 2, @"Failed to seed files");
+}
+
+- (void) testShouldLoadSeedsBasedUponClassNameAndGroupName{
+    
+    [Order removeAll];
+    [Order seedGroup:@"matt"];
+    STAssertEquals([Order count], 1, @"Failed to seed files");
+}
+
 - (void) testShouldReturnNameWithoutRelationship{
 	
 	STAssertEqualObjects([Order entityName], @"Order", @"Failed to match entity name");

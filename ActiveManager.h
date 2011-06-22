@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface ActiveManager : NSObject {
-	
-	NSOperationQueue *_requestQueue;
-	
+		
 	NSManagedObjectContext *_managedObjectContext;
 	NSManagedObjectModel *_managedObjectModel;
 	NSPersistentStoreCoordinator *_persistentStoreCoordinator;
@@ -30,7 +28,6 @@
 	int logLevel;
 	
 	id _connectionClass;
-	id _activeConnection;
 	id _parsingClass;
 	
 	NSString *_baseRemoteURL;
@@ -38,7 +35,6 @@
 	NSString *_remoteContentFormat;
 }
 
-@property (nonatomic, retain) id activeConnection;
 @property (nonatomic, retain) NSString *remoteContentFormat;
 @property (nonatomic, retain) NSString *remoteContentType;
 @property (nonatomic, assign) id parsingClass;
@@ -51,7 +47,6 @@
 @property (nonatomic, retain) NSMutableDictionary *modelProperties;
 @property (nonatomic, retain) NSMutableDictionary *modelRelationships;
 @property (nonatomic, retain) NSMutableDictionary *modelAttributes;
-@property (nonatomic, retain) NSOperationQueue *requestQueue;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -77,6 +72,7 @@
 - (NSPersistentStoreCoordinator *) persistentStoreCoordinator;
 - (NSString *) applicationDocumentsDirectory;
 
++ (NSArray *) seedFiles;
 - (BOOL) loadAllSeedFiles;
 - (BOOL) loadSeedFilesForGroupName:(NSString *) groupName;
 - (BOOL) loadSeedFiles:(NSArray *) files groupName:(NSString *) groupName;

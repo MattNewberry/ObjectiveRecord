@@ -90,6 +90,10 @@ const typedef enum {
 - (NSString *) relationshipForURLPath:(NSString *) urlPath;
 
 
++ (BOOL) seed;
++ (BOOL) seedGroup:(NSString *) groupName;
+
+
 /*	Utilities	*/
 
 + (NSString *) remoteURLForAction:(Action) action;
