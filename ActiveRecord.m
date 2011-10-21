@@ -48,18 +48,23 @@
 
 + (NSString *) entityName {
 	
-	NSMutableString *name = [NSMutableString stringWithString:$S(@"%@", self)];
+	return [self entityName:YES];
+}
+
++ (NSString *) entityName: (BOOL) removePrefix{
     
-    if([[self classPrefix] length] > 0)
+    NSMutableString *name = [NSMutableString stringWithString:$S(@"%@", self)];
+    
+    if([[self classPrefix] length] > 0 && removePrefix)
         [name replaceOccurrencesOfString:[self classPrefix] withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [[self classPrefix] length])];
-		
+    
 	if(![self shouldParseEntityNameFromRelationships] || ![self hasRelationships])
 		return name;
 	
 	NSMutableString *tempName = [NSMutableString stringWithString:name];
 	
 	for(NSString *key in [self relationshipsByName]){
-				
+        
 		NSRange search = [name rangeOfString:key options:NSCaseInsensitiveSearch];
 		if(search.location != NSNotFound){
 			
@@ -210,7 +215,7 @@
 	
 	ActiveResult *result = [self find:nil sortBy:nil limit:1 fields:nil];
 	
-	return [result object];
+	return [result count] > 0 ? [result object] : nil;
 }
 
 + (id) last{
@@ -409,7 +414,7 @@
 		if ([resource respondsToSelector:createdAtSel] && [resource valueForKey:[self createdAtField]] == nil)
 			[resource setValue:[NSDate date] forKey:[self createdAtField]];
 		
-        [resource didCreate:options data:dict];
+        //[resource didCreate:options data:dict];
 		
         return [resource autorelease];
     }
@@ -480,7 +485,7 @@
 		[dict setObject:[data objectForKey:key] forKey:[mappedKey stringByReplacingOccurrencesOfString:@"-" withString:@"_"]];
 	}
     
-	[threadSafeSelf willUpdate:options data:dict];
+	//[threadSafeSelf willUpdate:options data:dict];
 			
     for (NSString *field in [dict allKeys]) {
 		
@@ -506,7 +511,7 @@
 								
                 // ===== Get related resources from value ===== //
 				NSDictionary *relationshipOptions = [options objectForKey:relationshipClass];
-				
+                				
                 // If the value is a dictionary or array, use it to create or update an resource                
                 if ([value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSArray class]]) {
                     newRelatedResources = [relationshipClass build:value withOptions:options];
@@ -517,10 +522,17 @@
                 // Otherwise, if the value is a resource itself, use it directly
                 else if ([value isKindOfClass:relationshipClass])
                     newRelatedResources = value;
-				
+                
+                else if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]]){
+                    
+                    newRelatedResources = [relationshipClass findByID:$I([value intValue])];
+                    [threadSafeSelf setValue:newRelatedResources forKey:localField];
+                    continue;
+                }
+                    
                 // ===== Apply related resources to self ===== //
                 
-                NSString *rule = [relationshipOptions objectForKey:@"rule"] ? [relationshipOptions objectForKey:@"rule"] : @"destroy";
+                NSString *rule = [relationshipOptions objectForKey:@"rule"] ? [relationshipOptions objectForKey:@"rule"] : @"append";
                 				
                 // To-many relationships
                 if ([relationshipDescription isToMany]) {
@@ -578,7 +590,11 @@
 						case NSInteger16AttributeType:
 						case NSInteger32AttributeType:
 						case NSInteger64AttributeType:
-							[threadSafeSelf setValue:$I([value intValue]) forKey:localField];
+                            
+                            if(![value isKindOfClass:[NSNumber class]])
+                                [threadSafeSelf setValue:$I([value intValue]) forKey:localField];
+                            else
+                                [threadSafeSelf setValue:value forKey:localField];
 							break;
 						
 						case NSFloatAttributeType:
@@ -657,7 +673,7 @@
 + (void) removeAll{
 
 	[self remove:nil];
-	[self save];
+	//[self save];
 }
 
 + (void) remove:(NSPredicate *) predicate{
@@ -705,7 +721,6 @@
 - (NSString *) resourceURLForAction:(Action)action withContentFormat:(BOOL) withContentFormat{
     
     NSMutableArray *pieces = [NSMutableArray arrayWithObject:[[$S(@"%@", [self class]) pluralForm] lowercaseString]];
-	
 	[pieces addObject:$S(@"%i", [[self valueForKey:[[self class] localIDField]] intValue])];
 	
 	NSMutableString *name = [NSMutableString stringWithString:[pieces objectAtIndex:0]];
@@ -714,7 +729,7 @@
 		return [pieces componentsJoinedByString:@"/"];
     
 	for(NSString *key in [[self class] relationshipsByName]){
-		
+
 		NSRange search = [[pieces objectAtIndex:0] rangeOfString:key options:NSCaseInsensitiveSearch];
 		
 		if(search.location != NSNotFound){
@@ -777,7 +792,7 @@
 }
 
 
-- (void) fetch:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) fetch:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	[self fetchRelationship:nil didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
 }
@@ -796,7 +811,7 @@
 	[[[self class] activeManager] addRequest:request];
 }
 
-- (void) fetchRelationship:(NSString *) relationship didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) fetchRelationship:(NSString *) relationship didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	ActiveRequest *request = [self requestForFetch];
     request.delegate = nil;
@@ -808,7 +823,8 @@
 		
 		[self connectionDidFinish:result];
 		
-		didFinishBlock(result);
+        if(didFinishBlock != nil)
+            didFinishBlock(result);
 		
 	} didFailBlock:didFailBlock];
 }
@@ -844,7 +860,7 @@
 }
 
 
-- (void) push:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) push:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	ActiveRequest *request = [self requestForPush];
 	
@@ -901,7 +917,7 @@
 }
 
 
-+ (void) pull:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
++ (void) pull:(ActiveConnectionDidParseObjectBlock)didParseObjectBlock didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	ActiveRequest *request = [self requestForPull];
 	
@@ -965,7 +981,7 @@
 - (void) connectionDidFinish:(ActiveResult *) result{
     			
 	NSString *relationship = [self relationshipForURLPath:result.urlPath];
-	
+	NSLog(@"RELATIONSHIP = %@", relationship);
 	ActiveRecord *threadSafeSelf = [self threadSafe];
 			
 	if(relationship)
@@ -990,8 +1006,7 @@
 + (BOOL) seedGroup:(NSString *) groupName{
     
     NSArray *files = [ActiveManager seedFiles];
-    NSArray *seeds = [files filteredArrayUsingPredicate:$P(@"self BEGINSWITH %@", [self entityName])];
-    
+    NSArray *seeds = [files filteredArrayUsingPredicate:$P(@"self BEGINSWITH %@", [self entityName:NO])];
     return [[ActiveManager shared] loadSeedFiles:seeds groupName:groupName];
 }
 

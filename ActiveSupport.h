@@ -18,6 +18,7 @@
 #define $MA(...) [NSMutableArray arrayWithObjects: __VA_ARGS__, nil]
 #define $S(format, ...) [NSString stringWithFormat:format, ## __VA_ARGS__]
 #define $I(i) [NSNumber numberWithInt:i]
+#define $B(b) [NSNumber numberWithBool:b]
 #define $F(f) [NSNumber numberWithFloat:f]
 #define toArray(object) (object != nil ? ([object isKindOfClass:[NSArray class]] ? object : [NSArray arrayWithObject:object]) : [NSArray array])
 #define $P(...) [NSPredicate predicateWithFormat:__VA_ARGS__]

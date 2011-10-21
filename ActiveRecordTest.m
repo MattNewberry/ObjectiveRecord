@@ -219,7 +219,7 @@
 	[order removeItems:order.items];
 	[order save];
 	
-	NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"items" ofType:@"json"];
+	NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"OrderItem" ofType:@"json" inDirectory:@"Seeds"];
 	NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 	
 	NSArray *items = [content yajl_JSON];
@@ -237,7 +237,6 @@
 - (void) testShouldReturnProperRelationshipForURL{
 	
 	Order *order = [Order last];
-	NSLog(@"%@", [order relationshipForURLPath:@"http://mndcreative.myshopify.com/admin/orders/1/items/1.json"]);
 	STAssertEqualObjects([order relationshipForURLPath:@"http://mndcreative.myshopify.com/admin/orders/1/items/1.json"], @"items", @"Failed to return proper relationship for URL");
 }
 

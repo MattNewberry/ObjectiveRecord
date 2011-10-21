@@ -71,20 +71,20 @@ const typedef enum {
 - (BOOL) shouldUpdateWith:(NSDictionary*)dict;
 
 - (void) push;
-- (void) push:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) push:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
 - (ActiveRequest *) requestForPush;
 
 - (ActiveResult *) fetch;
 - (void) fetchRelationship:(NSString *) relationship delegate:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
-- (void) fetchRelationship:(NSString *) relationship didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) fetchRelationship:(NSString *) relationship didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
 - (void) fetchProperties:(NSDictionary *) properties;
 - (void) fetch:(id) delegate didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
-- (void) fetch:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) fetch:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
 - (ActiveRequest *) requestForFetch;
 
 + (void) pull;
 + (void) pull:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL) didFinishSelector didFailSelector:(SEL)didFailSelector;
-+ (void) pull:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
++ (void) pull:(ActiveConnectionDidParseObjectBlock)didParseObjectBlock didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
 + (ActiveRequest *) requestForPull;
 
 - (NSString *) relationshipForURLPath:(NSString *) urlPath;
@@ -105,6 +105,7 @@ const typedef enum {
 
 + (NSManagedObjectContext *) managedObjectContext;
 + (NSString *) entityName;
++ (NSString *) entityName: (BOOL) removePrefix;
 + (NSEntityDescription *) entityDescription;
 + (NSFetchRequest *) fetchRequest;
 + (NSString *) localNameForRemoteField:(NSString*)name;

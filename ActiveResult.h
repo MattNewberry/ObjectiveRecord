@@ -20,7 +20,7 @@
 	id _source;
 }
 
-@property (nonatomic, copy) NSString *urlPath;
+@property (nonatomic, retain) NSString *urlPath;
 @property (nonatomic, retain) id source;
 @property (nonatomic, retain) NSArray *objects;
 @property (nonatomic, retain) NSError *error;

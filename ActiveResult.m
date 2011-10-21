@@ -17,9 +17,19 @@
 @synthesize error=_error;
 @synthesize headers=_headers;
 
+- (id) init{
+    
+    if(self = [super init]){
+        
+        self.objects = [NSArray array];
+    }
+    
+    return self;
+}
+
 - (id) initWithResults:(NSArray *)results{
 	
-	if(self = [super init]){
+	if(self = [self init]){
 		
 		_objects = [results retain];
 	}
@@ -29,7 +39,7 @@
 
 - (id) initWithSource:(id) resultSource{
 	
-	if (self = [super init]){
+	if (self = [self init]){
 		
 		_source = [resultSource retain];
 	}
@@ -38,7 +48,7 @@
 }
 
 - (id) initWithError:(NSError*) errorRef {
-    if (self = [super init]) {
+    if (self = [self init]) {
         _error = [errorRef retain];
     }
     return self;

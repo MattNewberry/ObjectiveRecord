@@ -15,7 +15,7 @@
 #define OR_CORE_DATE_BATCH_SIZE		25
 #define OR_MOC_KEY                  @"managedObjectContext"
 #define OR_CORE_DATA_MIGRATION_NEED @"coreDataMigrationNeeded"
-#define OR_SEED_DIR                 @"Seeders"
+#define OR_SEED_DIR                 @"Seeds"
 
 static ActiveManager *_shared = nil;
 
@@ -26,7 +26,7 @@ static ActiveManager *_shared = nil;
 @synthesize parsingClass = _parsingClass;
 @synthesize baseRemoteURL = _baseRemoteURL;
 @synthesize connectionClass = _connectionClass;
-@synthesize logLevel;
+@synthesize logLevel = _logLevel;
 @synthesize defaultDateParser = _defaultDateParser;
 @synthesize defaultNumberFormatter = _defaultNumberFormatter;
 @synthesize entityDescriptions = _entityDescriptions;
@@ -36,6 +36,7 @@ static ActiveManager *_shared = nil;
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize fixtureParsingClass = _fixtureParsingClass;
 
 + (ActiveManager *) shared{
     	
@@ -90,9 +91,9 @@ static ActiveManager *_shared = nil;
 	
 	if([request.urlPath rangeOfString:@"http"].length == 0)
 		[self addBaseURL:request];
-	
+	    
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-				
+
 		id <ActiveConnection> conn = [[[_connectionClass alloc] init] autorelease];
 		[conn setResponseDelegate:delegate];
 		[conn setDidFinishSelector:didFinishSelector];
@@ -102,12 +103,12 @@ static ActiveManager *_shared = nil;
 	});
 }
 
-- (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(ActiveConnectionDidParseObjectBlock)didParseObjectBlock didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	[self addRequest:request toQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0) didParseObjectBlock:didParseObjectBlock didFinishBlock:didFinishBlock didFailBlock:didFailBlock];
 }
 
-- (void) addRequest:(ActiveRequest *) request toQueue:(dispatch_queue_t)queue didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) addRequest:(ActiveRequest *) request toQueue:(dispatch_queue_t)queue didParseObjectBlock:(ActiveConnectionDidParseObjectBlock)didParseObjectBlock didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	if([request.urlPath rangeOfString:@"http"].length == 0)
 		[self addBaseURL:request];
@@ -161,7 +162,7 @@ static ActiveManager *_shared = nil;
 	[pool release];
 }
 
-- (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock{
+- (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock{
 	
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
@@ -196,6 +197,16 @@ static ActiveManager *_shared = nil;
     
     id <ActiveParser> parser = [[[_parsingClass alloc] init] autorelease];
     return [parser parse:content];
+}
+
+- (id) parseFixture:(NSString *) content{
+    
+    if(_fixtureParsingClass != nil){
+        id <ActiveParser> parser = [[[_fixtureParsingClass alloc] init] autorelease];
+        return [parser parse:content];
+    }
+    else
+        return [self parseString:content];
 }
 
 
@@ -254,27 +265,11 @@ static ActiveManager *_shared = nil;
 	if( _managedObjectModel != nil )
 		return _managedObjectModel;
     
-    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSBundle bundleForClass:[self class]] bundlePath] error:nil];
-    NSArray *momFiles = [files filteredArrayUsingPredicate:$P(@"self ENDSWITH '.mom' OR self ENDSWITH '.momd'")];
-	    
-    BOOL modelExists = NO;
+    NSURL *momURL = [NSURL fileURLWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"Shopify_Mobile" ofType:@"momd"]];
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
+
     
-    if([momFiles count] > 0){
-        
-        for(NSString *file in momFiles){
-            
-            NSURL *momURL = [NSURL fileURLWithPath:file];
-            _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
-            
-            if(_managedObjectModel != nil){
-                
-                modelExists = YES;
-                break;
-            }
-        }
-    }
-    
-    if(!modelExists)
+    if(_managedObjectModel == nil)
         _managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
 	
 	return _managedObjectModel;
@@ -364,7 +359,7 @@ static ActiveManager *_shared = nil;
 
 + (NSArray *) seedFiles{
     
-   return [[NSFileManager defaultManager] contentsOfDirectoryAtPath:OR_SEED_DIR error:nil]; 
+   return [[NSFileManager defaultManager] contentsOfDirectoryAtPath:$S(@"%@/%@", [[NSBundle bundleForClass:[self class]] bundlePath], OR_SEED_DIR) error:nil]; 
 }
 
 - (BOOL) loadAllSeedFiles{
@@ -383,18 +378,21 @@ static ActiveManager *_shared = nil;
     
     for(NSString *file in files){
         
-        NSString *content = [NSString stringWithContentsOfFile:$S(@"%@/%@", OR_SEED_DIR, file) encoding:NSUTF8StringEncoding error:&error];
+        NSString *content = [NSString stringWithContentsOfFile:$S(@"%@/%@/%@", [[NSBundle bundleForClass:[self class]] bundlePath], OR_SEED_DIR, file) encoding:NSUTF8StringEncoding error:&error];
 
-        id value = [self parseString:content];
+        id value = [self parseFixture:content];
         
         if(value == nil){
             
             error = [NSError errorWithDomain:@"com.objectiverecord" code:1 userInfo:$D(file, content)];
             continue;
         }
-                
-        NSString *class = [[[file stringByDeletingPathExtension] componentsSeparatedByString:@"_"] objectAtIndex:0];                
-        Class modelClass = NSClassFromString(class);        
+                        
+        NSMutableString *class = [NSMutableString stringWithString:[[[file stringByDeletingPathExtension] componentsSeparatedByString:@"_"] objectAtIndex:0]];
+        [class replaceOccurrencesOfString:[ActiveRecord classPrefix] withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [[ActiveRecord classPrefix] length])];
+        
+        Class modelClass = NSClassFromString(class);
+        [modelClass removeAll];
         
         if([value isKindOfClass:[NSDictionary class]]){
                         
@@ -408,6 +406,8 @@ static ActiveManager *_shared = nil;
             [modelClass build:value];
         
     }
+    
+    [ActiveRecord save];
     
     return error == nil;
 }
@@ -447,6 +447,7 @@ static ActiveManager *_shared = nil;
 	[_baseRemoteURL release];
 
 	[_parsingClass release];
+    [_fixtureParsingClass release];
 	[_remoteContentType release];
 	[_remoteContentFormat release];
 

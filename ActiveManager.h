@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ActiveConnection.h"
 
 @interface ActiveManager : NSObject {
 		
@@ -25,10 +26,11 @@
     NSMutableDictionary *_modelRelationships;
     NSMutableDictionary *_modelAttributes;
 	
-	int logLevel;
+	int _logLevel;
 	
 	id _connectionClass;
 	id _parsingClass;
+    id _fixtureParsingClass;
 	
 	NSString *_baseRemoteURL;
 	NSString *_remoteContentType;
@@ -38,6 +40,7 @@
 @property (nonatomic, retain) NSString *remoteContentFormat;
 @property (nonatomic, retain) NSString *remoteContentType;
 @property (nonatomic, assign) id parsingClass;
+@property (nonatomic, assign) id fixtureParsingClass;
 @property (nonatomic, retain) NSString *baseRemoteURL;
 @property (nonatomic, assign) id connectionClass;
 @property (nonatomic, assign) int logLevel;
@@ -55,16 +58,17 @@
 
 - (void) addRequest:(ActiveRequest *) request;
 - (void) addRequest:(ActiveRequest *) request delegate:(id) delegate didParseObjectSelector:(SEL)didParseObjectSelector didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;
-- (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
-- (void) addRequest:(ActiveRequest *) request toQueue:(dispatch_queue_t)queue didParseObjectBlock:(void(^)(id object))didParseObjectBlock didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) addRequest:(ActiveRequest *) request didParseObjectBlock:(ActiveConnectionDidParseObjectBlock)didParseObjectBlock didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
+- (void) addRequest:(ActiveRequest *) request toQueue:(dispatch_queue_t)queue didParseObjectBlock:(ActiveConnectionDidParseObjectBlock)didParseObjectBlock didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
 
 - (ActiveResult *) addSyncronousRequest:(ActiveRequest *)request;
 - (void) addSyncronousRequest:(ActiveRequest *)request delegate:(id) delegate didFinishSelector:(SEL)didFinishSelector didFailSelector:(SEL)didFailSelector;
-- (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(void(^)(ActiveResult *result))didFinishBlock didFailBlock:(void(^)(ActiveResult *result))didFailBlock;
+- (void) addSyncronousRequest:(ActiveRequest *)request didFinishBlock:(ActiveConnectionBlock)didFinishBlock didFailBlock:(ActiveConnectionBlock)didFailBlock;
 
 
 - (NSData *) serializeObject:(id) object;
 - (id) parseString:(NSString *) content;
+- (id) parseFixture:(NSString *) content;
 
 - (NSManagedObjectContext *) newManagedObjectContext;
 - (NSManagedObjectContext *) managedObjectContext;

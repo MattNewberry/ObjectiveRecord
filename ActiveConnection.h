@@ -15,7 +15,8 @@ const typedef enum{
 	ActiveConnectionNotificationDidFailWithError
 } ActiveConnectionNotificationType;
 
-
+typedef void(^ActiveConnectionDidParseObjectBlock)(id object);
+typedef void(^ActiveConnectionBlock)(ActiveResult *result);
 
 
 @protocol ActiveConnection
@@ -25,9 +26,9 @@ const typedef enum{
 - (void) setDidFinishSelector:(SEL) selector;
 - (void) setDidFailSelector:(SEL) selector;
 - (void) setDidParseObjectSelector:(SEL) selector;
-- (void) setDidFinishBlock:(void(^)(ActiveResult *result))block;
-- (void) setDidFailBlock:(void(^)(ActiveResult *result))block;
-- (void) setDidParseObjectBlock:(void(^)(id object))block;
+- (void) setDidFinishBlock:(ActiveConnectionBlock)block;
+- (void) setDidFailBlock:(ActiveConnectionBlock)block;
+- (void) setDidParseObjectBlock:(ActiveConnectionDidParseObjectBlock)block;
 
 @required
 - (void) send:(ActiveRequest *) activeRequest;
